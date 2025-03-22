@@ -1,0 +1,9 @@
+provider_installation {
+  filesystem_mirror {
+    path    = "/path/to/providers-mirror"
+    include = ["*/*"]
+  }
+  direct {
+    exclude = ["*/*"]
+  }
+}
