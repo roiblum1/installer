@@ -1,0 +1,216 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.Appliance.Networking</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.Networking.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:58:42+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CreateNetworkingDnsDomains</S>
+                <S>Invoke-ListNetworkingDnsDomains</S>
+                <S>Invoke-SetNetworkingDnsDomains</S>
+                <S>Invoke-GetNetworkingDnsHostname</S>
+                <S>Invoke-SetNetworkingDnsHostname</S>
+                <S>Invoke-TestDnsHostname</S>
+                <S>Invoke-GetNetworkingFirewallInbound</S>
+                <S>Invoke-SetNetworkingFirewallInbound</S>
+                <S>Invoke-GetInterfaceNameNetworking</S>
+                <S>Invoke-ListNetworkingInterfaces</S>
+                <S>Invoke-GetInterfaceNameNetworkingIpv4</S>
+                <S>Invoke-SetInterfaceNameNetworkingIpv4</S>
+                <S>Invoke-GetInterfaceNameNetworkingIpv6</S>
+                <S>Invoke-SetInterfaceNameNetworkingIpv6</S>
+                <S>Invoke-GetNetworkingNoproxy</S>
+                <S>Invoke-SetNetworkingNoproxy</S>
+                <S>Invoke-DeleteProtocolNetworkingProxy</S>
+                <S>Invoke-GetProtocolNetworkingProxy</S>
+                <S>Invoke-ListNetworkingProxy</S>
+                <S>Invoke-SetProtocolNetworkingProxy</S>
+                <S>Invoke-TestProtocolProxy</S>
+                <S>Invoke-CreateNetworkingDnsServers</S>
+                <S>Invoke-GetNetworkingDnsServers</S>
+                <S>Invoke-SetNetworkingDnsServers</S>
+                <S>Invoke-TestDnsServers</S>
+                <S>Initialize-NetworkingDnsDomainsAddRequestBody</S>
+                <S>Initialize-NetworkingDnsDomainsSetRequestBody</S>
+                <S>Initialize-NetworkingDnsHostnameSetRequestBody</S>
+                <S>Initialize-NetworkingDnsHostnameTestRequestBody</S>
+                <S>Initialize-NetworkingDnsServersAddRequestBody</S>
+                <S>Initialize-NetworkingDnsServersDNSServerConfig</S>
+                <S>Initialize-NetworkingDnsServersTestRequestBody</S>
+                <S>Initialize-NetworkingFirewallInboundRule</S>
+                <S>Initialize-NetworkingFirewallInboundSetRequestBody</S>
+                <S>Initialize-NetworkingInterfacesIpv4Config</S>
+                <S>Initialize-NetworkingInterfacesIpv6Address</S>
+                <S>Initialize-NetworkingInterfacesIpv6Config</S>
+                <S>Initialize-NetworkingNoProxySetRequestBody</S>
+                <S>Initialize-NetworkingProxyConfig</S>
+                <S>Initialize-NetworkingProxyTestRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CreateNetworkingDnsDomains</S>
+                <S>Invoke-ListNetworkingDnsDomains</S>
+                <S>Invoke-SetNetworkingDnsDomains</S>
+                <S>Invoke-GetNetworkingDnsHostname</S>
+                <S>Invoke-SetNetworkingDnsHostname</S>
+                <S>Invoke-TestDnsHostname</S>
+                <S>Invoke-GetNetworkingFirewallInbound</S>
+                <S>Invoke-SetNetworkingFirewallInbound</S>
+                <S>Invoke-GetInterfaceNameNetworking</S>
+                <S>Invoke-ListNetworkingInterfaces</S>
+                <S>Invoke-GetInterfaceNameNetworkingIpv4</S>
+                <S>Invoke-SetInterfaceNameNetworkingIpv4</S>
+                <S>Invoke-GetInterfaceNameNetworkingIpv6</S>
+                <S>Invoke-SetInterfaceNameNetworkingIpv6</S>
+                <S>Invoke-GetNetworkingNoproxy</S>
+                <S>Invoke-SetNetworkingNoproxy</S>
+                <S>Invoke-DeleteProtocolNetworkingProxy</S>
+                <S>Invoke-GetProtocolNetworkingProxy</S>
+                <S>Invoke-ListNetworkingProxy</S>
+                <S>Invoke-SetProtocolNetworkingProxy</S>
+                <S>Invoke-TestProtocolProxy</S>
+                <S>Invoke-CreateNetworkingDnsServers</S>
+                <S>Invoke-GetNetworkingDnsServers</S>
+                <S>Invoke-SetNetworkingDnsServers</S>
+                <S>Invoke-TestDnsServers</S>
+                <S>Initialize-NetworkingDnsDomainsAddRequestBody</S>
+                <S>Initialize-NetworkingDnsDomainsSetRequestBody</S>
+                <S>Initialize-NetworkingDnsHostnameSetRequestBody</S>
+                <S>Initialize-NetworkingDnsHostnameTestRequestBody</S>
+                <S>Initialize-NetworkingDnsServersAddRequestBody</S>
+                <S>Initialize-NetworkingDnsServersDNSServerConfig</S>
+                <S>Initialize-NetworkingDnsServersTestRequestBody</S>
+                <S>Initialize-NetworkingFirewallInboundRule</S>
+                <S>Initialize-NetworkingFirewallInboundSetRequestBody</S>
+                <S>Initialize-NetworkingInterfacesIpv4Config</S>
+                <S>Initialize-NetworkingInterfacesIpv6Address</S>
+                <S>Initialize-NetworkingInterfacesIpv6Config</S>
+                <S>Initialize-NetworkingNoProxySetRequestBody</S>
+                <S>Initialize-NetworkingProxyConfig</S>
+                <S>Initialize-NetworkingProxyTestRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.Networking.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2515342</S>
+          <S N="downloadCount">6998745</S>
+          <S N="packageSize">317253</S>
+          <S N="published">7/25/2024 12:58:42 PM +03:00</S>
+          <S N="created">7/25/2024 12:58:42 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-CreateNetworkingDnsDomains PSCommand_Invoke-CreateNetworkingDnsDomains PSFunction_Invoke-ListNetworkingDnsDomains PSCommand_Invoke-ListNetworkingDnsDomains PSFunction_Invoke-SetNetworkingDnsDomains PSCommand_Invoke-SetNetworkingDnsDomains PSFunction_Invoke-GetNetworkingDnsHostname PSCommand_Invoke-GetNetworkingDnsHostname PSFunction_Invoke-SetNetworkingDnsHostname PSCommand_Invoke-SetNetworkingDnsHostname PSFunction_Invoke-TestDnsHostname PSCommand_Invoke-TestDnsHostname PSFunction_Invoke-GetNetworkingFirewallInbound PSCommand_Invoke-GetNetworkingFirewallInbound PSFunction_Invoke-SetNetworkingFirewallInbound PSCommand_Invoke-SetNetworkingFirewallInbound PSFunction_Invoke-GetInterfaceNameNetworking PSCommand_Invoke-GetInterfaceNameNetworking PSFunction_Invoke-ListNetworkingInterfaces PSCommand_Invoke-ListNetworkingInterfaces PSFunction_Invoke-GetInterfaceNameNetworkingIpv4 PSCommand_Invoke-GetInterfaceNameNetworkingIpv4 PSFunction_Invoke-SetInterfaceNameNetworkingIpv4 PSCommand_Invoke-SetInterfaceNameNetworkingIpv4 PSFunction_Invoke-GetInterfaceNameNetworkingIpv6 PSCommand_Invoke-GetInterfaceNameNetworkingIpv6 PSFunction_Invoke-SetInterfaceNameNetworkingIpv6 PSCommand_Invoke-SetInterfaceNameNetworkingIpv6 PSFunction_Invoke-GetNetworkingNoproxy PSCommand_Invoke-GetNetworkingNoproxy PSFunction_Invoke-SetNetworkingNoproxy PSCommand_Invoke-SetNetworkingNoproxy PSFunction_Invoke-DeleteProtocolNetworkingProxy PSCommand_Invoke-DeleteProtocolNetworkingProxy PSFunction_Invoke-GetProtocolNetworkingProxy PSCommand_Invoke-GetProtocolNetworkingProxy PSFunction_Invoke-ListNetworkingProxy PSCommand_Invoke-ListNetworkingProxy PSFunction_Invoke-SetProtocolNetworkingProxy PSCommand_Invoke-SetProtocolNetworkingProxy PSFunction_Invoke-TestProtocolProxy PSCommand_Invoke-TestProtocolProxy PSFunction_Invoke-CreateNetworkingDnsServers PSCommand_Invoke-CreateNetworkingDnsServers PSFunction_Invoke-GetNetworkingDnsServers PSCommand_Invoke-GetNetworkingDnsServers PSFunction_Invoke-SetNetworkingDnsServers PSCommand_Invoke-SetNetworkingDnsServers PSFunction_Invoke-TestDnsServers PSCommand_Invoke-TestDnsServers PSFunction_Initialize-NetworkingDnsDomainsAddRequestBody PSCommand_Initialize-NetworkingDnsDomainsAddRequestBody PSFunction_Initialize-NetworkingDnsDomainsSetRequestBody PSCommand_Initialize-NetworkingDnsDomainsSetRequestBody PSFunction_Initialize-NetworkingDnsHostnameSetRequestBody PSCommand_Initialize-NetworkingDnsHostnameSetRequestBody PSFunction_Initialize-NetworkingDnsHostnameTestRequestBody PSCommand_Initialize-NetworkingDnsHostnameTestRequestBody PSFunction_Initialize-NetworkingDnsServersAddRequestBody PSCommand_Initialize-NetworkingDnsServersAddRequestBody PSFunction_Initialize-NetworkingDnsServersDNSServerConfig PSCommand_Initialize-NetworkingDnsServersDNSServerConfig PSFunction_Initialize-NetworkingDnsServersTestRequestBody PSCommand_Initialize-NetworkingDnsServersTestRequestBody PSFunction_Initialize-NetworkingFirewallInboundRule PSCommand_Initialize-NetworkingFirewallInboundRule PSFunction_Initialize-NetworkingFirewallInboundSetRequestBody PSCommand_Initialize-NetworkingFirewallInboundSetRequestBody PSFunction_Initialize-NetworkingInterfacesIpv4Config PSCommand_Initialize-NetworkingInterfacesIpv4Config PSFunction_Initialize-NetworkingInterfacesIpv6Address PSCommand_Initialize-NetworkingInterfacesIpv6Address PSFunction_Initialize-NetworkingInterfacesIpv6Config PSCommand_Initialize-NetworkingInterfacesIpv6Config PSFunction_Initialize-NetworkingNoProxySetRequestBody PSCommand_Initialize-NetworkingNoProxySetRequestBody PSFunction_Initialize-NetworkingProxyConfig PSCommand_Initialize-NetworkingProxyConfig PSFunction_Initialize-NetworkingProxyTestRequestBody PSCommand_Initialize-NetworkingProxyTestRequestBody PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.Appliance.Networking.nuspec|README.md|VMware.Sdk.vSphere.Appliance.Networking.psd1|Api\HostnameApi.ps1|Api\Ipv4Api.ps1|Api\ProxyApi.ps1|Model\NetworkingDnsDomainsSetRequestBody.ps1|Model\NetworkingDnsHostnameTestRequestBody.ps1|Model\NetworkingDnsServersDNSServerConfig.ps1|Model\NetworkingFirewallInboundRule.ps1|Model\NetworkingInterfacesIpv4Config.ps1|Model\NetworkingInterfacesIpv6Config.ps1|Model\NetworkingProxyConfig.ps1|VMware.Sdk.vSphere.Appliance.Networking.cat|VMware.Sdk.vSphere.Appliance.Networking.psm1|Api\InboundApi.ps1|Api\Ipv6Api.ps1|Api\ServersApi.ps1|Model\NetworkingDnsHostnameSetRequestBody.ps1|Model\NetworkingDnsServersAddRequestBody.ps1|Model\NetworkingDnsServersTestRequestBody.ps1|Model\NetworkingFirewallInboundSetRequestBody.ps1|Model\NetworkingInterfacesIpv6Address.ps1|Model\NetworkingNoProxySetRequestBody.ps1|Model\NetworkingProxyTestRequestBody.ps1|Api\DomainsApi.ps1|Api\InterfacesApi.ps1|Api\NoProxyApi.ps1|Model\NetworkingDnsDomainsAddRequestBody.ps1</S>
+          <S N="GUID">bc657650-a24b-4bfe-9455-f4ee6f034e8c</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.Appliance.Networking/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

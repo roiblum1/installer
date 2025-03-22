@@ -1,0 +1,430 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Storage</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This Windows PowerShell module contains PowerCLI storage management cmdlets.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:47:53+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-EntityDefaultKeyProvider</S>
+                <S>Add-KeyManagementServer</S>
+                <S>Add-VsanFileServiceOvf</S>
+                <S>Add-VsanObjectToRepairQueue</S>
+                <S>Add-VsanStoragePoolDisk</S>
+                <S>Copy-VDisk</S>
+                <S>Export-SpbmStoragePolicy</S>
+                <S>Get-CnsVolume</S>
+                <S>Get-KeyManagementServer</S>
+                <S>Get-KeyProvider</S>
+                <S>Get-KmipClientCertificate</S>
+                <S>Get-NfsUser</S>
+                <S>Get-SpbmCapability</S>
+                <S>Get-SpbmCompatibleStorage</S>
+                <S>Get-SpbmEntityConfiguration</S>
+                <S>Get-SpbmFaultDomain</S>
+                <S>Get-SpbmPointInTimeReplica</S>
+                <S>Get-SpbmReplicationGroup</S>
+                <S>Get-SpbmReplicationPair</S>
+                <S>Get-SpbmStoragePolicy</S>
+                <S>Get-SpbmView</S>
+                <S>Get-VAIOFilter</S>
+                <S>Get-VasaProvider</S>
+                <S>Get-VasaStorageArray</S>
+                <S>Get-VDisk</S>
+                <S>Get-VsanClusterConfiguration</S>
+                <S>Get-VsanClusterPowerState</S>
+                <S>Get-VsanComponent</S>
+                <S>Get-VsanDirectDisk</S>
+                <S>Get-VsanDisk</S>
+                <S>Get-VsanDiskGroup</S>
+                <S>Get-VsanEnterMaintenanceModeReport</S>
+                <S>Get-VsanEsaEligibleDisk</S>
+                <S>Get-VsanEvacuationPlan</S>
+                <S>Get-VsanFaultDomain</S>
+                <S>Get-VsanFileServiceDomain</S>
+                <S>Get-VsanFileServiceOvfInfo</S>
+                <S>Get-VsanFileShare</S>
+                <S>Get-VsanFileShareSnapshot</S>
+                <S>Get-VsanHCIMeshDatastore</S>
+                <S>Get-VsanHCIMeshDatastoreSource</S>
+                <S>Get-VsanIscsiInitiatorGroup</S>
+                <S>Get-VsanIscsiInitiatorGroupTargetAssociation</S>
+                <S>Get-VsanIscsiLun</S>
+                <S>Get-VsanIscsiTarget</S>
+                <S>Get-VsanObject</S>
+                <S>Get-VsanPerformanceContributor</S>
+                <S>Get-VsanResyncingComponent</S>
+                <S>Get-VsanResyncingOverview</S>
+                <S>Get-VsanRuntimeInfo</S>
+                <S>Get-VsanSpaceUsage</S>
+                <S>Get-VsanStat</S>
+                <S>Get-VsanStoragePoolDisk</S>
+                <S>Get-VsanView</S>
+                <S>Get-VsanWipeDiskStatus</S>
+                <S>Get-VvolStorageContainer</S>
+                <S>Import-SpbmStoragePolicy</S>
+                <S>Move-VDisk</S>
+                <S>New-CnsContainerCluster</S>
+                <S>New-CnsKubernetesEntityMetadata</S>
+                <S>New-CnsKubernetesEntityReference</S>
+                <S>New-CnsVolume</S>
+                <S>New-CnsVolumeAttachment</S>
+                <S>New-CnsVolumeMetadata</S>
+                <S>New-KmipClientCertificate</S>
+                <S>New-NfsUser</S>
+                <S>New-RemoteVsanServerClusterConfig</S>
+                <S>New-SpbmRule</S>
+                <S>New-SpbmRuleSet</S>
+                <S>New-SpbmStoragePolicy</S>
+                <S>New-VAIOFilter</S>
+                <S>New-VasaProvider</S>
+                <S>New-VDisk</S>
+                <S>New-VsanDirectDisk</S>
+                <S>New-VsanDisk</S>
+                <S>New-VsanDiskGroup</S>
+                <S>New-VsanFaultDomain</S>
+                <S>New-VsanFileServerIpConfig</S>
+                <S>New-VsanFileServiceDomain</S>
+                <S>New-VsanFileShare</S>
+                <S>New-VsanFileShareNetworkPermission</S>
+                <S>New-VsanFileShareSnapshot</S>
+                <S>New-VsanHCIMeshDatastoreSource</S>
+                <S>New-VsanHealthCheckThreshold</S>
+                <S>New-VsanIscsiInitiatorGroup</S>
+                <S>New-VsanIscsiInitiatorGroupTargetAssociation</S>
+                <S>New-VsanIscsiLun</S>
+                <S>New-VsanIscsiTarget</S>
+                <S>Remove-CnsVolume</S>
+                <S>Remove-CnsVolumeAttachment</S>
+                <S>Remove-EntityDefaultKeyProvider</S>
+                <S>Remove-KeyManagementServer</S>
+                <S>Remove-NfsUser</S>
+                <S>Remove-SpbmStoragePolicy</S>
+                <S>Remove-VAIOFilter</S>
+                <S>Remove-VasaProvider</S>
+                <S>Remove-VDisk</S>
+                <S>Remove-VsanDirectDisk</S>
+                <S>Remove-VsanDisk</S>
+                <S>Remove-VsanDiskGroup</S>
+                <S>Remove-VsanFaultDomain</S>
+                <S>Remove-VsanFileServiceDomain</S>
+                <S>Remove-VsanFileShare</S>
+                <S>Remove-VsanFileShareSnapshot</S>
+                <S>Remove-VsanHCIMeshDatastoreSource</S>
+                <S>Remove-VsanIscsiInitiatorGroup</S>
+                <S>Remove-VsanIscsiInitiatorGroupTargetAssociation</S>
+                <S>Remove-VsanIscsiLun</S>
+                <S>Remove-VsanIscsiTarget</S>
+                <S>Remove-VsanStoragePoolDisk</S>
+                <S>Set-CnsVolume</S>
+                <S>Set-KeyManagementServer</S>
+                <S>Set-KeyProvider</S>
+                <S>Set-NfsUser</S>
+                <S>Set-SpbmEntityConfiguration</S>
+                <S>Set-SpbmStoragePolicy</S>
+                <S>Set-VAIOFilter</S>
+                <S>Set-VDisk</S>
+                <S>Set-VsanClusterConfiguration</S>
+                <S>Set-VsanFaultDomain</S>
+                <S>Set-VsanFileServiceDomain</S>
+                <S>Set-VsanFileShare</S>
+                <S>Set-VsanIscsiInitiatorGroup</S>
+                <S>Set-VsanIscsiLun</S>
+                <S>Set-VsanIscsiTarget</S>
+                <S>Start-SpbmReplicationFailover</S>
+                <S>Start-SpbmReplicationPrepareFailover</S>
+                <S>Start-SpbmReplicationPromote</S>
+                <S>Start-SpbmReplicationReverse</S>
+                <S>Start-SpbmReplicationTestFailover</S>
+                <S>Start-VsanCluster</S>
+                <S>Start-VsanClusterDiskUpdate</S>
+                <S>Start-VsanClusterRebalance</S>
+                <S>Start-VsanEncryptionConfiguration</S>
+                <S>Start-VsanRelayoutObjects</S>
+                <S>Start-VsanWipeDisk</S>
+                <S>Stop-SpbmReplicationTestFailover</S>
+                <S>Stop-VsanCluster</S>
+                <S>Stop-VsanClusterRebalance</S>
+                <S>Stop-VsanWipeDisk</S>
+                <S>Sync-SpbmReplicationGroup</S>
+                <S>Test-VsanClusterHealth</S>
+                <S>Test-VsanNetworkPerformance</S>
+                <S>Test-VsanStoragePerformance</S>
+                <S>Test-VsanVMCreation</S>
+                <S>Update-VsanHclDatabase</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-EntityDefaultKeyProvider</S>
+                <S>Add-KeyManagementServer</S>
+                <S>Add-VsanFileServiceOvf</S>
+                <S>Add-VsanObjectToRepairQueue</S>
+                <S>Add-VsanStoragePoolDisk</S>
+                <S>Copy-VDisk</S>
+                <S>Export-SpbmStoragePolicy</S>
+                <S>Get-CnsVolume</S>
+                <S>Get-KeyManagementServer</S>
+                <S>Get-KeyProvider</S>
+                <S>Get-KmipClientCertificate</S>
+                <S>Get-NfsUser</S>
+                <S>Get-SpbmCapability</S>
+                <S>Get-SpbmCompatibleStorage</S>
+                <S>Get-SpbmEntityConfiguration</S>
+                <S>Get-SpbmFaultDomain</S>
+                <S>Get-SpbmPointInTimeReplica</S>
+                <S>Get-SpbmReplicationGroup</S>
+                <S>Get-SpbmReplicationPair</S>
+                <S>Get-SpbmStoragePolicy</S>
+                <S>Get-SpbmView</S>
+                <S>Get-VAIOFilter</S>
+                <S>Get-VasaProvider</S>
+                <S>Get-VasaStorageArray</S>
+                <S>Get-VDisk</S>
+                <S>Get-VsanClusterConfiguration</S>
+                <S>Get-VsanClusterPowerState</S>
+                <S>Get-VsanComponent</S>
+                <S>Get-VsanDirectDisk</S>
+                <S>Get-VsanDisk</S>
+                <S>Get-VsanDiskGroup</S>
+                <S>Get-VsanEnterMaintenanceModeReport</S>
+                <S>Get-VsanEsaEligibleDisk</S>
+                <S>Get-VsanEvacuationPlan</S>
+                <S>Get-VsanFaultDomain</S>
+                <S>Get-VsanFileServiceDomain</S>
+                <S>Get-VsanFileServiceOvfInfo</S>
+                <S>Get-VsanFileShare</S>
+                <S>Get-VsanFileShareSnapshot</S>
+                <S>Get-VsanHCIMeshDatastore</S>
+                <S>Get-VsanHCIMeshDatastoreSource</S>
+                <S>Get-VsanIscsiInitiatorGroup</S>
+                <S>Get-VsanIscsiInitiatorGroupTargetAssociation</S>
+                <S>Get-VsanIscsiLun</S>
+                <S>Get-VsanIscsiTarget</S>
+                <S>Get-VsanObject</S>
+                <S>Get-VsanPerformanceContributor</S>
+                <S>Get-VsanResyncingComponent</S>
+                <S>Get-VsanResyncingOverview</S>
+                <S>Get-VsanRuntimeInfo</S>
+                <S>Get-VsanSpaceUsage</S>
+                <S>Get-VsanStat</S>
+                <S>Get-VsanStoragePoolDisk</S>
+                <S>Get-VsanView</S>
+                <S>Get-VsanWipeDiskStatus</S>
+                <S>Get-VvolStorageContainer</S>
+                <S>Import-SpbmStoragePolicy</S>
+                <S>Move-VDisk</S>
+                <S>New-CnsContainerCluster</S>
+                <S>New-CnsKubernetesEntityMetadata</S>
+                <S>New-CnsKubernetesEntityReference</S>
+                <S>New-CnsVolume</S>
+                <S>New-CnsVolumeAttachment</S>
+                <S>New-CnsVolumeMetadata</S>
+                <S>New-KmipClientCertificate</S>
+                <S>New-NfsUser</S>
+                <S>New-RemoteVsanServerClusterConfig</S>
+                <S>New-SpbmRule</S>
+                <S>New-SpbmRuleSet</S>
+                <S>New-SpbmStoragePolicy</S>
+                <S>New-VAIOFilter</S>
+                <S>New-VasaProvider</S>
+                <S>New-VDisk</S>
+                <S>New-VsanDirectDisk</S>
+                <S>New-VsanDisk</S>
+                <S>New-VsanDiskGroup</S>
+                <S>New-VsanFaultDomain</S>
+                <S>New-VsanFileServerIpConfig</S>
+                <S>New-VsanFileServiceDomain</S>
+                <S>New-VsanFileShare</S>
+                <S>New-VsanFileShareNetworkPermission</S>
+                <S>New-VsanFileShareSnapshot</S>
+                <S>New-VsanHCIMeshDatastoreSource</S>
+                <S>New-VsanHealthCheckThreshold</S>
+                <S>New-VsanIscsiInitiatorGroup</S>
+                <S>New-VsanIscsiInitiatorGroupTargetAssociation</S>
+                <S>New-VsanIscsiLun</S>
+                <S>New-VsanIscsiTarget</S>
+                <S>Remove-CnsVolume</S>
+                <S>Remove-CnsVolumeAttachment</S>
+                <S>Remove-EntityDefaultKeyProvider</S>
+                <S>Remove-KeyManagementServer</S>
+                <S>Remove-NfsUser</S>
+                <S>Remove-SpbmStoragePolicy</S>
+                <S>Remove-VAIOFilter</S>
+                <S>Remove-VasaProvider</S>
+                <S>Remove-VDisk</S>
+                <S>Remove-VsanDirectDisk</S>
+                <S>Remove-VsanDisk</S>
+                <S>Remove-VsanDiskGroup</S>
+                <S>Remove-VsanFaultDomain</S>
+                <S>Remove-VsanFileServiceDomain</S>
+                <S>Remove-VsanFileShare</S>
+                <S>Remove-VsanFileShareSnapshot</S>
+                <S>Remove-VsanHCIMeshDatastoreSource</S>
+                <S>Remove-VsanIscsiInitiatorGroup</S>
+                <S>Remove-VsanIscsiInitiatorGroupTargetAssociation</S>
+                <S>Remove-VsanIscsiLun</S>
+                <S>Remove-VsanIscsiTarget</S>
+                <S>Remove-VsanStoragePoolDisk</S>
+                <S>Set-CnsVolume</S>
+                <S>Set-KeyManagementServer</S>
+                <S>Set-KeyProvider</S>
+                <S>Set-NfsUser</S>
+                <S>Set-SpbmEntityConfiguration</S>
+                <S>Set-SpbmStoragePolicy</S>
+                <S>Set-VAIOFilter</S>
+                <S>Set-VDisk</S>
+                <S>Set-VsanClusterConfiguration</S>
+                <S>Set-VsanFaultDomain</S>
+                <S>Set-VsanFileServiceDomain</S>
+                <S>Set-VsanFileShare</S>
+                <S>Set-VsanIscsiInitiatorGroup</S>
+                <S>Set-VsanIscsiLun</S>
+                <S>Set-VsanIscsiTarget</S>
+                <S>Start-SpbmReplicationFailover</S>
+                <S>Start-SpbmReplicationPrepareFailover</S>
+                <S>Start-SpbmReplicationPromote</S>
+                <S>Start-SpbmReplicationReverse</S>
+                <S>Start-SpbmReplicationTestFailover</S>
+                <S>Start-VsanCluster</S>
+                <S>Start-VsanClusterDiskUpdate</S>
+                <S>Start-VsanClusterRebalance</S>
+                <S>Start-VsanEncryptionConfiguration</S>
+                <S>Start-VsanRelayoutObjects</S>
+                <S>Start-VsanWipeDisk</S>
+                <S>Stop-SpbmReplicationTestFailover</S>
+                <S>Stop-VsanCluster</S>
+                <S>Stop-VsanClusterRebalance</S>
+                <S>Stop-VsanWipeDisk</S>
+                <S>Sync-SpbmReplicationGroup</S>
+                <S>Test-VsanClusterHealth</S>
+                <S>Test-VsanNetworkPerformance</S>
+                <S>Test-VsanStoragePerformance</S>
+                <S>Test-VsanVMCreation</S>
+                <S>Update-VsanHclDatabase</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Core</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Core/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This Windows PowerShell module contains PowerCLI storage management cmdlets.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3929070</S>
+          <S N="downloadCount">15985811</S>
+          <S N="packageSize">19173992</S>
+          <S N="published">7/25/2024 12:47:53 PM +03:00</S>
+          <S N="created">7/25/2024 12:47:53 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Add-EntityDefaultKeyProvider PSCommand_Add-EntityDefaultKeyProvider PSCmdlet_Add-KeyManagementServer PSCommand_Add-KeyManagementServer PSCmdlet_Add-VsanFileServiceOvf PSCommand_Add-VsanFileServiceOvf PSCmdlet_Add-VsanObjectToRepairQueue PSCommand_Add-VsanObjectToRepairQueue PSCmdlet_Add-VsanStoragePoolDisk PSCommand_Add-VsanStoragePoolDisk PSCmdlet_Copy-VDisk PSCommand_Copy-VDisk PSCmdlet_Export-SpbmStoragePolicy PSCommand_Export-SpbmStoragePolicy PSCmdlet_Get-CnsVolume PSCommand_Get-CnsVolume PSCmdlet_Get-KeyManagementServer PSCommand_Get-KeyManagementServer PSCmdlet_Get-KeyProvider PSCommand_Get-KeyProvider PSCmdlet_Get-KmipClientCertificate PSCommand_Get-KmipClientCertificate PSCmdlet_Get-NfsUser PSCommand_Get-NfsUser PSCmdlet_Get-SpbmCapability PSCommand_Get-SpbmCapability PSCmdlet_Get-SpbmCompatibleStorage PSCommand_Get-SpbmCompatibleStorage PSCmdlet_Get-SpbmEntityConfiguration PSCommand_Get-SpbmEntityConfiguration PSCmdlet_Get-SpbmFaultDomain PSCommand_Get-SpbmFaultDomain PSCmdlet_Get-SpbmPointInTimeReplica PSCommand_Get-SpbmPointInTimeReplica PSCmdlet_Get-SpbmReplicationGroup PSCommand_Get-SpbmReplicationGroup PSCmdlet_Get-SpbmReplicationPair PSCommand_Get-SpbmReplicationPair PSCmdlet_Get-SpbmStoragePolicy PSCommand_Get-SpbmStoragePolicy PSCmdlet_Get-SpbmView PSCommand_Get-SpbmView PSCmdlet_Get-VAIOFilter PSCommand_Get-VAIOFilter PSCmdlet_Get-VasaProvider PSCommand_Get-VasaProvider PSCmdlet_Get-VasaStorageArray PSCommand_Get-VasaStorageArray PSCmdlet_Get-VDisk PSCommand_Get-VDisk PSCmdlet_Get-VsanClusterConfiguration PSCommand_Get-VsanClusterConfiguration PSCmdlet_Get-VsanClusterPowerState PSCommand_Get-VsanClusterPowerState PSCmdlet_Get-VsanComponent PSCommand_Get-VsanComponent PSCmdlet_Get-VsanDirectDisk PSCommand_Get-VsanDirectDisk PSCmdlet_Get-VsanDisk PSCommand_Get-VsanDisk PSCmdlet_Get-VsanDiskGroup PSCommand_Get-VsanDiskGroup PSCmdlet_Get-VsanEnterMaintenanceModeReport PSCommand_Get-VsanEnterMaintenanceModeReport PSCmdlet_Get-VsanEsaEligibleDisk PSCommand_Get-VsanEsaEligibleDisk PSCmdlet_Get-VsanEvacuationPlan PSCommand_Get-VsanEvacuationPlan PSCmdlet_Get-VsanFaultDomain PSCommand_Get-VsanFaultDomain PSCmdlet_Get-VsanFileServiceDomain PSCommand_Get-VsanFileServiceDomain PSCmdlet_Get-VsanFileServiceOvfInfo PSCommand_Get-VsanFileServiceOvfInfo PSCmdlet_Get-VsanFileShare PSCommand_Get-VsanFileShare PSCmdlet_Get-VsanFileShareSnapshot PSCommand_Get-VsanFileShareSnapshot PSCmdlet_Get-VsanHCIMeshDatastore PSCommand_Get-VsanHCIMeshDatastore PSCmdlet_Get-VsanHCIMeshDatastoreSource PSCommand_Get-VsanHCIMeshDatastoreSource PSCmdlet_Get-VsanIscsiInitiatorGroup PSCommand_Get-VsanIscsiInitiatorGroup PSCmdlet_Get-VsanIscsiInitiatorGroupTargetAssociation PSCommand_Get-VsanIscsiInitiatorGroupTargetAssociation PSCmdlet_Get-VsanIscsiLun PSCommand_Get-VsanIscsiLun PSCmdlet_Get-VsanIscsiTarget PSCommand_Get-VsanIscsiTarget PSCmdlet_Get-VsanObject PSCommand_Get-VsanObject PSCmdlet_Get-VsanPerformanceContributor PSCommand_Get-VsanPerformanceContributor PSCmdlet_Get-VsanResyncingComponent PSCommand_Get-VsanResyncingComponent PSCmdlet_Get-VsanResyncingOverview PSCommand_Get-VsanResyncingOverview PSCmdlet_Get-VsanRuntimeInfo PSCommand_Get-VsanRuntimeInfo PSCmdlet_Get-VsanSpaceUsage PSCommand_Get-VsanSpaceUsage PSCmdlet_Get-VsanStat PSCommand_Get-VsanStat PSCmdlet_Get-VsanStoragePoolDisk PSCommand_Get-VsanStoragePoolDisk PSCmdlet_Get-VsanView PSCommand_Get-VsanView PSCmdlet_Get-VsanWipeDiskStatus PSCommand_Get-VsanWipeDiskStatus PSCmdlet_Get-VvolStorageContainer PSCommand_Get-VvolStorageContainer PSCmdlet_Import-SpbmStoragePolicy PSCommand_Import-SpbmStoragePolicy PSCmdlet_Move-VDisk PSCommand_Move-VDisk PSCmdlet_New-CnsContainerCluster PSCommand_New-CnsContainerCluster PSCmdlet_New-CnsKubernetesEntityMetadata PSCommand_New-CnsKubernetesEntityMetadata PSCmdlet_New-CnsKubernetesEntityReference PSCommand_New-CnsKubernetesEntityReference PSCmdlet_New-CnsVolume PSCommand_New-CnsVolume PSCmdlet_New-CnsVolumeAttachment PSCommand_New-CnsVolumeAttachment PSCmdlet_New-CnsVolumeMetadata PSCommand_New-CnsVolumeMetadata PSCmdlet_New-KmipClientCertificate PSCommand_New-KmipClientCertificate PSCmdlet_New-NfsUser PSCommand_New-NfsUser PSCmdlet_New-RemoteVsanServerClusterConfig PSCommand_New-RemoteVsanServerClusterConfig PSCmdlet_New-SpbmRule PSCommand_New-SpbmRule PSCmdlet_New-SpbmRuleSet PSCommand_New-SpbmRuleSet PSCmdlet_New-SpbmStoragePolicy PSCommand_New-SpbmStoragePolicy PSCmdlet_New-VAIOFilter PSCommand_New-VAIOFilter PSCmdlet_New-VasaProvider PSCommand_New-VasaProvider PSCmdlet_New-VDisk PSCommand_New-VDisk PSCmdlet_New-VsanDirectDisk PSCommand_New-VsanDirectDisk PSCmdlet_New-VsanDisk PSCommand_New-VsanDisk PSCmdlet_New-VsanDiskGroup PSCommand_New-VsanDiskGroup PSCmdlet_New-VsanFaultDomain PSCommand_New-VsanFaultDomain PSCmdlet_New-VsanFileServerIpConfig PSCommand_New-VsanFileServerIpConfig PSCmdlet_New-VsanFileServiceDomain PSCommand_New-VsanFileServiceDomain PSCmdlet_New-VsanFileShare PSCommand_New-VsanFileShare PSCmdlet_New-VsanFileShareNetworkPermission PSCommand_New-VsanFileShareNetworkPermission PSCmdlet_New-VsanFileShareSnapshot PSCommand_New-VsanFileShareSnapshot PSCmdlet_New-VsanHCIMeshDatastoreSource PSCommand_New-VsanHCIMeshDatastoreSource PSCmdlet_New-VsanHealthCheckThreshold PSCommand_New-VsanHealthCheckThreshold PSCmdlet_New-VsanIscsiInitiatorGroup PSCommand_New-VsanIscsiInitiatorGroup PSCmdlet_New-VsanIscsiInitiatorGroupTargetAssociation PSCommand_New-VsanIscsiInitiatorGroupTargetAssociation PSCmdlet_New-VsanIscsiLun PSCommand_New-VsanIscsiLun PSCmdlet_New-VsanIscsiTarget PSCommand_New-VsanIscsiTarget PSCmdlet_Remove-CnsVolume PSCommand_Remove-CnsVolume PSCmdlet_Remove-CnsVolumeAttachment PSCommand_Remove-CnsVolumeAttachment PSCmdlet_Remove-EntityDefaultKeyProvider PSCommand_Remove-EntityDefaultKeyProvider PSCmdlet_Remove-KeyManagementServer PSCommand_Remove-KeyManagementServer PSCmdlet_Remove-NfsUser PSCommand_Remove-NfsUser PSCmdlet_Remove-SpbmStoragePolicy PSCommand_Remove-SpbmStoragePolicy PSCmdlet_Remove-VAIOFilter PSCommand_Remove-VAIOFilter PSCmdlet_Remove-VasaProvider PSCommand_Remove-VasaProvider PSCmdlet_Remove-VDisk PSCommand_Remove-VDisk PSCmdlet_Remove-VsanDirectDisk PSCommand_Remove-VsanDirectDisk PSCmdlet_Remove-VsanDisk PSCommand_Remove-VsanDisk PSCmdlet_Remove-VsanDiskGroup PSCommand_Remove-VsanDiskGroup PSCmdlet_Remove-VsanFaultDomain PSCommand_Remove-VsanFaultDomain PSCmdlet_Remove-VsanFileServiceDomain PSCommand_Remove-VsanFileServiceDomain PSCmdlet_Remove-VsanFileShare PSCommand_Remove-VsanFileShare PSCmdlet_Remove-VsanFileShareSnapshot PSCommand_Remove-VsanFileShareSnapshot PSCmdlet_Remove-VsanHCIMeshDatastoreSource PSCommand_Remove-VsanHCIMeshDatastoreSource PSCmdlet_Remove-VsanIscsiInitiatorGroup PSCommand_Remove-VsanIscsiInitiatorGroup PSCmdlet_Remove-VsanIscsiInitiatorGroupTargetAssociation PSCommand_Remove-VsanIscsiInitiatorGroupTargetAssociation PSCmdlet_Remove-VsanIscsiLun PSCommand_Remove-VsanIscsiLun PSCmdlet_Remove-VsanIscsiTarget PSCommand_Remove-VsanIscsiTarget PSCmdlet_Remove-VsanStoragePoolDisk PSCommand_Remove-VsanStoragePoolDisk PSCmdlet_Set-CnsVolume PSCommand_Set-CnsVolume PSCmdlet_Set-KeyManagementServer PSCommand_Set-KeyManagementServer PSCmdlet_Set-KeyProvider PSCommand_Set-KeyProvider PSCmdlet_Set-NfsUser PSCommand_Set-NfsUser PSCmdlet_Set-SpbmEntityConfiguration PSCommand_Set-SpbmEntityConfiguration PSCmdlet_Set-SpbmStoragePolicy PSCommand_Set-SpbmStoragePolicy PSCmdlet_Set-VAIOFilter PSCommand_Set-VAIOFilter PSCmdlet_Set-VDisk PSCommand_Set-VDisk PSCmdlet_Set-VsanClusterConfiguration PSCommand_Set-VsanClusterConfiguration PSCmdlet_Set-VsanFaultDomain PSCommand_Set-VsanFaultDomain PSCmdlet_Set-VsanFileServiceDomain PSCommand_Set-VsanFileServiceDomain PSCmdlet_Set-VsanFileShare PSCommand_Set-VsanFileShare PSCmdlet_Set-VsanIscsiInitiatorGroup PSCommand_Set-VsanIscsiInitiatorGroup PSCmdlet_Set-VsanIscsiLun PSCommand_Set-VsanIscsiLun PSCmdlet_Set-VsanIscsiTarget PSCommand_Set-VsanIscsiTarget PSCmdlet_Start-SpbmReplicationFailover PSCommand_Start-SpbmReplicationFailover PSCmdlet_Start-SpbmReplicationPrepareFailover PSCommand_Start-SpbmReplicationPrepareFailover PSCmdlet_Start-SpbmReplicationPromote PSCommand_Start-SpbmReplicationPromote PSCmdlet_Start-SpbmReplicationReverse PSCommand_Start-SpbmReplicationReverse PSCmdlet_Start-SpbmReplicationTestFailover PSCommand_Start-SpbmReplicationTestFailover PSCmdlet_Start-VsanCluster PSCommand_Start-VsanCluster PSCmdlet_Start-VsanClusterDiskUpdate PSCommand_Start-VsanClusterDiskUpdate PSCmdlet_Start-VsanClusterRebalance PSCommand_Start-VsanClusterRebalance PSCmdlet_Start-VsanEncryptionConfiguration PSCommand_Start-VsanEncryptionConfiguration PSCmdlet_Start-VsanRelayoutObjects PSCommand_Start-VsanRelayoutObjects PSCmdlet_Start-VsanWipeDisk PSCommand_Start-VsanWipeDisk PSCmdlet_Stop-SpbmReplicationTestFailover PSCommand_Stop-SpbmReplicationTestFailover PSCmdlet_Stop-VsanCluster PSCommand_Stop-VsanCluster PSCmdlet_Stop-VsanClusterRebalance PSCommand_Stop-VsanClusterRebalance PSCmdlet_Stop-VsanWipeDisk PSCommand_Stop-VsanWipeDisk PSCmdlet_Sync-SpbmReplicationGroup PSCommand_Sync-SpbmReplicationGroup PSCmdlet_Test-VsanClusterHealth PSCommand_Test-VsanClusterHealth PSCmdlet_Test-VsanNetworkPerformance PSCommand_Test-VsanNetworkPerformance PSCmdlet_Test-VsanStoragePerformance PSCommand_Test-VsanStoragePerformance PSCmdlet_Test-VsanVMCreation PSCommand_Test-VsanVMCreation PSCmdlet_Update-VsanHclDatabase PSCommand_Update-VsanHclDatabase PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Storage.nuspec|EULA.rtf|VMware.VimAutomation.Storage.psm1|net472\SmsService.dll|net472\VMware.VimAutomation.Storage.Commands.dll|net472\VMware.VimAutomation.Storage.Impl.dll|net472\VMware.VimAutomation.Storage.psd1|net472\Vsan65Service.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Storage.xml|netcoreapp3.1\VMware.Spbm.Views.dll|netcoreapp3.1\VMware.VimAutomation.Storage.Format.ps1xml|netcoreapp3.1\VMware.VimAutomation.Storage.ps1|netcoreapp3.1\VMware.Vsan.Views.dll|VMware.VimAutomation.Storage.cat|net472\ComponentDescriptor-VMware.VimAutomation.Storage.Commands.xml|net472\SpbmService.dll|net472\VMware.VimAutomation.Storage.Commands.dll-Help.xml|net472\VMware.VimAutomation.Storage.Interop.dll|net472\VMware.VimAutomation.Storage.Types.dll|net472\VsanService.dll|netcoreapp3.1\SmsService.dll|netcoreapp3.1\VMware.VimAutomation.Storage.Commands.dll|netcoreapp3.1\VMware.VimAutomation.Storage.Impl.dll|netcoreapp3.1\VMware.VimAutomation.Storage.psd1|netcoreapp3.1\Vsan65Service.dll|net472\ComponentDescriptor-VMware.VimAutomation.Storage.xml|net472\VMware.Spbm.Views.dll|net472\VMware.VimAutomation.Storage.Format.ps1xml|net472\VMware.VimAutomation.Storage.ps1|net472\VMware.Vsan.Views.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Storage.Commands.xml|netcoreapp3.1\SpbmService.dll|netcoreapp3.1\VMware.VimAutomation.Storage.Commands.dll-Help.xml|netcoreapp3.1\VMware.VimAutomation.Storage.Interop.dll|netcoreapp3.1\VMware.VimAutomation.Storage.Types.dll|netcoreapp3.1\VsanService.dll|VMware.VimAutomation.Storage.psd1</S>
+          <S N="GUID">7124bdd4-aa16-43d3-a689-f0a16655f454</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.VimAutomation.Storage/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

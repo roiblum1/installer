@@ -1,0 +1,565 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.Srm</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains cmdlets for managing VMware.Sdk.Srm API.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:05:05+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-SrmSdkServer</S>
+                <S>Disconnect-SrmSdkServer</S>
+                <S>Get-SrmOperation</S>
+                <S>Initialize-SrmAbrProtectionGroupSpec</S>
+                <S>Initialize-SrmAddDatastoreGroupSpec</S>
+                <S>Initialize-SrmAddDatastoreResult</S>
+                <S>Initialize-SrmAddPlaceholderDatastoreSpec</S>
+                <S>Initialize-SrmArrayManagerSpec</S>
+                <S>Initialize-SrmCallout</S>
+                <S>Initialize-SrmCalloutCreateSpec</S>
+                <S>Initialize-SrmCalloutModifySpec</S>
+                <S>Initialize-SrmCleanupTestPlanSpec</S>
+                <S>Initialize-SrmConnectionParam</S>
+                <S>Initialize-SrmConnectionParamGroup</S>
+                <S>Initialize-SrmConnectionParamGroupDrResponseEntity</S>
+                <S>Initialize-SrmCreateFolderSpec</S>
+                <S>Initialize-SrmDependentVm</S>
+                <S>Initialize-SrmDependentVmDrResponseEntity</S>
+                <S>Initialize-SrmDependentVmSpec</S>
+                <S>Initialize-SrmDnsSetting</S>
+                <S>Initialize-SrmEnvironmentBrowserDataDrResponseEntity</S>
+                <S>Initialize-SrmFolderMappingsSpec</S>
+                <S>Initialize-SrmFriendlyDatastorePathData</S>
+                <S>Initialize-SrmGeneralIpV4Setting</S>
+                <S>Initialize-SrmGeneralIpV6Setting</S>
+                <S>Initialize-SrmHbrProtectionGroupSpec</S>
+                <S>Initialize-SrmIPMapping</S>
+                <S>Initialize-SrmIpSettings</S>
+                <S>Initialize-SrmIssueInfoDrResponseEntity</S>
+                <S>Initialize-SrmMoveObjectSpec</S>
+                <S>Initialize-SrmNetworkMappingsSpec</S>
+                <S>Initialize-SrmNicSettings</S>
+                <S>Initialize-SrmPairingSpec</S>
+                <S>Initialize-SrmPairingSpecPairPscInfo</S>
+                <S>Initialize-SrmPriorityGroupData</S>
+                <S>Initialize-SrmProtectionGroupCreateSpec</S>
+                <S>Initialize-SrmProtectionGroupEditSpec</S>
+                <S>Initialize-SrmRecoverPlanSpec</S>
+                <S>Initialize-SrmRecoveryPlanCreateSpec</S>
+                <S>Initialize-SrmRecoveryPlanEditSpec</S>
+                <S>Initialize-SrmRemoteIpSetting</S>
+                <S>Initialize-SrmRemoveDatastoreResult</S>
+                <S>Initialize-SrmRenameObjectSpec</S>
+                <S>Initialize-SrmReplicatedArrayPairSpec</S>
+                <S>Initialize-SrmReprotectPlanSpec</S>
+                <S>Initialize-SrmResourceMappingsSpec</S>
+                <S>Initialize-SrmSessionIdData</S>
+                <S>Initialize-SrmSessionInfo</S>
+                <S>Initialize-SrmShutdownActionSettings</S>
+                <S>Initialize-SrmStartupActionSettings</S>
+                <S>Initialize-SrmStoragePolicyMappingsSpec</S>
+                <S>Initialize-SrmSubnetRule</S>
+                <S>Initialize-SrmSubnetRuleIpV4Setting</S>
+                <S>Initialize-SrmSuitableDatastoreInfo</S>
+                <S>Initialize-SrmTestNetworkMappingsSpec</S>
+                <S>Initialize-SrmTestPlanSpec</S>
+                <S>Initialize-SrmVmLocationData</S>
+                <S>Initialize-SrmVmProtectionDevice</S>
+                <S>Initialize-SrmVmProtectionLocation</S>
+                <S>Initialize-SrmVmProtectionNetwork</S>
+                <S>Initialize-SrmVmProtectionSettings</S>
+                <S>Initialize-SrmVmRecoveryIpCustomizationSettingsSpec</S>
+                <S>Initialize-SrmVmRecoverySettingsSpec</S>
+                <S>Initialize-SrmVmReplicationInfoDrResponseEntity</S>
+                <S>Initialize-SrmVvolProtectionGroupSpec</S>
+                <S>Initialize-SrmVvolReplicationGroupData</S>
+                <S>Initialize-SrmWinsSetting</S>
+                <S>Invoke-SrmAddDatastoreGroup</S>
+                <S>Invoke-SrmBrowseVcenterComputeItem</S>
+                <S>Invoke-SrmCancelRecoveryPlan</S>
+                <S>Invoke-SrmConfigureAll</S>
+                <S>Invoke-SrmCreateArrayManager</S>
+                <S>Invoke-SrmCreateFolderMapping</S>
+                <S>Invoke-SrmCreateGroup</S>
+                <S>Invoke-SrmCreateNetworkMapping</S>
+                <S>Invoke-SrmCreatePairing</S>
+                <S>Invoke-SrmCreatePlaceholderDatastores</S>
+                <S>Invoke-SrmCreatePlan</S>
+                <S>Invoke-SrmCreateProtectionGroupFolder</S>
+                <S>Invoke-SrmCreateRecoveryPlanFolder</S>
+                <S>Invoke-SrmCreateRecoveryStepsCallout</S>
+                <S>Invoke-SrmCreateReplicatedArrayPair</S>
+                <S>Invoke-SrmCreateResourceMapping</S>
+                <S>Invoke-SrmCreateStoragePolicyMapping</S>
+                <S>Invoke-SrmCreateTestNetworkMappings</S>
+                <S>Invoke-SrmDeleteArrayManager</S>
+                <S>Invoke-SrmDeleteFolderMapping</S>
+                <S>Invoke-SrmDeleteGroup</S>
+                <S>Invoke-SrmDeleteNetworkMapping</S>
+                <S>Invoke-SrmDeletePairing</S>
+                <S>Invoke-SrmDeletePlaceholderDatastore</S>
+                <S>Invoke-SrmDeleteProtectionGroupFolder</S>
+                <S>Invoke-SrmDeleteRecoveryPlan</S>
+                <S>Invoke-SrmDeleteRecoveryPlanFolder</S>
+                <S>Invoke-SrmDeleteRecoveryStep</S>
+                <S>Invoke-SrmDeleteReplicatedArrayPair</S>
+                <S>Invoke-SrmDeleteResourceMapping</S>
+                <S>Invoke-SrmDeleteStoragePolicyMapping</S>
+                <S>Invoke-SrmDeleteTestNetworkMapping</S>
+                <S>Invoke-SrmDiscoverReplicatedArrayPairs</S>
+                <S>Invoke-SrmDiscoverStorageDevices</S>
+                <S>Invoke-SrmDismissRecoveryStepsRecoveryPlanPrompt</S>
+                <S>Invoke-SrmEditRecoveryStepsCallout</S>
+                <S>Invoke-SrmGetAllGroups</S>
+                <S>Invoke-SrmGetAllPlanHistoryRecords</S>
+                <S>Invoke-SrmGetAllRecoveryPlans</S>
+                <S>Invoke-SrmGetAllVvolFaultDomainReplicationGroups</S>
+                <S>Invoke-SrmGetAllVvolFaultDomains</S>
+                <S>Invoke-SrmGetArrayManager</S>
+                <S>Invoke-SrmGetArrayManagers</S>
+                <S>Invoke-SrmGetDatastoreGroup</S>
+                <S>Invoke-SrmGetDatastoreGroups</S>
+                <S>Invoke-SrmGetFolderMapping</S>
+                <S>Invoke-SrmGetFolderMappings</S>
+                <S>Invoke-SrmGetGroup</S>
+                <S>Invoke-SrmGetGroupIssues</S>
+                <S>Invoke-SrmGetGroupRelatedRecoveryPlans</S>
+                <S>Invoke-SrmGetGroupVm</S>
+                <S>Invoke-SrmGetGroupVms</S>
+                <S>Invoke-SrmGetInfo</S>
+                <S>Invoke-SrmGetNetworkIpSubnetMapping</S>
+                <S>Invoke-SrmGetNetworkMapping</S>
+                <S>Invoke-SrmGetNetworkMappings</S>
+                <S>Invoke-SrmGetPairing</S>
+                <S>Invoke-SrmGetPairingIssues</S>
+                <S>Invoke-SrmGetPairings</S>
+                <S>Invoke-SrmGetPlaceholderDatastore</S>
+                <S>Invoke-SrmGetPlaceholderDatastores</S>
+                <S>Invoke-SrmGetPlanHistoryRecord</S>
+                <S>Invoke-SrmGetPlanHistoryRecords</S>
+                <S>Invoke-SrmGetPlanRelatedProtectionGroups</S>
+                <S>Invoke-SrmGetPlanRelatedTestNetworks</S>
+                <S>Invoke-SrmGetPlanVirtualMachine</S>
+                <S>Invoke-SrmGetPlanVirtualMachineDependentVms</S>
+                <S>Invoke-SrmGetPlanVirtualMachineIpCustomization</S>
+                <S>Invoke-SrmGetPlanVirtualMachineRecoveryPriority</S>
+                <S>Invoke-SrmGetPlanVirtualMachineRecoverySettings</S>
+                <S>Invoke-SrmGetPlanVirtualMachines</S>
+                <S>Invoke-SrmGetPlanVirtualMachineSummarizedRecoverySettings</S>
+                <S>Invoke-SrmGetProtectionGroupFolder</S>
+                <S>Invoke-SrmGetProtectionGroupFolderChildren</S>
+                <S>Invoke-SrmGetProtectionGroupFolders</S>
+                <S>Invoke-SrmGetRecentTasksInfo</S>
+                <S>Invoke-SrmGetRecoveryPlan</S>
+                <S>Invoke-SrmGetRecoveryPlanFolder</S>
+                <S>Invoke-SrmGetRecoveryPlanFolderChildren</S>
+                <S>Invoke-SrmGetRecoveryPlanFolders</S>
+                <S>Invoke-SrmGetRecoveryPlanIssues</S>
+                <S>Invoke-SrmGetRecoveryStep</S>
+                <S>Invoke-SrmGetRecoverySteps</S>
+                <S>Invoke-SrmGetRecoveryStepsCalloutDetails</S>
+                <S>Invoke-SrmGetRecoveryStepsUserPrompt</S>
+                <S>Invoke-SrmGetRecoveryStepsUserPrompts</S>
+                <S>Invoke-SrmGetReplicatedArrayPair</S>
+                <S>Invoke-SrmGetReplicatedArrayPairs</S>
+                <S>Invoke-SrmGetReplicatedVms</S>
+                <S>Invoke-SrmGetResourceMapping</S>
+                <S>Invoke-SrmGetResourceMappings</S>
+                <S>Invoke-SrmGetSrm</S>
+                <S>Invoke-SrmGetSrmIssues</S>
+                <S>Invoke-SrmGetSrms</S>
+                <S>Invoke-SrmGetStorageAdapter</S>
+                <S>Invoke-SrmGetStorageAdapterConnectionParams</S>
+                <S>Invoke-SrmGetStorageAdapters</S>
+                <S>Invoke-SrmGetStorageDevices</S>
+                <S>Invoke-SrmGetStoragePolicyMapping</S>
+                <S>Invoke-SrmGetStoragePolicyMappings</S>
+                <S>Invoke-SrmGetTaskInfo</S>
+                <S>Invoke-SrmGetTestNetworkMapping</S>
+                <S>Invoke-SrmGetTestNetworkMappings</S>
+                <S>Invoke-SrmGetVcenter</S>
+                <S>Invoke-SrmGetVcenterComputeInventory</S>
+                <S>Invoke-SrmGetVcenterComputeItem</S>
+                <S>Invoke-SrmGetVcenterDatastoreItem</S>
+                <S>Invoke-SrmGetVcenterDatastores</S>
+                <S>Invoke-SrmGetVcenterNetworkInventory</S>
+                <S>Invoke-SrmGetVcenterNetworkItem</S>
+                <S>Invoke-SrmGetVcenters</S>
+                <S>Invoke-SrmGetVcenterVmFolder</S>
+                <S>Invoke-SrmGetVcenterVmFolderInventory</S>
+                <S>Invoke-SrmGetVcStoragePolicies</S>
+                <S>Invoke-SrmGetVcStoragePolicy</S>
+                <S>Invoke-SrmGetVmProtectionSettings</S>
+                <S>Invoke-SrmGetVvolFaultDomain</S>
+                <S>Invoke-SrmGetVvolFaultDomainReplicationGroup</S>
+                <S>Invoke-SrmGetVvolReplicationGroup</S>
+                <S>Invoke-SrmGetVvolReplicationGroups</S>
+                <S>Invoke-SrmMoveProtectionGroupFolder</S>
+                <S>Invoke-SrmMoveRecoveryPlanFolder</S>
+                <S>Invoke-SrmOperation</S>
+                <S>Invoke-SrmPlanVirtualMachineCheckDependentVms</S>
+                <S>Invoke-SrmQuerySuitableDatastores</S>
+                <S>Invoke-SrmReconfigureGroup</S>
+                <S>Invoke-SrmReconfigureRecoveryPlan</S>
+                <S>Invoke-SrmReconnectPairing</S>
+                <S>Invoke-SrmRemoveDatastoreGroup</S>
+                <S>Invoke-SrmRemoveNetworkIpSubnetMapping</S>
+                <S>Invoke-SrmRemoveVmFromProtectionGroup</S>
+                <S>Invoke-SrmRemoveVmProtection</S>
+                <S>Invoke-SrmRenameProtectionGroupFolder</S>
+                <S>Invoke-SrmRenameRecoveryPlanFolder</S>
+                <S>Invoke-SrmRestoreAllPlaceholders</S>
+                <S>Invoke-SrmRetrieveUnassignedDatastoreGroups</S>
+                <S>Invoke-SrmRunCleanupTestRecovery</S>
+                <S>Invoke-SrmRunRecovery</S>
+                <S>Invoke-SrmRunReprotect</S>
+                <S>Invoke-SrmRunTestRecovery</S>
+                <S>Invoke-SrmUpdateNetworkIpSubnetMapping</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineDependentVms</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineIpCustomization</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineRecoveryPriority</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineRecoverySettings</S>
+                <S>Invoke-SrmUpdateVmProtectionSettings</S>
+                <S>Set-SrmOperationParameter</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-SrmSdkServer</S>
+                <S>Disconnect-SrmSdkServer</S>
+                <S>Get-SrmOperation</S>
+                <S>Initialize-SrmAbrProtectionGroupSpec</S>
+                <S>Initialize-SrmAddDatastoreGroupSpec</S>
+                <S>Initialize-SrmAddDatastoreResult</S>
+                <S>Initialize-SrmAddPlaceholderDatastoreSpec</S>
+                <S>Initialize-SrmArrayManagerSpec</S>
+                <S>Initialize-SrmCallout</S>
+                <S>Initialize-SrmCalloutCreateSpec</S>
+                <S>Initialize-SrmCalloutModifySpec</S>
+                <S>Initialize-SrmCleanupTestPlanSpec</S>
+                <S>Initialize-SrmConnectionParam</S>
+                <S>Initialize-SrmConnectionParamGroup</S>
+                <S>Initialize-SrmConnectionParamGroupDrResponseEntity</S>
+                <S>Initialize-SrmCreateFolderSpec</S>
+                <S>Initialize-SrmDependentVm</S>
+                <S>Initialize-SrmDependentVmDrResponseEntity</S>
+                <S>Initialize-SrmDependentVmSpec</S>
+                <S>Initialize-SrmDnsSetting</S>
+                <S>Initialize-SrmEnvironmentBrowserDataDrResponseEntity</S>
+                <S>Initialize-SrmFolderMappingsSpec</S>
+                <S>Initialize-SrmFriendlyDatastorePathData</S>
+                <S>Initialize-SrmGeneralIpV4Setting</S>
+                <S>Initialize-SrmGeneralIpV6Setting</S>
+                <S>Initialize-SrmHbrProtectionGroupSpec</S>
+                <S>Initialize-SrmIPMapping</S>
+                <S>Initialize-SrmIpSettings</S>
+                <S>Initialize-SrmIssueInfoDrResponseEntity</S>
+                <S>Initialize-SrmMoveObjectSpec</S>
+                <S>Initialize-SrmNetworkMappingsSpec</S>
+                <S>Initialize-SrmNicSettings</S>
+                <S>Initialize-SrmPairingSpec</S>
+                <S>Initialize-SrmPairingSpecPairPscInfo</S>
+                <S>Initialize-SrmPriorityGroupData</S>
+                <S>Initialize-SrmProtectionGroupCreateSpec</S>
+                <S>Initialize-SrmProtectionGroupEditSpec</S>
+                <S>Initialize-SrmRecoverPlanSpec</S>
+                <S>Initialize-SrmRecoveryPlanCreateSpec</S>
+                <S>Initialize-SrmRecoveryPlanEditSpec</S>
+                <S>Initialize-SrmRemoteIpSetting</S>
+                <S>Initialize-SrmRemoveDatastoreResult</S>
+                <S>Initialize-SrmRenameObjectSpec</S>
+                <S>Initialize-SrmReplicatedArrayPairSpec</S>
+                <S>Initialize-SrmReprotectPlanSpec</S>
+                <S>Initialize-SrmResourceMappingsSpec</S>
+                <S>Initialize-SrmSessionIdData</S>
+                <S>Initialize-SrmSessionInfo</S>
+                <S>Initialize-SrmShutdownActionSettings</S>
+                <S>Initialize-SrmStartupActionSettings</S>
+                <S>Initialize-SrmStoragePolicyMappingsSpec</S>
+                <S>Initialize-SrmSubnetRule</S>
+                <S>Initialize-SrmSubnetRuleIpV4Setting</S>
+                <S>Initialize-SrmSuitableDatastoreInfo</S>
+                <S>Initialize-SrmTestNetworkMappingsSpec</S>
+                <S>Initialize-SrmTestPlanSpec</S>
+                <S>Initialize-SrmVmLocationData</S>
+                <S>Initialize-SrmVmProtectionDevice</S>
+                <S>Initialize-SrmVmProtectionLocation</S>
+                <S>Initialize-SrmVmProtectionNetwork</S>
+                <S>Initialize-SrmVmProtectionSettings</S>
+                <S>Initialize-SrmVmRecoveryIpCustomizationSettingsSpec</S>
+                <S>Initialize-SrmVmRecoverySettingsSpec</S>
+                <S>Initialize-SrmVmReplicationInfoDrResponseEntity</S>
+                <S>Initialize-SrmVvolProtectionGroupSpec</S>
+                <S>Initialize-SrmVvolReplicationGroupData</S>
+                <S>Initialize-SrmWinsSetting</S>
+                <S>Invoke-SrmAddDatastoreGroup</S>
+                <S>Invoke-SrmBrowseVcenterComputeItem</S>
+                <S>Invoke-SrmCancelRecoveryPlan</S>
+                <S>Invoke-SrmConfigureAll</S>
+                <S>Invoke-SrmCreateArrayManager</S>
+                <S>Invoke-SrmCreateFolderMapping</S>
+                <S>Invoke-SrmCreateGroup</S>
+                <S>Invoke-SrmCreateNetworkMapping</S>
+                <S>Invoke-SrmCreatePairing</S>
+                <S>Invoke-SrmCreatePlaceholderDatastores</S>
+                <S>Invoke-SrmCreatePlan</S>
+                <S>Invoke-SrmCreateProtectionGroupFolder</S>
+                <S>Invoke-SrmCreateRecoveryPlanFolder</S>
+                <S>Invoke-SrmCreateRecoveryStepsCallout</S>
+                <S>Invoke-SrmCreateReplicatedArrayPair</S>
+                <S>Invoke-SrmCreateResourceMapping</S>
+                <S>Invoke-SrmCreateStoragePolicyMapping</S>
+                <S>Invoke-SrmCreateTestNetworkMappings</S>
+                <S>Invoke-SrmDeleteArrayManager</S>
+                <S>Invoke-SrmDeleteFolderMapping</S>
+                <S>Invoke-SrmDeleteGroup</S>
+                <S>Invoke-SrmDeleteNetworkMapping</S>
+                <S>Invoke-SrmDeletePairing</S>
+                <S>Invoke-SrmDeletePlaceholderDatastore</S>
+                <S>Invoke-SrmDeleteProtectionGroupFolder</S>
+                <S>Invoke-SrmDeleteRecoveryPlan</S>
+                <S>Invoke-SrmDeleteRecoveryPlanFolder</S>
+                <S>Invoke-SrmDeleteRecoveryStep</S>
+                <S>Invoke-SrmDeleteReplicatedArrayPair</S>
+                <S>Invoke-SrmDeleteResourceMapping</S>
+                <S>Invoke-SrmDeleteStoragePolicyMapping</S>
+                <S>Invoke-SrmDeleteTestNetworkMapping</S>
+                <S>Invoke-SrmDiscoverReplicatedArrayPairs</S>
+                <S>Invoke-SrmDiscoverStorageDevices</S>
+                <S>Invoke-SrmDismissRecoveryStepsRecoveryPlanPrompt</S>
+                <S>Invoke-SrmEditRecoveryStepsCallout</S>
+                <S>Invoke-SrmGetAllGroups</S>
+                <S>Invoke-SrmGetAllPlanHistoryRecords</S>
+                <S>Invoke-SrmGetAllRecoveryPlans</S>
+                <S>Invoke-SrmGetAllVvolFaultDomainReplicationGroups</S>
+                <S>Invoke-SrmGetAllVvolFaultDomains</S>
+                <S>Invoke-SrmGetArrayManager</S>
+                <S>Invoke-SrmGetArrayManagers</S>
+                <S>Invoke-SrmGetDatastoreGroup</S>
+                <S>Invoke-SrmGetDatastoreGroups</S>
+                <S>Invoke-SrmGetFolderMapping</S>
+                <S>Invoke-SrmGetFolderMappings</S>
+                <S>Invoke-SrmGetGroup</S>
+                <S>Invoke-SrmGetGroupIssues</S>
+                <S>Invoke-SrmGetGroupRelatedRecoveryPlans</S>
+                <S>Invoke-SrmGetGroupVm</S>
+                <S>Invoke-SrmGetGroupVms</S>
+                <S>Invoke-SrmGetInfo</S>
+                <S>Invoke-SrmGetNetworkIpSubnetMapping</S>
+                <S>Invoke-SrmGetNetworkMapping</S>
+                <S>Invoke-SrmGetNetworkMappings</S>
+                <S>Invoke-SrmGetPairing</S>
+                <S>Invoke-SrmGetPairingIssues</S>
+                <S>Invoke-SrmGetPairings</S>
+                <S>Invoke-SrmGetPlaceholderDatastore</S>
+                <S>Invoke-SrmGetPlaceholderDatastores</S>
+                <S>Invoke-SrmGetPlanHistoryRecord</S>
+                <S>Invoke-SrmGetPlanHistoryRecords</S>
+                <S>Invoke-SrmGetPlanRelatedProtectionGroups</S>
+                <S>Invoke-SrmGetPlanRelatedTestNetworks</S>
+                <S>Invoke-SrmGetPlanVirtualMachine</S>
+                <S>Invoke-SrmGetPlanVirtualMachineDependentVms</S>
+                <S>Invoke-SrmGetPlanVirtualMachineIpCustomization</S>
+                <S>Invoke-SrmGetPlanVirtualMachineRecoveryPriority</S>
+                <S>Invoke-SrmGetPlanVirtualMachineRecoverySettings</S>
+                <S>Invoke-SrmGetPlanVirtualMachines</S>
+                <S>Invoke-SrmGetPlanVirtualMachineSummarizedRecoverySettings</S>
+                <S>Invoke-SrmGetProtectionGroupFolder</S>
+                <S>Invoke-SrmGetProtectionGroupFolderChildren</S>
+                <S>Invoke-SrmGetProtectionGroupFolders</S>
+                <S>Invoke-SrmGetRecentTasksInfo</S>
+                <S>Invoke-SrmGetRecoveryPlan</S>
+                <S>Invoke-SrmGetRecoveryPlanFolder</S>
+                <S>Invoke-SrmGetRecoveryPlanFolderChildren</S>
+                <S>Invoke-SrmGetRecoveryPlanFolders</S>
+                <S>Invoke-SrmGetRecoveryPlanIssues</S>
+                <S>Invoke-SrmGetRecoveryStep</S>
+                <S>Invoke-SrmGetRecoverySteps</S>
+                <S>Invoke-SrmGetRecoveryStepsCalloutDetails</S>
+                <S>Invoke-SrmGetRecoveryStepsUserPrompt</S>
+                <S>Invoke-SrmGetRecoveryStepsUserPrompts</S>
+                <S>Invoke-SrmGetReplicatedArrayPair</S>
+                <S>Invoke-SrmGetReplicatedArrayPairs</S>
+                <S>Invoke-SrmGetReplicatedVms</S>
+                <S>Invoke-SrmGetResourceMapping</S>
+                <S>Invoke-SrmGetResourceMappings</S>
+                <S>Invoke-SrmGetSrm</S>
+                <S>Invoke-SrmGetSrmIssues</S>
+                <S>Invoke-SrmGetSrms</S>
+                <S>Invoke-SrmGetStorageAdapter</S>
+                <S>Invoke-SrmGetStorageAdapterConnectionParams</S>
+                <S>Invoke-SrmGetStorageAdapters</S>
+                <S>Invoke-SrmGetStorageDevices</S>
+                <S>Invoke-SrmGetStoragePolicyMapping</S>
+                <S>Invoke-SrmGetStoragePolicyMappings</S>
+                <S>Invoke-SrmGetTaskInfo</S>
+                <S>Invoke-SrmGetTestNetworkMapping</S>
+                <S>Invoke-SrmGetTestNetworkMappings</S>
+                <S>Invoke-SrmGetVcenter</S>
+                <S>Invoke-SrmGetVcenterComputeInventory</S>
+                <S>Invoke-SrmGetVcenterComputeItem</S>
+                <S>Invoke-SrmGetVcenterDatastoreItem</S>
+                <S>Invoke-SrmGetVcenterDatastores</S>
+                <S>Invoke-SrmGetVcenterNetworkInventory</S>
+                <S>Invoke-SrmGetVcenterNetworkItem</S>
+                <S>Invoke-SrmGetVcenters</S>
+                <S>Invoke-SrmGetVcenterVmFolder</S>
+                <S>Invoke-SrmGetVcenterVmFolderInventory</S>
+                <S>Invoke-SrmGetVcStoragePolicies</S>
+                <S>Invoke-SrmGetVcStoragePolicy</S>
+                <S>Invoke-SrmGetVmProtectionSettings</S>
+                <S>Invoke-SrmGetVvolFaultDomain</S>
+                <S>Invoke-SrmGetVvolFaultDomainReplicationGroup</S>
+                <S>Invoke-SrmGetVvolReplicationGroup</S>
+                <S>Invoke-SrmGetVvolReplicationGroups</S>
+                <S>Invoke-SrmMoveProtectionGroupFolder</S>
+                <S>Invoke-SrmMoveRecoveryPlanFolder</S>
+                <S>Invoke-SrmOperation</S>
+                <S>Invoke-SrmPlanVirtualMachineCheckDependentVms</S>
+                <S>Invoke-SrmQuerySuitableDatastores</S>
+                <S>Invoke-SrmReconfigureGroup</S>
+                <S>Invoke-SrmReconfigureRecoveryPlan</S>
+                <S>Invoke-SrmReconnectPairing</S>
+                <S>Invoke-SrmRemoveDatastoreGroup</S>
+                <S>Invoke-SrmRemoveNetworkIpSubnetMapping</S>
+                <S>Invoke-SrmRemoveVmFromProtectionGroup</S>
+                <S>Invoke-SrmRemoveVmProtection</S>
+                <S>Invoke-SrmRenameProtectionGroupFolder</S>
+                <S>Invoke-SrmRenameRecoveryPlanFolder</S>
+                <S>Invoke-SrmRestoreAllPlaceholders</S>
+                <S>Invoke-SrmRetrieveUnassignedDatastoreGroups</S>
+                <S>Invoke-SrmRunCleanupTestRecovery</S>
+                <S>Invoke-SrmRunRecovery</S>
+                <S>Invoke-SrmRunReprotect</S>
+                <S>Invoke-SrmRunTestRecovery</S>
+                <S>Invoke-SrmUpdateNetworkIpSubnetMapping</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineDependentVms</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineIpCustomization</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineRecoveryPriority</S>
+                <S>Invoke-SrmUpdatePlanVirtualMachineRecoverySettings</S>
+                <S>Invoke-SrmUpdateVmProtectionSettings</S>
+                <S>Set-SrmOperationParameter</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Common</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Common/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains cmdlets for managing VMware.Sdk.Srm API.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2009207</S>
+          <S N="downloadCount">4430471</S>
+          <S N="packageSize">1261598</S>
+          <S N="published">7/25/2024 1:05:05 PM +03:00</S>
+          <S N="created">7/25/2024 1:05:05 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Connect-SrmSdkServer PSCommand_Connect-SrmSdkServer PSCmdlet_Disconnect-SrmSdkServer PSCommand_Disconnect-SrmSdkServer PSCmdlet_Get-SrmOperation PSCommand_Get-SrmOperation PSCmdlet_Initialize-SrmAbrProtectionGroupSpec PSCommand_Initialize-SrmAbrProtectionGroupSpec PSCmdlet_Initialize-SrmAddDatastoreGroupSpec PSCommand_Initialize-SrmAddDatastoreGroupSpec PSCmdlet_Initialize-SrmAddDatastoreResult PSCommand_Initialize-SrmAddDatastoreResult PSCmdlet_Initialize-SrmAddPlaceholderDatastoreSpec PSCommand_Initialize-SrmAddPlaceholderDatastoreSpec PSCmdlet_Initialize-SrmArrayManagerSpec PSCommand_Initialize-SrmArrayManagerSpec PSCmdlet_Initialize-SrmCallout PSCommand_Initialize-SrmCallout PSCmdlet_Initialize-SrmCalloutCreateSpec PSCommand_Initialize-SrmCalloutCreateSpec PSCmdlet_Initialize-SrmCalloutModifySpec PSCommand_Initialize-SrmCalloutModifySpec PSCmdlet_Initialize-SrmCleanupTestPlanSpec PSCommand_Initialize-SrmCleanupTestPlanSpec PSCmdlet_Initialize-SrmConnectionParam PSCommand_Initialize-SrmConnectionParam PSCmdlet_Initialize-SrmConnectionParamGroup PSCommand_Initialize-SrmConnectionParamGroup PSCmdlet_Initialize-SrmConnectionParamGroupDrResponseEntity PSCommand_Initialize-SrmConnectionParamGroupDrResponseEntity PSCmdlet_Initialize-SrmCreateFolderSpec PSCommand_Initialize-SrmCreateFolderSpec PSCmdlet_Initialize-SrmDependentVm PSCommand_Initialize-SrmDependentVm PSCmdlet_Initialize-SrmDependentVmDrResponseEntity PSCommand_Initialize-SrmDependentVmDrResponseEntity PSCmdlet_Initialize-SrmDependentVmSpec PSCommand_Initialize-SrmDependentVmSpec PSCmdlet_Initialize-SrmDnsSetting PSCommand_Initialize-SrmDnsSetting PSCmdlet_Initialize-SrmEnvironmentBrowserDataDrResponseEntity PSCommand_Initialize-SrmEnvironmentBrowserDataDrResponseEntity PSCmdlet_Initialize-SrmFolderMappingsSpec PSCommand_Initialize-SrmFolderMappingsSpec PSCmdlet_Initialize-SrmFriendlyDatastorePathData PSCommand_Initialize-SrmFriendlyDatastorePathData PSCmdlet_Initialize-SrmGeneralIpV4Setting PSCommand_Initialize-SrmGeneralIpV4Setting PSCmdlet_Initialize-SrmGeneralIpV6Setting PSCommand_Initialize-SrmGeneralIpV6Setting PSCmdlet_Initialize-SrmHbrProtectionGroupSpec PSCommand_Initialize-SrmHbrProtectionGroupSpec PSCmdlet_Initialize-SrmIPMapping PSCommand_Initialize-SrmIPMapping PSCmdlet_Initialize-SrmIpSettings PSCommand_Initialize-SrmIpSettings PSCmdlet_Initialize-SrmIssueInfoDrResponseEntity PSCommand_Initialize-SrmIssueInfoDrResponseEntity PSCmdlet_Initialize-SrmMoveObjectSpec PSCommand_Initialize-SrmMoveObjectSpec PSCmdlet_Initialize-SrmNetworkMappingsSpec PSCommand_Initialize-SrmNetworkMappingsSpec PSCmdlet_Initialize-SrmNicSettings PSCommand_Initialize-SrmNicSettings PSCmdlet_Initialize-SrmPairingSpec PSCommand_Initialize-SrmPairingSpec PSCmdlet_Initialize-SrmPairingSpecPairPscInfo PSCommand_Initialize-SrmPairingSpecPairPscInfo PSCmdlet_Initialize-SrmPriorityGroupData PSCommand_Initialize-SrmPriorityGroupData PSCmdlet_Initialize-SrmProtectionGroupCreateSpec PSCommand_Initialize-SrmProtectionGroupCreateSpec PSCmdlet_Initialize-SrmProtectionGroupEditSpec PSCommand_Initialize-SrmProtectionGroupEditSpec PSCmdlet_Initialize-SrmRecoverPlanSpec PSCommand_Initialize-SrmRecoverPlanSpec PSCmdlet_Initialize-SrmRecoveryPlanCreateSpec PSCommand_Initialize-SrmRecoveryPlanCreateSpec PSCmdlet_Initialize-SrmRecoveryPlanEditSpec PSCommand_Initialize-SrmRecoveryPlanEditSpec PSCmdlet_Initialize-SrmRemoteIpSetting PSCommand_Initialize-SrmRemoteIpSetting PSCmdlet_Initialize-SrmRemoveDatastoreResult PSCommand_Initialize-SrmRemoveDatastoreResult PSCmdlet_Initialize-SrmRenameObjectSpec PSCommand_Initialize-SrmRenameObjectSpec PSCmdlet_Initialize-SrmReplicatedArrayPairSpec PSCommand_Initialize-SrmReplicatedArrayPairSpec PSCmdlet_Initialize-SrmReprotectPlanSpec PSCommand_Initialize-SrmReprotectPlanSpec PSCmdlet_Initialize-SrmResourceMappingsSpec PSCommand_Initialize-SrmResourceMappingsSpec PSCmdlet_Initialize-SrmSessionIdData PSCommand_Initialize-SrmSessionIdData PSCmdlet_Initialize-SrmSessionInfo PSCommand_Initialize-SrmSessionInfo PSCmdlet_Initialize-SrmShutdownActionSettings PSCommand_Initialize-SrmShutdownActionSettings PSCmdlet_Initialize-SrmStartupActionSettings PSCommand_Initialize-SrmStartupActionSettings PSCmdlet_Initialize-SrmStoragePolicyMappingsSpec PSCommand_Initialize-SrmStoragePolicyMappingsSpec PSCmdlet_Initialize-SrmSubnetRule PSCommand_Initialize-SrmSubnetRule PSCmdlet_Initialize-SrmSubnetRuleIpV4Setting PSCommand_Initialize-SrmSubnetRuleIpV4Setting PSCmdlet_Initialize-SrmSuitableDatastoreInfo PSCommand_Initialize-SrmSuitableDatastoreInfo PSCmdlet_Initialize-SrmTestNetworkMappingsSpec PSCommand_Initialize-SrmTestNetworkMappingsSpec PSCmdlet_Initialize-SrmTestPlanSpec PSCommand_Initialize-SrmTestPlanSpec PSCmdlet_Initialize-SrmVmLocationData PSCommand_Initialize-SrmVmLocationData PSCmdlet_Initialize-SrmVmProtectionDevice PSCommand_Initialize-SrmVmProtectionDevice PSCmdlet_Initialize-SrmVmProtectionLocation PSCommand_Initialize-SrmVmProtectionLocation PSCmdlet_Initialize-SrmVmProtectionNetwork PSCommand_Initialize-SrmVmProtectionNetwork PSCmdlet_Initialize-SrmVmProtectionSettings PSCommand_Initialize-SrmVmProtectionSettings PSCmdlet_Initialize-SrmVmRecoveryIpCustomizationSettingsSpec PSCommand_Initialize-SrmVmRecoveryIpCustomizationSettingsSpec PSCmdlet_Initialize-SrmVmRecoverySettingsSpec PSCommand_Initialize-SrmVmRecoverySettingsSpec PSCmdlet_Initialize-SrmVmReplicationInfoDrResponseEntity PSCommand_Initialize-SrmVmReplicationInfoDrResponseEntity PSCmdlet_Initialize-SrmVvolProtectionGroupSpec PSCommand_Initialize-SrmVvolProtectionGroupSpec PSCmdlet_Initialize-SrmVvolReplicationGroupData PSCommand_Initialize-SrmVvolReplicationGroupData PSCmdlet_Initialize-SrmWinsSetting PSCommand_Initialize-SrmWinsSetting PSCmdlet_Invoke-SrmAddDatastoreGroup PSCommand_Invoke-SrmAddDatastoreGroup PSCmdlet_Invoke-SrmBrowseVcenterComputeItem PSCommand_Invoke-SrmBrowseVcenterComputeItem PSCmdlet_Invoke-SrmCancelRecoveryPlan PSCommand_Invoke-SrmCancelRecoveryPlan PSCmdlet_Invoke-SrmConfigureAll PSCommand_Invoke-SrmConfigureAll PSCmdlet_Invoke-SrmCreateArrayManager PSCommand_Invoke-SrmCreateArrayManager PSCmdlet_Invoke-SrmCreateFolderMapping PSCommand_Invoke-SrmCreateFolderMapping PSCmdlet_Invoke-SrmCreateGroup PSCommand_Invoke-SrmCreateGroup PSCmdlet_Invoke-SrmCreateNetworkMapping PSCommand_Invoke-SrmCreateNetworkMapping PSCmdlet_Invoke-SrmCreatePairing PSCommand_Invoke-SrmCreatePairing PSCmdlet_Invoke-SrmCreatePlaceholderDatastores PSCommand_Invoke-SrmCreatePlaceholderDatastores PSCmdlet_Invoke-SrmCreatePlan PSCommand_Invoke-SrmCreatePlan PSCmdlet_Invoke-SrmCreateProtectionGroupFolder PSCommand_Invoke-SrmCreateProtectionGroupFolder PSCmdlet_Invoke-SrmCreateRecoveryPlanFolder PSCommand_Invoke-SrmCreateRecoveryPlanFolder PSCmdlet_Invoke-SrmCreateRecoveryStepsCallout PSCommand_Invoke-SrmCreateRecoveryStepsCallout PSCmdlet_Invoke-SrmCreateReplicatedArrayPair PSCommand_Invoke-SrmCreateReplicatedArrayPair PSCmdlet_Invoke-SrmCreateResourceMapping PSCommand_Invoke-SrmCreateResourceMapping PSCmdlet_Invoke-SrmCreateStoragePolicyMapping PSCommand_Invoke-SrmCreateStoragePolicyMapping PSCmdlet_Invoke-SrmCreateTestNetworkMappings PSCommand_Invoke-SrmCreateTestNetworkMappings PSCmdlet_Invoke-SrmDeleteArrayManager PSCommand_Invoke-SrmDeleteArrayManager PSCmdlet_Invoke-SrmDeleteFolderMapping PSCommand_Invoke-SrmDeleteFolderMapping PSCmdlet_Invoke-SrmDeleteGroup PSCommand_Invoke-SrmDeleteGroup PSCmdlet_Invoke-SrmDeleteNetworkMapping PSCommand_Invoke-SrmDeleteNetworkMapping PSCmdlet_Invoke-SrmDeletePairing PSCommand_Invoke-SrmDeletePairing PSCmdlet_Invoke-SrmDeletePlaceholderDatastore PSCommand_Invoke-SrmDeletePlaceholderDatastore PSCmdlet_Invoke-SrmDeleteProtectionGroupFolder PSCommand_Invoke-SrmDeleteProtectionGroupFolder PSCmdlet_Invoke-SrmDeleteRecoveryPlan PSCommand_Invoke-SrmDeleteRecoveryPlan PSCmdlet_Invoke-SrmDeleteRecoveryPlanFolder PSCommand_Invoke-SrmDeleteRecoveryPlanFolder PSCmdlet_Invoke-SrmDeleteRecoveryStep PSCommand_Invoke-SrmDeleteRecoveryStep PSCmdlet_Invoke-SrmDeleteReplicatedArrayPair PSCommand_Invoke-SrmDeleteReplicatedArrayPair PSCmdlet_Invoke-SrmDeleteResourceMapping PSCommand_Invoke-SrmDeleteResourceMapping PSCmdlet_Invoke-SrmDeleteStoragePolicyMapping PSCommand_Invoke-SrmDeleteStoragePolicyMapping PSCmdlet_Invoke-SrmDeleteTestNetworkMapping PSCommand_Invoke-SrmDeleteTestNetworkMapping PSCmdlet_Invoke-SrmDiscoverReplicatedArrayPairs PSCommand_Invoke-SrmDiscoverReplicatedArrayPairs PSCmdlet_Invoke-SrmDiscoverStorageDevices PSCommand_Invoke-SrmDiscoverStorageDevices PSCmdlet_Invoke-SrmDismissRecoveryStepsRecoveryPlanPrompt PSCommand_Invoke-SrmDismissRecoveryStepsRecoveryPlanPrompt PSCmdlet_Invoke-SrmEditRecoveryStepsCallout PSCommand_Invoke-SrmEditRecoveryStepsCallout PSCmdlet_Invoke-SrmGetAllGroups PSCommand_Invoke-SrmGetAllGroups PSCmdlet_Invoke-SrmGetAllPlanHistoryRecords PSCommand_Invoke-SrmGetAllPlanHistoryRecords PSCmdlet_Invoke-SrmGetAllRecoveryPlans PSCommand_Invoke-SrmGetAllRecoveryPlans PSCmdlet_Invoke-SrmGetAllVvolFaultDomainReplicationGroups PSCommand_Invoke-SrmGetAllVvolFaultDomainReplicationGroups PSCmdlet_Invoke-SrmGetAllVvolFaultDomains PSCommand_Invoke-SrmGetAllVvolFaultDomains PSCmdlet_Invoke-SrmGetArrayManager PSCommand_Invoke-SrmGetArrayManager PSCmdlet_Invoke-SrmGetArrayManagers PSCommand_Invoke-SrmGetArrayManagers PSCmdlet_Invoke-SrmGetDatastoreGroup PSCommand_Invoke-SrmGetDatastoreGroup PSCmdlet_Invoke-SrmGetDatastoreGroups PSCommand_Invoke-SrmGetDatastoreGroups PSCmdlet_Invoke-SrmGetFolderMapping PSCommand_Invoke-SrmGetFolderMapping PSCmdlet_Invoke-SrmGetFolderMappings PSCommand_Invoke-SrmGetFolderMappings PSCmdlet_Invoke-SrmGetGroup PSCommand_Invoke-SrmGetGroup PSCmdlet_Invoke-SrmGetGroupIssues PSCommand_Invoke-SrmGetGroupIssues PSCmdlet_Invoke-SrmGetGroupRelatedRecoveryPlans PSCommand_Invoke-SrmGetGroupRelatedRecoveryPlans PSCmdlet_Invoke-SrmGetGroupVm PSCommand_Invoke-SrmGetGroupVm PSCmdlet_Invoke-SrmGetGroupVms PSCommand_Invoke-SrmGetGroupVms PSCmdlet_Invoke-SrmGetInfo PSCommand_Invoke-SrmGetInfo PSCmdlet_Invoke-SrmGetNetworkIpSubnetMapping PSCommand_Invoke-SrmGetNetworkIpSubnetMapping PSCmdlet_Invoke-SrmGetNetworkMapping PSCommand_Invoke-SrmGetNetworkMapping PSCmdlet_Invoke-SrmGetNetworkMappings PSCommand_Invoke-SrmGetNetworkMappings PSCmdlet_Invoke-SrmGetPairing PSCommand_Invoke-SrmGetPairing PSCmdlet_Invoke-SrmGetPairingIssues PSCommand_Invoke-SrmGetPairingIssues PSCmdlet_Invoke-SrmGetPairings PSCommand_Invoke-SrmGetPairings PSCmdlet_Invoke-SrmGetPlaceholderDatastore PSCommand_Invoke-SrmGetPlaceholderDatastore PSCmdlet_Invoke-SrmGetPlaceholderDatastores PSCommand_Invoke-SrmGetPlaceholderDatastores PSCmdlet_Invoke-SrmGetPlanHistoryRecord PSCommand_Invoke-SrmGetPlanHistoryRecord PSCmdlet_Invoke-SrmGetPlanHistoryRecords PSCommand_Invoke-SrmGetPlanHistoryRecords PSCmdlet_Invoke-SrmGetPlanRelatedProtectionGroups PSCommand_Invoke-SrmGetPlanRelatedProtectionGroups PSCmdlet_Invoke-SrmGetPlanRelatedTestNetworks PSCommand_Invoke-SrmGetPlanRelatedTestNetworks PSCmdlet_Invoke-SrmGetPlanVirtualMachine PSCommand_Invoke-SrmGetPlanVirtualMachine PSCmdlet_Invoke-SrmGetPlanVirtualMachineDependentVms PSCommand_Invoke-SrmGetPlanVirtualMachineDependentVms PSCmdlet_Invoke-SrmGetPlanVirtualMachineIpCustomization PSCommand_Invoke-SrmGetPlanVirtualMachineIpCustomization PSCmdlet_Invoke-SrmGetPlanVirtualMachineRecoveryPriority PSCommand_Invoke-SrmGetPlanVirtualMachineRecoveryPriority PSCmdlet_Invoke-SrmGetPlanVirtualMachineRecoverySettings PSCommand_Invoke-SrmGetPlanVirtualMachineRecoverySettings PSCmdlet_Invoke-SrmGetPlanVirtualMachines PSCommand_Invoke-SrmGetPlanVirtualMachines PSCmdlet_Invoke-SrmGetPlanVirtualMachineSummarizedRecoverySettings PSCommand_Invoke-SrmGetPlanVirtualMachineSummarizedRecoverySettings PSCmdlet_Invoke-SrmGetProtectionGroupFolder PSCommand_Invoke-SrmGetProtectionGroupFolder PSCmdlet_Invoke-SrmGetProtectionGroupFolderChildren PSCommand_Invoke-SrmGetProtectionGroupFolderChildren PSCmdlet_Invoke-SrmGetProtectionGroupFolders PSCommand_Invoke-SrmGetProtectionGroupFolders PSCmdlet_Invoke-SrmGetRecentTasksInfo PSCommand_Invoke-SrmGetRecentTasksInfo PSCmdlet_Invoke-SrmGetRecoveryPlan PSCommand_Invoke-SrmGetRecoveryPlan PSCmdlet_Invoke-SrmGetRecoveryPlanFolder PSCommand_Invoke-SrmGetRecoveryPlanFolder PSCmdlet_Invoke-SrmGetRecoveryPlanFolderChildren PSCommand_Invoke-SrmGetRecoveryPlanFolderChildren PSCmdlet_Invoke-SrmGetRecoveryPlanFolders PSCommand_Invoke-SrmGetRecoveryPlanFolders PSCmdlet_Invoke-SrmGetRecoveryPlanIssues PSCommand_Invoke-SrmGetRecoveryPlanIssues PSCmdlet_Invoke-SrmGetRecoveryStep PSCommand_Invoke-SrmGetRecoveryStep PSCmdlet_Invoke-SrmGetRecoverySteps PSCommand_Invoke-SrmGetRecoverySteps PSCmdlet_Invoke-SrmGetRecoveryStepsCalloutDetails PSCommand_Invoke-SrmGetRecoveryStepsCalloutDetails PSCmdlet_Invoke-SrmGetRecoveryStepsUserPrompt PSCommand_Invoke-SrmGetRecoveryStepsUserPrompt PSCmdlet_Invoke-SrmGetRecoveryStepsUserPrompts PSCommand_Invoke-SrmGetRecoveryStepsUserPrompts PSCmdlet_Invoke-SrmGetReplicatedArrayPair PSCommand_Invoke-SrmGetReplicatedArrayPair PSCmdlet_Invoke-SrmGetReplicatedArrayPairs PSCommand_Invoke-SrmGetReplicatedArrayPairs PSCmdlet_Invoke-SrmGetReplicatedVms PSCommand_Invoke-SrmGetReplicatedVms PSCmdlet_Invoke-SrmGetResourceMapping PSCommand_Invoke-SrmGetResourceMapping PSCmdlet_Invoke-SrmGetResourceMappings PSCommand_Invoke-SrmGetResourceMappings PSCmdlet_Invoke-SrmGetSrm PSCommand_Invoke-SrmGetSrm PSCmdlet_Invoke-SrmGetSrmIssues PSCommand_Invoke-SrmGetSrmIssues PSCmdlet_Invoke-SrmGetSrms PSCommand_Invoke-SrmGetSrms PSCmdlet_Invoke-SrmGetStorageAdapter PSCommand_Invoke-SrmGetStorageAdapter PSCmdlet_Invoke-SrmGetStorageAdapterConnectionParams PSCommand_Invoke-SrmGetStorageAdapterConnectionParams PSCmdlet_Invoke-SrmGetStorageAdapters PSCommand_Invoke-SrmGetStorageAdapters PSCmdlet_Invoke-SrmGetStorageDevices PSCommand_Invoke-SrmGetStorageDevices PSCmdlet_Invoke-SrmGetStoragePolicyMapping PSCommand_Invoke-SrmGetStoragePolicyMapping PSCmdlet_Invoke-SrmGetStoragePolicyMappings PSCommand_Invoke-SrmGetStoragePolicyMappings PSCmdlet_Invoke-SrmGetTaskInfo PSCommand_Invoke-SrmGetTaskInfo PSCmdlet_Invoke-SrmGetTestNetworkMapping PSCommand_Invoke-SrmGetTestNetworkMapping PSCmdlet_Invoke-SrmGetTestNetworkMappings PSCommand_Invoke-SrmGetTestNetworkMappings PSCmdlet_Invoke-SrmGetVcenter PSCommand_Invoke-SrmGetVcenter PSCmdlet_Invoke-SrmGetVcenterComputeInventory PSCommand_Invoke-SrmGetVcenterComputeInventory PSCmdlet_Invoke-SrmGetVcenterComputeItem PSCommand_Invoke-SrmGetVcenterComputeItem PSCmdlet_Invoke-SrmGetVcenterDatastoreItem PSCommand_Invoke-SrmGetVcenterDatastoreItem PSCmdlet_Invoke-SrmGetVcenterDatastores PSCommand_Invoke-SrmGetVcenterDatastores PSCmdlet_Invoke-SrmGetVcenterNetworkInventory PSCommand_Invoke-SrmGetVcenterNetworkInventory PSCmdlet_Invoke-SrmGetVcenterNetworkItem PSCommand_Invoke-SrmGetVcenterNetworkItem PSCmdlet_Invoke-SrmGetVcenters PSCommand_Invoke-SrmGetVcenters PSCmdlet_Invoke-SrmGetVcenterVmFolder PSCommand_Invoke-SrmGetVcenterVmFolder PSCmdlet_Invoke-SrmGetVcenterVmFolderInventory PSCommand_Invoke-SrmGetVcenterVmFolderInventory PSCmdlet_Invoke-SrmGetVcStoragePolicies PSCommand_Invoke-SrmGetVcStoragePolicies PSCmdlet_Invoke-SrmGetVcStoragePolicy PSCommand_Invoke-SrmGetVcStoragePolicy PSCmdlet_Invoke-SrmGetVmProtectionSettings PSCommand_Invoke-SrmGetVmProtectionSettings PSCmdlet_Invoke-SrmGetVvolFaultDomain PSCommand_Invoke-SrmGetVvolFaultDomain PSCmdlet_Invoke-SrmGetVvolFaultDomainReplicationGroup PSCommand_Invoke-SrmGetVvolFaultDomainReplicationGroup PSCmdlet_Invoke-SrmGetVvolReplicationGroup PSCommand_Invoke-SrmGetVvolReplicationGroup PSCmdlet_Invoke-SrmGetVvolReplicationGroups PSCommand_Invoke-SrmGetVvolReplicationGroups PSCmdlet_Invoke-SrmMoveProtectionGroupFolder PSCommand_Invoke-SrmMoveProtectionGroupFolder PSCmdlet_Invoke-SrmMoveRecoveryPlanFolder PSCommand_Invoke-SrmMoveRecoveryPlanFolder PSCmdlet_Invoke-SrmOperation PSCommand_Invoke-SrmOperation PSCmdlet_Invoke-SrmPlanVirtualMachineCheckDependentVms PSCommand_Invoke-SrmPlanVirtualMachineCheckDependentVms PSCmdlet_Invoke-SrmQuerySuitableDatastores PSCommand_Invoke-SrmQuerySuitableDatastores PSCmdlet_Invoke-SrmReconfigureGroup PSCommand_Invoke-SrmReconfigureGroup PSCmdlet_Invoke-SrmReconfigureRecoveryPlan PSCommand_Invoke-SrmReconfigureRecoveryPlan PSCmdlet_Invoke-SrmReconnectPairing PSCommand_Invoke-SrmReconnectPairing PSCmdlet_Invoke-SrmRemoveDatastoreGroup PSCommand_Invoke-SrmRemoveDatastoreGroup PSCmdlet_Invoke-SrmRemoveNetworkIpSubnetMapping PSCommand_Invoke-SrmRemoveNetworkIpSubnetMapping PSCmdlet_Invoke-SrmRemoveVmFromProtectionGroup PSCommand_Invoke-SrmRemoveVmFromProtectionGroup PSCmdlet_Invoke-SrmRemoveVmProtection PSCommand_Invoke-SrmRemoveVmProtection PSCmdlet_Invoke-SrmRenameProtectionGroupFolder PSCommand_Invoke-SrmRenameProtectionGroupFolder PSCmdlet_Invoke-SrmRenameRecoveryPlanFolder PSCommand_Invoke-SrmRenameRecoveryPlanFolder PSCmdlet_Invoke-SrmRestoreAllPlaceholders PSCommand_Invoke-SrmRestoreAllPlaceholders PSCmdlet_Invoke-SrmRetrieveUnassignedDatastoreGroups PSCommand_Invoke-SrmRetrieveUnassignedDatastoreGroups PSCmdlet_Invoke-SrmRunCleanupTestRecovery PSCommand_Invoke-SrmRunCleanupTestRecovery PSCmdlet_Invoke-SrmRunRecovery PSCommand_Invoke-SrmRunRecovery PSCmdlet_Invoke-SrmRunReprotect PSCommand_Invoke-SrmRunReprotect PSCmdlet_Invoke-SrmRunTestRecovery PSCommand_Invoke-SrmRunTestRecovery PSCmdlet_Invoke-SrmUpdateNetworkIpSubnetMapping PSCommand_Invoke-SrmUpdateNetworkIpSubnetMapping PSCmdlet_Invoke-SrmUpdatePlanVirtualMachineDependentVms PSCommand_Invoke-SrmUpdatePlanVirtualMachineDependentVms PSCmdlet_Invoke-SrmUpdatePlanVirtualMachineIpCustomization PSCommand_Invoke-SrmUpdatePlanVirtualMachineIpCustomization PSCmdlet_Invoke-SrmUpdatePlanVirtualMachineRecoveryPriority PSCommand_Invoke-SrmUpdatePlanVirtualMachineRecoveryPriority PSCmdlet_Invoke-SrmUpdatePlanVirtualMachineRecoverySettings PSCommand_Invoke-SrmUpdatePlanVirtualMachineRecoverySettings PSCmdlet_Invoke-SrmUpdateVmProtectionSettings PSCommand_Invoke-SrmUpdateVmProtectionSettings PSCmdlet_Set-SrmOperationParameter PSCommand_Set-SrmOperationParameter PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.Srm.nuspec|EULA.rtf|VMware.Sdk.Srm.psm1|net472\VMware.Bindings.Srm.xml|net472\VMware.Sdk.Srm.Cmdlets.dll-Help.xml|net472\VMware.Sdk.Srm.Register.ArgumentCompleters.ps1|netcoreapp3.1\VMware.Bindings.Srm.dll|netcoreapp3.1\VMware.Bindings.Srm.xml|netcoreapp3.1\VMware.Sdk.Srm.Cmdlets.dll|netcoreapp3.1\VMware.Sdk.Srm.Cmdlets.dll-Help.xml|netcoreapp3.1\VMware.Sdk.Srm.psd1|netcoreapp3.1\VMware.Sdk.Srm.xml|VMware.Sdk.Srm.cat|VMware.Sdk.Srm.psd1|net472\VMware.Bindings.Srm.dll|net472\VMware.Sdk.Srm.Cmdlets.dll|net472\VMware.Sdk.Srm.psd1|net472\VMware.Sdk.Srm.xml</S>
+          <S N="GUID">9f21878f-e4a8-4349-bc0d-6d480f1ef9cc</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.Srm/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

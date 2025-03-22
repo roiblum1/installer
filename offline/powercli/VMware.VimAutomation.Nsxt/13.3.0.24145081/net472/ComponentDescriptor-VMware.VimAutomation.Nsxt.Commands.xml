@@ -1,0 +1,26 @@
+<ComponentDescriptor>
+  <Name>VMware.VimAutomation.Cis.Nsxt.Commands</Name>
+  <Assembly>VMware.VimAutomation.Cis.Nsxt.Commands</Assembly>
+  <ImplementingType>VMware.VimAutomation.Cis.Nsxt.Commands.NsxtCommandsComponentImpl</ImplementingType>
+  <IsSnapin>true</IsSnapin>
+  <ProvidedServiceList>
+  </ProvidedServiceList>
+  <RequiredServiceList>
+    <ServiceDescriptor>
+      <Name>NsxtCoreService</Name>
+      <Version>1.0</Version>
+    </ServiceDescriptor>
+  </RequiredServiceList>
+  <ExtendedServiceList>
+  </ExtendedServiceList>
+  <Version>
+    <Major>13</Major>
+    <Minor>3</Minor>
+    <Revision>0</Revision>
+    <Build>24145081</Build>
+    <Company>Broadcom, Inc.</Company>
+    <Copyright>Copyright (c) Broadcom. All Rights Reserved.</Copyright>
+    <UserFriendlyVersion>VMware Nsxt PowerCLI Component PowerCLI Component 13.3 build 24145081</UserFriendlyVersion>
+    <Description>Provides cmdlets for managing VMware NSXT Server.</Description>
+  </Version>
+</ComponentDescriptor>

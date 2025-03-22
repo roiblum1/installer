@@ -1,0 +1,210 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.Content</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Content.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:00:37+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetContentConfiguration</S>
+                <S>Invoke-UpdateContentConfiguration</S>
+                <S>Invoke-FindContentLibrary</S>
+                <S>Invoke-GetLibraryIdContent</S>
+                <S>Invoke-ListContentLibrary</S>
+                <S>Invoke-UpdateLibraryIdContent</S>
+                <S>Invoke-CreateContentLocalLibrary</S>
+                <S>Invoke-DeleteLibraryIdContentLocalLibrary</S>
+                <S>Invoke-GetLibraryIdContentLocalLibrary</S>
+                <S>Invoke-ListContentLocalLibrary</S>
+                <S>Invoke-PublishLibraryIdLocalLibrary</S>
+                <S>Invoke-UpdateLibraryIdContentLocalLibrary</S>
+                <S>Invoke-ListContentSecurityPolicies</S>
+                <S>Invoke-CreateContentSubscribedLibrary</S>
+                <S>Invoke-DeleteLibraryIdContentSubscribedLibrary</S>
+                <S>Invoke-EvictLibraryIdSubscribedLibrary</S>
+                <S>Invoke-GetLibraryIdContentSubscribedLibrary</S>
+                <S>Invoke-ListContentSubscribedLibrary</S>
+                <S>Invoke-ProbeContentSubscribedLibrary</S>
+                <S>Invoke-SyncLibraryIdSubscribedLibrary</S>
+                <S>Invoke-UpdateLibraryIdContentSubscribedLibrary</S>
+                <S>Invoke-CreateContentTrustedCertificates</S>
+                <S>Invoke-DeleteCertificateContentTrustedCertificates</S>
+                <S>Invoke-GetCertificateContentTrustedCertificates</S>
+                <S>Invoke-ListContentTrustedCertificates</S>
+                <S>Invoke-ListContentType</S>
+                <S>Initialize-ConfigurationModel</S>
+                <S>Initialize-LibraryFindSpec</S>
+                <S>Initialize-LibraryModel</S>
+                <S>Initialize-LibraryOptimizationInfo</S>
+                <S>Initialize-LibraryPublishInfo</S>
+                <S>Initialize-LibrarySourceInfo</S>
+                <S>Initialize-LibrarySubscriptionInfo</S>
+                <S>Initialize-LocalLibraryDestinationSpec</S>
+                <S>Initialize-LocalLibraryPublishRequestBody</S>
+                <S>Initialize-SubscribedLibraryProbeRequestBody</S>
+                <S>Initialize-TrustedCertificatesCreateSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetContentConfiguration</S>
+                <S>Invoke-UpdateContentConfiguration</S>
+                <S>Invoke-FindContentLibrary</S>
+                <S>Invoke-GetLibraryIdContent</S>
+                <S>Invoke-ListContentLibrary</S>
+                <S>Invoke-UpdateLibraryIdContent</S>
+                <S>Invoke-CreateContentLocalLibrary</S>
+                <S>Invoke-DeleteLibraryIdContentLocalLibrary</S>
+                <S>Invoke-GetLibraryIdContentLocalLibrary</S>
+                <S>Invoke-ListContentLocalLibrary</S>
+                <S>Invoke-PublishLibraryIdLocalLibrary</S>
+                <S>Invoke-UpdateLibraryIdContentLocalLibrary</S>
+                <S>Invoke-ListContentSecurityPolicies</S>
+                <S>Invoke-CreateContentSubscribedLibrary</S>
+                <S>Invoke-DeleteLibraryIdContentSubscribedLibrary</S>
+                <S>Invoke-EvictLibraryIdSubscribedLibrary</S>
+                <S>Invoke-GetLibraryIdContentSubscribedLibrary</S>
+                <S>Invoke-ListContentSubscribedLibrary</S>
+                <S>Invoke-ProbeContentSubscribedLibrary</S>
+                <S>Invoke-SyncLibraryIdSubscribedLibrary</S>
+                <S>Invoke-UpdateLibraryIdContentSubscribedLibrary</S>
+                <S>Invoke-CreateContentTrustedCertificates</S>
+                <S>Invoke-DeleteCertificateContentTrustedCertificates</S>
+                <S>Invoke-GetCertificateContentTrustedCertificates</S>
+                <S>Invoke-ListContentTrustedCertificates</S>
+                <S>Invoke-ListContentType</S>
+                <S>Initialize-ConfigurationModel</S>
+                <S>Initialize-LibraryFindSpec</S>
+                <S>Initialize-LibraryModel</S>
+                <S>Initialize-LibraryOptimizationInfo</S>
+                <S>Initialize-LibraryPublishInfo</S>
+                <S>Initialize-LibrarySourceInfo</S>
+                <S>Initialize-LibrarySubscriptionInfo</S>
+                <S>Initialize-LocalLibraryDestinationSpec</S>
+                <S>Initialize-LocalLibraryPublishRequestBody</S>
+                <S>Initialize-SubscribedLibraryProbeRequestBody</S>
+                <S>Initialize-TrustedCertificatesCreateSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Content.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2489923</S>
+          <S N="downloadCount">6966967</S>
+          <S N="packageSize">270084</S>
+          <S N="published">7/25/2024 1:00:37 PM +03:00</S>
+          <S N="created">7/25/2024 1:00:37 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-GetContentConfiguration PSCommand_Invoke-GetContentConfiguration PSFunction_Invoke-UpdateContentConfiguration PSCommand_Invoke-UpdateContentConfiguration PSFunction_Invoke-FindContentLibrary PSCommand_Invoke-FindContentLibrary PSFunction_Invoke-GetLibraryIdContent PSCommand_Invoke-GetLibraryIdContent PSFunction_Invoke-ListContentLibrary PSCommand_Invoke-ListContentLibrary PSFunction_Invoke-UpdateLibraryIdContent PSCommand_Invoke-UpdateLibraryIdContent PSFunction_Invoke-CreateContentLocalLibrary PSCommand_Invoke-CreateContentLocalLibrary PSFunction_Invoke-DeleteLibraryIdContentLocalLibrary PSCommand_Invoke-DeleteLibraryIdContentLocalLibrary PSFunction_Invoke-GetLibraryIdContentLocalLibrary PSCommand_Invoke-GetLibraryIdContentLocalLibrary PSFunction_Invoke-ListContentLocalLibrary PSCommand_Invoke-ListContentLocalLibrary PSFunction_Invoke-PublishLibraryIdLocalLibrary PSCommand_Invoke-PublishLibraryIdLocalLibrary PSFunction_Invoke-UpdateLibraryIdContentLocalLibrary PSCommand_Invoke-UpdateLibraryIdContentLocalLibrary PSFunction_Invoke-ListContentSecurityPolicies PSCommand_Invoke-ListContentSecurityPolicies PSFunction_Invoke-CreateContentSubscribedLibrary PSCommand_Invoke-CreateContentSubscribedLibrary PSFunction_Invoke-DeleteLibraryIdContentSubscribedLibrary PSCommand_Invoke-DeleteLibraryIdContentSubscribedLibrary PSFunction_Invoke-EvictLibraryIdSubscribedLibrary PSCommand_Invoke-EvictLibraryIdSubscribedLibrary PSFunction_Invoke-GetLibraryIdContentSubscribedLibrary PSCommand_Invoke-GetLibraryIdContentSubscribedLibrary PSFunction_Invoke-ListContentSubscribedLibrary PSCommand_Invoke-ListContentSubscribedLibrary PSFunction_Invoke-ProbeContentSubscribedLibrary PSCommand_Invoke-ProbeContentSubscribedLibrary PSFunction_Invoke-SyncLibraryIdSubscribedLibrary PSCommand_Invoke-SyncLibraryIdSubscribedLibrary PSFunction_Invoke-UpdateLibraryIdContentSubscribedLibrary PSCommand_Invoke-UpdateLibraryIdContentSubscribedLibrary PSFunction_Invoke-CreateContentTrustedCertificates PSCommand_Invoke-CreateContentTrustedCertificates PSFunction_Invoke-DeleteCertificateContentTrustedCertificates PSCommand_Invoke-DeleteCertificateContentTrustedCertificates PSFunction_Invoke-GetCertificateContentTrustedCertificates PSCommand_Invoke-GetCertificateContentTrustedCertificates PSFunction_Invoke-ListContentTrustedCertificates PSCommand_Invoke-ListContentTrustedCertificates PSFunction_Invoke-ListContentType PSCommand_Invoke-ListContentType PSFunction_Initialize-ConfigurationModel PSCommand_Initialize-ConfigurationModel PSFunction_Initialize-LibraryFindSpec PSCommand_Initialize-LibraryFindSpec PSFunction_Initialize-LibraryModel PSCommand_Initialize-LibraryModel PSFunction_Initialize-LibraryOptimizationInfo PSCommand_Initialize-LibraryOptimizationInfo PSFunction_Initialize-LibraryPublishInfo PSCommand_Initialize-LibraryPublishInfo PSFunction_Initialize-LibrarySourceInfo PSCommand_Initialize-LibrarySourceInfo PSFunction_Initialize-LibrarySubscriptionInfo PSCommand_Initialize-LibrarySubscriptionInfo PSFunction_Initialize-LocalLibraryDestinationSpec PSCommand_Initialize-LocalLibraryDestinationSpec PSFunction_Initialize-LocalLibraryPublishRequestBody PSCommand_Initialize-LocalLibraryPublishRequestBody PSFunction_Initialize-SubscribedLibraryProbeRequestBody PSCommand_Initialize-SubscribedLibraryProbeRequestBody PSFunction_Initialize-TrustedCertificatesCreateSpec PSCommand_Initialize-TrustedCertificatesCreateSpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.Content.nuspec|README.md|VMware.Sdk.vSphere.Content.psm1|Api\LibraryApi.ps1|Api\SecurityPoliciesApi.ps1|Api\TrustedCertificatesApi.ps1|Model\ConfigurationModel.ps1|Model\LibraryModel.ps1|Model\LibraryPublishInfo.ps1|Model\LibraryStorageBacking.ps1|Model\LocalLibraryDestinationSpec.ps1|Model\SubscribedLibraryProbeRequestBody.ps1|VMware.Sdk.vSphere.Content.cat|VMware.Sdk.vSphere.Content.psd1|Api\ConfigurationApi.ps1|Api\LocalLibraryApi.ps1|Api\SubscribedLibraryApi.ps1|Api\TypeApi.ps1|Model\LibraryFindSpec.ps1|Model\LibraryOptimizationInfo.ps1|Model\LibrarySourceInfo.ps1|Model\LibrarySubscriptionInfo.ps1|Model\LocalLibraryPublishRequestBody.ps1|Model\TrustedCertificatesCreateSpec.ps1</S>
+          <S N="GUID">5d97397b-a5f3-47d1-8f79-3ad34f100a45</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.Content/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

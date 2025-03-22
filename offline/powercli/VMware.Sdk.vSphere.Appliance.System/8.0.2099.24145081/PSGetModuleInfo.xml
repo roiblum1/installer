@@ -1,0 +1,160 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.Appliance.System</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.System.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:59:24+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetSystemGlobalFips</S>
+                <S>Invoke-SetSystemGlobalFips</S>
+                <S>Invoke-ListSystemStorage</S>
+                <S>Invoke-ResizeExSystemStorage</S>
+                <S>Invoke-ResizeSystemStorage</S>
+                <S>Invoke-GetSystemTime</S>
+                <S>Invoke-GetSystemTimeTimezone</S>
+                <S>Invoke-SetSystemTimeTimezone</S>
+                <S>Invoke-GetSystemUptime</S>
+                <S>Invoke-GetSystemVersion</S>
+                <S>Initialize-SystemSecurityGlobalFipsUpdateSpec</S>
+                <S>Initialize-SystemTimeTimezoneSetRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetSystemGlobalFips</S>
+                <S>Invoke-SetSystemGlobalFips</S>
+                <S>Invoke-ListSystemStorage</S>
+                <S>Invoke-ResizeExSystemStorage</S>
+                <S>Invoke-ResizeSystemStorage</S>
+                <S>Invoke-GetSystemTime</S>
+                <S>Invoke-GetSystemTimeTimezone</S>
+                <S>Invoke-SetSystemTimeTimezone</S>
+                <S>Invoke-GetSystemUptime</S>
+                <S>Invoke-GetSystemVersion</S>
+                <S>Initialize-SystemSecurityGlobalFipsUpdateSpec</S>
+                <S>Initialize-SystemTimeTimezoneSetRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.System.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2505474</S>
+          <S N="downloadCount">6974322</S>
+          <S N="packageSize">132528</S>
+          <S N="published">7/25/2024 12:59:24 PM +03:00</S>
+          <S N="created">7/25/2024 12:59:24 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-GetSystemGlobalFips PSCommand_Invoke-GetSystemGlobalFips PSFunction_Invoke-SetSystemGlobalFips PSCommand_Invoke-SetSystemGlobalFips PSFunction_Invoke-ListSystemStorage PSCommand_Invoke-ListSystemStorage PSFunction_Invoke-ResizeExSystemStorage PSCommand_Invoke-ResizeExSystemStorage PSFunction_Invoke-ResizeSystemStorage PSCommand_Invoke-ResizeSystemStorage PSFunction_Invoke-GetSystemTime PSCommand_Invoke-GetSystemTime PSFunction_Invoke-GetSystemTimeTimezone PSCommand_Invoke-GetSystemTimeTimezone PSFunction_Invoke-SetSystemTimeTimezone PSCommand_Invoke-SetSystemTimeTimezone PSFunction_Invoke-GetSystemUptime PSCommand_Invoke-GetSystemUptime PSFunction_Invoke-GetSystemVersion PSCommand_Invoke-GetSystemVersion PSFunction_Initialize-SystemSecurityGlobalFipsUpdateSpec PSCommand_Initialize-SystemSecurityGlobalFipsUpdateSpec PSFunction_Initialize-SystemTimeTimezoneSetRequestBody PSCommand_Initialize-SystemTimeTimezoneSetRequestBody PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.Appliance.System.nuspec|README.md|VMware.Sdk.vSphere.Appliance.System.psd1|VMware.Sdk.vSphere.Appliance.System.psm1|Api\GlobalFipsApi.ps1|Api\StorageApi.ps1|Api\TimeApi.ps1|Api\TimezoneApi.ps1|Api\UptimeApi.ps1|Api\VersionApi.ps1|Model\SystemSecurityGlobalFipsUpdateSpec.ps1|Model\SystemTimeTimezoneSetRequestBody.ps1|VMware.Sdk.vSphere.Appliance.System.cat</S>
+          <S N="GUID">bf819e06-83b4-445d-87ae-6825f3e59519</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.Appliance.System/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

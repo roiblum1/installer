@@ -1,0 +1,111 @@
+{
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "description": "The json schema for ESXi manifest spec",
+   "type": "object",
+   "required": [ "releaseType",
+                 "schemaVersion",
+                 "category",
+                 "vendor",
+                 "description",
+                 "summary",
+                 "docURL",
+                 "acceptanceLevel",
+                 "releaseDate",
+                 "nameSpec",
+                 "versionSpec",
+                 "removedComponents",
+                 "components",
+                 "supportedBaseImageVersions",
+                 "hardwareSupportInfo"],
+   "properties": {
+      "releaseID": {
+         "$ref": "#/definitions/releaseID"
+      },
+      "releaseType": {
+         "allOf": [
+            {"$ref": "#/definitions/releaseType"},
+            {"pattern": "manifest"}
+         ]
+      },
+      "schemaVersion": {
+         "$ref": "#/definitions/schemaVersion"
+      },
+      "category": {
+         "$ref": "#/definitions/category"
+      },
+      "vendor": {
+         "$ref": "#/definitions/vendor"
+      },
+      "description": {
+         "$ref": "#/definitions/description"
+      },
+      "summary": {
+         "$ref": "#/definitions/summary"
+      },
+      "docURL": {
+         "$ref": "#/definitions/docURL"
+      },
+      "acceptanceLevel": {
+         "$ref": "#/definitions/acceptanceLevel"
+      },
+      "removedComponents": {
+         "type": "array",
+         "items" : {
+            "$ref": "#/definitions/nameSimple"
+         }
+      },
+      "releaseDate": {
+         "$ref": "#/definitions/releaseDate"
+      },
+      "nameSpec": {
+         "$ref": "#/definitions/nameSpec"
+      },
+      "versionSpec": {
+         "$ref": "#/definitions/versionSpecPattern"
+      },
+      "components": {
+         "allOf": [
+            {"$ref": "#/definitions/components"},
+            {"propertyNames": {
+                   "pattern": "^(?!ESXi$).+"
+              }
+            }
+         ]
+      },
+      "supportedBaseImageVersions": {
+         "$ref": "#/definitions/supportedBaseImageVersions"
+      },
+      "hardwareSupportInfo": {
+         "description": "The hardware support info of the manifest",
+         "type": "object",
+         "required": ["package", "manager"],
+         "properties": {
+            "package": {
+               "description": "The name and version of the hardware support package",
+               "type": "object",
+               "required": ["version", "name"],
+               "properties": {
+                  "version": {
+                      "$ref": "#/definitions/versionPattern"
+                  },
+                  "name": {
+                     "type": "string",
+                     "minLength": 3
+                  }
+               }
+            },
+            "manager": {
+               "description": "The name of the hardware support manager",
+               "type": "object",
+               "required": ["name"],
+               "properties": {
+                  "name": {
+                     "type": "string",
+                     "minLength": 3
+                  }
+               }
+            }
+         }
+      }
+   }
+}

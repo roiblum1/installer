@@ -1,0 +1,186 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Vmc</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerCLI VMC cmdlets.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:03:10+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-VmcSddcHost</S>
+                <S>Connect-Vmc</S>
+                <S>Disconnect-Vmc</S>
+                <S>Get-AwsAccount</S>
+                <S>Get-AwsVpcSubnet</S>
+                <S>Get-VmcClusterEdrsPolicy</S>
+                <S>Get-VmcOrganization</S>
+                <S>Get-VmcOutpost</S>
+                <S>Get-VmcSddc</S>
+                <S>Get-VmcSddcCluster</S>
+                <S>Get-VmcSddcGroup</S>
+                <S>Get-VmcSddcNetworkService</S>
+                <S>Get-VmcSddcSiteRecovery</S>
+                <S>Get-VmcSddcSiteRecoveryInstance</S>
+                <S>Get-VmcService</S>
+                <S>New-VmcSddc</S>
+                <S>New-VmcSddcCluster</S>
+                <S>New-VmcSddcSiteRecoveryInstance</S>
+                <S>Remove-VmcSddc</S>
+                <S>Remove-VmcSddcCluster</S>
+                <S>Remove-VmcSddcHost</S>
+                <S>Remove-VmcSddcSiteRecoveryInstance</S>
+                <S>Set-VmcClusterEdrsPolicy</S>
+                <S>Set-VmcSddc</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-VmcSddcHost</S>
+                <S>Connect-Vmc</S>
+                <S>Disconnect-Vmc</S>
+                <S>Get-AwsAccount</S>
+                <S>Get-AwsVpcSubnet</S>
+                <S>Get-VmcClusterEdrsPolicy</S>
+                <S>Get-VmcOrganization</S>
+                <S>Get-VmcOutpost</S>
+                <S>Get-VmcSddc</S>
+                <S>Get-VmcSddcCluster</S>
+                <S>Get-VmcSddcGroup</S>
+                <S>Get-VmcSddcNetworkService</S>
+                <S>Get-VmcSddcSiteRecovery</S>
+                <S>Get-VmcSddcSiteRecoveryInstance</S>
+                <S>Get-VmcService</S>
+                <S>New-VmcSddc</S>
+                <S>New-VmcSddcCluster</S>
+                <S>New-VmcSddcSiteRecoveryInstance</S>
+                <S>Remove-VmcSddc</S>
+                <S>Remove-VmcSddcCluster</S>
+                <S>Remove-VmcSddcHost</S>
+                <S>Remove-VmcSddcSiteRecoveryInstance</S>
+                <S>Set-VmcClusterEdrsPolicy</S>
+                <S>Set-VmcSddc</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.CloudServices</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.CloudServices/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerCLI VMC cmdlets.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3740051</S>
+          <S N="downloadCount">14330776</S>
+          <S N="packageSize">887470</S>
+          <S N="published">7/25/2024 1:03:10 PM +03:00</S>
+          <S N="created">7/25/2024 1:03:10 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Add-VmcSddcHost PSCommand_Add-VmcSddcHost PSCmdlet_Connect-Vmc PSCommand_Connect-Vmc PSCmdlet_Disconnect-Vmc PSCommand_Disconnect-Vmc PSCmdlet_Get-AwsAccount PSCommand_Get-AwsAccount PSCmdlet_Get-AwsVpcSubnet PSCommand_Get-AwsVpcSubnet PSCmdlet_Get-VmcClusterEdrsPolicy PSCommand_Get-VmcClusterEdrsPolicy PSCmdlet_Get-VmcOrganization PSCommand_Get-VmcOrganization PSCmdlet_Get-VmcOutpost PSCommand_Get-VmcOutpost PSCmdlet_Get-VmcSddc PSCommand_Get-VmcSddc PSCmdlet_Get-VmcSddcCluster PSCommand_Get-VmcSddcCluster PSCmdlet_Get-VmcSddcGroup PSCommand_Get-VmcSddcGroup PSCmdlet_Get-VmcSddcNetworkService PSCommand_Get-VmcSddcNetworkService PSCmdlet_Get-VmcSddcSiteRecovery PSCommand_Get-VmcSddcSiteRecovery PSCmdlet_Get-VmcSddcSiteRecoveryInstance PSCommand_Get-VmcSddcSiteRecoveryInstance PSCmdlet_Get-VmcService PSCommand_Get-VmcService PSCmdlet_New-VmcSddc PSCommand_New-VmcSddc PSCmdlet_New-VmcSddcCluster PSCommand_New-VmcSddcCluster PSCmdlet_New-VmcSddcSiteRecoveryInstance PSCommand_New-VmcSddcSiteRecoveryInstance PSCmdlet_Remove-VmcSddc PSCommand_Remove-VmcSddc PSCmdlet_Remove-VmcSddcCluster PSCommand_Remove-VmcSddcCluster PSCmdlet_Remove-VmcSddcHost PSCommand_Remove-VmcSddcHost PSCmdlet_Remove-VmcSddcSiteRecoveryInstance PSCommand_Remove-VmcSddcSiteRecoveryInstance PSCmdlet_Set-VmcClusterEdrsPolicy PSCommand_Set-VmcClusterEdrsPolicy PSCmdlet_Set-VmcSddc PSCommand_Set-VmcSddc PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Vmc.nuspec|EULA.rtf|VMware.VimAutomation.Vmc.psd1|net472\ComponentDescriptor-VMware.VimAutomation.Vmc.xml|net472\VMware.VimAutomation.Vmc.Format.ps1xml|net472\VMware.VimAutomation.Vmc.ps1|net472\VMware.Vmc.Autoscaler.Bindings.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Vmc.Commands.xml|netcoreapp3.1\VMware.VimAutomation.Vmc.Commands.dll-Help.xml|netcoreapp3.1\VMware.VimAutomation.Vmc.Interop.dll|netcoreapp3.1\VMware.VimAutomation.Vmc.Types.dll|netcoreapp3.1\VMware.Vmc.DRaaS.Bindings.dll|netcoreapp3.1\Resources\autoscalerMetadata.json|VMware.VimAutomation.Vmc.cat|VMware.VimAutomation.Vmc.psm1|net472\VMware.VimAutomation.Vmc.Commands.dll|net472\VMware.VimAutomation.Vmc.Impl.dll|net472\VMware.VimAutomation.Vmc.psd1|net472\VMware.Vmc.Bindings.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Vmc.xml|netcoreapp3.1\VMware.VimAutomation.Vmc.Format.ps1xml|netcoreapp3.1\VMware.VimAutomation.Vmc.ps1|netcoreapp3.1\VMware.Vmc.Autoscaler.Bindings.dll|net472\Resources\autoscalerMetadata.json|netcoreapp3.1\Resources\draasMetadata.json|net472\ComponentDescriptor-VMware.VimAutomation.Vmc.Commands.xml|net472\VMware.VimAutomation.Vmc.Commands.dll-Help.xml|net472\VMware.VimAutomation.Vmc.Interop.dll|net472\VMware.VimAutomation.Vmc.Types.dll|net472\VMware.Vmc.DRaaS.Bindings.dll|netcoreapp3.1\VMware.VimAutomation.Vmc.Commands.dll|netcoreapp3.1\VMware.VimAutomation.Vmc.Impl.dll|netcoreapp3.1\VMware.VimAutomation.Vmc.psd1|netcoreapp3.1\VMware.Vmc.Bindings.dll|net472\Resources\draasMetadata.json</S>
+          <S N="GUID">502c5bdb-da3c-423f-a4c8-8240b424f89d</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.VimAutomation.Vmc/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

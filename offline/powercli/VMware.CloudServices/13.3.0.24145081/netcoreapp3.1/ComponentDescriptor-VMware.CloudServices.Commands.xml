@@ -1,0 +1,26 @@
+<ComponentDescriptor>
+  <Name>VMware.CloudServices.Commands</Name>
+  <Assembly>VMware.CloudServices.Commands</Assembly>
+  <ImplementingType>VMware.CloudServices.Commands.VcsCmdletsImpl</ImplementingType>
+  <IsSnapin>true</IsSnapin>
+  <ProvidedServiceList>
+  </ProvidedServiceList>
+  <RequiredServiceList>
+    <ServiceDescriptor>
+      <Name>VcsComponentService</Name>
+      <Version>1.0</Version>
+    </ServiceDescriptor>
+  </RequiredServiceList>
+  <ExtendedServiceList>
+  </ExtendedServiceList>
+  <Version>
+    <Major>13</Major>
+    <Minor>3</Minor>
+    <Revision>0</Revision>
+    <Build>24145081</Build>
+    <Company>Broadcom, Inc.</Company>
+    <Copyright>Copyright (c) Broadcom. All Rights Reserved.</Copyright>
+    <UserFriendlyVersion>VMware CloudServices PowerCLI Component PowerCLI Component 13.3 build 24145081</UserFriendlyVersion>
+    <Description>Provides test cmdlets.</Description>
+  </Version>
+</ComponentDescriptor>

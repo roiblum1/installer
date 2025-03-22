@@ -1,0 +1,162 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.vROps</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerCLI vROps cmdlets.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:02:56+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-OMServer</S>
+                <S>Disconnect-OMServer</S>
+                <S>Get-OMAlert</S>
+                <S>Get-OMAlertDefinition</S>
+                <S>Get-OMAlertSubType</S>
+                <S>Get-OMAlertType</S>
+                <S>Get-OMRecommendation</S>
+                <S>Get-OMResource</S>
+                <S>Get-OMStat</S>
+                <S>Get-OMStatKey</S>
+                <S>Get-OMUser</S>
+                <S>Set-OMAlert</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-OMServer</S>
+                <S>Disconnect-OMServer</S>
+                <S>Get-OMAlert</S>
+                <S>Get-OMAlertDefinition</S>
+                <S>Get-OMAlertSubType</S>
+                <S>Get-OMAlertType</S>
+                <S>Get-OMRecommendation</S>
+                <S>Get-OMResource</S>
+                <S>Get-OMStat</S>
+                <S>Get-OMStatKey</S>
+                <S>Get-OMUser</S>
+                <S>Set-OMAlert</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Vds</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Vds/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerCLI vROps cmdlets.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3701979</S>
+          <S N="downloadCount">14339879</S>
+          <S N="packageSize">1111553</S>
+          <S N="published">7/25/2024 1:02:56 PM +03:00</S>
+          <S N="created">7/25/2024 1:02:56 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Connect-OMServer PSCommand_Connect-OMServer PSCmdlet_Disconnect-OMServer PSCommand_Disconnect-OMServer PSCmdlet_Get-OMAlert PSCommand_Get-OMAlert PSCmdlet_Get-OMAlertDefinition PSCommand_Get-OMAlertDefinition PSCmdlet_Get-OMAlertSubType PSCommand_Get-OMAlertSubType PSCmdlet_Get-OMAlertType PSCommand_Get-OMAlertType PSCmdlet_Get-OMRecommendation PSCommand_Get-OMRecommendation PSCmdlet_Get-OMResource PSCommand_Get-OMResource PSCmdlet_Get-OMStat PSCommand_Get-OMStat PSCmdlet_Get-OMStatKey PSCommand_Get-OMStatKey PSCmdlet_Get-OMUser PSCommand_Get-OMUser PSCmdlet_Set-OMAlert PSCommand_Set-OMAlert PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.vROps.nuspec|EULA.rtf|VMware.VimAutomation.vROps.psd1|net472\ComponentDescriptor-VMware.VimAutomation.vROps.Impl.xml|net472\VMware.VimAutomation.vROps.Format.ps1xml|net472\VMware.VimAutomation.vROps.ps1|net472\VMware.VimAutomation.vROps.Types.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.vROps.Commands.xml|netcoreapp3.1\VMware.VimAutomation.vROps.Commands.dll|netcoreapp3.1\VMware.VimAutomation.vROps.Format.ps1xml|netcoreapp3.1\VMware.VimAutomation.vROps.Interop.dll|netcoreapp3.1\VMware.VimAutomation.vROps.psd1|netcoreapp3.1\VMware.VimAutomation.vROps.Types.dll|VMware.VimAutomation.vROps.cat|VMware.VimAutomation.vROps.psm1|net472\VMware.VimAutomation.vROps.Commands.dll|net472\VMware.VimAutomation.vROps.Impl.dll|net472\VMware.VimAutomation.vROps.psd1|net472\VMware.VimAutomation.vROps.Views.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.vROps.Impl.xml|netcoreapp3.1\VMware.VimAutomation.vROps.Commands.dll-Help.xml|netcoreapp3.1\VMware.VimAutomation.vROps.Impl.dll|netcoreapp3.1\VMware.VimAutomation.vROps.ps1|netcoreapp3.1\VMware.VimAutomation.VROps.Schema.dll|netcoreapp3.1\VMware.VimAutomation.vROps.Views.dll|net472\ComponentDescriptor-VMware.VimAutomation.vROps.Commands.xml|net472\VMware.VimAutomation.vROps.Commands.dll-Help.xml|net472\VMware.VimAutomation.vROps.Interop.dll|net472\VMware.VimAutomation.VROps.Schema.dll</S>
+          <S N="GUID">326b6dad-9af0-4a8d-a341-8f9804fee8af</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.VimAutomation.vROps/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

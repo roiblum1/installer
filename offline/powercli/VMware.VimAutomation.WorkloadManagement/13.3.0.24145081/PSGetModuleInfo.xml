@@ -1,0 +1,176 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.WorkloadManagement</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">PowerShell commands for automation of workloads related functionality in vSphere.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:06:59+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Disable-WMCluster</S>
+                <S>Enable-WMCluster</S>
+                <S>Get-WMCluster</S>
+                <S>Get-WMNamespace</S>
+                <S>Get-WMNamespaceLimits</S>
+                <S>Get-WMNamespacePermission</S>
+                <S>Get-WMNamespaceStoragePolicy</S>
+                <S>New-WMNamespace</S>
+                <S>New-WMNamespaceNetworkSpec</S>
+                <S>New-WMNamespacePermission</S>
+                <S>New-WMNamespaceStoragePolicy</S>
+                <S>Remove-WMNamespace</S>
+                <S>Remove-WMNamespacePermission</S>
+                <S>Remove-WMNamespaceStoragePolicy</S>
+                <S>Set-WMCluster</S>
+                <S>Set-WMNamespace</S>
+                <S>Set-WMNamespaceLimits</S>
+                <S>Set-WMNamespacePermission</S>
+                <S>Set-WMNamespaceStoragePolicy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Disable-WMCluster</S>
+                <S>Enable-WMCluster</S>
+                <S>Get-WMCluster</S>
+                <S>Get-WMNamespace</S>
+                <S>Get-WMNamespaceLimits</S>
+                <S>Get-WMNamespacePermission</S>
+                <S>Get-WMNamespaceStoragePolicy</S>
+                <S>New-WMNamespace</S>
+                <S>New-WMNamespaceNetworkSpec</S>
+                <S>New-WMNamespacePermission</S>
+                <S>New-WMNamespaceStoragePolicy</S>
+                <S>Remove-WMNamespace</S>
+                <S>Remove-WMNamespacePermission</S>
+                <S>Remove-WMNamespaceStoragePolicy</S>
+                <S>Set-WMCluster</S>
+                <S>Set-WMNamespace</S>
+                <S>Set-WMNamespaceLimits</S>
+                <S>Set-WMNamespacePermission</S>
+                <S>Set-WMNamespaceStoragePolicy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Vds</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Vds/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">PowerShell commands for automation of workloads related functionality in vSphere.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3481010</S>
+          <S N="downloadCount">11972782</S>
+          <S N="packageSize">470613</S>
+          <S N="published">7/25/2024 1:06:59 PM +03:00</S>
+          <S N="created">7/25/2024 1:06:59 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Disable-WMCluster PSCommand_Disable-WMCluster PSCmdlet_Enable-WMCluster PSCommand_Enable-WMCluster PSCmdlet_Get-WMCluster PSCommand_Get-WMCluster PSCmdlet_Get-WMNamespace PSCommand_Get-WMNamespace PSCmdlet_Get-WMNamespaceLimits PSCommand_Get-WMNamespaceLimits PSCmdlet_Get-WMNamespacePermission PSCommand_Get-WMNamespacePermission PSCmdlet_Get-WMNamespaceStoragePolicy PSCommand_Get-WMNamespaceStoragePolicy PSCmdlet_New-WMNamespace PSCommand_New-WMNamespace PSCmdlet_New-WMNamespaceNetworkSpec PSCommand_New-WMNamespaceNetworkSpec PSCmdlet_New-WMNamespacePermission PSCommand_New-WMNamespacePermission PSCmdlet_New-WMNamespaceStoragePolicy PSCommand_New-WMNamespaceStoragePolicy PSCmdlet_Remove-WMNamespace PSCommand_Remove-WMNamespace PSCmdlet_Remove-WMNamespacePermission PSCommand_Remove-WMNamespacePermission PSCmdlet_Remove-WMNamespaceStoragePolicy PSCommand_Remove-WMNamespaceStoragePolicy PSCmdlet_Set-WMCluster PSCommand_Set-WMCluster PSCmdlet_Set-WMNamespace PSCommand_Set-WMNamespace PSCmdlet_Set-WMNamespaceLimits PSCommand_Set-WMNamespaceLimits PSCmdlet_Set-WMNamespacePermission PSCommand_Set-WMNamespacePermission PSCmdlet_Set-WMNamespaceStoragePolicy PSCommand_Set-WMNamespaceStoragePolicy PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.WorkloadManagement.nuspec|EULA.rtf|net472\ComponentDescriptor-VMware.VimAutomation.WorkloadManagement.Commands.xml|net472\VMware.VimAutomation.WorkloadManagement.Commands.dll|net472\VMware.VimAutomation.WorkloadManagement.Format.ps1xml|net472\VMware.VimAutomation.WorkloadManagement.Interop.dll|net472\VMware.VimAutomation.WorkloadManagement.psd1|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.WorkloadManagement.Commands.xml|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.Commands.dll|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.Format.ps1xml|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.Interop.dll|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.psd1|open_source_licenses.txt|VMware.VimAutomation.WorkloadManagement.psd1|net472\ComponentDescriptor-VMware.VimAutomation.WorkloadManagement.Impl.xml|net472\VMware.VimAutomation.WorkloadManagement.Commands.dll-Help.xml|net472\VMware.VimAutomation.WorkloadManagement.Impl.dll|net472\VMware.VimAutomation.WorkloadManagement.ps1|net472\VMware.VimAutomation.WorkloadManagement.Types.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.WorkloadManagement.Impl.xml|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.Commands.dll-Help.xml|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.Impl.dll|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.ps1|netcoreapp3.1\VMware.VimAutomation.WorkloadManagement.Types.dll|VMware.VimAutomation.WorkloadManagement.cat|VMware.VimAutomation.WorkloadManagement.psm1</S>
+          <S N="GUID">326b6dad-9af0-4a8d-a341-8f9804fee8af</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.VimAutomation.WorkloadManagement/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

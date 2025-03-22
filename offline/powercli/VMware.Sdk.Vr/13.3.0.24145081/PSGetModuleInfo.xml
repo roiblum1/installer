@@ -1,0 +1,273 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.Vr</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains cmdlets for managing VMware.Sdk.Vr API.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:03:54+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-VrServer</S>
+                <S>Disconnect-VrServer</S>
+                <S>Get-VrOperation</S>
+                <S>Initialize-VrConfigureReplicationSpec</S>
+                <S>Initialize-VrConfigureReplicationVmDisk</S>
+                <S>Initialize-VrDatastoreBrowserRequest</S>
+                <S>Initialize-VrDatastoreBrowserResultDrResponseEntity</S>
+                <S>Initialize-VrDatastoreDrResponseEntity</S>
+                <S>Initialize-VrDatastorePathData</S>
+                <S>Initialize-VrIssueInfoDrResponseEntity</S>
+                <S>Initialize-VrPairingSpec</S>
+                <S>Initialize-VrPairingSpecPairPscInfo</S>
+                <S>Initialize-VrReconfigureReplicationSpec</S>
+                <S>Initialize-VrReplicatedVmDiskDrResponseEntity</S>
+                <S>Initialize-VrSessionIdData</S>
+                <S>Initialize-VrSessionInfo</S>
+                <S>Initialize-VrStoragePolicyComplianceCheckDataDrResponseEntity</S>
+                <S>Initialize-VrStoragePolicyDrResponseEntity</S>
+                <S>Initialize-VrStringDrData</S>
+                <S>Initialize-VrVirtualMachineDrResponseEntity</S>
+                <S>Initialize-VrVmDisk</S>
+                <S>Initialize-VrVmDiskDrResponseEntity</S>
+                <S>Initialize-VrVmDiskFindSeedSpec</S>
+                <S>Initialize-VrVmDiskIdentifier</S>
+                <S>Initialize-VrVmDiskSeedInformationDrResponseEntity</S>
+                <S>Invoke-VrBrowseDatastore</S>
+                <S>Invoke-VrCheckStoragePolicyCompliance</S>
+                <S>Invoke-VrConfigureReplication</S>
+                <S>Invoke-VrDeleteVrPairing</S>
+                <S>Invoke-VrDestroyReplication</S>
+                <S>Invoke-VrGetAllReplications</S>
+                <S>Invoke-VrGetAllVrDetailsInPairing</S>
+                <S>Invoke-VrGetAllVrServers</S>
+                <S>Invoke-VrGetAllVrServersInPairing</S>
+                <S>Invoke-VrGetLocalVmDisks</S>
+                <S>Invoke-VrGetLocalVms</S>
+                <S>Invoke-VrGetRecentTasksInfo</S>
+                <S>Invoke-VrGetReplicatedVmDisks</S>
+                <S>Invoke-VrGetReplicationInfo</S>
+                <S>Invoke-VrGetReplicationsCount</S>
+                <S>Invoke-VrGetReplicationsIssues</S>
+                <S>Invoke-VrGetSeedsForDisks</S>
+                <S>Invoke-VrGetTaskInfo</S>
+                <S>Invoke-VrGetVcStoragePolicies</S>
+                <S>Invoke-VrGetVmCapability</S>
+                <S>Invoke-VrGetVrCapableTargetDatastores</S>
+                <S>Invoke-VrGetVrInfo</S>
+                <S>Invoke-VrGetVrInfoInPairing</S>
+                <S>Invoke-VrGetVrPairing</S>
+                <S>Invoke-VrGetVrPairingIssues</S>
+                <S>Invoke-VrGetVrPairings</S>
+                <S>Invoke-VrGetVrServer</S>
+                <S>Invoke-VrGetVrServerInPairing</S>
+                <S>Invoke-VrOperation</S>
+                <S>Invoke-VrPairVr</S>
+                <S>Invoke-VrPauseReplication</S>
+                <S>Invoke-VrReconfigureReplication</S>
+                <S>Invoke-VrReconnectVrPairing</S>
+                <S>Invoke-VrReconnectVrServer</S>
+                <S>Invoke-VrReconnectVrServerInPairing</S>
+                <S>Invoke-VrRegisterVrServer</S>
+                <S>Invoke-VrRegisterVrServerInPairing</S>
+                <S>Invoke-VrResumeReplication</S>
+                <S>Invoke-VrSyncReplication</S>
+                <S>Invoke-VrUnconfigureReplication</S>
+                <S>Invoke-VrUnregisterVrServer</S>
+                <S>Invoke-VrUnregisterVrServerInPairing</S>
+                <S>Set-VrOperationParameter</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-VrServer</S>
+                <S>Disconnect-VrServer</S>
+                <S>Get-VrOperation</S>
+                <S>Initialize-VrConfigureReplicationSpec</S>
+                <S>Initialize-VrConfigureReplicationVmDisk</S>
+                <S>Initialize-VrDatastoreBrowserRequest</S>
+                <S>Initialize-VrDatastoreBrowserResultDrResponseEntity</S>
+                <S>Initialize-VrDatastoreDrResponseEntity</S>
+                <S>Initialize-VrDatastorePathData</S>
+                <S>Initialize-VrIssueInfoDrResponseEntity</S>
+                <S>Initialize-VrPairingSpec</S>
+                <S>Initialize-VrPairingSpecPairPscInfo</S>
+                <S>Initialize-VrReconfigureReplicationSpec</S>
+                <S>Initialize-VrReplicatedVmDiskDrResponseEntity</S>
+                <S>Initialize-VrSessionIdData</S>
+                <S>Initialize-VrSessionInfo</S>
+                <S>Initialize-VrStoragePolicyComplianceCheckDataDrResponseEntity</S>
+                <S>Initialize-VrStoragePolicyDrResponseEntity</S>
+                <S>Initialize-VrStringDrData</S>
+                <S>Initialize-VrVirtualMachineDrResponseEntity</S>
+                <S>Initialize-VrVmDisk</S>
+                <S>Initialize-VrVmDiskDrResponseEntity</S>
+                <S>Initialize-VrVmDiskFindSeedSpec</S>
+                <S>Initialize-VrVmDiskIdentifier</S>
+                <S>Initialize-VrVmDiskSeedInformationDrResponseEntity</S>
+                <S>Invoke-VrBrowseDatastore</S>
+                <S>Invoke-VrCheckStoragePolicyCompliance</S>
+                <S>Invoke-VrConfigureReplication</S>
+                <S>Invoke-VrDeleteVrPairing</S>
+                <S>Invoke-VrDestroyReplication</S>
+                <S>Invoke-VrGetAllReplications</S>
+                <S>Invoke-VrGetAllVrDetailsInPairing</S>
+                <S>Invoke-VrGetAllVrServers</S>
+                <S>Invoke-VrGetAllVrServersInPairing</S>
+                <S>Invoke-VrGetLocalVmDisks</S>
+                <S>Invoke-VrGetLocalVms</S>
+                <S>Invoke-VrGetRecentTasksInfo</S>
+                <S>Invoke-VrGetReplicatedVmDisks</S>
+                <S>Invoke-VrGetReplicationInfo</S>
+                <S>Invoke-VrGetReplicationsCount</S>
+                <S>Invoke-VrGetReplicationsIssues</S>
+                <S>Invoke-VrGetSeedsForDisks</S>
+                <S>Invoke-VrGetTaskInfo</S>
+                <S>Invoke-VrGetVcStoragePolicies</S>
+                <S>Invoke-VrGetVmCapability</S>
+                <S>Invoke-VrGetVrCapableTargetDatastores</S>
+                <S>Invoke-VrGetVrInfo</S>
+                <S>Invoke-VrGetVrInfoInPairing</S>
+                <S>Invoke-VrGetVrPairing</S>
+                <S>Invoke-VrGetVrPairingIssues</S>
+                <S>Invoke-VrGetVrPairings</S>
+                <S>Invoke-VrGetVrServer</S>
+                <S>Invoke-VrGetVrServerInPairing</S>
+                <S>Invoke-VrOperation</S>
+                <S>Invoke-VrPairVr</S>
+                <S>Invoke-VrPauseReplication</S>
+                <S>Invoke-VrReconfigureReplication</S>
+                <S>Invoke-VrReconnectVrPairing</S>
+                <S>Invoke-VrReconnectVrServer</S>
+                <S>Invoke-VrReconnectVrServerInPairing</S>
+                <S>Invoke-VrRegisterVrServer</S>
+                <S>Invoke-VrRegisterVrServerInPairing</S>
+                <S>Invoke-VrResumeReplication</S>
+                <S>Invoke-VrSyncReplication</S>
+                <S>Invoke-VrUnconfigureReplication</S>
+                <S>Invoke-VrUnregisterVrServer</S>
+                <S>Invoke-VrUnregisterVrServerInPairing</S>
+                <S>Set-VrOperationParameter</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Common</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Common/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains cmdlets for managing VMware.Sdk.Vr API.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2007139</S>
+          <S N="downloadCount">4427829</S>
+          <S N="packageSize">569061</S>
+          <S N="published">7/25/2024 1:03:54 PM +03:00</S>
+          <S N="created">7/25/2024 1:03:54 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Connect-VrServer PSCommand_Connect-VrServer PSCmdlet_Disconnect-VrServer PSCommand_Disconnect-VrServer PSCmdlet_Get-VrOperation PSCommand_Get-VrOperation PSCmdlet_Initialize-VrConfigureReplicationSpec PSCommand_Initialize-VrConfigureReplicationSpec PSCmdlet_Initialize-VrConfigureReplicationVmDisk PSCommand_Initialize-VrConfigureReplicationVmDisk PSCmdlet_Initialize-VrDatastoreBrowserRequest PSCommand_Initialize-VrDatastoreBrowserRequest PSCmdlet_Initialize-VrDatastoreBrowserResultDrResponseEntity PSCommand_Initialize-VrDatastoreBrowserResultDrResponseEntity PSCmdlet_Initialize-VrDatastoreDrResponseEntity PSCommand_Initialize-VrDatastoreDrResponseEntity PSCmdlet_Initialize-VrDatastorePathData PSCommand_Initialize-VrDatastorePathData PSCmdlet_Initialize-VrIssueInfoDrResponseEntity PSCommand_Initialize-VrIssueInfoDrResponseEntity PSCmdlet_Initialize-VrPairingSpec PSCommand_Initialize-VrPairingSpec PSCmdlet_Initialize-VrPairingSpecPairPscInfo PSCommand_Initialize-VrPairingSpecPairPscInfo PSCmdlet_Initialize-VrReconfigureReplicationSpec PSCommand_Initialize-VrReconfigureReplicationSpec PSCmdlet_Initialize-VrReplicatedVmDiskDrResponseEntity PSCommand_Initialize-VrReplicatedVmDiskDrResponseEntity PSCmdlet_Initialize-VrSessionIdData PSCommand_Initialize-VrSessionIdData PSCmdlet_Initialize-VrSessionInfo PSCommand_Initialize-VrSessionInfo PSCmdlet_Initialize-VrStoragePolicyComplianceCheckDataDrResponseEntity PSCommand_Initialize-VrStoragePolicyComplianceCheckDataDrResponseEntity PSCmdlet_Initialize-VrStoragePolicyDrResponseEntity PSCommand_Initialize-VrStoragePolicyDrResponseEntity PSCmdlet_Initialize-VrStringDrData PSCommand_Initialize-VrStringDrData PSCmdlet_Initialize-VrVirtualMachineDrResponseEntity PSCommand_Initialize-VrVirtualMachineDrResponseEntity PSCmdlet_Initialize-VrVmDisk PSCommand_Initialize-VrVmDisk PSCmdlet_Initialize-VrVmDiskDrResponseEntity PSCommand_Initialize-VrVmDiskDrResponseEntity PSCmdlet_Initialize-VrVmDiskFindSeedSpec PSCommand_Initialize-VrVmDiskFindSeedSpec PSCmdlet_Initialize-VrVmDiskIdentifier PSCommand_Initialize-VrVmDiskIdentifier PSCmdlet_Initialize-VrVmDiskSeedInformationDrResponseEntity PSCommand_Initialize-VrVmDiskSeedInformationDrResponseEntity PSCmdlet_Invoke-VrBrowseDatastore PSCommand_Invoke-VrBrowseDatastore PSCmdlet_Invoke-VrCheckStoragePolicyCompliance PSCommand_Invoke-VrCheckStoragePolicyCompliance PSCmdlet_Invoke-VrConfigureReplication PSCommand_Invoke-VrConfigureReplication PSCmdlet_Invoke-VrDeleteVrPairing PSCommand_Invoke-VrDeleteVrPairing PSCmdlet_Invoke-VrDestroyReplication PSCommand_Invoke-VrDestroyReplication PSCmdlet_Invoke-VrGetAllReplications PSCommand_Invoke-VrGetAllReplications PSCmdlet_Invoke-VrGetAllVrDetailsInPairing PSCommand_Invoke-VrGetAllVrDetailsInPairing PSCmdlet_Invoke-VrGetAllVrServers PSCommand_Invoke-VrGetAllVrServers PSCmdlet_Invoke-VrGetAllVrServersInPairing PSCommand_Invoke-VrGetAllVrServersInPairing PSCmdlet_Invoke-VrGetLocalVmDisks PSCommand_Invoke-VrGetLocalVmDisks PSCmdlet_Invoke-VrGetLocalVms PSCommand_Invoke-VrGetLocalVms PSCmdlet_Invoke-VrGetRecentTasksInfo PSCommand_Invoke-VrGetRecentTasksInfo PSCmdlet_Invoke-VrGetReplicatedVmDisks PSCommand_Invoke-VrGetReplicatedVmDisks PSCmdlet_Invoke-VrGetReplicationInfo PSCommand_Invoke-VrGetReplicationInfo PSCmdlet_Invoke-VrGetReplicationsCount PSCommand_Invoke-VrGetReplicationsCount PSCmdlet_Invoke-VrGetReplicationsIssues PSCommand_Invoke-VrGetReplicationsIssues PSCmdlet_Invoke-VrGetSeedsForDisks PSCommand_Invoke-VrGetSeedsForDisks PSCmdlet_Invoke-VrGetTaskInfo PSCommand_Invoke-VrGetTaskInfo PSCmdlet_Invoke-VrGetVcStoragePolicies PSCommand_Invoke-VrGetVcStoragePolicies PSCmdlet_Invoke-VrGetVmCapability PSCommand_Invoke-VrGetVmCapability PSCmdlet_Invoke-VrGetVrCapableTargetDatastores PSCommand_Invoke-VrGetVrCapableTargetDatastores PSCmdlet_Invoke-VrGetVrInfo PSCommand_Invoke-VrGetVrInfo PSCmdlet_Invoke-VrGetVrInfoInPairing PSCommand_Invoke-VrGetVrInfoInPairing PSCmdlet_Invoke-VrGetVrPairing PSCommand_Invoke-VrGetVrPairing PSCmdlet_Invoke-VrGetVrPairingIssues PSCommand_Invoke-VrGetVrPairingIssues PSCmdlet_Invoke-VrGetVrPairings PSCommand_Invoke-VrGetVrPairings PSCmdlet_Invoke-VrGetVrServer PSCommand_Invoke-VrGetVrServer PSCmdlet_Invoke-VrGetVrServerInPairing PSCommand_Invoke-VrGetVrServerInPairing PSCmdlet_Invoke-VrOperation PSCommand_Invoke-VrOperation PSCmdlet_Invoke-VrPairVr PSCommand_Invoke-VrPairVr PSCmdlet_Invoke-VrPauseReplication PSCommand_Invoke-VrPauseReplication PSCmdlet_Invoke-VrReconfigureReplication PSCommand_Invoke-VrReconfigureReplication PSCmdlet_Invoke-VrReconnectVrPairing PSCommand_Invoke-VrReconnectVrPairing PSCmdlet_Invoke-VrReconnectVrServer PSCommand_Invoke-VrReconnectVrServer PSCmdlet_Invoke-VrReconnectVrServerInPairing PSCommand_Invoke-VrReconnectVrServerInPairing PSCmdlet_Invoke-VrRegisterVrServer PSCommand_Invoke-VrRegisterVrServer PSCmdlet_Invoke-VrRegisterVrServerInPairing PSCommand_Invoke-VrRegisterVrServerInPairing PSCmdlet_Invoke-VrResumeReplication PSCommand_Invoke-VrResumeReplication PSCmdlet_Invoke-VrSyncReplication PSCommand_Invoke-VrSyncReplication PSCmdlet_Invoke-VrUnconfigureReplication PSCommand_Invoke-VrUnconfigureReplication PSCmdlet_Invoke-VrUnregisterVrServer PSCommand_Invoke-VrUnregisterVrServer PSCmdlet_Invoke-VrUnregisterVrServerInPairing PSCommand_Invoke-VrUnregisterVrServerInPairing PSCmdlet_Set-VrOperationParameter PSCommand_Set-VrOperationParameter PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.Vr.nuspec|EULA.rtf|VMware.Sdk.Vr.psm1|net472\VMware.Bindings.Vr.xml|net472\VMware.Sdk.Vr.Cmdlets.dll-Help.xml|net472\VMware.Sdk.Vr.Register.ArgumentCompleters.ps1|netcoreapp3.1\VMware.Bindings.Vr.dll|netcoreapp3.1\VMware.Bindings.Vr.xml|netcoreapp3.1\VMware.Sdk.Vr.Cmdlets.dll|netcoreapp3.1\VMware.Sdk.Vr.Cmdlets.dll-Help.xml|netcoreapp3.1\VMware.Sdk.Vr.psd1|netcoreapp3.1\VMware.Sdk.Vr.xml|VMware.Sdk.Vr.cat|VMware.Sdk.Vr.psd1|net472\VMware.Bindings.Vr.dll|net472\VMware.Sdk.Vr.Cmdlets.dll|net472\VMware.Sdk.Vr.psd1|net472\VMware.Sdk.Vr.xml</S>
+          <S N="GUID">434764e4-7d93-45d7-9a84-12cd99b546fc</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.Vr/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

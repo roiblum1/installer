@@ -1,0 +1,26 @@
+<ComponentDescriptor>
+  <Name>VMware.VimAutomation.WorkloadManagement.Commands</Name>
+  <Assembly>VMware.VimAutomation.WorkloadManagement.Commands</Assembly>
+  <ImplementingType>VMware.VimAutomation.WorkloadManagement.Commands.CommandsComponent</ImplementingType>
+  <IsSnapin>true</IsSnapin>
+  <ProvidedServiceList>
+  </ProvidedServiceList>
+  <RequiredServiceList>
+    <ServiceDescriptor>
+      <Name>WMService</Name>
+      <Version>1.0</Version>
+    </ServiceDescriptor>
+  </RequiredServiceList>
+  <ExtendedServiceList>
+  </ExtendedServiceList>
+  <Version>
+    <Major>13</Major>
+    <Minor>3</Minor>
+    <Revision>0</Revision>
+    <Build>24145081</Build>
+    <Company>Broadcom, Inc.</Company>
+    <Copyright>Copyright (c) Broadcom. All Rights Reserved.</Copyright>
+    <UserFriendlyVersion>VMware Workload Management PowerCLI Component PowerCLI Component 13.3 build 24145081</UserFriendlyVersion>
+    <Description>PowerShell commands for automation of workloads related functionality in vSphere.</Description>
+  </Version>
+</ComponentDescriptor>

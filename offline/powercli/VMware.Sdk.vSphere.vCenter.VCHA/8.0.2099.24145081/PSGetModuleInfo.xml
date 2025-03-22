@@ -1,0 +1,206 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter.VCHA</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.VCHA.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:53:35+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetClusterActive</S>
+                <S>Invoke-DeployVchaClusterAsync</S>
+                <S>Invoke-FailoverVchaClusterAsync</S>
+                <S>Invoke-GetVchaCluster</S>
+                <S>Invoke-UndeployVchaClusterAsync</S>
+                <S>Invoke-GetVchaClusterDeploymentType</S>
+                <S>Invoke-GetVchaClusterMode</S>
+                <S>Invoke-SetClusterModeAsync</S>
+                <S>Invoke-GetVchaOperations</S>
+                <S>Invoke-CheckClusterPassive</S>
+                <S>Invoke-RedeployClusterPassiveAsync</S>
+                <S>Invoke-CheckClusterWitness</S>
+                <S>Invoke-RedeployClusterWitnessAsync</S>
+                <S>Initialize-VchaClusterActiveGetRequestBody</S>
+                <S>Initialize-VchaClusterActiveSpec</S>
+                <S>Initialize-VchaClusterDeploySpec</S>
+                <S>Initialize-VchaClusterFailoverTaskRequestBody</S>
+                <S>Initialize-VchaClusterGetRequestBody</S>
+                <S>Initialize-VchaClusterModeSetTaskRequestBody</S>
+                <S>Initialize-VchaClusterNodeVmInfo</S>
+                <S>Initialize-VchaClusterPassiveCheckSpec</S>
+                <S>Initialize-VchaClusterPassiveRedeploySpec</S>
+                <S>Initialize-VchaClusterPassiveSpec</S>
+                <S>Initialize-VchaClusterUndeploySpec</S>
+                <S>Initialize-VchaClusterVmInfo</S>
+                <S>Initialize-VchaClusterWitnessCheckSpec</S>
+                <S>Initialize-VchaClusterWitnessRedeploySpec</S>
+                <S>Initialize-VchaClusterWitnessSpec</S>
+                <S>Initialize-VchaConnectionSpec</S>
+                <S>Initialize-VchaCredentialsSpec</S>
+                <S>Initialize-VchaDiskSpec</S>
+                <S>Initialize-VchaIpSpec</S>
+                <S>Initialize-VchaIpv4Spec</S>
+                <S>Initialize-VchaIpv6Spec</S>
+                <S>Initialize-VchaPlacementSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetClusterActive</S>
+                <S>Invoke-DeployVchaClusterAsync</S>
+                <S>Invoke-FailoverVchaClusterAsync</S>
+                <S>Invoke-GetVchaCluster</S>
+                <S>Invoke-UndeployVchaClusterAsync</S>
+                <S>Invoke-GetVchaClusterDeploymentType</S>
+                <S>Invoke-GetVchaClusterMode</S>
+                <S>Invoke-SetClusterModeAsync</S>
+                <S>Invoke-GetVchaOperations</S>
+                <S>Invoke-CheckClusterPassive</S>
+                <S>Invoke-RedeployClusterPassiveAsync</S>
+                <S>Invoke-CheckClusterWitness</S>
+                <S>Invoke-RedeployClusterWitnessAsync</S>
+                <S>Initialize-VchaClusterActiveGetRequestBody</S>
+                <S>Initialize-VchaClusterActiveSpec</S>
+                <S>Initialize-VchaClusterDeploySpec</S>
+                <S>Initialize-VchaClusterFailoverTaskRequestBody</S>
+                <S>Initialize-VchaClusterGetRequestBody</S>
+                <S>Initialize-VchaClusterModeSetTaskRequestBody</S>
+                <S>Initialize-VchaClusterNodeVmInfo</S>
+                <S>Initialize-VchaClusterPassiveCheckSpec</S>
+                <S>Initialize-VchaClusterPassiveRedeploySpec</S>
+                <S>Initialize-VchaClusterPassiveSpec</S>
+                <S>Initialize-VchaClusterUndeploySpec</S>
+                <S>Initialize-VchaClusterVmInfo</S>
+                <S>Initialize-VchaClusterWitnessCheckSpec</S>
+                <S>Initialize-VchaClusterWitnessRedeploySpec</S>
+                <S>Initialize-VchaClusterWitnessSpec</S>
+                <S>Initialize-VchaConnectionSpec</S>
+                <S>Initialize-VchaCredentialsSpec</S>
+                <S>Initialize-VchaDiskSpec</S>
+                <S>Initialize-VchaIpSpec</S>
+                <S>Initialize-VchaIpv4Spec</S>
+                <S>Initialize-VchaIpv6Spec</S>
+                <S>Initialize-VchaPlacementSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.VCHA.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2422623</S>
+          <S N="downloadCount">6836559</S>
+          <S N="packageSize">361159</S>
+          <S N="published">7/25/2024 12:53:35 PM +03:00</S>
+          <S N="created">7/25/2024 12:53:35 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-GetClusterActive PSCommand_Invoke-GetClusterActive PSFunction_Invoke-DeployVchaClusterAsync PSCommand_Invoke-DeployVchaClusterAsync PSFunction_Invoke-FailoverVchaClusterAsync PSCommand_Invoke-FailoverVchaClusterAsync PSFunction_Invoke-GetVchaCluster PSCommand_Invoke-GetVchaCluster PSFunction_Invoke-UndeployVchaClusterAsync PSCommand_Invoke-UndeployVchaClusterAsync PSFunction_Invoke-GetVchaClusterDeploymentType PSCommand_Invoke-GetVchaClusterDeploymentType PSFunction_Invoke-GetVchaClusterMode PSCommand_Invoke-GetVchaClusterMode PSFunction_Invoke-SetClusterModeAsync PSCommand_Invoke-SetClusterModeAsync PSFunction_Invoke-GetVchaOperations PSCommand_Invoke-GetVchaOperations PSFunction_Invoke-CheckClusterPassive PSCommand_Invoke-CheckClusterPassive PSFunction_Invoke-RedeployClusterPassiveAsync PSCommand_Invoke-RedeployClusterPassiveAsync PSFunction_Invoke-CheckClusterWitness PSCommand_Invoke-CheckClusterWitness PSFunction_Invoke-RedeployClusterWitnessAsync PSCommand_Invoke-RedeployClusterWitnessAsync PSFunction_Initialize-VchaClusterActiveGetRequestBody PSCommand_Initialize-VchaClusterActiveGetRequestBody PSFunction_Initialize-VchaClusterActiveSpec PSCommand_Initialize-VchaClusterActiveSpec PSFunction_Initialize-VchaClusterDeploySpec PSCommand_Initialize-VchaClusterDeploySpec PSFunction_Initialize-VchaClusterFailoverTaskRequestBody PSCommand_Initialize-VchaClusterFailoverTaskRequestBody PSFunction_Initialize-VchaClusterGetRequestBody PSCommand_Initialize-VchaClusterGetRequestBody PSFunction_Initialize-VchaClusterModeSetTaskRequestBody PSCommand_Initialize-VchaClusterModeSetTaskRequestBody PSFunction_Initialize-VchaClusterNodeVmInfo PSCommand_Initialize-VchaClusterNodeVmInfo PSFunction_Initialize-VchaClusterPassiveCheckSpec PSCommand_Initialize-VchaClusterPassiveCheckSpec PSFunction_Initialize-VchaClusterPassiveRedeploySpec PSCommand_Initialize-VchaClusterPassiveRedeploySpec PSFunction_Initialize-VchaClusterPassiveSpec PSCommand_Initialize-VchaClusterPassiveSpec PSFunction_Initialize-VchaClusterUndeploySpec PSCommand_Initialize-VchaClusterUndeploySpec PSFunction_Initialize-VchaClusterVmInfo PSCommand_Initialize-VchaClusterVmInfo PSFunction_Initialize-VchaClusterWitnessCheckSpec PSCommand_Initialize-VchaClusterWitnessCheckSpec PSFunction_Initialize-VchaClusterWitnessRedeploySpec PSCommand_Initialize-VchaClusterWitnessRedeploySpec PSFunction_Initialize-VchaClusterWitnessSpec PSCommand_Initialize-VchaClusterWitnessSpec PSFunction_Initialize-VchaConnectionSpec PSCommand_Initialize-VchaConnectionSpec PSFunction_Initialize-VchaCredentialsSpec PSCommand_Initialize-VchaCredentialsSpec PSFunction_Initialize-VchaDiskSpec PSCommand_Initialize-VchaDiskSpec PSFunction_Initialize-VchaIpSpec PSCommand_Initialize-VchaIpSpec PSFunction_Initialize-VchaIpv4Spec PSCommand_Initialize-VchaIpv4Spec PSFunction_Initialize-VchaIpv6Spec PSCommand_Initialize-VchaIpv6Spec PSFunction_Initialize-VchaPlacementSpec PSCommand_Initialize-VchaPlacementSpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.VCHA.nuspec|README.md|VMware.Sdk.vSphere.vCenter.VCHA.psd1|Api\ClusterApi.ps1|Api\OperationsApi.ps1|Model\VchaClusterActiveGetRequestBody.ps1|Model\VchaClusterFailoverTaskRequestBody.ps1|Model\VchaClusterNodeVmInfo.ps1|Model\VchaClusterPassiveSpec.ps1|Model\VchaClusterWitnessCheckSpec.ps1|Model\VchaConnectionSpec.ps1|Model\VchaIpSpec.ps1|Model\VchaIpv6Spec.ps1|VMware.Sdk.vSphere.vCenter.VCHA.cat|VMware.Sdk.vSphere.vCenter.VCHA.psm1|Api\DeploymentTypeApi.ps1|Api\PassiveApi.ps1|Model\VchaClusterActiveSpec.ps1|Model\VchaClusterGetRequestBody.ps1|Model\VchaClusterPassiveCheckSpec.ps1|Model\VchaClusterUndeploySpec.ps1|Model\VchaClusterWitnessRedeploySpec.ps1|Model\VchaCredentialsSpec.ps1|Model\VchaIpv4Spec.ps1|Model\VchaPlacementSpec.ps1|Api\ActiveApi.ps1|Api\ModeApi.ps1|Api\WitnessApi.ps1|Model\VchaClusterDeploySpec.ps1|Model\VchaClusterModeSetTaskRequestBody.ps1|Model\VchaClusterPassiveRedeploySpec.ps1|Model\VchaClusterVmInfo.ps1|Model\VchaClusterWitnessSpec.ps1|Model\VchaDiskSpec.ps1</S>
+          <S N="GUID">78528441-bdf1-4b1f-a4d6-b31213074abd</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter.VCHA/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

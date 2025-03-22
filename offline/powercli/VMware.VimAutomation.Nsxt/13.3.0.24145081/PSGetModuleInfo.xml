@@ -1,0 +1,148 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Nsxt</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerCLI NSXT cmdlets.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:02:11+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-NsxtServer</S>
+                <S>Disconnect-NsxtServer</S>
+                <S>Get-NsxtGlobalManagerService</S>
+                <S>Get-NsxtPolicyService</S>
+                <S>Get-NsxtService</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-NsxtServer</S>
+                <S>Disconnect-NsxtServer</S>
+                <S>Get-NsxtGlobalManagerService</S>
+                <S>Get-NsxtPolicyService</S>
+                <S>Get-NsxtService</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Cis.Core</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Cis.Core/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerCLI NSXT cmdlets.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3726237</S>
+          <S N="downloadCount">14371160</S>
+          <S N="packageSize">1574245</S>
+          <S N="published">7/25/2024 1:02:11 PM +03:00</S>
+          <S N="created">7/25/2024 1:02:11 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Connect-NsxtServer PSCommand_Connect-NsxtServer PSCmdlet_Disconnect-NsxtServer PSCommand_Disconnect-NsxtServer PSCmdlet_Get-NsxtGlobalManagerService PSCommand_Get-NsxtGlobalManagerService PSCmdlet_Get-NsxtPolicyService PSCommand_Get-NsxtPolicyService PSCmdlet_Get-NsxtService PSCommand_Get-NsxtService PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Nsxt.nuspec|EULA.rtf|VMware.VimAutomation.Nsxt.psd1|net472\ComponentDescriptor-VMware.VimAutomation.Nsxt.xml|net472\VMware.VimAutomation.Cis.Nsxt.Impl.dll|net472\VMware.VimAutomation.Cis.Nsxt.Types.dll|net472\VMware.VimAutomation.Nsxt.ps1|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Nsxt.Commands.xml|netcoreapp3.1\VMware.VimAutomation.Cis.Nsxt.Commands.dll|netcoreapp3.1\VMware.VimAutomation.Cis.Nsxt.Impl.dll|netcoreapp3.1\VMware.VimAutomation.Cis.Nsxt.Types.dll|netcoreapp3.1\VMware.VimAutomation.Nsxt.ps1|net472\Resources\metadata.json|VMware.VimAutomation.Nsxt.cat|VMware.VimAutomation.Nsxt.psm1|net472\VMware.VimAutomation.Cis.Nsxt.Commands.dll|net472\VMware.VimAutomation.Cis.Nsxt.Interop.dll|net472\VMware.VimAutomation.Nsxt.Format.ps1xml|net472\VMware.VimAutomation.Nsxt.psd1|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Nsxt.xml|netcoreapp3.1\VMware.VimAutomation.Cis.Nsxt.Commands.dll-Help.xml|netcoreapp3.1\VMware.VimAutomation.Cis.Nsxt.Interop.dll|netcoreapp3.1\VMware.VimAutomation.Nsxt.Format.ps1xml|netcoreapp3.1\VMware.VimAutomation.Nsxt.psd1|netcoreapp3.1\Resources\metadata.json|net472\ComponentDescriptor-VMware.VimAutomation.Nsxt.Commands.xml|net472\VMware.VimAutomation.Cis.Nsxt.Commands.dll-Help.xml</S>
+          <S N="GUID">657f911b-efe2-4ffe-af15-020d9cff91c4</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.VimAutomation.Nsxt/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

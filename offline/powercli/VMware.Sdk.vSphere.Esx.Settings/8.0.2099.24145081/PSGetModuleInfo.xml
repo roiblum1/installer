@@ -1,0 +1,670 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.Esx.Settings</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Esx.Settings.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:01:36+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-DeleteClusterDraftSoftwareAddOn</S>
+                <S>Invoke-DeleteHostDraftSoftwareAddOn</S>
+                <S>Invoke-GetClusterDraftSoftwareAddOn</S>
+                <S>Invoke-GetClusterSoftwareAddOn</S>
+                <S>Invoke-GetHostDraftSoftwareAddOn</S>
+                <S>Invoke-GetHostSoftwareAddOn</S>
+                <S>Invoke-SetClusterDraftSoftwareAddOn</S>
+                <S>Invoke-SetHostDraftSoftwareAddOn</S>
+                <S>Invoke-ListDepotContentAddOns</S>
+                <S>Invoke-GetClusterPoliciesApply</S>
+                <S>Invoke-GetDefaultsClustersPoliciesApply</S>
+                <S>Invoke-GetDefaultsHostsPoliciesApply</S>
+                <S>Invoke-GetHostPoliciesApply</S>
+                <S>Invoke-SetClusterPoliciesApply</S>
+                <S>Invoke-SetDefaultsClustersPoliciesApply</S>
+                <S>Invoke-SetDefaultsHostsPoliciesApply</S>
+                <S>Invoke-SetHostPoliciesApply</S>
+                <S>Invoke-GetClusterSoftwareReportsApplyImpact</S>
+                <S>Invoke-GetHostSoftwareReportsApplyImpact</S>
+                <S>Invoke-ListClusterConfigurationAuditRecords</S>
+                <S>Invoke-GetClusterDraftSoftwareBaseImage</S>
+                <S>Invoke-GetClusterSoftwareBaseImage</S>
+                <S>Invoke-GetHostDraftSoftwareBaseImage</S>
+                <S>Invoke-GetHostSoftwareBaseImage</S>
+                <S>Invoke-SetClusterDraftSoftwareBaseImage</S>
+                <S>Invoke-SetHostDraftSoftwareBaseImage</S>
+                <S>Invoke-ListDepotContentBaseImages</S>
+                <S>Invoke-GetClusterCommitSoftware</S>
+                <S>Invoke-GetHostCommitSoftware</S>
+                <S>Invoke-GetClusterSoftwareCompliance</S>
+                <S>Invoke-GetHostSoftwareCompliance</S>
+                <S>Invoke-UpdateClusterStorageDeviceOverridesComplianceStatusAsync</S>
+                <S>Invoke-DeleteClusterDraftComponentSoftware</S>
+                <S>Invoke-DeleteHostDraftComponentSoftware</S>
+                <S>Invoke-GetClusterComponentSoftware</S>
+                <S>Invoke-GetClusterDraftComponentSoftware</S>
+                <S>Invoke-GetHostComponentSoftware</S>
+                <S>Invoke-GetHostDraftComponentSoftware</S>
+                <S>Invoke-ListClusterDraftSoftwareComponents</S>
+                <S>Invoke-ListClusterSoftwareComponents</S>
+                <S>Invoke-ListDepotContentComponents</S>
+                <S>Invoke-ListHostDraftSoftwareComponents</S>
+                <S>Invoke-ListHostSoftwareComponents</S>
+                <S>Invoke-SetClusterDraftComponentSoftware</S>
+                <S>Invoke-SetHostDraftComponentSoftware</S>
+                <S>Invoke-UpdateClusterDraftSoftwareComponents</S>
+                <S>Invoke-UpdateHostDraftSoftwareComponents</S>
+                <S>Invoke-ApplyClusterConfigurationAsync</S>
+                <S>Invoke-CheckComplianceClusterConfigurationAsync</S>
+                <S>Invoke-ExportConfigClusterConfiguration</S>
+                <S>Invoke-ExtractHostConfiguration</S>
+                <S>Invoke-GetClusterConfiguration</S>
+                <S>Invoke-GetClusterEnablementConfiguration</S>
+                <S>Invoke-ImportConfigClusterConfigurationAsync</S>
+                <S>Invoke-PrecheckClusterConfigurationAsync</S>
+                <S>Invoke-ValidateClusterConfigurationAsync</S>
+                <S>Invoke-GetDepotOfflineContent</S>
+                <S>Invoke-GetDepotOnlineContent</S>
+                <S>Invoke-GetDepotsUmdsContent</S>
+                <S>Invoke-AddClusterDepotOverrides</S>
+                <S>Invoke-AddHostDepotOverrides</S>
+                <S>Invoke-GetClusterDepotOverrides</S>
+                <S>Invoke-GetHostDepotOverrides</S>
+                <S>Invoke-RemoveClusterDepotOverrides</S>
+                <S>Invoke-RemoveHostDepotOverrides</S>
+                <S>Invoke-SyncDepotsAsync</S>
+                <S>Invoke-GetClusterSoftwareReportsHardwareCompatibilityDetails</S>
+                <S>Invoke-ApplyClusterDraft</S>
+                <S>Invoke-CheckComplianceClusterDraftAsync</S>
+                <S>Invoke-CommitClusterDraftAsync</S>
+                <S>Invoke-CommitHostDraftAsync</S>
+                <S>Invoke-CreateClusterConfigurationDrafts</S>
+                <S>Invoke-CreateClusterSoftwareDrafts</S>
+                <S>Invoke-CreateHostSoftwareDrafts</S>
+                <S>Invoke-DeleteClusterDraftConfiguration</S>
+                <S>Invoke-DeleteClusterDraftSoftware</S>
+                <S>Invoke-DeleteHostDraftSoftware</S>
+                <S>Invoke-ExportConfigClusterDraft</S>
+                <S>Invoke-GetClusterDraft</S>
+                <S>Invoke-GetClusterDraftConfiguration</S>
+                <S>Invoke-GetClusterDraftSoftware</S>
+                <S>Invoke-GetClusterDraft_0</S>
+                <S>Invoke-GetHostDraftSoftware</S>
+                <S>Invoke-ImportFromHostClusterDraftAsync</S>
+                <S>Invoke-ImportSoftwareSpecClusterSoftwareDrafts</S>
+                <S>Invoke-ImportSoftwareSpecHostSoftwareDrafts</S>
+                <S>Invoke-ListClusterConfigurationDrafts</S>
+                <S>Invoke-ListClusterSoftwareDrafts</S>
+                <S>Invoke-ListHostSoftwareDrafts</S>
+                <S>Invoke-PrecheckClusterDraftAsync</S>
+                <S>Invoke-ScanClusterDraftAsync</S>
+                <S>Invoke-ScanHostDraftAsync</S>
+                <S>Invoke-UpdateClusterDraft</S>
+                <S>Invoke-ValidateClusterDraftAsync</S>
+                <S>Invoke-ValidateHostDraftAsync</S>
+                <S>Invoke-GetClusterPoliciesApplyEffective</S>
+                <S>Invoke-GetClustersPoliciesApplyEffective</S>
+                <S>Invoke-GetHostPoliciesApplyEffective</S>
+                <S>Invoke-GetHostsPoliciesApplyEffective</S>
+                <S>Invoke-GetClusterDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-GetClusterSoftwareEffectiveComponents</S>
+                <S>Invoke-GetHostDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-GetHostSoftwareEffectiveComponents</S>
+                <S>Invoke-ListClusterDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-ListClusterSoftwareEffectiveComponents</S>
+                <S>Invoke-ListHostDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-ListHostSoftwareEffectiveComponents</S>
+                <S>Invoke-CheckClusterReportsHardwareCompatibilityAsync</S>
+                <S>Invoke-GetClusterSoftwareReportsHardwareCompatibility</S>
+                <S>Invoke-DeleteClusterDraftSoftwareHardwareSupport</S>
+                <S>Invoke-GetClusterDraftSoftwareHardwareSupport</S>
+                <S>Invoke-GetClusterSoftwareHardwareSupport</S>
+                <S>Invoke-SetClusterDraftSoftwareHardwareSupport</S>
+                <S>Invoke-ExtractClusterInstalledImagesAsync</S>
+                <S>Invoke-GetClusterInstalledImages</S>
+                <S>Invoke-GetClusterConfigurationReportsLastApplyResult</S>
+                <S>Invoke-GetClusterSoftwareReportsLastApplyResult</S>
+                <S>Invoke-GetHostSoftwareReportsLastApplyResult</S>
+                <S>Invoke-GetClusterSoftwareReportsLastCheckResult</S>
+                <S>Invoke-GetHostSoftwareReportsLastCheckResult</S>
+                <S>Invoke-GetClusterConfigurationReportsLastComplianceResult</S>
+                <S>Invoke-GetClusterConfigurationReportsLastPrecheckResult</S>
+                <S>Invoke-ListHardwareSupportManagers</S>
+                <S>Invoke-CreateDepotsOfflineAsync</S>
+                <S>Invoke-CreateFromHostDepotsOfflineAsync</S>
+                <S>Invoke-DeleteDepotOffline</S>
+                <S>Invoke-DeleteDepotOfflineAsync</S>
+                <S>Invoke-GetDepotOffline</S>
+                <S>Invoke-ListDepotsOffline</S>
+                <S>Invoke-CreateDepotsOnline</S>
+                <S>Invoke-DeleteDepotOnline</S>
+                <S>Invoke-DeleteDepotOnlineAsync</S>
+                <S>Invoke-FlushDepotOnlineAsync</S>
+                <S>Invoke-GetDepotOnline</S>
+                <S>Invoke-ListDepotsOnline</S>
+                <S>Invoke-UpdateDepotOnline</S>
+                <S>Invoke-ListManagerHardwareSupportPackages</S>
+                <S>Invoke-GetClusterConfigurationReportsRecentTasks</S>
+                <S>Invoke-GenerateClusterSoftwareRecommendationsAsync</S>
+                <S>Invoke-GenerateHostSoftwareRecommendationsAsync</S>
+                <S>Invoke-GetClusterSoftwareRecommendations</S>
+                <S>Invoke-GetHostSoftwareRecommendations</S>
+                <S>Invoke-DeleteClusterDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-DeleteHostDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetClusterComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetClusterDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetHostComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetHostDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-ListClusterDraftSoftwareRemovedComponents</S>
+                <S>Invoke-ListClusterSoftwareRemovedComponents</S>
+                <S>Invoke-ListHostDraftSoftwareRemovedComponents</S>
+                <S>Invoke-ListHostSoftwareRemovedComponents</S>
+                <S>Invoke-SetClusterDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-SetHostDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetClusterConfigurationSchema</S>
+                <S>Invoke-ApplyClusterSoftwareAsync</S>
+                <S>Invoke-ApplyHostSoftwareAsync</S>
+                <S>Invoke-CheckClusterEnablementSoftwareAsync</S>
+                <S>Invoke-CheckClusterSoftwareAsync</S>
+                <S>Invoke-CheckHostEnablementSoftwareAsync</S>
+                <S>Invoke-CheckHostSoftwareAsync</S>
+                <S>Invoke-ExportClusterSoftware</S>
+                <S>Invoke-ExportHostSoftware</S>
+                <S>Invoke-GetClusterEnablementSoftware</S>
+                <S>Invoke-GetClusterSoftware</S>
+                <S>Invoke-GetHostEnablementSoftware</S>
+                <S>Invoke-GetHostSoftware</S>
+                <S>Invoke-ScanClusterSoftwareAsync</S>
+                <S>Invoke-ScanHostSoftwareAsync</S>
+                <S>Invoke-SetClusterEnablementSoftwareAsync</S>
+                <S>Invoke-SetHostEnablementSoftwareAsync</S>
+                <S>Invoke-StageClusterSoftwareAsync</S>
+                <S>Invoke-StageHostSoftwareAsync</S>
+                <S>Invoke-DeleteClusterSolutionAsync</S>
+                <S>Invoke-DeleteHostSolutionAsync</S>
+                <S>Invoke-GetClusterSolutionSoftware</S>
+                <S>Invoke-GetHostSolutionSoftware</S>
+                <S>Invoke-ListClusterSoftwareSolutions</S>
+                <S>Invoke-ListHostSoftwareSolutions</S>
+                <S>Invoke-SetClusterSolutionAsync</S>
+                <S>Invoke-SetHostSolutionAsync</S>
+                <S>Invoke-GetDepotsSyncSchedule</S>
+                <S>Invoke-SetDepotsSyncSchedule</S>
+                <S>Invoke-CancelClusterConfigurationTransition</S>
+                <S>Invoke-CheckEligibilityClusterConfigurationTransitionAsync</S>
+                <S>Invoke-EnableClusterConfigurationTransitionAsync</S>
+                <S>Invoke-ExportConfigClusterConfigurationTransition</S>
+                <S>Invoke-ExportSchemaClusterConfigurationTransition</S>
+                <S>Invoke-GetClusterEnablementConfigurationTransition</S>
+                <S>Invoke-ImportFromFileClusterConfigurationTransition</S>
+                <S>Invoke-ImportFromHostClusterConfigurationTransitionAsync</S>
+                <S>Invoke-PrecheckClusterConfigurationTransitionAsync</S>
+                <S>Invoke-ValidateConfigClusterConfigurationTransitionAsync</S>
+                <S>Invoke-DeleteDepotsUmds</S>
+                <S>Invoke-DeleteDepotsUmdsAsync</S>
+                <S>Invoke-GetDepotsUmds</S>
+                <S>Invoke-SetDepotsUmds</S>
+                <S>Invoke-UpdateDepotsUmds</S>
+                <S>Invoke-UpdateClusterStorageDeviceOverridesVcgEntriesAsync</S>
+                <S>Invoke-GetManagerPkgVersionPackages</S>
+                <S>Invoke-GetNameVersionAddOns</S>
+                <S>Invoke-GetNameVersionComponents</S>
+                <S>Invoke-GetVersionBaseImages</S>
+                <S>Initialize-SettingsAddOnSpec</S>
+                <S>Initialize-SettingsBaseImageSpec</S>
+                <S>Initialize-SettingsClustersConfigurationApplySpec</S>
+                <S>Initialize-SettingsClustersConfigurationAuditRecordsTimePeriod</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsApplySpec</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsCreateSpec</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsImportFromHostTaskRequestBody</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsUpdateSpec</S>
+                <S>Initialize-SettingsClustersConfigurationImportSpec</S>
+                <S>Initialize-SettingsClustersDepotOverridesDepot</S>
+                <S>Initialize-SettingsClustersEnablementConfigurationTransitionFileSpec</S>
+                <S>Initialize-SettingsClustersEnablementSoftwareCheckSpec</S>
+                <S>Initialize-SettingsClustersEnablementSoftwareEnableSpec</S>
+                <S>Initialize-SettingsClustersPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsClustersPoliciesApplyEffectiveEffectivePolicySpec</S>
+                <S>Initialize-SettingsClustersPoliciesApplyEffectiveFailureAction</S>
+                <S>Initialize-SettingsClustersPoliciesApplyEffectiveParallelRemediationAction</S>
+                <S>Initialize-SettingsClustersPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsClustersPoliciesApplyParallelRemediationAction</S>
+                <S>Initialize-SettingsClustersPoliciesConfigManagerPolicySpec</S>
+                <S>Initialize-SettingsClustersSoftwareApplySpec</S>
+                <S>Initialize-SettingsClustersSoftwareCheckSpec</S>
+                <S>Initialize-SettingsClustersSoftwareDraftsCommitSpec</S>
+                <S>Initialize-SettingsClustersSoftwareDraftsImportSpec</S>
+                <S>Initialize-SettingsClustersSoftwareDraftsSoftwareComponentsUpdateSpec</S>
+                <S>Initialize-SettingsClustersSoftwareExportSpec</S>
+                <S>Initialize-SettingsClustersSoftwareRecommendationsFilterSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusKey</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusReclassificationSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusUpdateSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesKey</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesProductSelectionSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesUpdateSpec</S>
+                <S>Initialize-SettingsClustersSoftwareStageSpec</S>
+                <S>Initialize-SettingsDefaultsClustersPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsDefaultsClustersPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsDefaultsClustersPoliciesApplyParallelRemediationAction</S>
+                <S>Initialize-SettingsDefaultsHostsPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsDefaultsHostsPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsDepotsOfflineConnectionSpec</S>
+                <S>Initialize-SettingsDepotsOfflineCreateSpec</S>
+                <S>Initialize-SettingsDepotsOfflineHostCredentials</S>
+                <S>Initialize-SettingsDepotsOnlineCreateSpec</S>
+                <S>Initialize-SettingsDepotsOnlineUpdateSpec</S>
+                <S>Initialize-SettingsDepotsSyncScheduleSchedule</S>
+                <S>Initialize-SettingsDepotsSyncScheduleSpec</S>
+                <S>Initialize-SettingsDepotsUmdsSetSpec</S>
+                <S>Initialize-SettingsDepotsUmdsUpdateSpec</S>
+                <S>Initialize-SettingsHardwareSupportPackageSpec</S>
+                <S>Initialize-SettingsHardwareSupportSpec</S>
+                <S>Initialize-SettingsHostsDepotOverridesDepot</S>
+                <S>Initialize-SettingsHostsEnablementSoftwareCheckSpec</S>
+                <S>Initialize-SettingsHostsEnablementSoftwareEnableSpec</S>
+                <S>Initialize-SettingsHostsPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsHostsPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsHostsSoftwareApplySpec</S>
+                <S>Initialize-SettingsHostsSoftwareCheckSpec</S>
+                <S>Initialize-SettingsHostsSoftwareDraftsCommitSpec</S>
+                <S>Initialize-SettingsHostsSoftwareDraftsImportSpec</S>
+                <S>Initialize-SettingsHostsSoftwareDraftsSoftwareComponentsUpdateSpec</S>
+                <S>Initialize-SettingsHostsSoftwareExportSpec</S>
+                <S>Initialize-SettingsHostsSoftwareStageSpec</S>
+                <S>Initialize-SettingsSolutionComponentSpec</S>
+                <S>Initialize-SettingsSolutionSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-DeleteClusterDraftSoftwareAddOn</S>
+                <S>Invoke-DeleteHostDraftSoftwareAddOn</S>
+                <S>Invoke-GetClusterDraftSoftwareAddOn</S>
+                <S>Invoke-GetClusterSoftwareAddOn</S>
+                <S>Invoke-GetHostDraftSoftwareAddOn</S>
+                <S>Invoke-GetHostSoftwareAddOn</S>
+                <S>Invoke-SetClusterDraftSoftwareAddOn</S>
+                <S>Invoke-SetHostDraftSoftwareAddOn</S>
+                <S>Invoke-ListDepotContentAddOns</S>
+                <S>Invoke-GetClusterPoliciesApply</S>
+                <S>Invoke-GetDefaultsClustersPoliciesApply</S>
+                <S>Invoke-GetDefaultsHostsPoliciesApply</S>
+                <S>Invoke-GetHostPoliciesApply</S>
+                <S>Invoke-SetClusterPoliciesApply</S>
+                <S>Invoke-SetDefaultsClustersPoliciesApply</S>
+                <S>Invoke-SetDefaultsHostsPoliciesApply</S>
+                <S>Invoke-SetHostPoliciesApply</S>
+                <S>Invoke-GetClusterSoftwareReportsApplyImpact</S>
+                <S>Invoke-GetHostSoftwareReportsApplyImpact</S>
+                <S>Invoke-ListClusterConfigurationAuditRecords</S>
+                <S>Invoke-GetClusterDraftSoftwareBaseImage</S>
+                <S>Invoke-GetClusterSoftwareBaseImage</S>
+                <S>Invoke-GetHostDraftSoftwareBaseImage</S>
+                <S>Invoke-GetHostSoftwareBaseImage</S>
+                <S>Invoke-SetClusterDraftSoftwareBaseImage</S>
+                <S>Invoke-SetHostDraftSoftwareBaseImage</S>
+                <S>Invoke-ListDepotContentBaseImages</S>
+                <S>Invoke-GetClusterCommitSoftware</S>
+                <S>Invoke-GetHostCommitSoftware</S>
+                <S>Invoke-GetClusterSoftwareCompliance</S>
+                <S>Invoke-GetHostSoftwareCompliance</S>
+                <S>Invoke-UpdateClusterStorageDeviceOverridesComplianceStatusAsync</S>
+                <S>Invoke-DeleteClusterDraftComponentSoftware</S>
+                <S>Invoke-DeleteHostDraftComponentSoftware</S>
+                <S>Invoke-GetClusterComponentSoftware</S>
+                <S>Invoke-GetClusterDraftComponentSoftware</S>
+                <S>Invoke-GetHostComponentSoftware</S>
+                <S>Invoke-GetHostDraftComponentSoftware</S>
+                <S>Invoke-ListClusterDraftSoftwareComponents</S>
+                <S>Invoke-ListClusterSoftwareComponents</S>
+                <S>Invoke-ListDepotContentComponents</S>
+                <S>Invoke-ListHostDraftSoftwareComponents</S>
+                <S>Invoke-ListHostSoftwareComponents</S>
+                <S>Invoke-SetClusterDraftComponentSoftware</S>
+                <S>Invoke-SetHostDraftComponentSoftware</S>
+                <S>Invoke-UpdateClusterDraftSoftwareComponents</S>
+                <S>Invoke-UpdateHostDraftSoftwareComponents</S>
+                <S>Invoke-ApplyClusterConfigurationAsync</S>
+                <S>Invoke-CheckComplianceClusterConfigurationAsync</S>
+                <S>Invoke-ExportConfigClusterConfiguration</S>
+                <S>Invoke-ExtractHostConfiguration</S>
+                <S>Invoke-GetClusterConfiguration</S>
+                <S>Invoke-GetClusterEnablementConfiguration</S>
+                <S>Invoke-ImportConfigClusterConfigurationAsync</S>
+                <S>Invoke-PrecheckClusterConfigurationAsync</S>
+                <S>Invoke-ValidateClusterConfigurationAsync</S>
+                <S>Invoke-GetDepotOfflineContent</S>
+                <S>Invoke-GetDepotOnlineContent</S>
+                <S>Invoke-GetDepotsUmdsContent</S>
+                <S>Invoke-AddClusterDepotOverrides</S>
+                <S>Invoke-AddHostDepotOverrides</S>
+                <S>Invoke-GetClusterDepotOverrides</S>
+                <S>Invoke-GetHostDepotOverrides</S>
+                <S>Invoke-RemoveClusterDepotOverrides</S>
+                <S>Invoke-RemoveHostDepotOverrides</S>
+                <S>Invoke-SyncDepotsAsync</S>
+                <S>Invoke-GetClusterSoftwareReportsHardwareCompatibilityDetails</S>
+                <S>Invoke-ApplyClusterDraft</S>
+                <S>Invoke-CheckComplianceClusterDraftAsync</S>
+                <S>Invoke-CommitClusterDraftAsync</S>
+                <S>Invoke-CommitHostDraftAsync</S>
+                <S>Invoke-CreateClusterConfigurationDrafts</S>
+                <S>Invoke-CreateClusterSoftwareDrafts</S>
+                <S>Invoke-CreateHostSoftwareDrafts</S>
+                <S>Invoke-DeleteClusterDraftConfiguration</S>
+                <S>Invoke-DeleteClusterDraftSoftware</S>
+                <S>Invoke-DeleteHostDraftSoftware</S>
+                <S>Invoke-ExportConfigClusterDraft</S>
+                <S>Invoke-GetClusterDraft</S>
+                <S>Invoke-GetClusterDraftConfiguration</S>
+                <S>Invoke-GetClusterDraftSoftware</S>
+                <S>Invoke-GetClusterDraft_0</S>
+                <S>Invoke-GetHostDraftSoftware</S>
+                <S>Invoke-ImportFromHostClusterDraftAsync</S>
+                <S>Invoke-ImportSoftwareSpecClusterSoftwareDrafts</S>
+                <S>Invoke-ImportSoftwareSpecHostSoftwareDrafts</S>
+                <S>Invoke-ListClusterConfigurationDrafts</S>
+                <S>Invoke-ListClusterSoftwareDrafts</S>
+                <S>Invoke-ListHostSoftwareDrafts</S>
+                <S>Invoke-PrecheckClusterDraftAsync</S>
+                <S>Invoke-ScanClusterDraftAsync</S>
+                <S>Invoke-ScanHostDraftAsync</S>
+                <S>Invoke-UpdateClusterDraft</S>
+                <S>Invoke-ValidateClusterDraftAsync</S>
+                <S>Invoke-ValidateHostDraftAsync</S>
+                <S>Invoke-GetClusterPoliciesApplyEffective</S>
+                <S>Invoke-GetClustersPoliciesApplyEffective</S>
+                <S>Invoke-GetHostPoliciesApplyEffective</S>
+                <S>Invoke-GetHostsPoliciesApplyEffective</S>
+                <S>Invoke-GetClusterDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-GetClusterSoftwareEffectiveComponents</S>
+                <S>Invoke-GetHostDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-GetHostSoftwareEffectiveComponents</S>
+                <S>Invoke-ListClusterDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-ListClusterSoftwareEffectiveComponents</S>
+                <S>Invoke-ListHostDraftSoftwareEffectiveComponents</S>
+                <S>Invoke-ListHostSoftwareEffectiveComponents</S>
+                <S>Invoke-CheckClusterReportsHardwareCompatibilityAsync</S>
+                <S>Invoke-GetClusterSoftwareReportsHardwareCompatibility</S>
+                <S>Invoke-DeleteClusterDraftSoftwareHardwareSupport</S>
+                <S>Invoke-GetClusterDraftSoftwareHardwareSupport</S>
+                <S>Invoke-GetClusterSoftwareHardwareSupport</S>
+                <S>Invoke-SetClusterDraftSoftwareHardwareSupport</S>
+                <S>Invoke-ExtractClusterInstalledImagesAsync</S>
+                <S>Invoke-GetClusterInstalledImages</S>
+                <S>Invoke-GetClusterConfigurationReportsLastApplyResult</S>
+                <S>Invoke-GetClusterSoftwareReportsLastApplyResult</S>
+                <S>Invoke-GetHostSoftwareReportsLastApplyResult</S>
+                <S>Invoke-GetClusterSoftwareReportsLastCheckResult</S>
+                <S>Invoke-GetHostSoftwareReportsLastCheckResult</S>
+                <S>Invoke-GetClusterConfigurationReportsLastComplianceResult</S>
+                <S>Invoke-GetClusterConfigurationReportsLastPrecheckResult</S>
+                <S>Invoke-ListHardwareSupportManagers</S>
+                <S>Invoke-CreateDepotsOfflineAsync</S>
+                <S>Invoke-CreateFromHostDepotsOfflineAsync</S>
+                <S>Invoke-DeleteDepotOffline</S>
+                <S>Invoke-DeleteDepotOfflineAsync</S>
+                <S>Invoke-GetDepotOffline</S>
+                <S>Invoke-ListDepotsOffline</S>
+                <S>Invoke-CreateDepotsOnline</S>
+                <S>Invoke-DeleteDepotOnline</S>
+                <S>Invoke-DeleteDepotOnlineAsync</S>
+                <S>Invoke-FlushDepotOnlineAsync</S>
+                <S>Invoke-GetDepotOnline</S>
+                <S>Invoke-ListDepotsOnline</S>
+                <S>Invoke-UpdateDepotOnline</S>
+                <S>Invoke-ListManagerHardwareSupportPackages</S>
+                <S>Invoke-GetClusterConfigurationReportsRecentTasks</S>
+                <S>Invoke-GenerateClusterSoftwareRecommendationsAsync</S>
+                <S>Invoke-GenerateHostSoftwareRecommendationsAsync</S>
+                <S>Invoke-GetClusterSoftwareRecommendations</S>
+                <S>Invoke-GetHostSoftwareRecommendations</S>
+                <S>Invoke-DeleteClusterDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-DeleteHostDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetClusterComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetClusterDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetHostComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetHostDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-ListClusterDraftSoftwareRemovedComponents</S>
+                <S>Invoke-ListClusterSoftwareRemovedComponents</S>
+                <S>Invoke-ListHostDraftSoftwareRemovedComponents</S>
+                <S>Invoke-ListHostSoftwareRemovedComponents</S>
+                <S>Invoke-SetClusterDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-SetHostDraftComponentSoftwareRemovedComponents</S>
+                <S>Invoke-GetClusterConfigurationSchema</S>
+                <S>Invoke-ApplyClusterSoftwareAsync</S>
+                <S>Invoke-ApplyHostSoftwareAsync</S>
+                <S>Invoke-CheckClusterEnablementSoftwareAsync</S>
+                <S>Invoke-CheckClusterSoftwareAsync</S>
+                <S>Invoke-CheckHostEnablementSoftwareAsync</S>
+                <S>Invoke-CheckHostSoftwareAsync</S>
+                <S>Invoke-ExportClusterSoftware</S>
+                <S>Invoke-ExportHostSoftware</S>
+                <S>Invoke-GetClusterEnablementSoftware</S>
+                <S>Invoke-GetClusterSoftware</S>
+                <S>Invoke-GetHostEnablementSoftware</S>
+                <S>Invoke-GetHostSoftware</S>
+                <S>Invoke-ScanClusterSoftwareAsync</S>
+                <S>Invoke-ScanHostSoftwareAsync</S>
+                <S>Invoke-SetClusterEnablementSoftwareAsync</S>
+                <S>Invoke-SetHostEnablementSoftwareAsync</S>
+                <S>Invoke-StageClusterSoftwareAsync</S>
+                <S>Invoke-StageHostSoftwareAsync</S>
+                <S>Invoke-DeleteClusterSolutionAsync</S>
+                <S>Invoke-DeleteHostSolutionAsync</S>
+                <S>Invoke-GetClusterSolutionSoftware</S>
+                <S>Invoke-GetHostSolutionSoftware</S>
+                <S>Invoke-ListClusterSoftwareSolutions</S>
+                <S>Invoke-ListHostSoftwareSolutions</S>
+                <S>Invoke-SetClusterSolutionAsync</S>
+                <S>Invoke-SetHostSolutionAsync</S>
+                <S>Invoke-GetDepotsSyncSchedule</S>
+                <S>Invoke-SetDepotsSyncSchedule</S>
+                <S>Invoke-CancelClusterConfigurationTransition</S>
+                <S>Invoke-CheckEligibilityClusterConfigurationTransitionAsync</S>
+                <S>Invoke-EnableClusterConfigurationTransitionAsync</S>
+                <S>Invoke-ExportConfigClusterConfigurationTransition</S>
+                <S>Invoke-ExportSchemaClusterConfigurationTransition</S>
+                <S>Invoke-GetClusterEnablementConfigurationTransition</S>
+                <S>Invoke-ImportFromFileClusterConfigurationTransition</S>
+                <S>Invoke-ImportFromHostClusterConfigurationTransitionAsync</S>
+                <S>Invoke-PrecheckClusterConfigurationTransitionAsync</S>
+                <S>Invoke-ValidateConfigClusterConfigurationTransitionAsync</S>
+                <S>Invoke-DeleteDepotsUmds</S>
+                <S>Invoke-DeleteDepotsUmdsAsync</S>
+                <S>Invoke-GetDepotsUmds</S>
+                <S>Invoke-SetDepotsUmds</S>
+                <S>Invoke-UpdateDepotsUmds</S>
+                <S>Invoke-UpdateClusterStorageDeviceOverridesVcgEntriesAsync</S>
+                <S>Invoke-GetManagerPkgVersionPackages</S>
+                <S>Invoke-GetNameVersionAddOns</S>
+                <S>Invoke-GetNameVersionComponents</S>
+                <S>Invoke-GetVersionBaseImages</S>
+                <S>Initialize-SettingsAddOnSpec</S>
+                <S>Initialize-SettingsBaseImageSpec</S>
+                <S>Initialize-SettingsClustersConfigurationApplySpec</S>
+                <S>Initialize-SettingsClustersConfigurationAuditRecordsTimePeriod</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsApplySpec</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsCreateSpec</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsImportFromHostTaskRequestBody</S>
+                <S>Initialize-SettingsClustersConfigurationDraftsUpdateSpec</S>
+                <S>Initialize-SettingsClustersConfigurationImportSpec</S>
+                <S>Initialize-SettingsClustersDepotOverridesDepot</S>
+                <S>Initialize-SettingsClustersEnablementConfigurationTransitionFileSpec</S>
+                <S>Initialize-SettingsClustersEnablementSoftwareCheckSpec</S>
+                <S>Initialize-SettingsClustersEnablementSoftwareEnableSpec</S>
+                <S>Initialize-SettingsClustersPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsClustersPoliciesApplyEffectiveEffectivePolicySpec</S>
+                <S>Initialize-SettingsClustersPoliciesApplyEffectiveFailureAction</S>
+                <S>Initialize-SettingsClustersPoliciesApplyEffectiveParallelRemediationAction</S>
+                <S>Initialize-SettingsClustersPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsClustersPoliciesApplyParallelRemediationAction</S>
+                <S>Initialize-SettingsClustersPoliciesConfigManagerPolicySpec</S>
+                <S>Initialize-SettingsClustersSoftwareApplySpec</S>
+                <S>Initialize-SettingsClustersSoftwareCheckSpec</S>
+                <S>Initialize-SettingsClustersSoftwareDraftsCommitSpec</S>
+                <S>Initialize-SettingsClustersSoftwareDraftsImportSpec</S>
+                <S>Initialize-SettingsClustersSoftwareDraftsSoftwareComponentsUpdateSpec</S>
+                <S>Initialize-SettingsClustersSoftwareExportSpec</S>
+                <S>Initialize-SettingsClustersSoftwareRecommendationsFilterSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusKey</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusReclassificationSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusUpdateSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesKey</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesProductSelectionSpec</S>
+                <S>Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesUpdateSpec</S>
+                <S>Initialize-SettingsClustersSoftwareStageSpec</S>
+                <S>Initialize-SettingsDefaultsClustersPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsDefaultsClustersPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsDefaultsClustersPoliciesApplyParallelRemediationAction</S>
+                <S>Initialize-SettingsDefaultsHostsPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsDefaultsHostsPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsDepotsOfflineConnectionSpec</S>
+                <S>Initialize-SettingsDepotsOfflineCreateSpec</S>
+                <S>Initialize-SettingsDepotsOfflineHostCredentials</S>
+                <S>Initialize-SettingsDepotsOnlineCreateSpec</S>
+                <S>Initialize-SettingsDepotsOnlineUpdateSpec</S>
+                <S>Initialize-SettingsDepotsSyncScheduleSchedule</S>
+                <S>Initialize-SettingsDepotsSyncScheduleSpec</S>
+                <S>Initialize-SettingsDepotsUmdsSetSpec</S>
+                <S>Initialize-SettingsDepotsUmdsUpdateSpec</S>
+                <S>Initialize-SettingsHardwareSupportPackageSpec</S>
+                <S>Initialize-SettingsHardwareSupportSpec</S>
+                <S>Initialize-SettingsHostsDepotOverridesDepot</S>
+                <S>Initialize-SettingsHostsEnablementSoftwareCheckSpec</S>
+                <S>Initialize-SettingsHostsEnablementSoftwareEnableSpec</S>
+                <S>Initialize-SettingsHostsPoliciesApplyConfiguredPolicySpec</S>
+                <S>Initialize-SettingsHostsPoliciesApplyFailureAction</S>
+                <S>Initialize-SettingsHostsSoftwareApplySpec</S>
+                <S>Initialize-SettingsHostsSoftwareCheckSpec</S>
+                <S>Initialize-SettingsHostsSoftwareDraftsCommitSpec</S>
+                <S>Initialize-SettingsHostsSoftwareDraftsImportSpec</S>
+                <S>Initialize-SettingsHostsSoftwareDraftsSoftwareComponentsUpdateSpec</S>
+                <S>Initialize-SettingsHostsSoftwareExportSpec</S>
+                <S>Initialize-SettingsHostsSoftwareStageSpec</S>
+                <S>Initialize-SettingsSolutionComponentSpec</S>
+                <S>Initialize-SettingsSolutionSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Esx.Settings.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2458188</S>
+          <S N="downloadCount">6902342</S>
+          <S N="packageSize">1251811</S>
+          <S N="published">7/25/2024 1:01:36 PM +03:00</S>
+          <S N="created">7/25/2024 1:01:36 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-DeleteClusterDraftSoftwareAddOn PSCommand_Invoke-DeleteClusterDraftSoftwareAddOn PSFunction_Invoke-DeleteHostDraftSoftwareAddOn PSCommand_Invoke-DeleteHostDraftSoftwareAddOn PSFunction_Invoke-GetClusterDraftSoftwareAddOn PSCommand_Invoke-GetClusterDraftSoftwareAddOn PSFunction_Invoke-GetClusterSoftwareAddOn PSCommand_Invoke-GetClusterSoftwareAddOn PSFunction_Invoke-GetHostDraftSoftwareAddOn PSCommand_Invoke-GetHostDraftSoftwareAddOn PSFunction_Invoke-GetHostSoftwareAddOn PSCommand_Invoke-GetHostSoftwareAddOn PSFunction_Invoke-SetClusterDraftSoftwareAddOn PSCommand_Invoke-SetClusterDraftSoftwareAddOn PSFunction_Invoke-SetHostDraftSoftwareAddOn PSCommand_Invoke-SetHostDraftSoftwareAddOn PSFunction_Invoke-ListDepotContentAddOns PSCommand_Invoke-ListDepotContentAddOns PSFunction_Invoke-GetClusterPoliciesApply PSCommand_Invoke-GetClusterPoliciesApply PSFunction_Invoke-GetDefaultsClustersPoliciesApply PSCommand_Invoke-GetDefaultsClustersPoliciesApply PSFunction_Invoke-GetDefaultsHostsPoliciesApply PSCommand_Invoke-GetDefaultsHostsPoliciesApply PSFunction_Invoke-GetHostPoliciesApply PSCommand_Invoke-GetHostPoliciesApply PSFunction_Invoke-SetClusterPoliciesApply PSCommand_Invoke-SetClusterPoliciesApply PSFunction_Invoke-SetDefaultsClustersPoliciesApply PSCommand_Invoke-SetDefaultsClustersPoliciesApply PSFunction_Invoke-SetDefaultsHostsPoliciesApply PSCommand_Invoke-SetDefaultsHostsPoliciesApply PSFunction_Invoke-SetHostPoliciesApply PSCommand_Invoke-SetHostPoliciesApply PSFunction_Invoke-GetClusterSoftwareReportsApplyImpact PSCommand_Invoke-GetClusterSoftwareReportsApplyImpact PSFunction_Invoke-GetHostSoftwareReportsApplyImpact PSCommand_Invoke-GetHostSoftwareReportsApplyImpact PSFunction_Invoke-ListClusterConfigurationAuditRecords PSCommand_Invoke-ListClusterConfigurationAuditRecords PSFunction_Invoke-GetClusterDraftSoftwareBaseImage PSCommand_Invoke-GetClusterDraftSoftwareBaseImage PSFunction_Invoke-GetClusterSoftwareBaseImage PSCommand_Invoke-GetClusterSoftwareBaseImage PSFunction_Invoke-GetHostDraftSoftwareBaseImage PSCommand_Invoke-GetHostDraftSoftwareBaseImage PSFunction_Invoke-GetHostSoftwareBaseImage PSCommand_Invoke-GetHostSoftwareBaseImage PSFunction_Invoke-SetClusterDraftSoftwareBaseImage PSCommand_Invoke-SetClusterDraftSoftwareBaseImage PSFunction_Invoke-SetHostDraftSoftwareBaseImage PSCommand_Invoke-SetHostDraftSoftwareBaseImage PSFunction_Invoke-ListDepotContentBaseImages PSCommand_Invoke-ListDepotContentBaseImages PSFunction_Invoke-GetClusterCommitSoftware PSCommand_Invoke-GetClusterCommitSoftware PSFunction_Invoke-GetHostCommitSoftware PSCommand_Invoke-GetHostCommitSoftware PSFunction_Invoke-GetClusterSoftwareCompliance PSCommand_Invoke-GetClusterSoftwareCompliance PSFunction_Invoke-GetHostSoftwareCompliance PSCommand_Invoke-GetHostSoftwareCompliance PSFunction_Invoke-UpdateClusterStorageDeviceOverridesComplianceStatusAsync PSCommand_Invoke-UpdateClusterStorageDeviceOverridesComplianceStatusAsync PSFunction_Invoke-DeleteClusterDraftComponentSoftware PSCommand_Invoke-DeleteClusterDraftComponentSoftware PSFunction_Invoke-DeleteHostDraftComponentSoftware PSCommand_Invoke-DeleteHostDraftComponentSoftware PSFunction_Invoke-GetClusterComponentSoftware PSCommand_Invoke-GetClusterComponentSoftware PSFunction_Invoke-GetClusterDraftComponentSoftware PSCommand_Invoke-GetClusterDraftComponentSoftware PSFunction_Invoke-GetHostComponentSoftware PSCommand_Invoke-GetHostComponentSoftware PSFunction_Invoke-GetHostDraftComponentSoftware PSCommand_Invoke-GetHostDraftComponentSoftware PSFunction_Invoke-ListClusterDraftSoftwareComponents PSCommand_Invoke-ListClusterDraftSoftwareComponents PSFunction_Invoke-ListClusterSoftwareComponents PSCommand_Invoke-ListClusterSoftwareComponents PSFunction_Invoke-ListDepotContentComponents PSCommand_Invoke-ListDepotContentComponents PSFunction_Invoke-ListHostDraftSoftwareComponents PSCommand_Invoke-ListHostDraftSoftwareComponents PSFunction_Invoke-ListHostSoftwareComponents PSCommand_Invoke-ListHostSoftwareComponents PSFunction_Invoke-SetClusterDraftComponentSoftware PSCommand_Invoke-SetClusterDraftComponentSoftware PSFunction_Invoke-SetHostDraftComponentSoftware PSCommand_Invoke-SetHostDraftComponentSoftware PSFunction_Invoke-UpdateClusterDraftSoftwareComponents PSCommand_Invoke-UpdateClusterDraftSoftwareComponents PSFunction_Invoke-UpdateHostDraftSoftwareComponents PSCommand_Invoke-UpdateHostDraftSoftwareComponents PSFunction_Invoke-ApplyClusterConfigurationAsync PSCommand_Invoke-ApplyClusterConfigurationAsync PSFunction_Invoke-CheckComplianceClusterConfigurationAsync PSCommand_Invoke-CheckComplianceClusterConfigurationAsync PSFunction_Invoke-ExportConfigClusterConfiguration PSCommand_Invoke-ExportConfigClusterConfiguration PSFunction_Invoke-ExtractHostConfiguration PSCommand_Invoke-ExtractHostConfiguration PSFunction_Invoke-GetClusterConfiguration PSCommand_Invoke-GetClusterConfiguration PSFunction_Invoke-GetClusterEnablementConfiguration PSCommand_Invoke-GetClusterEnablementConfiguration PSFunction_Invoke-ImportConfigClusterConfigurationAsync PSCommand_Invoke-ImportConfigClusterConfigurationAsync PSFunction_Invoke-PrecheckClusterConfigurationAsync PSCommand_Invoke-PrecheckClusterConfigurationAsync PSFunction_Invoke-ValidateClusterConfigurationAsync PSCommand_Invoke-ValidateClusterConfigurationAsync PSFunction_Invoke-GetDepotOfflineContent PSCommand_Invoke-GetDepotOfflineContent PSFunction_Invoke-GetDepotOnlineContent PSCommand_Invoke-GetDepotOnlineContent PSFunction_Invoke-GetDepotsUmdsContent PSCommand_Invoke-GetDepotsUmdsContent PSFunction_Invoke-AddClusterDepotOverrides PSCommand_Invoke-AddClusterDepotOverrides PSFunction_Invoke-AddHostDepotOverrides PSCommand_Invoke-AddHostDepotOverrides PSFunction_Invoke-GetClusterDepotOverrides PSCommand_Invoke-GetClusterDepotOverrides PSFunction_Invoke-GetHostDepotOverrides PSCommand_Invoke-GetHostDepotOverrides PSFunction_Invoke-RemoveClusterDepotOverrides PSCommand_Invoke-RemoveClusterDepotOverrides PSFunction_Invoke-RemoveHostDepotOverrides PSCommand_Invoke-RemoveHostDepotOverrides PSFunction_Invoke-SyncDepotsAsync PSCommand_Invoke-SyncDepotsAsync PSFunction_Invoke-GetClusterSoftwareReportsHardwareCompatibilityDetails PSCommand_Invoke-GetClusterSoftwareReportsHardwareCompatibilityDetails PSFunction_Invoke-ApplyClusterDraft PSCommand_Invoke-ApplyClusterDraft PSFunction_Invoke-CheckComplianceClusterDraftAsync PSCommand_Invoke-CheckComplianceClusterDraftAsync PSFunction_Invoke-CommitClusterDraftAsync PSCommand_Invoke-CommitClusterDraftAsync PSFunction_Invoke-CommitHostDraftAsync PSCommand_Invoke-CommitHostDraftAsync PSFunction_Invoke-CreateClusterConfigurationDrafts PSCommand_Invoke-CreateClusterConfigurationDrafts PSFunction_Invoke-CreateClusterSoftwareDrafts PSCommand_Invoke-CreateClusterSoftwareDrafts PSFunction_Invoke-CreateHostSoftwareDrafts PSCommand_Invoke-CreateHostSoftwareDrafts PSFunction_Invoke-DeleteClusterDraftConfiguration PSCommand_Invoke-DeleteClusterDraftConfiguration PSFunction_Invoke-DeleteClusterDraftSoftware PSCommand_Invoke-DeleteClusterDraftSoftware PSFunction_Invoke-DeleteHostDraftSoftware PSCommand_Invoke-DeleteHostDraftSoftware PSFunction_Invoke-ExportConfigClusterDraft PSCommand_Invoke-ExportConfigClusterDraft PSFunction_Invoke-GetClusterDraft PSCommand_Invoke-GetClusterDraft PSFunction_Invoke-GetClusterDraftConfiguration PSCommand_Invoke-GetClusterDraftConfiguration PSFunction_Invoke-GetClusterDraftSoftware PSCommand_Invoke-GetClusterDraftSoftware PSFunction_Invoke-GetClusterDraft_0 PSCommand_Invoke-GetClusterDraft_0 PSFunction_Invoke-GetHostDraftSoftware PSCommand_Invoke-GetHostDraftSoftware PSFunction_Invoke-ImportFromHostClusterDraftAsync PSCommand_Invoke-ImportFromHostClusterDraftAsync PSFunction_Invoke-ImportSoftwareSpecClusterSoftwareDrafts PSCommand_Invoke-ImportSoftwareSpecClusterSoftwareDrafts PSFunction_Invoke-ImportSoftwareSpecHostSoftwareDrafts PSCommand_Invoke-ImportSoftwareSpecHostSoftwareDrafts PSFunction_Invoke-ListClusterConfigurationDrafts PSCommand_Invoke-ListClusterConfigurationDrafts PSFunction_Invoke-ListClusterSoftwareDrafts PSCommand_Invoke-ListClusterSoftwareDrafts PSFunction_Invoke-ListHostSoftwareDrafts PSCommand_Invoke-ListHostSoftwareDrafts PSFunction_Invoke-PrecheckClusterDraftAsync PSCommand_Invoke-PrecheckClusterDraftAsync PSFunction_Invoke-ScanClusterDraftAsync PSCommand_Invoke-ScanClusterDraftAsync PSFunction_Invoke-ScanHostDraftAsync PSCommand_Invoke-ScanHostDraftAsync PSFunction_Invoke-UpdateClusterDraft PSCommand_Invoke-UpdateClusterDraft PSFunction_Invoke-ValidateClusterDraftAsync PSCommand_Invoke-ValidateClusterDraftAsync PSFunction_Invoke-ValidateHostDraftAsync PSCommand_Invoke-ValidateHostDraftAsync PSFunction_Invoke-GetClusterPoliciesApplyEffective PSCommand_Invoke-GetClusterPoliciesApplyEffective PSFunction_Invoke-GetClustersPoliciesApplyEffective PSCommand_Invoke-GetClustersPoliciesApplyEffective PSFunction_Invoke-GetHostPoliciesApplyEffective PSCommand_Invoke-GetHostPoliciesApplyEffective PSFunction_Invoke-GetHostsPoliciesApplyEffective PSCommand_Invoke-GetHostsPoliciesApplyEffective PSFunction_Invoke-GetClusterDraftSoftwareEffectiveComponents PSCommand_Invoke-GetClusterDraftSoftwareEffectiveComponents PSFunction_Invoke-GetClusterSoftwareEffectiveComponents PSCommand_Invoke-GetClusterSoftwareEffectiveComponents PSFunction_Invoke-GetHostDraftSoftwareEffectiveComponents PSCommand_Invoke-GetHostDraftSoftwareEffectiveComponents PSFunction_Invoke-GetHostSoftwareEffectiveComponents PSCommand_Invoke-GetHostSoftwareEffectiveComponents PSFunction_Invoke-ListClusterDraftSoftwareEffectiveComponents PSCommand_Invoke-ListClusterDraftSoftwareEffectiveComponents PSFunction_Invoke-ListClusterSoftwareEffectiveComponents PSCommand_Invoke-ListClusterSoftwareEffectiveComponents PSFunction_Invoke-ListHostDraftSoftwareEffectiveComponents PSCommand_Invoke-ListHostDraftSoftwareEffectiveComponents PSFunction_Invoke-ListHostSoftwareEffectiveComponents PSCommand_Invoke-ListHostSoftwareEffectiveComponents PSFunction_Invoke-CheckClusterReportsHardwareCompatibilityAsync PSCommand_Invoke-CheckClusterReportsHardwareCompatibilityAsync PSFunction_Invoke-GetClusterSoftwareReportsHardwareCompatibility PSCommand_Invoke-GetClusterSoftwareReportsHardwareCompatibility PSFunction_Invoke-DeleteClusterDraftSoftwareHardwareSupport PSCommand_Invoke-DeleteClusterDraftSoftwareHardwareSupport PSFunction_Invoke-GetClusterDraftSoftwareHardwareSupport PSCommand_Invoke-GetClusterDraftSoftwareHardwareSupport PSFunction_Invoke-GetClusterSoftwareHardwareSupport PSCommand_Invoke-GetClusterSoftwareHardwareSupport PSFunction_Invoke-SetClusterDraftSoftwareHardwareSupport PSCommand_Invoke-SetClusterDraftSoftwareHardwareSupport PSFunction_Invoke-ExtractClusterInstalledImagesAsync PSCommand_Invoke-ExtractClusterInstalledImagesAsync PSFunction_Invoke-GetClusterInstalledImages PSCommand_Invoke-GetClusterInstalledImages PSFunction_Invoke-GetClusterConfigurationReportsLastApplyResult PSCommand_Invoke-GetClusterConfigurationReportsLastApplyResult PSFunction_Invoke-GetClusterSoftwareReportsLastApplyResult PSCommand_Invoke-GetClusterSoftwareReportsLastApplyResult PSFunction_Invoke-GetHostSoftwareReportsLastApplyResult PSCommand_Invoke-GetHostSoftwareReportsLastApplyResult PSFunction_Invoke-GetClusterSoftwareReportsLastCheckResult PSCommand_Invoke-GetClusterSoftwareReportsLastCheckResult PSFunction_Invoke-GetHostSoftwareReportsLastCheckResult PSCommand_Invoke-GetHostSoftwareReportsLastCheckResult PSFunction_Invoke-GetClusterConfigurationReportsLastComplianceResult PSCommand_Invoke-GetClusterConfigurationReportsLastComplianceResult PSFunction_Invoke-GetClusterConfigurationReportsLastPrecheckResult PSCommand_Invoke-GetClusterConfigurationReportsLastPrecheckResult PSFunction_Invoke-ListHardwareSupportManagers PSCommand_Invoke-ListHardwareSupportManagers PSFunction_Invoke-CreateDepotsOfflineAsync PSCommand_Invoke-CreateDepotsOfflineAsync PSFunction_Invoke-CreateFromHostDepotsOfflineAsync PSCommand_Invoke-CreateFromHostDepotsOfflineAsync PSFunction_Invoke-DeleteDepotOffline PSCommand_Invoke-DeleteDepotOffline PSFunction_Invoke-DeleteDepotOfflineAsync PSCommand_Invoke-DeleteDepotOfflineAsync PSFunction_Invoke-GetDepotOffline PSCommand_Invoke-GetDepotOffline PSFunction_Invoke-ListDepotsOffline PSCommand_Invoke-ListDepotsOffline PSFunction_Invoke-CreateDepotsOnline PSCommand_Invoke-CreateDepotsOnline PSFunction_Invoke-DeleteDepotOnline PSCommand_Invoke-DeleteDepotOnline PSFunction_Invoke-DeleteDepotOnlineAsync PSCommand_Invoke-DeleteDepotOnlineAsync PSFunction_Invoke-FlushDepotOnlineAsync PSCommand_Invoke-FlushDepotOnlineAsync PSFunction_Invoke-GetDepotOnline PSCommand_Invoke-GetDepotOnline PSFunction_Invoke-ListDepotsOnline PSCommand_Invoke-ListDepotsOnline PSFunction_Invoke-UpdateDepotOnline PSCommand_Invoke-UpdateDepotOnline PSFunction_Invoke-ListManagerHardwareSupportPackages PSCommand_Invoke-ListManagerHardwareSupportPackages PSFunction_Invoke-GetClusterConfigurationReportsRecentTasks PSCommand_Invoke-GetClusterConfigurationReportsRecentTasks PSFunction_Invoke-GenerateClusterSoftwareRecommendationsAsync PSCommand_Invoke-GenerateClusterSoftwareRecommendationsAsync PSFunction_Invoke-GenerateHostSoftwareRecommendationsAsync PSCommand_Invoke-GenerateHostSoftwareRecommendationsAsync PSFunction_Invoke-GetClusterSoftwareRecommendations PSCommand_Invoke-GetClusterSoftwareRecommendations PSFunction_Invoke-GetHostSoftwareRecommendations PSCommand_Invoke-GetHostSoftwareRecommendations PSFunction_Invoke-DeleteClusterDraftComponentSoftwareRemovedComponents PSCommand_Invoke-DeleteClusterDraftComponentSoftwareRemovedComponents PSFunction_Invoke-DeleteHostDraftComponentSoftwareRemovedComponents PSCommand_Invoke-DeleteHostDraftComponentSoftwareRemovedComponents PSFunction_Invoke-GetClusterComponentSoftwareRemovedComponents PSCommand_Invoke-GetClusterComponentSoftwareRemovedComponents PSFunction_Invoke-GetClusterDraftComponentSoftwareRemovedComponents PSCommand_Invoke-GetClusterDraftComponentSoftwareRemovedComponents PSFunction_Invoke-GetHostComponentSoftwareRemovedComponents PSCommand_Invoke-GetHostComponentSoftwareRemovedComponents PSFunction_Invoke-GetHostDraftComponentSoftwareRemovedComponents PSCommand_Invoke-GetHostDraftComponentSoftwareRemovedComponents PSFunction_Invoke-ListClusterDraftSoftwareRemovedComponents PSCommand_Invoke-ListClusterDraftSoftwareRemovedComponents PSFunction_Invoke-ListClusterSoftwareRemovedComponents PSCommand_Invoke-ListClusterSoftwareRemovedComponents PSFunction_Invoke-ListHostDraftSoftwareRemovedComponents PSCommand_Invoke-ListHostDraftSoftwareRemovedComponents PSFunction_Invoke-ListHostSoftwareRemovedComponents PSCommand_Invoke-ListHostSoftwareRemovedComponents PSFunction_Invoke-SetClusterDraftComponentSoftwareRemovedComponents PSCommand_Invoke-SetClusterDraftComponentSoftwareRemovedComponents PSFunction_Invoke-SetHostDraftComponentSoftwareRemovedComponents PSCommand_Invoke-SetHostDraftComponentSoftwareRemovedComponents PSFunction_Invoke-GetClusterConfigurationSchema PSCommand_Invoke-GetClusterConfigurationSchema PSFunction_Invoke-ApplyClusterSoftwareAsync PSCommand_Invoke-ApplyClusterSoftwareAsync PSFunction_Invoke-ApplyHostSoftwareAsync PSCommand_Invoke-ApplyHostSoftwareAsync PSFunction_Invoke-CheckClusterEnablementSoftwareAsync PSCommand_Invoke-CheckClusterEnablementSoftwareAsync PSFunction_Invoke-CheckClusterSoftwareAsync PSCommand_Invoke-CheckClusterSoftwareAsync PSFunction_Invoke-CheckHostEnablementSoftwareAsync PSCommand_Invoke-CheckHostEnablementSoftwareAsync PSFunction_Invoke-CheckHostSoftwareAsync PSCommand_Invoke-CheckHostSoftwareAsync PSFunction_Invoke-ExportClusterSoftware PSCommand_Invoke-ExportClusterSoftware PSFunction_Invoke-ExportHostSoftware PSCommand_Invoke-ExportHostSoftware PSFunction_Invoke-GetClusterEnablementSoftware PSCommand_Invoke-GetClusterEnablementSoftware PSFunction_Invoke-GetClusterSoftware PSCommand_Invoke-GetClusterSoftware PSFunction_Invoke-GetHostEnablementSoftware PSCommand_Invoke-GetHostEnablementSoftware PSFunction_Invoke-GetHostSoftware PSCommand_Invoke-GetHostSoftware PSFunction_Invoke-ScanClusterSoftwareAsync PSCommand_Invoke-ScanClusterSoftwareAsync PSFunction_Invoke-ScanHostSoftwareAsync PSCommand_Invoke-ScanHostSoftwareAsync PSFunction_Invoke-SetClusterEnablementSoftwareAsync PSCommand_Invoke-SetClusterEnablementSoftwareAsync PSFunction_Invoke-SetHostEnablementSoftwareAsync PSCommand_Invoke-SetHostEnablementSoftwareAsync PSFunction_Invoke-StageClusterSoftwareAsync PSCommand_Invoke-StageClusterSoftwareAsync PSFunction_Invoke-StageHostSoftwareAsync PSCommand_Invoke-StageHostSoftwareAsync PSFunction_Invoke-DeleteClusterSolutionAsync PSCommand_Invoke-DeleteClusterSolutionAsync PSFunction_Invoke-DeleteHostSolutionAsync PSCommand_Invoke-DeleteHostSolutionAsync PSFunction_Invoke-GetClusterSolutionSoftware PSCommand_Invoke-GetClusterSolutionSoftware PSFunction_Invoke-GetHostSolutionSoftware PSCommand_Invoke-GetHostSolutionSoftware PSFunction_Invoke-ListClusterSoftwareSolutions PSCommand_Invoke-ListClusterSoftwareSolutions PSFunction_Invoke-ListHostSoftwareSolutions PSCommand_Invoke-ListHostSoftwareSolutions PSFunction_Invoke-SetClusterSolutionAsync PSCommand_Invoke-SetClusterSolutionAsync PSFunction_Invoke-SetHostSolutionAsync PSCommand_Invoke-SetHostSolutionAsync PSFunction_Invoke-GetDepotsSyncSchedule PSCommand_Invoke-GetDepotsSyncSchedule PSFunction_Invoke-SetDepotsSyncSchedule PSCommand_Invoke-SetDepotsSyncSchedule PSFunction_Invoke-CancelClusterConfigurationTransition PSCommand_Invoke-CancelClusterConfigurationTransition PSFunction_Invoke-CheckEligibilityClusterConfigurationTransitionAsync PSCommand_Invoke-CheckEligibilityClusterConfigurationTransitionAsync PSFunction_Invoke-EnableClusterConfigurationTransitionAsync PSCommand_Invoke-EnableClusterConfigurationTransitionAsync PSFunction_Invoke-ExportConfigClusterConfigurationTransition PSCommand_Invoke-ExportConfigClusterConfigurationTransition PSFunction_Invoke-ExportSchemaClusterConfigurationTransition PSCommand_Invoke-ExportSchemaClusterConfigurationTransition PSFunction_Invoke-GetClusterEnablementConfigurationTransition PSCommand_Invoke-GetClusterEnablementConfigurationTransition PSFunction_Invoke-ImportFromFileClusterConfigurationTransition PSCommand_Invoke-ImportFromFileClusterConfigurationTransition PSFunction_Invoke-ImportFromHostClusterConfigurationTransitionAsync PSCommand_Invoke-ImportFromHostClusterConfigurationTransitionAsync PSFunction_Invoke-PrecheckClusterConfigurationTransitionAsync PSCommand_Invoke-PrecheckClusterConfigurationTransitionAsync PSFunction_Invoke-ValidateConfigClusterConfigurationTransitionAsync PSCommand_Invoke-ValidateConfigClusterConfigurationTransitionAsync PSFunction_Invoke-DeleteDepotsUmds PSCommand_Invoke-DeleteDepotsUmds PSFunction_Invoke-DeleteDepotsUmdsAsync PSCommand_Invoke-DeleteDepotsUmdsAsync PSFunction_Invoke-GetDepotsUmds PSCommand_Invoke-GetDepotsUmds PSFunction_Invoke-SetDepotsUmds PSCommand_Invoke-SetDepotsUmds PSFunction_Invoke-UpdateDepotsUmds PSCommand_Invoke-UpdateDepotsUmds PSFunction_Invoke-UpdateClusterStorageDeviceOverridesVcgEntriesAsync PSCommand_Invoke-UpdateClusterStorageDeviceOverridesVcgEntriesAsync PSFunction_Invoke-GetManagerPkgVersionPackages PSCommand_Invoke-GetManagerPkgVersionPackages PSFunction_Invoke-GetNameVersionAddOns PSCommand_Invoke-GetNameVersionAddOns PSFunction_Invoke-GetNameVersionComponents PSCommand_Invoke-GetNameVersionComponents PSFunction_Invoke-GetVersionBaseImages PSCommand_Invoke-GetVersionBaseImages PSFunction_Initialize-SettingsAddOnSpec PSCommand_Initialize-SettingsAddOnSpec PSFunction_Initialize-SettingsBaseImageSpec PSCommand_Initialize-SettingsBaseImageSpec PSFunction_Initialize-SettingsClustersConfigurationApplySpec PSCommand_Initialize-SettingsClustersConfigurationApplySpec PSFunction_Initialize-SettingsClustersConfigurationAuditRecordsTimePeriod PSCommand_Initialize-SettingsClustersConfigurationAuditRecordsTimePeriod PSFunction_Initialize-SettingsClustersConfigurationDraftsApplySpec PSCommand_Initialize-SettingsClustersConfigurationDraftsApplySpec PSFunction_Initialize-SettingsClustersConfigurationDraftsCreateSpec PSCommand_Initialize-SettingsClustersConfigurationDraftsCreateSpec PSFunction_Initialize-SettingsClustersConfigurationDraftsImportFromHostTaskRequestBody PSCommand_Initialize-SettingsClustersConfigurationDraftsImportFromHostTaskRequestBody PSFunction_Initialize-SettingsClustersConfigurationDraftsUpdateSpec PSCommand_Initialize-SettingsClustersConfigurationDraftsUpdateSpec PSFunction_Initialize-SettingsClustersConfigurationImportSpec PSCommand_Initialize-SettingsClustersConfigurationImportSpec PSFunction_Initialize-SettingsClustersDepotOverridesDepot PSCommand_Initialize-SettingsClustersDepotOverridesDepot PSFunction_Initialize-SettingsClustersEnablementConfigurationTransitionFileSpec PSCommand_Initialize-SettingsClustersEnablementConfigurationTransitionFileSpec PSFunction_Initialize-SettingsClustersEnablementSoftwareCheckSpec PSCommand_Initialize-SettingsClustersEnablementSoftwareCheckSpec PSFunction_Initialize-SettingsClustersEnablementSoftwareEnableSpec PSCommand_Initialize-SettingsClustersEnablementSoftwareEnableSpec PSFunction_Initialize-SettingsClustersPoliciesApplyConfiguredPolicySpec PSCommand_Initialize-SettingsClustersPoliciesApplyConfiguredPolicySpec PSFunction_Initialize-SettingsClustersPoliciesApplyEffectiveEffectivePolicySpec PSCommand_Initialize-SettingsClustersPoliciesApplyEffectiveEffectivePolicySpec PSFunction_Initialize-SettingsClustersPoliciesApplyEffectiveFailureAction PSCommand_Initialize-SettingsClustersPoliciesApplyEffectiveFailureAction PSFunction_Initialize-SettingsClustersPoliciesApplyEffectiveParallelRemediationAction PSCommand_Initialize-SettingsClustersPoliciesApplyEffectiveParallelRemediationAction PSFunction_Initialize-SettingsClustersPoliciesApplyFailureAction PSCommand_Initialize-SettingsClustersPoliciesApplyFailureAction PSFunction_Initialize-SettingsClustersPoliciesApplyParallelRemediationAction PSCommand_Initialize-SettingsClustersPoliciesApplyParallelRemediationAction PSFunction_Initialize-SettingsClustersPoliciesConfigManagerPolicySpec PSCommand_Initialize-SettingsClustersPoliciesConfigManagerPolicySpec PSFunction_Initialize-SettingsClustersSoftwareApplySpec PSCommand_Initialize-SettingsClustersSoftwareApplySpec PSFunction_Initialize-SettingsClustersSoftwareCheckSpec PSCommand_Initialize-SettingsClustersSoftwareCheckSpec PSFunction_Initialize-SettingsClustersSoftwareDraftsCommitSpec PSCommand_Initialize-SettingsClustersSoftwareDraftsCommitSpec PSFunction_Initialize-SettingsClustersSoftwareDraftsImportSpec PSCommand_Initialize-SettingsClustersSoftwareDraftsImportSpec PSFunction_Initialize-SettingsClustersSoftwareDraftsSoftwareComponentsUpdateSpec PSCommand_Initialize-SettingsClustersSoftwareDraftsSoftwareComponentsUpdateSpec PSFunction_Initialize-SettingsClustersSoftwareExportSpec PSCommand_Initialize-SettingsClustersSoftwareExportSpec PSFunction_Initialize-SettingsClustersSoftwareRecommendationsFilterSpec PSCommand_Initialize-SettingsClustersSoftwareRecommendationsFilterSpec PSFunction_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusKey PSCommand_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusKey PSFunction_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusReclassificationSpec PSCommand_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusReclassificationSpec PSFunction_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusUpdateSpec PSCommand_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusUpdateSpec PSFunction_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesKey PSCommand_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesKey PSFunction_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesProductSelectionSpec PSCommand_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesProductSelectionSpec PSFunction_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesUpdateSpec PSCommand_Initialize-SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesUpdateSpec PSFunction_Initialize-SettingsClustersSoftwareStageSpec PSCommand_Initialize-SettingsClustersSoftwareStageSpec PSFunction_Initialize-SettingsDefaultsClustersPoliciesApplyConfiguredPolicySpec PSCommand_Initialize-SettingsDefaultsClustersPoliciesApplyConfiguredPolicySpec PSFunction_Initialize-SettingsDefaultsClustersPoliciesApplyFailureAction PSCommand_Initialize-SettingsDefaultsClustersPoliciesApplyFailureAction PSFunction_Initialize-SettingsDefaultsClustersPoliciesApplyParallelRemediationAction PSCommand_Initialize-SettingsDefaultsClustersPoliciesApplyParallelRemediationAction PSFunction_Initialize-SettingsDefaultsHostsPoliciesApplyConfiguredPolicySpec PSCommand_Initialize-SettingsDefaultsHostsPoliciesApplyConfiguredPolicySpec PSFunction_Initialize-SettingsDefaultsHostsPoliciesApplyFailureAction PSCommand_Initialize-SettingsDefaultsHostsPoliciesApplyFailureAction PSFunction_Initialize-SettingsDepotsOfflineConnectionSpec PSCommand_Initialize-SettingsDepotsOfflineConnectionSpec PSFunction_Initialize-SettingsDepotsOfflineCreateSpec PSCommand_Initialize-SettingsDepotsOfflineCreateSpec PSFunction_Initialize-SettingsDepotsOfflineHostCredentials PSCommand_Initialize-SettingsDepotsOfflineHostCredentials PSFunction_Initialize-SettingsDepotsOnlineCreateSpec PSCommand_Initialize-SettingsDepotsOnlineCreateSpec PSFunction_Initialize-SettingsDepotsOnlineUpdateSpec PSCommand_Initialize-SettingsDepotsOnlineUpdateSpec PSFunction_Initialize-SettingsDepotsSyncScheduleSchedule PSCommand_Initialize-SettingsDepotsSyncScheduleSchedule PSFunction_Initialize-SettingsDepotsSyncScheduleSpec PSCommand_Initialize-SettingsDepotsSyncScheduleSpec PSFunction_Initialize-SettingsDepotsUmdsSetSpec PSCommand_Initialize-SettingsDepotsUmdsSetSpec PSFunction_Initialize-SettingsDepotsUmdsUpdateSpec PSCommand_Initialize-SettingsDepotsUmdsUpdateSpec PSFunction_Initialize-SettingsHardwareSupportPackageSpec PSCommand_Initialize-SettingsHardwareSupportPackageSpec PSFunction_Initialize-SettingsHardwareSupportSpec PSCommand_Initialize-SettingsHardwareSupportSpec PSFunction_Initialize-SettingsHostsDepotOverridesDepot PSCommand_Initialize-SettingsHostsDepotOverridesDepot PSFunction_Initialize-SettingsHostsEnablementSoftwareCheckSpec PSCommand_Initialize-SettingsHostsEnablementSoftwareCheckSpec PSFunction_Initialize-SettingsHostsEnablementSoftwareEnableSpec PSCommand_Initialize-SettingsHostsEnablementSoftwareEnableSpec PSFunction_Initialize-SettingsHostsPoliciesApplyConfiguredPolicySpec PSCommand_Initialize-SettingsHostsPoliciesApplyConfiguredPolicySpec PSFunction_Initialize-SettingsHostsPoliciesApplyFailureAction PSCommand_Initialize-SettingsHostsPoliciesApplyFailureAction PSFunction_Initialize-SettingsHostsSoftwareApplySpec PSCommand_Initialize-SettingsHostsSoftwareApplySpec PSFunction_Initialize-SettingsHostsSoftwareCheckSpec PSCommand_Initialize-SettingsHostsSoftwareCheckSpec PSFunction_Initialize-SettingsHostsSoftwareDraftsCommitSpec PSCommand_Initialize-SettingsHostsSoftwareDraftsCommitSpec PSFunction_Initialize-SettingsHostsSoftwareDraftsImportSpec PSCommand_Initialize-SettingsHostsSoftwareDraftsImportSpec PSFunction_Initialize-SettingsHostsSoftwareDraftsSoftwareComponentsUpdateSpec PSCommand_Initialize-SettingsHostsSoftwareDraftsSoftwareComponentsUpdateSpec PSFunction_Initialize-SettingsHostsSoftwareExportSpec PSCommand_Initialize-SettingsHostsSoftwareExportSpec PSFunction_Initialize-SettingsHostsSoftwareStageSpec PSCommand_Initialize-SettingsHostsSoftwareStageSpec PSFunction_Initialize-SettingsSolutionComponentSpec PSCommand_Initialize-SettingsSolutionComponentSpec PSFunction_Initialize-SettingsSolutionSpec PSCommand_Initialize-SettingsSolutionSpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.Esx.Settings.nuspec|Model\SettingsDepotsUmdsUpdateSpec.ps1|Model\SettingsHostsSoftwareCheckSpec.ps1|README.md|Api\AuditRecordsApi.ps1|Api\DepotOverridesApi.ps1|Api\LastCheckResultApi.ps1|Api\SchemaApi.ps1|Model\SettingsBaseImageSpec.ps1|Model\SettingsClustersEnablementConfigurationTransitionFileSpec.ps1|Model\SettingsClustersSoftwareApplySpec.ps1|Model\SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusUpdateSpec.ps1|Model\SettingsDefaultsHostsPoliciesApplyFailureAction.ps1|Model\SettingsHardwareSupportPackageSpec.ps1|Model\SettingsHostsSoftwareDraftsCommitSpec.ps1|VMware.Sdk.vSphere.Esx.Settings.cat|Api\BaseImageApi.ps1|Api\DepotsApi.ps1|Api\LastComplianceResultApi.ps1|Api\SoftwareApi.ps1|Model\SettingsClustersConfigurationApplySpec.ps1|Model\SettingsClustersEnablementSoftwareCheckSpec.ps1|Model\SettingsClustersSoftwareCheckSpec.ps1|Model\SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesKey.ps1|Model\SettingsDepotsOfflineConnectionSpec.ps1|Model\SettingsHardwareSupportSpec.ps1|Model\SettingsHostsSoftwareDraftsImportSpec.ps1|Api\BaseImagesApi.ps1|Api\DetailsApi.ps1|Api\LastPrecheckResultApi.ps1|Api\SolutionsApi.ps1|Model\SettingsClustersConfigurationAuditRecordsTimePeriod.ps1|Model\SettingsClustersEnablementSoftwareEnableSpec.ps1|Model\SettingsClustersSoftwareDraftsCommitSpec.ps1|Model\SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesProductSelectionSpec.ps1|Model\SettingsDepotsOfflineCreateSpec.ps1|Model\SettingsHostsDepotOverridesDepot.ps1|Model\SettingsHostsSoftwareDraftsSoftwareComponentsUpdateSpec.ps1|VMware.Sdk.vSphere.Esx.Settings.psd1|Api\CommitsApi.ps1|Api\DraftsApi.ps1|Api\ManagersApi.ps1|Api\SyncScheduleApi.ps1|Model\SettingsClustersConfigurationDraftsApplySpec.ps1|Model\SettingsClustersPoliciesApplyConfiguredPolicySpec.ps1|Model\SettingsClustersSoftwareDraftsImportSpec.ps1|Model\SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesVcgEntriesUpdateSpec.ps1|Model\SettingsDepotsOfflineHostCredentials.ps1|Model\SettingsHostsEnablementSoftwareCheckSpec.ps1|Model\SettingsHostsSoftwareExportSpec.ps1|VMware.Sdk.vSphere.Esx.Settings.psm1|Api\ComplianceApi.ps1|Api\EffectiveApi.ps1|Api\OfflineApi.ps1|Api\TransitionApi.ps1|Model\SettingsClustersConfigurationDraftsCreateSpec.ps1|Model\SettingsClustersPoliciesApplyEffectiveEffectivePolicySpec.ps1|Model\SettingsClustersSoftwareDraftsSoftwareComponentsUpdateSpec.ps1|Model\SettingsClustersSoftwareStageSpec.ps1|Model\SettingsDepotsOnlineCreateSpec.ps1|Model\SettingsHostsEnablementSoftwareEnableSpec.ps1|Model\SettingsHostsSoftwareStageSpec.ps1|Api\AddOnApi.ps1|Api\ComplianceStatusApi.ps1|Api\EffectiveComponentsApi.ps1|Api\OnlineApi.ps1|Api\UmdsApi.ps1|Model\SettingsClustersConfigurationDraftsImportFromHostTaskRequestBody.ps1|Model\SettingsClustersPoliciesApplyEffectiveFailureAction.ps1|Model\SettingsClustersSoftwareExportSpec.ps1|Model\SettingsDefaultsClustersPoliciesApplyConfiguredPolicySpec.ps1|Model\SettingsDepotsOnlineUpdateSpec.ps1|Model\SettingsHostsPoliciesApplyConfiguredPolicySpec.ps1|Model\SettingsSolutionComponentSpec.ps1|Api\AddOnsApi.ps1|Api\ComponentsApi.ps1|Api\HardwareCompatibilityApi.ps1|Api\PackagesApi.ps1|Api\VcgEntriesApi.ps1|Model\SettingsClustersConfigurationDraftsUpdateSpec.ps1|Model\SettingsClustersPoliciesApplyEffectiveParallelRemediationAction.ps1|Model\SettingsClustersSoftwareRecommendationsFilterSpec.ps1|Model\SettingsDefaultsClustersPoliciesApplyFailureAction.ps1|Model\SettingsDepotsSyncScheduleSchedule.ps1|Model\SettingsHostsPoliciesApplyFailureAction.ps1|Model\SettingsSolutionSpec.ps1|Api\ApplyApi.ps1|Api\ConfigurationApi.ps1|Api\HardwareSupportApi.ps1|Api\RecentTasksApi.ps1|Api\VersionsApi.ps1|Model\SettingsClustersConfigurationImportSpec.ps1|Model\SettingsClustersPoliciesApplyFailureAction.ps1|Model\SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusKey.ps1|Model\SettingsDefaultsClustersPoliciesApplyParallelRemediationAction.ps1|Model\SettingsDepotsSyncScheduleSpec.ps1|Model\SettingsHostsSoftwareApplySpec.ps1|Api\ApplyImpactApi.ps1|Api\ContentApi.ps1|Api\LastApplyResultApi.ps1|Api\RecommendationsApi.ps1|Model\SettingsAddOnSpec.ps1|Model\SettingsClustersDepotOverridesDepot.ps1|Model\SettingsClustersPoliciesApplyParallelRemediationAction.ps1|Model\SettingsClustersSoftwareReportsHardwareCompatibilityStorageDeviceOverridesComplianceStatusReclassificationSpec.ps1|Model\SettingsDefaultsHostsPoliciesApplyConfiguredPolicySpec.ps1|Model\SettingsDepotsUmdsSetSpec.ps1</S>
+          <S N="GUID">64b6b2b1-c739-41d4-a4b7-569160145501</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.Esx.Settings/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

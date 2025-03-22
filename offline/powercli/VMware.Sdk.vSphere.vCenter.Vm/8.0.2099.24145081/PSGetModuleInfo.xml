@@ -1,0 +1,558 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter.Vm</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.Vm.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:53:50+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetVmHardwareBoot</S>
+                <S>Invoke-UpdateVmHardwareBoot</S>
+                <S>Invoke-ConnectVmCdrom</S>
+                <S>Invoke-CreateVmHardwareCdrom</S>
+                <S>Invoke-DeleteVmCdromHardware</S>
+                <S>Invoke-DisconnectVmCdrom</S>
+                <S>Invoke-GetVmCdromHardware</S>
+                <S>Invoke-ListVmHardwareCdrom</S>
+                <S>Invoke-UpdateVmCdromHardware</S>
+                <S>Invoke-CheckVmPolicyCompliance</S>
+                <S>Invoke-GetVmStoragePolicyCompliance</S>
+                <S>Invoke-GetVmHardwareCpu</S>
+                <S>Invoke-UpdateVmHardwareCpu</S>
+                <S>Invoke-GetVmGuestCustomization</S>
+                <S>Invoke-SetVmGuestCustomization</S>
+                <S>Invoke-CreateVmDataSets</S>
+                <S>Invoke-DeleteVmDataSet</S>
+                <S>Invoke-GetVmDataSet</S>
+                <S>Invoke-ListVmDataSets</S>
+                <S>Invoke-UpdateVmDataSet</S>
+                <S>Invoke-GetVmHardwareBootDevice</S>
+                <S>Invoke-SetVmHardwareBootDevice</S>
+                <S>Invoke-CreateTemporaryVmFilesystemDirectories</S>
+                <S>Invoke-CreateVmFilesystemDirectories</S>
+                <S>Invoke-DeleteVmFilesystemDirectories</S>
+                <S>Invoke-MoveVmFilesystemDirectories</S>
+                <S>Invoke-CreateVmHardwareDisk</S>
+                <S>Invoke-DeleteVmDiskHardware</S>
+                <S>Invoke-GetVmDiskHardware</S>
+                <S>Invoke-ListVmHardwareDisk</S>
+                <S>Invoke-UpdateVmDiskHardware</S>
+                <S>Invoke-DeleteVmDataSetKeyVmEntries</S>
+                <S>Invoke-GetVmDataSetKeyVmEntries</S>
+                <S>Invoke-ListVmDataSetVmEntries</S>
+                <S>Invoke-SetVmDataSetKeyVmEntries</S>
+                <S>Invoke-GetVmNameEnvironment</S>
+                <S>Invoke-ListVmGuestEnvironment</S>
+                <S>Invoke-ConnectVmNicEthernet</S>
+                <S>Invoke-CreateVmHardwareEthernet</S>
+                <S>Invoke-DeleteVmNicHardwareEthernet</S>
+                <S>Invoke-DisconnectVmNicEthernet</S>
+                <S>Invoke-GetVmNicHardwareEthernet</S>
+                <S>Invoke-ListVmHardwareEthernet</S>
+                <S>Invoke-UpdateVmNicHardwareEthernet</S>
+                <S>Invoke-CreateTemporaryVmFilesystemFiles</S>
+                <S>Invoke-DeleteVmPathFiles</S>
+                <S>Invoke-GetVmPathFiles</S>
+                <S>Invoke-ListVmFilesystemFiles</S>
+                <S>Invoke-MoveVmFilesystemFiles</S>
+                <S>Invoke-UpdateVmFilesystemFiles</S>
+                <S>Invoke-ConnectVmFloppy</S>
+                <S>Invoke-CreateVmHardwareFloppy</S>
+                <S>Invoke-DeleteVmFloppyHardware</S>
+                <S>Invoke-DisconnectVmFloppy</S>
+                <S>Invoke-GetVmFloppyHardware</S>
+                <S>Invoke-ListVmHardwareFloppy</S>
+                <S>Invoke-UpdateVmFloppyHardware</S>
+                <S>Invoke-GetVmHardware</S>
+                <S>Invoke-UpdateVmHardware</S>
+                <S>Invoke-UpgradeVmHardware</S>
+                <S>Invoke-GetVmGuestIdentity</S>
+                <S>Invoke-ConnectVmToolsInstaller</S>
+                <S>Invoke-DisconnectVmToolsInstaller</S>
+                <S>Invoke-GetVmToolsInstaller</S>
+                <S>Invoke-ListVmGuestNetworkingInterfaces</S>
+                <S>Invoke-GetVmLibraryItem</S>
+                <S>Invoke-GetVmGuestLocalFilesystem</S>
+                <S>Invoke-GetVmHardwareMemory</S>
+                <S>Invoke-UpdateVmHardwareMemory</S>
+                <S>Invoke-GetVmGuestNetworking</S>
+                <S>Invoke-CreateVmHardwareAdapterNvme</S>
+                <S>Invoke-DeleteVmAdapterHardwareNvme</S>
+                <S>Invoke-GetVmAdapterHardwareNvme</S>
+                <S>Invoke-ListVmHardwareAdapterNvme</S>
+                <S>Invoke-GetVmGuestOperations</S>
+                <S>Invoke-ConnectVmPortParallel</S>
+                <S>Invoke-CreateVmHardwareParallel</S>
+                <S>Invoke-DeleteVmPortHardwareParallel</S>
+                <S>Invoke-DisconnectVmPortParallel</S>
+                <S>Invoke-GetVmPortHardwareParallel</S>
+                <S>Invoke-ListVmHardwareParallel</S>
+                <S>Invoke-UpdateVmPortHardwareParallel</S>
+                <S>Invoke-GetVmPolicyComputePolicies</S>
+                <S>Invoke-GetVmStoragePolicy</S>
+                <S>Invoke-UpdateVmStoragePolicy</S>
+                <S>Invoke-GetVmGuestPower</S>
+                <S>Invoke-GetVmPower</S>
+                <S>Invoke-RebootVmGuestPower</S>
+                <S>Invoke-ResetVmPower</S>
+                <S>Invoke-ShutdownVmGuestPower</S>
+                <S>Invoke-StandbyVmGuestPower</S>
+                <S>Invoke-StartVmPower</S>
+                <S>Invoke-StopVmPower</S>
+                <S>Invoke-SuspendVmPower</S>
+                <S>Invoke-CreateVmGuestProcesses</S>
+                <S>Invoke-DeleteVmPidProcesses</S>
+                <S>Invoke-GetVmPidProcesses</S>
+                <S>Invoke-ListVmGuestProcesses</S>
+                <S>Invoke-ListVmGuestNetworkingRoutes</S>
+                <S>Invoke-CreateVmHardwareAdapterSata</S>
+                <S>Invoke-DeleteVmAdapterHardwareSata</S>
+                <S>Invoke-GetVmAdapterHardwareSata</S>
+                <S>Invoke-ListVmHardwareAdapterSata</S>
+                <S>Invoke-CreateVmHardwareAdapterScsi</S>
+                <S>Invoke-DeleteVmAdapterHardwareScsi</S>
+                <S>Invoke-GetVmAdapterHardwareScsi</S>
+                <S>Invoke-ListVmHardwareAdapterScsi</S>
+                <S>Invoke-UpdateVmAdapterHardwareScsi</S>
+                <S>Invoke-ConnectVmPortSerial</S>
+                <S>Invoke-CreateVmHardwareSerial</S>
+                <S>Invoke-DeleteVmPortHardwareSerial</S>
+                <S>Invoke-DisconnectVmPortSerial</S>
+                <S>Invoke-GetVmPortHardwareSerial</S>
+                <S>Invoke-ListVmHardwareSerial</S>
+                <S>Invoke-UpdateVmPortHardwareSerial</S>
+                <S>Invoke-CreateVmConsoleTickets</S>
+                <S>Invoke-GetVmTools</S>
+                <S>Invoke-UpdateVmTools</S>
+                <S>Invoke-UpgradeVmTools</S>
+                <S>Invoke-CreateVmGuestFilesystem</S>
+                <S>Initialize-GuestAdapterMapping</S>
+                <S>Initialize-GuestCloudConfiguration</S>
+                <S>Initialize-GuestCloudinitConfiguration</S>
+                <S>Initialize-GuestConfigurationSpec</S>
+                <S>Initialize-GuestCustomizationSpec</S>
+                <S>Initialize-GuestDomain</S>
+                <S>Initialize-GuestGlobalDNSSettings</S>
+                <S>Initialize-GuestGuiUnattended</S>
+                <S>Initialize-GuestHostnameGenerator</S>
+                <S>Initialize-GuestIPSettings</S>
+                <S>Initialize-GuestIpv4</S>
+                <S>Initialize-GuestIpv6</S>
+                <S>Initialize-GuestIpv6Address</S>
+                <S>Initialize-GuestLinuxConfiguration</S>
+                <S>Initialize-GuestUserData</S>
+                <S>Initialize-GuestWindowsConfiguration</S>
+                <S>Initialize-GuestWindowsNetworkAdapterSettings</S>
+                <S>Initialize-GuestWindowsSysprep</S>
+                <S>Initialize-VmConsoleTicketsCreateSpec</S>
+                <S>Initialize-VmDataSetsCreateSpec</S>
+                <S>Initialize-VmDataSetsUpdateSpec</S>
+                <S>Initialize-VmGuestCredentials</S>
+                <S>Initialize-VmGuestCustomizationSetSpec</S>
+                <S>Initialize-VmGuestEnvironmentGetRequestBody</S>
+                <S>Initialize-VmGuestEnvironmentListRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesCreateRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesCreateTemporaryRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesDeleteRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesMoveRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesCreateTemporaryRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesDeleteRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesFileAttributesUpdateSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesFilterSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesGetRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesIterationSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesListRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesMoveRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesPosixFileAttributesUpdateSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesUpdateRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesWindowsFileAttributesUpdateSpec</S>
+                <S>Initialize-VmGuestFilesystemTransfersCreateRequestBody</S>
+                <S>Initialize-VmGuestFilesystemTransfersCreateSpec</S>
+                <S>Initialize-VmGuestFilesystemTransfersFileCreationAttributes</S>
+                <S>Initialize-VmGuestFilesystemTransfersPosixFileAttributesCreateSpec</S>
+                <S>Initialize-VmGuestFilesystemTransfersWindowsFileAttributesCreateSpec</S>
+                <S>Initialize-VmGuestProcessesCreateRequestBody</S>
+                <S>Initialize-VmGuestProcessesCreateSpec</S>
+                <S>Initialize-VmGuestProcessesDeleteRequestBody</S>
+                <S>Initialize-VmGuestProcessesGetRequestBody</S>
+                <S>Initialize-VmGuestProcessesListRequestBody</S>
+                <S>Initialize-VmHardwareAdapterNvmeCreateSpec</S>
+                <S>Initialize-VmHardwareAdapterSataCreateSpec</S>
+                <S>Initialize-VmHardwareAdapterScsiCreateSpec</S>
+                <S>Initialize-VmHardwareAdapterScsiUpdateSpec</S>
+                <S>Initialize-VmHardwareBootDeviceEntry</S>
+                <S>Initialize-VmHardwareBootDeviceSetRequestBody</S>
+                <S>Initialize-VmHardwareBootUpdateSpec</S>
+                <S>Initialize-VmHardwareCdromBackingSpec</S>
+                <S>Initialize-VmHardwareCdromCreateSpec</S>
+                <S>Initialize-VmHardwareCdromUpdateSpec</S>
+                <S>Initialize-VmHardwareCpuUpdateSpec</S>
+                <S>Initialize-VmHardwareDiskBackingSpec</S>
+                <S>Initialize-VmHardwareDiskCreateSpec</S>
+                <S>Initialize-VmHardwareDiskStoragePolicySpec</S>
+                <S>Initialize-VmHardwareDiskUpdateSpec</S>
+                <S>Initialize-VmHardwareDiskVmdkCreateSpec</S>
+                <S>Initialize-VmHardwareEthernetBackingSpec</S>
+                <S>Initialize-VmHardwareEthernetCreateSpec</S>
+                <S>Initialize-VmHardwareEthernetUpdateSpec</S>
+                <S>Initialize-VmHardwareFloppyBackingSpec</S>
+                <S>Initialize-VmHardwareFloppyCreateSpec</S>
+                <S>Initialize-VmHardwareFloppyUpdateSpec</S>
+                <S>Initialize-VmHardwareIdeAddressSpec</S>
+                <S>Initialize-VmHardwareMemoryUpdateSpec</S>
+                <S>Initialize-VmHardwareNvmeAddressSpec</S>
+                <S>Initialize-VmHardwareParallelBackingSpec</S>
+                <S>Initialize-VmHardwareParallelCreateSpec</S>
+                <S>Initialize-VmHardwareParallelUpdateSpec</S>
+                <S>Initialize-VmHardwareSataAddressSpec</S>
+                <S>Initialize-VmHardwareScsiAddressSpec</S>
+                <S>Initialize-VmHardwareSerialBackingSpec</S>
+                <S>Initialize-VmHardwareSerialCreateSpec</S>
+                <S>Initialize-VmHardwareSerialUpdateSpec</S>
+                <S>Initialize-VmHardwareUpdateSpec</S>
+                <S>Initialize-VmHardwareUpgradeRequestBody</S>
+                <S>Initialize-VmStoragePolicyComplianceCheckSpec</S>
+                <S>Initialize-VmStoragePolicyDiskPolicySpec</S>
+                <S>Initialize-VmStoragePolicyUpdateSpec</S>
+                <S>Initialize-VmStoragePolicyVmHomePolicySpec</S>
+                <S>Initialize-VmToolsUpdateSpec</S>
+                <S>Initialize-VmToolsUpgradeRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetVmHardwareBoot</S>
+                <S>Invoke-UpdateVmHardwareBoot</S>
+                <S>Invoke-ConnectVmCdrom</S>
+                <S>Invoke-CreateVmHardwareCdrom</S>
+                <S>Invoke-DeleteVmCdromHardware</S>
+                <S>Invoke-DisconnectVmCdrom</S>
+                <S>Invoke-GetVmCdromHardware</S>
+                <S>Invoke-ListVmHardwareCdrom</S>
+                <S>Invoke-UpdateVmCdromHardware</S>
+                <S>Invoke-CheckVmPolicyCompliance</S>
+                <S>Invoke-GetVmStoragePolicyCompliance</S>
+                <S>Invoke-GetVmHardwareCpu</S>
+                <S>Invoke-UpdateVmHardwareCpu</S>
+                <S>Invoke-GetVmGuestCustomization</S>
+                <S>Invoke-SetVmGuestCustomization</S>
+                <S>Invoke-CreateVmDataSets</S>
+                <S>Invoke-DeleteVmDataSet</S>
+                <S>Invoke-GetVmDataSet</S>
+                <S>Invoke-ListVmDataSets</S>
+                <S>Invoke-UpdateVmDataSet</S>
+                <S>Invoke-GetVmHardwareBootDevice</S>
+                <S>Invoke-SetVmHardwareBootDevice</S>
+                <S>Invoke-CreateTemporaryVmFilesystemDirectories</S>
+                <S>Invoke-CreateVmFilesystemDirectories</S>
+                <S>Invoke-DeleteVmFilesystemDirectories</S>
+                <S>Invoke-MoveVmFilesystemDirectories</S>
+                <S>Invoke-CreateVmHardwareDisk</S>
+                <S>Invoke-DeleteVmDiskHardware</S>
+                <S>Invoke-GetVmDiskHardware</S>
+                <S>Invoke-ListVmHardwareDisk</S>
+                <S>Invoke-UpdateVmDiskHardware</S>
+                <S>Invoke-DeleteVmDataSetKeyVmEntries</S>
+                <S>Invoke-GetVmDataSetKeyVmEntries</S>
+                <S>Invoke-ListVmDataSetVmEntries</S>
+                <S>Invoke-SetVmDataSetKeyVmEntries</S>
+                <S>Invoke-GetVmNameEnvironment</S>
+                <S>Invoke-ListVmGuestEnvironment</S>
+                <S>Invoke-ConnectVmNicEthernet</S>
+                <S>Invoke-CreateVmHardwareEthernet</S>
+                <S>Invoke-DeleteVmNicHardwareEthernet</S>
+                <S>Invoke-DisconnectVmNicEthernet</S>
+                <S>Invoke-GetVmNicHardwareEthernet</S>
+                <S>Invoke-ListVmHardwareEthernet</S>
+                <S>Invoke-UpdateVmNicHardwareEthernet</S>
+                <S>Invoke-CreateTemporaryVmFilesystemFiles</S>
+                <S>Invoke-DeleteVmPathFiles</S>
+                <S>Invoke-GetVmPathFiles</S>
+                <S>Invoke-ListVmFilesystemFiles</S>
+                <S>Invoke-MoveVmFilesystemFiles</S>
+                <S>Invoke-UpdateVmFilesystemFiles</S>
+                <S>Invoke-ConnectVmFloppy</S>
+                <S>Invoke-CreateVmHardwareFloppy</S>
+                <S>Invoke-DeleteVmFloppyHardware</S>
+                <S>Invoke-DisconnectVmFloppy</S>
+                <S>Invoke-GetVmFloppyHardware</S>
+                <S>Invoke-ListVmHardwareFloppy</S>
+                <S>Invoke-UpdateVmFloppyHardware</S>
+                <S>Invoke-GetVmHardware</S>
+                <S>Invoke-UpdateVmHardware</S>
+                <S>Invoke-UpgradeVmHardware</S>
+                <S>Invoke-GetVmGuestIdentity</S>
+                <S>Invoke-ConnectVmToolsInstaller</S>
+                <S>Invoke-DisconnectVmToolsInstaller</S>
+                <S>Invoke-GetVmToolsInstaller</S>
+                <S>Invoke-ListVmGuestNetworkingInterfaces</S>
+                <S>Invoke-GetVmLibraryItem</S>
+                <S>Invoke-GetVmGuestLocalFilesystem</S>
+                <S>Invoke-GetVmHardwareMemory</S>
+                <S>Invoke-UpdateVmHardwareMemory</S>
+                <S>Invoke-GetVmGuestNetworking</S>
+                <S>Invoke-CreateVmHardwareAdapterNvme</S>
+                <S>Invoke-DeleteVmAdapterHardwareNvme</S>
+                <S>Invoke-GetVmAdapterHardwareNvme</S>
+                <S>Invoke-ListVmHardwareAdapterNvme</S>
+                <S>Invoke-GetVmGuestOperations</S>
+                <S>Invoke-ConnectVmPortParallel</S>
+                <S>Invoke-CreateVmHardwareParallel</S>
+                <S>Invoke-DeleteVmPortHardwareParallel</S>
+                <S>Invoke-DisconnectVmPortParallel</S>
+                <S>Invoke-GetVmPortHardwareParallel</S>
+                <S>Invoke-ListVmHardwareParallel</S>
+                <S>Invoke-UpdateVmPortHardwareParallel</S>
+                <S>Invoke-GetVmPolicyComputePolicies</S>
+                <S>Invoke-GetVmStoragePolicy</S>
+                <S>Invoke-UpdateVmStoragePolicy</S>
+                <S>Invoke-GetVmGuestPower</S>
+                <S>Invoke-GetVmPower</S>
+                <S>Invoke-RebootVmGuestPower</S>
+                <S>Invoke-ResetVmPower</S>
+                <S>Invoke-ShutdownVmGuestPower</S>
+                <S>Invoke-StandbyVmGuestPower</S>
+                <S>Invoke-StartVmPower</S>
+                <S>Invoke-StopVmPower</S>
+                <S>Invoke-SuspendVmPower</S>
+                <S>Invoke-CreateVmGuestProcesses</S>
+                <S>Invoke-DeleteVmPidProcesses</S>
+                <S>Invoke-GetVmPidProcesses</S>
+                <S>Invoke-ListVmGuestProcesses</S>
+                <S>Invoke-ListVmGuestNetworkingRoutes</S>
+                <S>Invoke-CreateVmHardwareAdapterSata</S>
+                <S>Invoke-DeleteVmAdapterHardwareSata</S>
+                <S>Invoke-GetVmAdapterHardwareSata</S>
+                <S>Invoke-ListVmHardwareAdapterSata</S>
+                <S>Invoke-CreateVmHardwareAdapterScsi</S>
+                <S>Invoke-DeleteVmAdapterHardwareScsi</S>
+                <S>Invoke-GetVmAdapterHardwareScsi</S>
+                <S>Invoke-ListVmHardwareAdapterScsi</S>
+                <S>Invoke-UpdateVmAdapterHardwareScsi</S>
+                <S>Invoke-ConnectVmPortSerial</S>
+                <S>Invoke-CreateVmHardwareSerial</S>
+                <S>Invoke-DeleteVmPortHardwareSerial</S>
+                <S>Invoke-DisconnectVmPortSerial</S>
+                <S>Invoke-GetVmPortHardwareSerial</S>
+                <S>Invoke-ListVmHardwareSerial</S>
+                <S>Invoke-UpdateVmPortHardwareSerial</S>
+                <S>Invoke-CreateVmConsoleTickets</S>
+                <S>Invoke-GetVmTools</S>
+                <S>Invoke-UpdateVmTools</S>
+                <S>Invoke-UpgradeVmTools</S>
+                <S>Invoke-CreateVmGuestFilesystem</S>
+                <S>Initialize-GuestAdapterMapping</S>
+                <S>Initialize-GuestCloudConfiguration</S>
+                <S>Initialize-GuestCloudinitConfiguration</S>
+                <S>Initialize-GuestConfigurationSpec</S>
+                <S>Initialize-GuestCustomizationSpec</S>
+                <S>Initialize-GuestDomain</S>
+                <S>Initialize-GuestGlobalDNSSettings</S>
+                <S>Initialize-GuestGuiUnattended</S>
+                <S>Initialize-GuestHostnameGenerator</S>
+                <S>Initialize-GuestIPSettings</S>
+                <S>Initialize-GuestIpv4</S>
+                <S>Initialize-GuestIpv6</S>
+                <S>Initialize-GuestIpv6Address</S>
+                <S>Initialize-GuestLinuxConfiguration</S>
+                <S>Initialize-GuestUserData</S>
+                <S>Initialize-GuestWindowsConfiguration</S>
+                <S>Initialize-GuestWindowsNetworkAdapterSettings</S>
+                <S>Initialize-GuestWindowsSysprep</S>
+                <S>Initialize-VmConsoleTicketsCreateSpec</S>
+                <S>Initialize-VmDataSetsCreateSpec</S>
+                <S>Initialize-VmDataSetsUpdateSpec</S>
+                <S>Initialize-VmGuestCredentials</S>
+                <S>Initialize-VmGuestCustomizationSetSpec</S>
+                <S>Initialize-VmGuestEnvironmentGetRequestBody</S>
+                <S>Initialize-VmGuestEnvironmentListRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesCreateRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesCreateTemporaryRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesDeleteRequestBody</S>
+                <S>Initialize-VmGuestFilesystemDirectoriesMoveRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesCreateTemporaryRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesDeleteRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesFileAttributesUpdateSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesFilterSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesGetRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesIterationSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesListRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesMoveRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesPosixFileAttributesUpdateSpec</S>
+                <S>Initialize-VmGuestFilesystemFilesUpdateRequestBody</S>
+                <S>Initialize-VmGuestFilesystemFilesWindowsFileAttributesUpdateSpec</S>
+                <S>Initialize-VmGuestFilesystemTransfersCreateRequestBody</S>
+                <S>Initialize-VmGuestFilesystemTransfersCreateSpec</S>
+                <S>Initialize-VmGuestFilesystemTransfersFileCreationAttributes</S>
+                <S>Initialize-VmGuestFilesystemTransfersPosixFileAttributesCreateSpec</S>
+                <S>Initialize-VmGuestFilesystemTransfersWindowsFileAttributesCreateSpec</S>
+                <S>Initialize-VmGuestProcessesCreateRequestBody</S>
+                <S>Initialize-VmGuestProcessesCreateSpec</S>
+                <S>Initialize-VmGuestProcessesDeleteRequestBody</S>
+                <S>Initialize-VmGuestProcessesGetRequestBody</S>
+                <S>Initialize-VmGuestProcessesListRequestBody</S>
+                <S>Initialize-VmHardwareAdapterNvmeCreateSpec</S>
+                <S>Initialize-VmHardwareAdapterSataCreateSpec</S>
+                <S>Initialize-VmHardwareAdapterScsiCreateSpec</S>
+                <S>Initialize-VmHardwareAdapterScsiUpdateSpec</S>
+                <S>Initialize-VmHardwareBootDeviceEntry</S>
+                <S>Initialize-VmHardwareBootDeviceSetRequestBody</S>
+                <S>Initialize-VmHardwareBootUpdateSpec</S>
+                <S>Initialize-VmHardwareCdromBackingSpec</S>
+                <S>Initialize-VmHardwareCdromCreateSpec</S>
+                <S>Initialize-VmHardwareCdromUpdateSpec</S>
+                <S>Initialize-VmHardwareCpuUpdateSpec</S>
+                <S>Initialize-VmHardwareDiskBackingSpec</S>
+                <S>Initialize-VmHardwareDiskCreateSpec</S>
+                <S>Initialize-VmHardwareDiskStoragePolicySpec</S>
+                <S>Initialize-VmHardwareDiskUpdateSpec</S>
+                <S>Initialize-VmHardwareDiskVmdkCreateSpec</S>
+                <S>Initialize-VmHardwareEthernetBackingSpec</S>
+                <S>Initialize-VmHardwareEthernetCreateSpec</S>
+                <S>Initialize-VmHardwareEthernetUpdateSpec</S>
+                <S>Initialize-VmHardwareFloppyBackingSpec</S>
+                <S>Initialize-VmHardwareFloppyCreateSpec</S>
+                <S>Initialize-VmHardwareFloppyUpdateSpec</S>
+                <S>Initialize-VmHardwareIdeAddressSpec</S>
+                <S>Initialize-VmHardwareMemoryUpdateSpec</S>
+                <S>Initialize-VmHardwareNvmeAddressSpec</S>
+                <S>Initialize-VmHardwareParallelBackingSpec</S>
+                <S>Initialize-VmHardwareParallelCreateSpec</S>
+                <S>Initialize-VmHardwareParallelUpdateSpec</S>
+                <S>Initialize-VmHardwareSataAddressSpec</S>
+                <S>Initialize-VmHardwareScsiAddressSpec</S>
+                <S>Initialize-VmHardwareSerialBackingSpec</S>
+                <S>Initialize-VmHardwareSerialCreateSpec</S>
+                <S>Initialize-VmHardwareSerialUpdateSpec</S>
+                <S>Initialize-VmHardwareUpdateSpec</S>
+                <S>Initialize-VmHardwareUpgradeRequestBody</S>
+                <S>Initialize-VmStoragePolicyComplianceCheckSpec</S>
+                <S>Initialize-VmStoragePolicyDiskPolicySpec</S>
+                <S>Initialize-VmStoragePolicyUpdateSpec</S>
+                <S>Initialize-VmStoragePolicyVmHomePolicySpec</S>
+                <S>Initialize-VmToolsUpdateSpec</S>
+                <S>Initialize-VmToolsUpgradeRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.Vm.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2419099</S>
+          <S N="downloadCount">6832175</S>
+          <S N="packageSize">1523685</S>
+          <S N="published">7/25/2024 12:53:50 PM +03:00</S>
+          <S N="created">7/25/2024 12:53:50 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-GetVmHardwareBoot PSCommand_Invoke-GetVmHardwareBoot PSFunction_Invoke-UpdateVmHardwareBoot PSCommand_Invoke-UpdateVmHardwareBoot PSFunction_Invoke-ConnectVmCdrom PSCommand_Invoke-ConnectVmCdrom PSFunction_Invoke-CreateVmHardwareCdrom PSCommand_Invoke-CreateVmHardwareCdrom PSFunction_Invoke-DeleteVmCdromHardware PSCommand_Invoke-DeleteVmCdromHardware PSFunction_Invoke-DisconnectVmCdrom PSCommand_Invoke-DisconnectVmCdrom PSFunction_Invoke-GetVmCdromHardware PSCommand_Invoke-GetVmCdromHardware PSFunction_Invoke-ListVmHardwareCdrom PSCommand_Invoke-ListVmHardwareCdrom PSFunction_Invoke-UpdateVmCdromHardware PSCommand_Invoke-UpdateVmCdromHardware PSFunction_Invoke-CheckVmPolicyCompliance PSCommand_Invoke-CheckVmPolicyCompliance PSFunction_Invoke-GetVmStoragePolicyCompliance PSCommand_Invoke-GetVmStoragePolicyCompliance PSFunction_Invoke-GetVmHardwareCpu PSCommand_Invoke-GetVmHardwareCpu PSFunction_Invoke-UpdateVmHardwareCpu PSCommand_Invoke-UpdateVmHardwareCpu PSFunction_Invoke-GetVmGuestCustomization PSCommand_Invoke-GetVmGuestCustomization PSFunction_Invoke-SetVmGuestCustomization PSCommand_Invoke-SetVmGuestCustomization PSFunction_Invoke-CreateVmDataSets PSCommand_Invoke-CreateVmDataSets PSFunction_Invoke-DeleteVmDataSet PSCommand_Invoke-DeleteVmDataSet PSFunction_Invoke-GetVmDataSet PSCommand_Invoke-GetVmDataSet PSFunction_Invoke-ListVmDataSets PSCommand_Invoke-ListVmDataSets PSFunction_Invoke-UpdateVmDataSet PSCommand_Invoke-UpdateVmDataSet PSFunction_Invoke-GetVmHardwareBootDevice PSCommand_Invoke-GetVmHardwareBootDevice PSFunction_Invoke-SetVmHardwareBootDevice PSCommand_Invoke-SetVmHardwareBootDevice PSFunction_Invoke-CreateTemporaryVmFilesystemDirectories PSCommand_Invoke-CreateTemporaryVmFilesystemDirectories PSFunction_Invoke-CreateVmFilesystemDirectories PSCommand_Invoke-CreateVmFilesystemDirectories PSFunction_Invoke-DeleteVmFilesystemDirectories PSCommand_Invoke-DeleteVmFilesystemDirectories PSFunction_Invoke-MoveVmFilesystemDirectories PSCommand_Invoke-MoveVmFilesystemDirectories PSFunction_Invoke-CreateVmHardwareDisk PSCommand_Invoke-CreateVmHardwareDisk PSFunction_Invoke-DeleteVmDiskHardware PSCommand_Invoke-DeleteVmDiskHardware PSFunction_Invoke-GetVmDiskHardware PSCommand_Invoke-GetVmDiskHardware PSFunction_Invoke-ListVmHardwareDisk PSCommand_Invoke-ListVmHardwareDisk PSFunction_Invoke-UpdateVmDiskHardware PSCommand_Invoke-UpdateVmDiskHardware PSFunction_Invoke-DeleteVmDataSetKeyVmEntries PSCommand_Invoke-DeleteVmDataSetKeyVmEntries PSFunction_Invoke-GetVmDataSetKeyVmEntries PSCommand_Invoke-GetVmDataSetKeyVmEntries PSFunction_Invoke-ListVmDataSetVmEntries PSCommand_Invoke-ListVmDataSetVmEntries PSFunction_Invoke-SetVmDataSetKeyVmEntries PSCommand_Invoke-SetVmDataSetKeyVmEntries PSFunction_Invoke-GetVmNameEnvironment PSCommand_Invoke-GetVmNameEnvironment PSFunction_Invoke-ListVmGuestEnvironment PSCommand_Invoke-ListVmGuestEnvironment PSFunction_Invoke-ConnectVmNicEthernet PSCommand_Invoke-ConnectVmNicEthernet PSFunction_Invoke-CreateVmHardwareEthernet PSCommand_Invoke-CreateVmHardwareEthernet PSFunction_Invoke-DeleteVmNicHardwareEthernet PSCommand_Invoke-DeleteVmNicHardwareEthernet PSFunction_Invoke-DisconnectVmNicEthernet PSCommand_Invoke-DisconnectVmNicEthernet PSFunction_Invoke-GetVmNicHardwareEthernet PSCommand_Invoke-GetVmNicHardwareEthernet PSFunction_Invoke-ListVmHardwareEthernet PSCommand_Invoke-ListVmHardwareEthernet PSFunction_Invoke-UpdateVmNicHardwareEthernet PSCommand_Invoke-UpdateVmNicHardwareEthernet PSFunction_Invoke-CreateTemporaryVmFilesystemFiles PSCommand_Invoke-CreateTemporaryVmFilesystemFiles PSFunction_Invoke-DeleteVmPathFiles PSCommand_Invoke-DeleteVmPathFiles PSFunction_Invoke-GetVmPathFiles PSCommand_Invoke-GetVmPathFiles PSFunction_Invoke-ListVmFilesystemFiles PSCommand_Invoke-ListVmFilesystemFiles PSFunction_Invoke-MoveVmFilesystemFiles PSCommand_Invoke-MoveVmFilesystemFiles PSFunction_Invoke-UpdateVmFilesystemFiles PSCommand_Invoke-UpdateVmFilesystemFiles PSFunction_Invoke-ConnectVmFloppy PSCommand_Invoke-ConnectVmFloppy PSFunction_Invoke-CreateVmHardwareFloppy PSCommand_Invoke-CreateVmHardwareFloppy PSFunction_Invoke-DeleteVmFloppyHardware PSCommand_Invoke-DeleteVmFloppyHardware PSFunction_Invoke-DisconnectVmFloppy PSCommand_Invoke-DisconnectVmFloppy PSFunction_Invoke-GetVmFloppyHardware PSCommand_Invoke-GetVmFloppyHardware PSFunction_Invoke-ListVmHardwareFloppy PSCommand_Invoke-ListVmHardwareFloppy PSFunction_Invoke-UpdateVmFloppyHardware PSCommand_Invoke-UpdateVmFloppyHardware PSFunction_Invoke-GetVmHardware PSCommand_Invoke-GetVmHardware PSFunction_Invoke-UpdateVmHardware PSCommand_Invoke-UpdateVmHardware PSFunction_Invoke-UpgradeVmHardware PSCommand_Invoke-UpgradeVmHardware PSFunction_Invoke-GetVmGuestIdentity PSCommand_Invoke-GetVmGuestIdentity PSFunction_Invoke-ConnectVmToolsInstaller PSCommand_Invoke-ConnectVmToolsInstaller PSFunction_Invoke-DisconnectVmToolsInstaller PSCommand_Invoke-DisconnectVmToolsInstaller PSFunction_Invoke-GetVmToolsInstaller PSCommand_Invoke-GetVmToolsInstaller PSFunction_Invoke-ListVmGuestNetworkingInterfaces PSCommand_Invoke-ListVmGuestNetworkingInterfaces PSFunction_Invoke-GetVmLibraryItem PSCommand_Invoke-GetVmLibraryItem PSFunction_Invoke-GetVmGuestLocalFilesystem PSCommand_Invoke-GetVmGuestLocalFilesystem PSFunction_Invoke-GetVmHardwareMemory PSCommand_Invoke-GetVmHardwareMemory PSFunction_Invoke-UpdateVmHardwareMemory PSCommand_Invoke-UpdateVmHardwareMemory PSFunction_Invoke-GetVmGuestNetworking PSCommand_Invoke-GetVmGuestNetworking PSFunction_Invoke-CreateVmHardwareAdapterNvme PSCommand_Invoke-CreateVmHardwareAdapterNvme PSFunction_Invoke-DeleteVmAdapterHardwareNvme PSCommand_Invoke-DeleteVmAdapterHardwareNvme PSFunction_Invoke-GetVmAdapterHardwareNvme PSCommand_Invoke-GetVmAdapterHardwareNvme PSFunction_Invoke-ListVmHardwareAdapterNvme PSCommand_Invoke-ListVmHardwareAdapterNvme PSFunction_Invoke-GetVmGuestOperations PSCommand_Invoke-GetVmGuestOperations PSFunction_Invoke-ConnectVmPortParallel PSCommand_Invoke-ConnectVmPortParallel PSFunction_Invoke-CreateVmHardwareParallel PSCommand_Invoke-CreateVmHardwareParallel PSFunction_Invoke-DeleteVmPortHardwareParallel PSCommand_Invoke-DeleteVmPortHardwareParallel PSFunction_Invoke-DisconnectVmPortParallel PSCommand_Invoke-DisconnectVmPortParallel PSFunction_Invoke-GetVmPortHardwareParallel PSCommand_Invoke-GetVmPortHardwareParallel PSFunction_Invoke-ListVmHardwareParallel PSCommand_Invoke-ListVmHardwareParallel PSFunction_Invoke-UpdateVmPortHardwareParallel PSCommand_Invoke-UpdateVmPortHardwareParallel PSFunction_Invoke-GetVmPolicyComputePolicies PSCommand_Invoke-GetVmPolicyComputePolicies PSFunction_Invoke-GetVmStoragePolicy PSCommand_Invoke-GetVmStoragePolicy PSFunction_Invoke-UpdateVmStoragePolicy PSCommand_Invoke-UpdateVmStoragePolicy PSFunction_Invoke-GetVmGuestPower PSCommand_Invoke-GetVmGuestPower PSFunction_Invoke-GetVmPower PSCommand_Invoke-GetVmPower PSFunction_Invoke-RebootVmGuestPower PSCommand_Invoke-RebootVmGuestPower PSFunction_Invoke-ResetVmPower PSCommand_Invoke-ResetVmPower PSFunction_Invoke-ShutdownVmGuestPower PSCommand_Invoke-ShutdownVmGuestPower PSFunction_Invoke-StandbyVmGuestPower PSCommand_Invoke-StandbyVmGuestPower PSFunction_Invoke-StartVmPower PSCommand_Invoke-StartVmPower PSFunction_Invoke-StopVmPower PSCommand_Invoke-StopVmPower PSFunction_Invoke-SuspendVmPower PSCommand_Invoke-SuspendVmPower PSFunction_Invoke-CreateVmGuestProcesses PSCommand_Invoke-CreateVmGuestProcesses PSFunction_Invoke-DeleteVmPidProcesses PSCommand_Invoke-DeleteVmPidProcesses PSFunction_Invoke-GetVmPidProcesses PSCommand_Invoke-GetVmPidProcesses PSFunction_Invoke-ListVmGuestProcesses PSCommand_Invoke-ListVmGuestProcesses PSFunction_Invoke-ListVmGuestNetworkingRoutes PSCommand_Invoke-ListVmGuestNetworkingRoutes PSFunction_Invoke-CreateVmHardwareAdapterSata PSCommand_Invoke-CreateVmHardwareAdapterSata PSFunction_Invoke-DeleteVmAdapterHardwareSata PSCommand_Invoke-DeleteVmAdapterHardwareSata PSFunction_Invoke-GetVmAdapterHardwareSata PSCommand_Invoke-GetVmAdapterHardwareSata PSFunction_Invoke-ListVmHardwareAdapterSata PSCommand_Invoke-ListVmHardwareAdapterSata PSFunction_Invoke-CreateVmHardwareAdapterScsi PSCommand_Invoke-CreateVmHardwareAdapterScsi PSFunction_Invoke-DeleteVmAdapterHardwareScsi PSCommand_Invoke-DeleteVmAdapterHardwareScsi PSFunction_Invoke-GetVmAdapterHardwareScsi PSCommand_Invoke-GetVmAdapterHardwareScsi PSFunction_Invoke-ListVmHardwareAdapterScsi PSCommand_Invoke-ListVmHardwareAdapterScsi PSFunction_Invoke-UpdateVmAdapterHardwareScsi PSCommand_Invoke-UpdateVmAdapterHardwareScsi PSFunction_Invoke-ConnectVmPortSerial PSCommand_Invoke-ConnectVmPortSerial PSFunction_Invoke-CreateVmHardwareSerial PSCommand_Invoke-CreateVmHardwareSerial PSFunction_Invoke-DeleteVmPortHardwareSerial PSCommand_Invoke-DeleteVmPortHardwareSerial PSFunction_Invoke-DisconnectVmPortSerial PSCommand_Invoke-DisconnectVmPortSerial PSFunction_Invoke-GetVmPortHardwareSerial PSCommand_Invoke-GetVmPortHardwareSerial PSFunction_Invoke-ListVmHardwareSerial PSCommand_Invoke-ListVmHardwareSerial PSFunction_Invoke-UpdateVmPortHardwareSerial PSCommand_Invoke-UpdateVmPortHardwareSerial PSFunction_Invoke-CreateVmConsoleTickets PSCommand_Invoke-CreateVmConsoleTickets PSFunction_Invoke-GetVmTools PSCommand_Invoke-GetVmTools PSFunction_Invoke-UpdateVmTools PSCommand_Invoke-UpdateVmTools PSFunction_Invoke-UpgradeVmTools PSCommand_Invoke-UpgradeVmTools PSFunction_Invoke-CreateVmGuestFilesystem PSCommand_Invoke-CreateVmGuestFilesystem PSFunction_Initialize-GuestAdapterMapping PSCommand_Initialize-GuestAdapterMapping PSFunction_Initialize-GuestCloudConfiguration PSCommand_Initialize-GuestCloudConfiguration PSFunction_Initialize-GuestCloudinitConfiguration PSCommand_Initialize-GuestCloudinitConfiguration PSFunction_Initialize-GuestConfigurationSpec PSCommand_Initialize-GuestConfigurationSpec PSFunction_Initialize-GuestCustomizationSpec PSCommand_Initialize-GuestCustomizationSpec PSFunction_Initialize-GuestDomain PSCommand_Initialize-GuestDomain PSFunction_Initialize-GuestGlobalDNSSettings PSCommand_Initialize-GuestGlobalDNSSettings PSFunction_Initialize-GuestGuiUnattended PSCommand_Initialize-GuestGuiUnattended PSFunction_Initialize-GuestHostnameGenerator PSCommand_Initialize-GuestHostnameGenerator PSFunction_Initialize-GuestIPSettings PSCommand_Initialize-GuestIPSettings PSFunction_Initialize-GuestIpv4 PSCommand_Initialize-GuestIpv4 PSFunction_Initialize-GuestIpv6 PSCommand_Initialize-GuestIpv6 PSFunction_Initialize-GuestIpv6Address PSCommand_Initialize-GuestIpv6Address PSFunction_Initialize-GuestLinuxConfiguration PSCommand_Initialize-GuestLinuxConfiguration PSFunction_Initialize-GuestUserData PSCommand_Initialize-GuestUserData PSFunction_Initialize-GuestWindowsConfiguration PSCommand_Initialize-GuestWindowsConfiguration PSFunction_Initialize-GuestWindowsNetworkAdapterSettings PSCommand_Initialize-GuestWindowsNetworkAdapterSettings PSFunction_Initialize-GuestWindowsSysprep PSCommand_Initialize-GuestWindowsSysprep PSFunction_Initialize-VmConsoleTicketsCreateSpec PSCommand_Initialize-VmConsoleTicketsCreateSpec PSFunction_Initialize-VmDataSetsCreateSpec PSCommand_Initialize-VmDataSetsCreateSpec PSFunction_Initialize-VmDataSetsUpdateSpec PSCommand_Initialize-VmDataSetsUpdateSpec PSFunction_Initialize-VmGuestCredentials PSCommand_Initialize-VmGuestCredentials PSFunction_Initialize-VmGuestCustomizationSetSpec PSCommand_Initialize-VmGuestCustomizationSetSpec PSFunction_Initialize-VmGuestEnvironmentGetRequestBody PSCommand_Initialize-VmGuestEnvironmentGetRequestBody PSFunction_Initialize-VmGuestEnvironmentListRequestBody PSCommand_Initialize-VmGuestEnvironmentListRequestBody PSFunction_Initialize-VmGuestFilesystemDirectoriesCreateRequestBody PSCommand_Initialize-VmGuestFilesystemDirectoriesCreateRequestBody PSFunction_Initialize-VmGuestFilesystemDirectoriesCreateTemporaryRequestBody PSCommand_Initialize-VmGuestFilesystemDirectoriesCreateTemporaryRequestBody PSFunction_Initialize-VmGuestFilesystemDirectoriesDeleteRequestBody PSCommand_Initialize-VmGuestFilesystemDirectoriesDeleteRequestBody PSFunction_Initialize-VmGuestFilesystemDirectoriesMoveRequestBody PSCommand_Initialize-VmGuestFilesystemDirectoriesMoveRequestBody PSFunction_Initialize-VmGuestFilesystemFilesCreateTemporaryRequestBody PSCommand_Initialize-VmGuestFilesystemFilesCreateTemporaryRequestBody PSFunction_Initialize-VmGuestFilesystemFilesDeleteRequestBody PSCommand_Initialize-VmGuestFilesystemFilesDeleteRequestBody PSFunction_Initialize-VmGuestFilesystemFilesFileAttributesUpdateSpec PSCommand_Initialize-VmGuestFilesystemFilesFileAttributesUpdateSpec PSFunction_Initialize-VmGuestFilesystemFilesFilterSpec PSCommand_Initialize-VmGuestFilesystemFilesFilterSpec PSFunction_Initialize-VmGuestFilesystemFilesGetRequestBody PSCommand_Initialize-VmGuestFilesystemFilesGetRequestBody PSFunction_Initialize-VmGuestFilesystemFilesIterationSpec PSCommand_Initialize-VmGuestFilesystemFilesIterationSpec PSFunction_Initialize-VmGuestFilesystemFilesListRequestBody PSCommand_Initialize-VmGuestFilesystemFilesListRequestBody PSFunction_Initialize-VmGuestFilesystemFilesMoveRequestBody PSCommand_Initialize-VmGuestFilesystemFilesMoveRequestBody PSFunction_Initialize-VmGuestFilesystemFilesPosixFileAttributesUpdateSpec PSCommand_Initialize-VmGuestFilesystemFilesPosixFileAttributesUpdateSpec PSFunction_Initialize-VmGuestFilesystemFilesUpdateRequestBody PSCommand_Initialize-VmGuestFilesystemFilesUpdateRequestBody PSFunction_Initialize-VmGuestFilesystemFilesWindowsFileAttributesUpdateSpec PSCommand_Initialize-VmGuestFilesystemFilesWindowsFileAttributesUpdateSpec PSFunction_Initialize-VmGuestFilesystemTransfersCreateRequestBody PSCommand_Initialize-VmGuestFilesystemTransfersCreateRequestBody PSFunction_Initialize-VmGuestFilesystemTransfersCreateSpec PSCommand_Initialize-VmGuestFilesystemTransfersCreateSpec PSFunction_Initialize-VmGuestFilesystemTransfersFileCreationAttributes PSCommand_Initialize-VmGuestFilesystemTransfersFileCreationAttributes PSFunction_Initialize-VmGuestFilesystemTransfersPosixFileAttributesCreateSpec PSCommand_Initialize-VmGuestFilesystemTransfersPosixFileAttributesCreateSpec PSFunction_Initialize-VmGuestFilesystemTransfersWindowsFileAttributesCreateSpec PSCommand_Initialize-VmGuestFilesystemTransfersWindowsFileAttributesCreateSpec PSFunction_Initialize-VmGuestProcessesCreateRequestBody PSCommand_Initialize-VmGuestProcessesCreateRequestBody PSFunction_Initialize-VmGuestProcessesCreateSpec PSCommand_Initialize-VmGuestProcessesCreateSpec PSFunction_Initialize-VmGuestProcessesDeleteRequestBody PSCommand_Initialize-VmGuestProcessesDeleteRequestBody PSFunction_Initialize-VmGuestProcessesGetRequestBody PSCommand_Initialize-VmGuestProcessesGetRequestBody PSFunction_Initialize-VmGuestProcessesListRequestBody PSCommand_Initialize-VmGuestProcessesListRequestBody PSFunction_Initialize-VmHardwareAdapterNvmeCreateSpec PSCommand_Initialize-VmHardwareAdapterNvmeCreateSpec PSFunction_Initialize-VmHardwareAdapterSataCreateSpec PSCommand_Initialize-VmHardwareAdapterSataCreateSpec PSFunction_Initialize-VmHardwareAdapterScsiCreateSpec PSCommand_Initialize-VmHardwareAdapterScsiCreateSpec PSFunction_Initialize-VmHardwareAdapterScsiUpdateSpec PSCommand_Initialize-VmHardwareAdapterScsiUpdateSpec PSFunction_Initialize-VmHardwareBootDeviceEntry PSCommand_Initialize-VmHardwareBootDeviceEntry PSFunction_Initialize-VmHardwareBootDeviceSetRequestBody PSCommand_Initialize-VmHardwareBootDeviceSetRequestBody PSFunction_Initialize-VmHardwareBootUpdateSpec PSCommand_Initialize-VmHardwareBootUpdateSpec PSFunction_Initialize-VmHardwareCdromBackingSpec PSCommand_Initialize-VmHardwareCdromBackingSpec PSFunction_Initialize-VmHardwareCdromCreateSpec PSCommand_Initialize-VmHardwareCdromCreateSpec PSFunction_Initialize-VmHardwareCdromUpdateSpec PSCommand_Initialize-VmHardwareCdromUpdateSpec PSFunction_Initialize-VmHardwareCpuUpdateSpec PSCommand_Initialize-VmHardwareCpuUpdateSpec PSFunction_Initialize-VmHardwareDiskBackingSpec PSCommand_Initialize-VmHardwareDiskBackingSpec PSFunction_Initialize-VmHardwareDiskCreateSpec PSCommand_Initialize-VmHardwareDiskCreateSpec PSFunction_Initialize-VmHardwareDiskStoragePolicySpec PSCommand_Initialize-VmHardwareDiskStoragePolicySpec PSFunction_Initialize-VmHardwareDiskUpdateSpec PSCommand_Initialize-VmHardwareDiskUpdateSpec PSFunction_Initialize-VmHardwareDiskVmdkCreateSpec PSCommand_Initialize-VmHardwareDiskVmdkCreateSpec PSFunction_Initialize-VmHardwareEthernetBackingSpec PSCommand_Initialize-VmHardwareEthernetBackingSpec PSFunction_Initialize-VmHardwareEthernetCreateSpec PSCommand_Initialize-VmHardwareEthernetCreateSpec PSFunction_Initialize-VmHardwareEthernetUpdateSpec PSCommand_Initialize-VmHardwareEthernetUpdateSpec PSFunction_Initialize-VmHardwareFloppyBackingSpec PSCommand_Initialize-VmHardwareFloppyBackingSpec PSFunction_Initialize-VmHardwareFloppyCreateSpec PSCommand_Initialize-VmHardwareFloppyCreateSpec PSFunction_Initialize-VmHardwareFloppyUpdateSpec PSCommand_Initialize-VmHardwareFloppyUpdateSpec PSFunction_Initialize-VmHardwareIdeAddressSpec PSCommand_Initialize-VmHardwareIdeAddressSpec PSFunction_Initialize-VmHardwareMemoryUpdateSpec PSCommand_Initialize-VmHardwareMemoryUpdateSpec PSFunction_Initialize-VmHardwareNvmeAddressSpec PSCommand_Initialize-VmHardwareNvmeAddressSpec PSFunction_Initialize-VmHardwareParallelBackingSpec PSCommand_Initialize-VmHardwareParallelBackingSpec PSFunction_Initialize-VmHardwareParallelCreateSpec PSCommand_Initialize-VmHardwareParallelCreateSpec PSFunction_Initialize-VmHardwareParallelUpdateSpec PSCommand_Initialize-VmHardwareParallelUpdateSpec PSFunction_Initialize-VmHardwareSataAddressSpec PSCommand_Initialize-VmHardwareSataAddressSpec PSFunction_Initialize-VmHardwareScsiAddressSpec PSCommand_Initialize-VmHardwareScsiAddressSpec PSFunction_Initialize-VmHardwareSerialBackingSpec PSCommand_Initialize-VmHardwareSerialBackingSpec PSFunction_Initialize-VmHardwareSerialCreateSpec PSCommand_Initialize-VmHardwareSerialCreateSpec PSFunction_Initialize-VmHardwareSerialUpdateSpec PSCommand_Initialize-VmHardwareSerialUpdateSpec PSFunction_Initialize-VmHardwareUpdateSpec PSCommand_Initialize-VmHardwareUpdateSpec PSFunction_Initialize-VmHardwareUpgradeRequestBody PSCommand_Initialize-VmHardwareUpgradeRequestBody PSFunction_Initialize-VmStoragePolicyComplianceCheckSpec PSCommand_Initialize-VmStoragePolicyComplianceCheckSpec PSFunction_Initialize-VmStoragePolicyDiskPolicySpec PSCommand_Initialize-VmStoragePolicyDiskPolicySpec PSFunction_Initialize-VmStoragePolicyUpdateSpec PSCommand_Initialize-VmStoragePolicyUpdateSpec PSFunction_Initialize-VmStoragePolicyVmHomePolicySpec PSCommand_Initialize-VmStoragePolicyVmHomePolicySpec PSFunction_Initialize-VmToolsUpdateSpec PSCommand_Initialize-VmToolsUpdateSpec PSFunction_Initialize-VmToolsUpgradeRequestBody PSCommand_Initialize-VmToolsUpgradeRequestBody PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.Vm.nuspec|README.md|Api\DeviceApi.ps1|Api\InterfacesApi.ps1|Api\ProcessesApi.ps1|Model\GuestConfigurationSpec.ps1|Model\GuestUserData.ps1|Model\VmGuestFilesystemDirectoriesCreateRequestBody.ps1|Model\VmGuestFilesystemFilesMoveRequestBody.ps1|Model\VmGuestProcessesDeleteRequestBody.ps1|Model\VmHardwareCdromCreateSpec.ps1|Model\VmHardwareFloppyBackingSpec.ps1|Model\VmHardwareSerialBackingSpec.ps1|VMware.Sdk.vSphere.vCenter.Vm.cat|Api\DirectoriesApi.ps1|Api\LibraryItemApi.ps1|Api\RoutesApi.ps1|Model\GuestCustomizationSpec.ps1|Model\GuestWindowsConfiguration.ps1|Model\VmGuestFilesystemDirectoriesCreateTemporaryRequestBody.ps1|Model\VmGuestFilesystemFilesPosixFileAttributesUpdateSpec.ps1|Model\VmGuestProcessesGetRequestBody.ps1|Model\VmHardwareCdromUpdateSpec.ps1|Model\VmHardwareFloppyCreateSpec.ps1|Model\VmHardwareSerialCreateSpec.ps1|Api\DiskApi.ps1|Api\LocalFilesystemApi.ps1|Api\SataApi.ps1|Model\GuestDomain.ps1|Model\GuestWindowsNetworkAdapterSettings.ps1|Model\VmGuestFilesystemDirectoriesDeleteRequestBody.ps1|Model\VmGuestFilesystemFilesUpdateRequestBody.ps1|Model\VmGuestProcessesListRequestBody.ps1|Model\VmHardwareCpuUpdateSpec.ps1|Model\VmHardwareFloppyUpdateSpec.ps1|Model\VmHardwareSerialUpdateSpec.ps1|VMware.Sdk.vSphere.vCenter.Vm.psd1|Api\EntriesApi.ps1|Api\MemoryApi.ps1|Api\ScsiApi.ps1|Model\GuestGlobalDNSSettings.ps1|Model\GuestWindowsSysprep.ps1|Model\VmGuestFilesystemDirectoriesMoveRequestBody.ps1|Model\VmGuestFilesystemFilesWindowsFileAttributesUpdateSpec.ps1|Model\VmHardwareAdapterNvmeCreateSpec.ps1|Model\VmHardwareDiskBackingSpec.ps1|Model\VmHardwareIdeAddressSpec.ps1|Model\VmHardwareUpdateSpec.ps1|VMware.Sdk.vSphere.vCenter.Vm.psm1|Api\EnvironmentApi.ps1|Api\NetworkingApi.ps1|Api\SerialApi.ps1|Model\GuestGuiUnattended.ps1|Model\VmConsoleTicketsCreateSpec.ps1|Model\VmGuestFilesystemFilesCreateTemporaryRequestBody.ps1|Model\VmGuestFilesystemTransfersCreateRequestBody.ps1|Model\VmHardwareAdapterSataCreateSpec.ps1|Model\VmHardwareDiskCreateSpec.ps1|Model\VmHardwareMemoryUpdateSpec.ps1|Model\VmHardwareUpgradeRequestBody.ps1|Api\BootApi.ps1|Api\EthernetApi.ps1|Api\NvmeApi.ps1|Api\TicketsApi.ps1|Model\GuestHostnameGenerator.ps1|Model\VmDataSetsCreateSpec.ps1|Model\VmGuestFilesystemFilesDeleteRequestBody.ps1|Model\VmGuestFilesystemTransfersCreateSpec.ps1|Model\VmHardwareAdapterScsiCreateSpec.ps1|Model\VmHardwareDiskStoragePolicySpec.ps1|Model\VmHardwareNvmeAddressSpec.ps1|Model\VmStoragePolicyComplianceCheckSpec.ps1|Api\CdromApi.ps1|Api\FilesApi.ps1|Api\OperationsApi.ps1|Api\ToolsApi.ps1|Model\GuestIPSettings.ps1|Model\VmDataSetsUpdateSpec.ps1|Model\VmGuestFilesystemFilesFileAttributesUpdateSpec.ps1|Model\VmGuestFilesystemTransfersFileCreationAttributes.ps1|Model\VmHardwareAdapterScsiUpdateSpec.ps1|Model\VmHardwareDiskUpdateSpec.ps1|Model\VmHardwareParallelBackingSpec.ps1|Model\VmStoragePolicyDiskPolicySpec.ps1|Api\ComplianceApi.ps1|Api\FloppyApi.ps1|Api\ParallelApi.ps1|Api\TransfersApi.ps1|Model\GuestIpv4.ps1|Model\VmGuestCredentials.ps1|Model\VmGuestFilesystemFilesFilterSpec.ps1|Model\VmGuestFilesystemTransfersPosixFileAttributesCreateSpec.ps1|Model\VmHardwareBootDeviceEntry.ps1|Model\VmHardwareDiskVmdkCreateSpec.ps1|Model\VmHardwareParallelCreateSpec.ps1|Model\VmStoragePolicyUpdateSpec.ps1|Api\CpuApi.ps1|Api\HardwareApi.ps1|Api\PoliciesApi.ps1|Model\GuestAdapterMapping.ps1|Model\GuestIpv6.ps1|Model\VmGuestCustomizationSetSpec.ps1|Model\VmGuestFilesystemFilesGetRequestBody.ps1|Model\VmGuestFilesystemTransfersWindowsFileAttributesCreateSpec.ps1|Model\VmHardwareBootDeviceSetRequestBody.ps1|Model\VmHardwareEthernetBackingSpec.ps1|Model\VmHardwareParallelUpdateSpec.ps1|Model\VmStoragePolicyVmHomePolicySpec.ps1|Api\CustomizationApi.ps1|Api\IdentityApi.ps1|Api\PolicyApi.ps1|Model\GuestCloudConfiguration.ps1|Model\GuestIpv6Address.ps1|Model\VmGuestEnvironmentGetRequestBody.ps1|Model\VmGuestFilesystemFilesIterationSpec.ps1|Model\VmGuestProcessesCreateRequestBody.ps1|Model\VmHardwareBootUpdateSpec.ps1|Model\VmHardwareEthernetCreateSpec.ps1|Model\VmHardwareSataAddressSpec.ps1|Model\VmToolsUpdateSpec.ps1|Api\DataSetsApi.ps1|Api\InstallerApi.ps1|Api\PowerApi.ps1|Model\GuestCloudinitConfiguration.ps1|Model\GuestLinuxConfiguration.ps1|Model\VmGuestEnvironmentListRequestBody.ps1|Model\VmGuestFilesystemFilesListRequestBody.ps1|Model\VmGuestProcessesCreateSpec.ps1|Model\VmHardwareCdromBackingSpec.ps1|Model\VmHardwareEthernetUpdateSpec.ps1|Model\VmHardwareScsiAddressSpec.ps1|Model\VmToolsUpgradeRequestBody.ps1</S>
+          <S N="GUID">4d6fe633-0530-4d4a-b81b-4726691a145b</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter.Vm/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

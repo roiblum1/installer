@@ -1,0 +1,282 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Hcx</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This Windows PowerShell module contains PowerCLI HCX cmdlets.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:07:13+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-HCXServer</S>
+                <S>Disconnect-HCXServer</S>
+                <S>Get-HCXAppliance</S>
+                <S>Get-HCXComputeProfile</S>
+                <S>Get-HCXContainer</S>
+                <S>Get-HCXDatastore</S>
+                <S>Get-HCXGateway</S>
+                <S>Get-HCXInterconnectStatus</S>
+                <S>Get-HCXInventoryCompute</S>
+                <S>Get-HCXInventoryDatastore</S>
+                <S>Get-HCXInventoryDVS</S>
+                <S>Get-HCXInventoryNetwork</S>
+                <S>Get-HCXJob</S>
+                <S>Get-HCXMigration</S>
+                <S>Get-HCXMobilityGroup</S>
+                <S>Get-HCXNetwork</S>
+                <S>Get-HCXNetworkBacking</S>
+                <S>Get-HCXNetworkExtension</S>
+                <S>Get-HCXNetworkProfile</S>
+                <S>Get-HCXReplication</S>
+                <S>Get-HCXReplicationSnapshot</S>
+                <S>Get-HCXService</S>
+                <S>Get-HCXServiceMesh</S>
+                <S>Get-HCXSite</S>
+                <S>Get-HCXSitePairing</S>
+                <S>Get-HCXStorageProfile</S>
+                <S>Get-HCXVM</S>
+                <S>New-HCXAppliance</S>
+                <S>New-HCXComputeProfile</S>
+                <S>New-HCXComputeProfileDVS</S>
+                <S>New-HCXComputeProfileNetwork</S>
+                <S>New-HCXGuestOSCustomization</S>
+                <S>New-HCXGuestOSNetworkCustomization</S>
+                <S>New-HCXMigration</S>
+                <S>New-HCXMobilityGroup</S>
+                <S>New-HCXMobilityGroupConfiguration</S>
+                <S>New-HCXNetworkExtension</S>
+                <S>New-HCXNetworkMapping</S>
+                <S>New-HCXNetworkProfile</S>
+                <S>New-HCXReplication</S>
+                <S>New-HCXSentinelBundle</S>
+                <S>New-HCXServiceMesh</S>
+                <S>New-HCXServiceMeshDVS</S>
+                <S>New-HCXSitePairing</S>
+                <S>New-HCXStaticRoute</S>
+                <S>Remove-HCXAppliance</S>
+                <S>Remove-HCXComputeProfile</S>
+                <S>Remove-HCXNetworkExtension</S>
+                <S>Remove-HCXNetworkProfile</S>
+                <S>Remove-HCXReplication</S>
+                <S>Remove-HCXServiceMesh</S>
+                <S>Remove-HCXSitePairing</S>
+                <S>Resume-HCXReplication</S>
+                <S>Set-HCXAppliance</S>
+                <S>Set-HCXComputeProfile</S>
+                <S>Set-HCXMigration</S>
+                <S>Set-HCXMobilityGroup</S>
+                <S>Set-HCXMobilityGroupConfiguration</S>
+                <S>Set-HCXNetworkProfile</S>
+                <S>Set-HCXReplication</S>
+                <S>Set-HCXServiceMesh</S>
+                <S>Start-HCXMigration</S>
+                <S>Start-HCXMobilityGroupMigration</S>
+                <S>Start-HCXReplication</S>
+                <S>Stop-HCXMobilityGroupMigration</S>
+                <S>Suspend-HCXReplication</S>
+                <S>Test-HCXMigration</S>
+                <S>Test-HCXMobilityGroup</S>
+                <S>Test-HCXReplication</S>
+                <S>Uninstall-HCXSentinel</S>
+                <S>Update-HCXSentinel</S>
+                <S>Wait-HCXJob</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-HCXServer</S>
+                <S>Disconnect-HCXServer</S>
+                <S>Get-HCXAppliance</S>
+                <S>Get-HCXComputeProfile</S>
+                <S>Get-HCXContainer</S>
+                <S>Get-HCXDatastore</S>
+                <S>Get-HCXGateway</S>
+                <S>Get-HCXInterconnectStatus</S>
+                <S>Get-HCXInventoryCompute</S>
+                <S>Get-HCXInventoryDatastore</S>
+                <S>Get-HCXInventoryDVS</S>
+                <S>Get-HCXInventoryNetwork</S>
+                <S>Get-HCXJob</S>
+                <S>Get-HCXMigration</S>
+                <S>Get-HCXMobilityGroup</S>
+                <S>Get-HCXNetwork</S>
+                <S>Get-HCXNetworkBacking</S>
+                <S>Get-HCXNetworkExtension</S>
+                <S>Get-HCXNetworkProfile</S>
+                <S>Get-HCXReplication</S>
+                <S>Get-HCXReplicationSnapshot</S>
+                <S>Get-HCXService</S>
+                <S>Get-HCXServiceMesh</S>
+                <S>Get-HCXSite</S>
+                <S>Get-HCXSitePairing</S>
+                <S>Get-HCXStorageProfile</S>
+                <S>Get-HCXVM</S>
+                <S>New-HCXAppliance</S>
+                <S>New-HCXComputeProfile</S>
+                <S>New-HCXComputeProfileDVS</S>
+                <S>New-HCXComputeProfileNetwork</S>
+                <S>New-HCXGuestOSCustomization</S>
+                <S>New-HCXGuestOSNetworkCustomization</S>
+                <S>New-HCXMigration</S>
+                <S>New-HCXMobilityGroup</S>
+                <S>New-HCXMobilityGroupConfiguration</S>
+                <S>New-HCXNetworkExtension</S>
+                <S>New-HCXNetworkMapping</S>
+                <S>New-HCXNetworkProfile</S>
+                <S>New-HCXReplication</S>
+                <S>New-HCXSentinelBundle</S>
+                <S>New-HCXServiceMesh</S>
+                <S>New-HCXServiceMeshDVS</S>
+                <S>New-HCXSitePairing</S>
+                <S>New-HCXStaticRoute</S>
+                <S>Remove-HCXAppliance</S>
+                <S>Remove-HCXComputeProfile</S>
+                <S>Remove-HCXNetworkExtension</S>
+                <S>Remove-HCXNetworkProfile</S>
+                <S>Remove-HCXReplication</S>
+                <S>Remove-HCXServiceMesh</S>
+                <S>Remove-HCXSitePairing</S>
+                <S>Resume-HCXReplication</S>
+                <S>Set-HCXAppliance</S>
+                <S>Set-HCXComputeProfile</S>
+                <S>Set-HCXMigration</S>
+                <S>Set-HCXMobilityGroup</S>
+                <S>Set-HCXMobilityGroupConfiguration</S>
+                <S>Set-HCXNetworkProfile</S>
+                <S>Set-HCXReplication</S>
+                <S>Set-HCXServiceMesh</S>
+                <S>Start-HCXMigration</S>
+                <S>Start-HCXMobilityGroupMigration</S>
+                <S>Start-HCXReplication</S>
+                <S>Stop-HCXMobilityGroupMigration</S>
+                <S>Suspend-HCXReplication</S>
+                <S>Test-HCXMigration</S>
+                <S>Test-HCXMobilityGroup</S>
+                <S>Test-HCXReplication</S>
+                <S>Uninstall-HCXSentinel</S>
+                <S>Update-HCXSentinel</S>
+                <S>Wait-HCXJob</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Core</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">13.3.0.24145081</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Core/13.3.0.24145081</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This Windows PowerShell module contains PowerCLI HCX cmdlets.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3548681</S>
+          <S N="downloadCount">13389739</S>
+          <S N="packageSize">1392943</S>
+          <S N="published">7/25/2024 1:07:13 PM +03:00</S>
+          <S N="created">7/25/2024 1:07:13 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Connect-HCXServer PSCommand_Connect-HCXServer PSCmdlet_Disconnect-HCXServer PSCommand_Disconnect-HCXServer PSCmdlet_Get-HCXAppliance PSCommand_Get-HCXAppliance PSCmdlet_Get-HCXComputeProfile PSCommand_Get-HCXComputeProfile PSCmdlet_Get-HCXContainer PSCommand_Get-HCXContainer PSCmdlet_Get-HCXDatastore PSCommand_Get-HCXDatastore PSCmdlet_Get-HCXGateway PSCommand_Get-HCXGateway PSCmdlet_Get-HCXInterconnectStatus PSCommand_Get-HCXInterconnectStatus PSCmdlet_Get-HCXInventoryCompute PSCommand_Get-HCXInventoryCompute PSCmdlet_Get-HCXInventoryDatastore PSCommand_Get-HCXInventoryDatastore PSCmdlet_Get-HCXInventoryDVS PSCommand_Get-HCXInventoryDVS PSCmdlet_Get-HCXInventoryNetwork PSCommand_Get-HCXInventoryNetwork PSCmdlet_Get-HCXJob PSCommand_Get-HCXJob PSCmdlet_Get-HCXMigration PSCommand_Get-HCXMigration PSCmdlet_Get-HCXMobilityGroup PSCommand_Get-HCXMobilityGroup PSCmdlet_Get-HCXNetwork PSCommand_Get-HCXNetwork PSCmdlet_Get-HCXNetworkBacking PSCommand_Get-HCXNetworkBacking PSCmdlet_Get-HCXNetworkExtension PSCommand_Get-HCXNetworkExtension PSCmdlet_Get-HCXNetworkProfile PSCommand_Get-HCXNetworkProfile PSCmdlet_Get-HCXReplication PSCommand_Get-HCXReplication PSCmdlet_Get-HCXReplicationSnapshot PSCommand_Get-HCXReplicationSnapshot PSCmdlet_Get-HCXService PSCommand_Get-HCXService PSCmdlet_Get-HCXServiceMesh PSCommand_Get-HCXServiceMesh PSCmdlet_Get-HCXSite PSCommand_Get-HCXSite PSCmdlet_Get-HCXSitePairing PSCommand_Get-HCXSitePairing PSCmdlet_Get-HCXStorageProfile PSCommand_Get-HCXStorageProfile PSCmdlet_Get-HCXVM PSCommand_Get-HCXVM PSCmdlet_New-HCXAppliance PSCommand_New-HCXAppliance PSCmdlet_New-HCXComputeProfile PSCommand_New-HCXComputeProfile PSCmdlet_New-HCXComputeProfileDVS PSCommand_New-HCXComputeProfileDVS PSCmdlet_New-HCXComputeProfileNetwork PSCommand_New-HCXComputeProfileNetwork PSCmdlet_New-HCXGuestOSCustomization PSCommand_New-HCXGuestOSCustomization PSCmdlet_New-HCXGuestOSNetworkCustomization PSCommand_New-HCXGuestOSNetworkCustomization PSCmdlet_New-HCXMigration PSCommand_New-HCXMigration PSCmdlet_New-HCXMobilityGroup PSCommand_New-HCXMobilityGroup PSCmdlet_New-HCXMobilityGroupConfiguration PSCommand_New-HCXMobilityGroupConfiguration PSCmdlet_New-HCXNetworkExtension PSCommand_New-HCXNetworkExtension PSCmdlet_New-HCXNetworkMapping PSCommand_New-HCXNetworkMapping PSCmdlet_New-HCXNetworkProfile PSCommand_New-HCXNetworkProfile PSCmdlet_New-HCXReplication PSCommand_New-HCXReplication PSCmdlet_New-HCXSentinelBundle PSCommand_New-HCXSentinelBundle PSCmdlet_New-HCXServiceMesh PSCommand_New-HCXServiceMesh PSCmdlet_New-HCXServiceMeshDVS PSCommand_New-HCXServiceMeshDVS PSCmdlet_New-HCXSitePairing PSCommand_New-HCXSitePairing PSCmdlet_New-HCXStaticRoute PSCommand_New-HCXStaticRoute PSCmdlet_Remove-HCXAppliance PSCommand_Remove-HCXAppliance PSCmdlet_Remove-HCXComputeProfile PSCommand_Remove-HCXComputeProfile PSCmdlet_Remove-HCXNetworkExtension PSCommand_Remove-HCXNetworkExtension PSCmdlet_Remove-HCXNetworkProfile PSCommand_Remove-HCXNetworkProfile PSCmdlet_Remove-HCXReplication PSCommand_Remove-HCXReplication PSCmdlet_Remove-HCXServiceMesh PSCommand_Remove-HCXServiceMesh PSCmdlet_Remove-HCXSitePairing PSCommand_Remove-HCXSitePairing PSCmdlet_Resume-HCXReplication PSCommand_Resume-HCXReplication PSCmdlet_Set-HCXAppliance PSCommand_Set-HCXAppliance PSCmdlet_Set-HCXComputeProfile PSCommand_Set-HCXComputeProfile PSCmdlet_Set-HCXMigration PSCommand_Set-HCXMigration PSCmdlet_Set-HCXMobilityGroup PSCommand_Set-HCXMobilityGroup PSCmdlet_Set-HCXMobilityGroupConfiguration PSCommand_Set-HCXMobilityGroupConfiguration PSCmdlet_Set-HCXNetworkProfile PSCommand_Set-HCXNetworkProfile PSCmdlet_Set-HCXReplication PSCommand_Set-HCXReplication PSCmdlet_Set-HCXServiceMesh PSCommand_Set-HCXServiceMesh PSCmdlet_Start-HCXMigration PSCommand_Start-HCXMigration PSCmdlet_Start-HCXMobilityGroupMigration PSCommand_Start-HCXMobilityGroupMigration PSCmdlet_Start-HCXReplication PSCommand_Start-HCXReplication PSCmdlet_Stop-HCXMobilityGroupMigration PSCommand_Stop-HCXMobilityGroupMigration PSCmdlet_Suspend-HCXReplication PSCommand_Suspend-HCXReplication PSCmdlet_Test-HCXMigration PSCommand_Test-HCXMigration PSCmdlet_Test-HCXMobilityGroup PSCommand_Test-HCXMobilityGroup PSCmdlet_Test-HCXReplication PSCommand_Test-HCXReplication PSCmdlet_Uninstall-HCXSentinel PSCommand_Uninstall-HCXSentinel PSCmdlet_Update-HCXSentinel PSCommand_Update-HCXSentinel PSCmdlet_Wait-HCXJob PSCommand_Wait-HCXJob PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Hcx.nuspec|EULA.rtf|net472\ComponentDescriptor-VMware.VimAutomation.Hcx.Commands.xml|net472\VMware.VimAutomation.Hcx.Format.ps1xml|net472\VMware.VimAutomation.Hcx.Types.dll|netcoreapp3.1\VMware.VimAutomation.Hcx.Commands.dll-Help.xml|netcoreapp3.1\VMware.VimAutomation.Hcx.psd1|net472\Resources\featureConfigMetadata.json|net472\Resources\migrationMetadata.json|net472\Resources\servicemeshMetadata.json|netcoreapp3.1\Resources\featureConfigMetadata.json|netcoreapp3.1\Resources\l2extensionMetadata.json|netcoreapp3.1\Resources\networkprofileMetadata.json|VMware.VimAutomation.Hcx.cat|net472\ComponentDescriptor-VMware.VimAutomation.Hcx.xml|net472\VMware.VimAutomation.Hcx.Impl.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Hcx.Commands.xml|netcoreapp3.1\VMware.VimAutomation.Hcx.Format.ps1xml|netcoreapp3.1\VMware.VimAutomation.Hcx.Types.dll|net472\Resources\interconnectapplianceMetadata.json|net472\Resources\mobilitygroupMetadata.json|net472\Resources\sessionMetadata.json|netcoreapp3.1\Resources\interconnectapplianceMetadata.json|netcoreapp3.1\Resources\migrationMetadata.json|netcoreapp3.1\Resources\sentinelbundleMetadata.json|net472\VMware.Hcx.Client.Bindings.dll|net472\VMware.VimAutomation.Hcx.Interop.dll|netcoreapp3.1\ComponentDescriptor-VMware.VimAutomation.Hcx.xml|netcoreapp3.1\VMware.VimAutomation.Hcx.Impl.dll|net472\Resources\applianceMetadata.json|net472\Resources\interconnecttaskMetadata.json|net472\Resources\mobilityMigrationMetadata.json|netcoreapp3.1\Resources\applianceMetadata.json|netcoreapp3.1\Resources\interconnecttaskMetadata.json|netcoreapp3.1\Resources\mobilitygroupMetadata.json|netcoreapp3.1\Resources\servicemeshMetadata.json|VMware.VimAutomation.Hcx.psd1|net472\VMware.VimAutomation.Hcx.Commands.dll|net472\VMware.VimAutomation.Hcx.ps1|netcoreapp3.1\VMware.Hcx.Client.Bindings.dll|netcoreapp3.1\VMware.VimAutomation.Hcx.Interop.dll|net472\Resources\computeprofileMetadata.json|net472\Resources\inventoryMetadata.json|net472\Resources\networkprofileMetadata.json|netcoreapp3.1\Resources\computeprofileMetadata.json|netcoreapp3.1\Resources\inventoryMetadata.json|netcoreapp3.1\Resources\mobilityMigrationMetadata.json|netcoreapp3.1\Resources\sessionMetadata.json|VMware.VimAutomation.Hcx.psm1|net472\VMware.VimAutomation.Hcx.Commands.dll-Help.xml|net472\VMware.VimAutomation.Hcx.psd1|netcoreapp3.1\VMware.VimAutomation.Hcx.Commands.dll|netcoreapp3.1\VMware.VimAutomation.Hcx.ps1|net472\Resources\disasterrecoveryMetadata.json|net472\Resources\l2extensionMetadata.json|net472\Resources\sentinelbundleMetadata.json|netcoreapp3.1\Resources\disasterrecoveryMetadata.json</S>
+          <S N="GUID">aa22ab20-1d51-4945-8b55-a1ce4198c290</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.VimAutomation.Hcx/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

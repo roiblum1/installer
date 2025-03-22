@@ -1,0 +1,210 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.Appliance.Recovery</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.Recovery.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:58:57+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetSystemNameArchive</S>
+                <S>Invoke-ListSystemNameArchives</S>
+                <S>Invoke-ValidateRecoveryBackup</S>
+                <S>Invoke-ListBackupJobDetails</S>
+                <S>Invoke-CancelIdJob</S>
+                <S>Invoke-CancelRestoreJob</S>
+                <S>Invoke-CreateRecoveryBackupJob</S>
+                <S>Invoke-CreateRecoveryReconciliationJob</S>
+                <S>Invoke-CreateRecoveryRestoreJob</S>
+                <S>Invoke-GetIdBackupJob</S>
+                <S>Invoke-GetRecoveryReconciliationJob</S>
+                <S>Invoke-GetRecoveryRestoreJob</S>
+                <S>Invoke-ListRecoveryBackupJob</S>
+                <S>Invoke-GetIdBackupParts</S>
+                <S>Invoke-ListRecoveryBackupParts</S>
+                <S>Invoke-ValidateRecoveryRestore</S>
+                <S>Invoke-CreateRecoveryBackupSchedules</S>
+                <S>Invoke-DeleteScheduleBackup</S>
+                <S>Invoke-GetScheduleBackup</S>
+                <S>Invoke-ListRecoveryBackupSchedules</S>
+                <S>Invoke-RunSchedule</S>
+                <S>Invoke-UpdateScheduleBackup</S>
+                <S>Invoke-ListBackupSystemName</S>
+                <S>Initialize-RecoveryBackupBackupRequest</S>
+                <S>Initialize-RecoveryBackupJobBackupRequest</S>
+                <S>Initialize-RecoveryBackupLocationSpec</S>
+                <S>Initialize-RecoveryBackupSchedulesCreateRequestBody</S>
+                <S>Initialize-RecoveryBackupSchedulesCreateSpec</S>
+                <S>Initialize-RecoveryBackupSchedulesRecurrenceInfo</S>
+                <S>Initialize-RecoveryBackupSchedulesRetentionInfo</S>
+                <S>Initialize-RecoveryBackupSchedulesRunRequestBody</S>
+                <S>Initialize-RecoveryBackupSchedulesUpdateSpec</S>
+                <S>Initialize-RecoveryBackupSystemNameArchiveFilterSpec</S>
+                <S>Initialize-RecoveryBackupSystemNameArchiveListRequestBody</S>
+                <S>Initialize-RecoveryReconciliationJobCreateSpec</S>
+                <S>Initialize-RecoveryRestoreJobRestoreRequest</S>
+                <S>Initialize-RecoveryRestoreRestoreRequest</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetSystemNameArchive</S>
+                <S>Invoke-ListSystemNameArchives</S>
+                <S>Invoke-ValidateRecoveryBackup</S>
+                <S>Invoke-ListBackupJobDetails</S>
+                <S>Invoke-CancelIdJob</S>
+                <S>Invoke-CancelRestoreJob</S>
+                <S>Invoke-CreateRecoveryBackupJob</S>
+                <S>Invoke-CreateRecoveryReconciliationJob</S>
+                <S>Invoke-CreateRecoveryRestoreJob</S>
+                <S>Invoke-GetIdBackupJob</S>
+                <S>Invoke-GetRecoveryReconciliationJob</S>
+                <S>Invoke-GetRecoveryRestoreJob</S>
+                <S>Invoke-ListRecoveryBackupJob</S>
+                <S>Invoke-GetIdBackupParts</S>
+                <S>Invoke-ListRecoveryBackupParts</S>
+                <S>Invoke-ValidateRecoveryRestore</S>
+                <S>Invoke-CreateRecoveryBackupSchedules</S>
+                <S>Invoke-DeleteScheduleBackup</S>
+                <S>Invoke-GetScheduleBackup</S>
+                <S>Invoke-ListRecoveryBackupSchedules</S>
+                <S>Invoke-RunSchedule</S>
+                <S>Invoke-UpdateScheduleBackup</S>
+                <S>Invoke-ListBackupSystemName</S>
+                <S>Initialize-RecoveryBackupBackupRequest</S>
+                <S>Initialize-RecoveryBackupJobBackupRequest</S>
+                <S>Initialize-RecoveryBackupLocationSpec</S>
+                <S>Initialize-RecoveryBackupSchedulesCreateRequestBody</S>
+                <S>Initialize-RecoveryBackupSchedulesCreateSpec</S>
+                <S>Initialize-RecoveryBackupSchedulesRecurrenceInfo</S>
+                <S>Initialize-RecoveryBackupSchedulesRetentionInfo</S>
+                <S>Initialize-RecoveryBackupSchedulesRunRequestBody</S>
+                <S>Initialize-RecoveryBackupSchedulesUpdateSpec</S>
+                <S>Initialize-RecoveryBackupSystemNameArchiveFilterSpec</S>
+                <S>Initialize-RecoveryBackupSystemNameArchiveListRequestBody</S>
+                <S>Initialize-RecoveryReconciliationJobCreateSpec</S>
+                <S>Initialize-RecoveryRestoreJobRestoreRequest</S>
+                <S>Initialize-RecoveryRestoreRestoreRequest</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.Recovery.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2512652</S>
+          <S N="downloadCount">7025532</S>
+          <S N="packageSize">297792</S>
+          <S N="published">7/25/2024 12:58:57 PM +03:00</S>
+          <S N="created">7/25/2024 12:58:57 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-GetSystemNameArchive PSCommand_Invoke-GetSystemNameArchive PSFunction_Invoke-ListSystemNameArchives PSCommand_Invoke-ListSystemNameArchives PSFunction_Invoke-ValidateRecoveryBackup PSCommand_Invoke-ValidateRecoveryBackup PSFunction_Invoke-ListBackupJobDetails PSCommand_Invoke-ListBackupJobDetails PSFunction_Invoke-CancelIdJob PSCommand_Invoke-CancelIdJob PSFunction_Invoke-CancelRestoreJob PSCommand_Invoke-CancelRestoreJob PSFunction_Invoke-CreateRecoveryBackupJob PSCommand_Invoke-CreateRecoveryBackupJob PSFunction_Invoke-CreateRecoveryReconciliationJob PSCommand_Invoke-CreateRecoveryReconciliationJob PSFunction_Invoke-CreateRecoveryRestoreJob PSCommand_Invoke-CreateRecoveryRestoreJob PSFunction_Invoke-GetIdBackupJob PSCommand_Invoke-GetIdBackupJob PSFunction_Invoke-GetRecoveryReconciliationJob PSCommand_Invoke-GetRecoveryReconciliationJob PSFunction_Invoke-GetRecoveryRestoreJob PSCommand_Invoke-GetRecoveryRestoreJob PSFunction_Invoke-ListRecoveryBackupJob PSCommand_Invoke-ListRecoveryBackupJob PSFunction_Invoke-GetIdBackupParts PSCommand_Invoke-GetIdBackupParts PSFunction_Invoke-ListRecoveryBackupParts PSCommand_Invoke-ListRecoveryBackupParts PSFunction_Invoke-ValidateRecoveryRestore PSCommand_Invoke-ValidateRecoveryRestore PSFunction_Invoke-CreateRecoveryBackupSchedules PSCommand_Invoke-CreateRecoveryBackupSchedules PSFunction_Invoke-DeleteScheduleBackup PSCommand_Invoke-DeleteScheduleBackup PSFunction_Invoke-GetScheduleBackup PSCommand_Invoke-GetScheduleBackup PSFunction_Invoke-ListRecoveryBackupSchedules PSCommand_Invoke-ListRecoveryBackupSchedules PSFunction_Invoke-RunSchedule PSCommand_Invoke-RunSchedule PSFunction_Invoke-UpdateScheduleBackup PSCommand_Invoke-UpdateScheduleBackup PSFunction_Invoke-ListBackupSystemName PSCommand_Invoke-ListBackupSystemName PSFunction_Initialize-RecoveryBackupBackupRequest PSCommand_Initialize-RecoveryBackupBackupRequest PSFunction_Initialize-RecoveryBackupJobBackupRequest PSCommand_Initialize-RecoveryBackupJobBackupRequest PSFunction_Initialize-RecoveryBackupLocationSpec PSCommand_Initialize-RecoveryBackupLocationSpec PSFunction_Initialize-RecoveryBackupSchedulesCreateRequestBody PSCommand_Initialize-RecoveryBackupSchedulesCreateRequestBody PSFunction_Initialize-RecoveryBackupSchedulesCreateSpec PSCommand_Initialize-RecoveryBackupSchedulesCreateSpec PSFunction_Initialize-RecoveryBackupSchedulesRecurrenceInfo PSCommand_Initialize-RecoveryBackupSchedulesRecurrenceInfo PSFunction_Initialize-RecoveryBackupSchedulesRetentionInfo PSCommand_Initialize-RecoveryBackupSchedulesRetentionInfo PSFunction_Initialize-RecoveryBackupSchedulesRunRequestBody PSCommand_Initialize-RecoveryBackupSchedulesRunRequestBody PSFunction_Initialize-RecoveryBackupSchedulesUpdateSpec PSCommand_Initialize-RecoveryBackupSchedulesUpdateSpec PSFunction_Initialize-RecoveryBackupSystemNameArchiveFilterSpec PSCommand_Initialize-RecoveryBackupSystemNameArchiveFilterSpec PSFunction_Initialize-RecoveryBackupSystemNameArchiveListRequestBody PSCommand_Initialize-RecoveryBackupSystemNameArchiveListRequestBody PSFunction_Initialize-RecoveryReconciliationJobCreateSpec PSCommand_Initialize-RecoveryReconciliationJobCreateSpec PSFunction_Initialize-RecoveryRestoreJobRestoreRequest PSCommand_Initialize-RecoveryRestoreJobRestoreRequest PSFunction_Initialize-RecoveryRestoreRestoreRequest PSCommand_Initialize-RecoveryRestoreRestoreRequest PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.Appliance.Recovery.nuspec|README.md|VMware.Sdk.vSphere.Appliance.Recovery.psd1|Api\BackupApi.ps1|Api\PartsApi.ps1|Api\SchedulesApi.ps1|Model\RecoveryBackupBackupRequest.ps1|Model\RecoveryBackupLocationSpec.ps1|Model\RecoveryBackupSchedulesCreateSpec.ps1|Model\RecoveryBackupSchedulesRetentionInfo.ps1|Model\RecoveryBackupSchedulesUpdateSpec.ps1|Model\RecoveryBackupSystemNameArchiveListRequestBody.ps1|Model\RecoveryRestoreJobRestoreRequest.ps1|VMware.Sdk.vSphere.Appliance.Recovery.cat|VMware.Sdk.vSphere.Appliance.Recovery.psm1|Api\DetailsApi.ps1|Api\RestoreApi.ps1|Api\SystemNameApi.ps1|Model\RecoveryBackupJobBackupRequest.ps1|Model\RecoveryBackupSchedulesCreateRequestBody.ps1|Model\RecoveryBackupSchedulesRecurrenceInfo.ps1|Model\RecoveryBackupSchedulesRunRequestBody.ps1|Model\RecoveryBackupSystemNameArchiveFilterSpec.ps1|Model\RecoveryReconciliationJobCreateSpec.ps1|Model\RecoveryRestoreRestoreRequest.ps1|Api\ArchiveApi.ps1|Api\JobApi.ps1</S>
+          <S N="GUID">1fa0da9d-4f8d-4116-bb3b-206e99bde902</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.Appliance.Recovery/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

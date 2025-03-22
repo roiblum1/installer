@@ -1,0 +1,352 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter.TrustedInfrastructure</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.TrustedInfrastructure.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:53:21+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CreateTrustedInfrastructureTrustAuthorityHostsAttestation</S>
+                <S>Invoke-GetHostTrustedInfrastructureAttestation</S>
+                <S>Invoke-DeleteClusterVersionBaseImagesAsync</S>
+                <S>Invoke-GetClusterBaseImagesAsync</S>
+                <S>Invoke-GetClusterVersionBaseImagesAsync</S>
+                <S>Invoke-ImportFromImgdbClusterBaseImagesAsync</S>
+                <S>Invoke-CreateClusterTpm2CaCertificatesAsync</S>
+                <S>Invoke-DeleteClusterNameCaCertificatesAsync</S>
+                <S>Invoke-GetClusterNameCaCertificatesAsync</S>
+                <S>Invoke-GetClusterTpm2CaCertificatesAsync</S>
+                <S>Invoke-CreateClusterProviderClientCertificateAsync</S>
+                <S>Invoke-GetClusterProviderClientCertificateAsync</S>
+                <S>Invoke-UpdateClusterProviderClientCertificateAsync</S>
+                <S>Invoke-CreateClusterConsumerPrincipalsAsync</S>
+                <S>Invoke-DeleteClusterProfileConsumerPrincipalsAsync</S>
+                <S>Invoke-GetClusterProfileConsumerPrincipalsAsync</S>
+                <S>Invoke-QueryClusterConsumerPrincipalsAsync</S>
+                <S>Invoke-SetClusterProviderCredentialAsync</S>
+                <S>Invoke-CreateClusterProviderClientCertificateCsrAsync</S>
+                <S>Invoke-GetClusterProviderClientCertificateCsrAsync</S>
+                <S>Invoke-GetClusterProviderPeerCertsCurrentAsync</S>
+                <S>Invoke-CreateClusterTpm2EndorsementKeysAsync</S>
+                <S>Invoke-DeleteClusterNameEndorsementKeysAsync</S>
+                <S>Invoke-GetClusterNameEndorsementKeysAsync</S>
+                <S>Invoke-GetClusterTpm2EndorsementKeysAsync</S>
+                <S>Invoke-GetHostTpmKeyHardwareEndorsementKeys</S>
+                <S>Invoke-ListHostTpmHardwareHostEndorsementKeys</S>
+                <S>Invoke-UnsealHostTpmKey</S>
+                <S>Invoke-GetHostTpmHardwareHostEventLog</S>
+                <S>Invoke-GetHostTrustedInfrastructureKms</S>
+                <S>Invoke-QueryTrustAuthorityHostsKms</S>
+                <S>Invoke-GetTrustedInfrastructurePrincipal</S>
+                <S>Invoke-CreateClusterKmsProvidersAsync</S>
+                <S>Invoke-DeleteClusterProviderAsync</S>
+                <S>Invoke-GetClusterKmsProvidersAsync</S>
+                <S>Invoke-GetClusterProviderAsync</S>
+                <S>Invoke-UpdateClusterProviderAsync</S>
+                <S>Invoke-CreateClusterAttestationServicesAsync</S>
+                <S>Invoke-CreateClusterKmsServicesAsync</S>
+                <S>Invoke-CreateTrustedInfrastructureAttestationServices</S>
+                <S>Invoke-CreateTrustedInfrastructureKmsServices</S>
+                <S>Invoke-DeleteClusterServiceAsync</S>
+                <S>Invoke-DeleteClusterServiceAsync_0</S>
+                <S>Invoke-DeleteServiceAttestation</S>
+                <S>Invoke-DeleteServiceKms</S>
+                <S>Invoke-GetClusterServiceAttestation</S>
+                <S>Invoke-GetClusterServiceKms</S>
+                <S>Invoke-GetServiceAttestation</S>
+                <S>Invoke-GetServiceKms</S>
+                <S>Invoke-QueryAttestationServices</S>
+                <S>Invoke-QueryClusterAttestationServices</S>
+                <S>Invoke-QueryClusterKmsServices</S>
+                <S>Invoke-QueryKmsServices</S>
+                <S>Invoke-DeleteClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-DeleteClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-DeleteClusterServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterServicesAppliedConfigAsync</S>
+                <S>Invoke-QueryClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-QueryClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-UpdateClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-UpdateClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-UpdateClusterServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterAttestationServiceStatusAsync</S>
+                <S>Invoke-GetClusterKmsServiceStatusAsync</S>
+                <S>Invoke-GetClusterTpm2SettingsAsync</S>
+                <S>Invoke-UpdateClusterTpm2SettingsAsync</S>
+                <S>Invoke-GetHostTpmHardware</S>
+                <S>Invoke-ListHostTrustedInfrastructureHardwareTpm</S>
+                <S>Invoke-GetClusterTrustedInfrastructureTrustAuthorityClusters</S>
+                <S>Invoke-ListTrustedInfrastructureTrustAuthorityClusters</S>
+                <S>Invoke-UpdateClusterAsync</S>
+                <S>Invoke-GetClusterProviderPeerCertsTrustedAsync</S>
+                <S>Invoke-UpdateClusterProviderPeerCertsTrustedAsync</S>
+                <S>Initialize-TrustedInfrastructureAttestationServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureAttestationServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysPolicyPcrSpec</S>
+                <S>Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysUnsealSpec</S>
+                <S>Initialize-TrustedInfrastructureKmsServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureKmsServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureNetworkAddress</S>
+                <S>Initialize-TrustedInfrastructureStsPrincipal</S>
+                <S>Initialize-TrustedInfrastructureStsPrincipalId</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2CaCertificatesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2EndorsementKeysCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2SettingsUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersClientCertificateUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersServer</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersTrustedPeerCertificatesUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityHostsAttestationFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityHostsKmsFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersAttestationServicesAppliedConfigFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersAttestationServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersAttestationServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersKmsServicesAppliedConfigFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersKmsServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersKmsServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureX509CertChain</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CreateTrustedInfrastructureTrustAuthorityHostsAttestation</S>
+                <S>Invoke-GetHostTrustedInfrastructureAttestation</S>
+                <S>Invoke-DeleteClusterVersionBaseImagesAsync</S>
+                <S>Invoke-GetClusterBaseImagesAsync</S>
+                <S>Invoke-GetClusterVersionBaseImagesAsync</S>
+                <S>Invoke-ImportFromImgdbClusterBaseImagesAsync</S>
+                <S>Invoke-CreateClusterTpm2CaCertificatesAsync</S>
+                <S>Invoke-DeleteClusterNameCaCertificatesAsync</S>
+                <S>Invoke-GetClusterNameCaCertificatesAsync</S>
+                <S>Invoke-GetClusterTpm2CaCertificatesAsync</S>
+                <S>Invoke-CreateClusterProviderClientCertificateAsync</S>
+                <S>Invoke-GetClusterProviderClientCertificateAsync</S>
+                <S>Invoke-UpdateClusterProviderClientCertificateAsync</S>
+                <S>Invoke-CreateClusterConsumerPrincipalsAsync</S>
+                <S>Invoke-DeleteClusterProfileConsumerPrincipalsAsync</S>
+                <S>Invoke-GetClusterProfileConsumerPrincipalsAsync</S>
+                <S>Invoke-QueryClusterConsumerPrincipalsAsync</S>
+                <S>Invoke-SetClusterProviderCredentialAsync</S>
+                <S>Invoke-CreateClusterProviderClientCertificateCsrAsync</S>
+                <S>Invoke-GetClusterProviderClientCertificateCsrAsync</S>
+                <S>Invoke-GetClusterProviderPeerCertsCurrentAsync</S>
+                <S>Invoke-CreateClusterTpm2EndorsementKeysAsync</S>
+                <S>Invoke-DeleteClusterNameEndorsementKeysAsync</S>
+                <S>Invoke-GetClusterNameEndorsementKeysAsync</S>
+                <S>Invoke-GetClusterTpm2EndorsementKeysAsync</S>
+                <S>Invoke-GetHostTpmKeyHardwareEndorsementKeys</S>
+                <S>Invoke-ListHostTpmHardwareHostEndorsementKeys</S>
+                <S>Invoke-UnsealHostTpmKey</S>
+                <S>Invoke-GetHostTpmHardwareHostEventLog</S>
+                <S>Invoke-GetHostTrustedInfrastructureKms</S>
+                <S>Invoke-QueryTrustAuthorityHostsKms</S>
+                <S>Invoke-GetTrustedInfrastructurePrincipal</S>
+                <S>Invoke-CreateClusterKmsProvidersAsync</S>
+                <S>Invoke-DeleteClusterProviderAsync</S>
+                <S>Invoke-GetClusterKmsProvidersAsync</S>
+                <S>Invoke-GetClusterProviderAsync</S>
+                <S>Invoke-UpdateClusterProviderAsync</S>
+                <S>Invoke-CreateClusterAttestationServicesAsync</S>
+                <S>Invoke-CreateClusterKmsServicesAsync</S>
+                <S>Invoke-CreateTrustedInfrastructureAttestationServices</S>
+                <S>Invoke-CreateTrustedInfrastructureKmsServices</S>
+                <S>Invoke-DeleteClusterServiceAsync</S>
+                <S>Invoke-DeleteClusterServiceAsync_0</S>
+                <S>Invoke-DeleteServiceAttestation</S>
+                <S>Invoke-DeleteServiceKms</S>
+                <S>Invoke-GetClusterServiceAttestation</S>
+                <S>Invoke-GetClusterServiceKms</S>
+                <S>Invoke-GetServiceAttestation</S>
+                <S>Invoke-GetServiceKms</S>
+                <S>Invoke-QueryAttestationServices</S>
+                <S>Invoke-QueryClusterAttestationServices</S>
+                <S>Invoke-QueryClusterKmsServices</S>
+                <S>Invoke-QueryKmsServices</S>
+                <S>Invoke-DeleteClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-DeleteClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-DeleteClusterServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterServicesAppliedConfigAsync</S>
+                <S>Invoke-QueryClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-QueryClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-UpdateClusterAttestationServicesAppliedConfigAsync</S>
+                <S>Invoke-UpdateClusterKmsServicesAppliedConfigAsync</S>
+                <S>Invoke-UpdateClusterServicesAppliedConfigAsync</S>
+                <S>Invoke-GetClusterAttestationServiceStatusAsync</S>
+                <S>Invoke-GetClusterKmsServiceStatusAsync</S>
+                <S>Invoke-GetClusterTpm2SettingsAsync</S>
+                <S>Invoke-UpdateClusterTpm2SettingsAsync</S>
+                <S>Invoke-GetHostTpmHardware</S>
+                <S>Invoke-ListHostTrustedInfrastructureHardwareTpm</S>
+                <S>Invoke-GetClusterTrustedInfrastructureTrustAuthorityClusters</S>
+                <S>Invoke-ListTrustedInfrastructureTrustAuthorityClusters</S>
+                <S>Invoke-UpdateClusterAsync</S>
+                <S>Invoke-GetClusterProviderPeerCertsTrustedAsync</S>
+                <S>Invoke-UpdateClusterProviderPeerCertsTrustedAsync</S>
+                <S>Initialize-TrustedInfrastructureAttestationServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureAttestationServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysPolicyPcrSpec</S>
+                <S>Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysUnsealSpec</S>
+                <S>Initialize-TrustedInfrastructureKmsServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureKmsServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureNetworkAddress</S>
+                <S>Initialize-TrustedInfrastructureStsPrincipal</S>
+                <S>Initialize-TrustedInfrastructureStsPrincipalId</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2CaCertificatesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2EndorsementKeysCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2SettingsUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersClientCertificateUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersServer</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersTrustedPeerCertificatesUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityClustersUpdateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityHostsAttestationFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustAuthorityHostsKmsFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersAttestationServicesAppliedConfigFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersAttestationServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersAttestationServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersKmsServicesAppliedConfigFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersKmsServicesCreateSpec</S>
+                <S>Initialize-TrustedInfrastructureTrustedClustersKmsServicesFilterSpec</S>
+                <S>Initialize-TrustedInfrastructureX509CertChain</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.TrustedInfrastructure.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2428802</S>
+          <S N="downloadCount">6843071</S>
+          <S N="packageSize">565012</S>
+          <S N="published">7/25/2024 12:53:21 PM +03:00</S>
+          <S N="created">7/25/2024 12:53:21 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-CreateTrustedInfrastructureTrustAuthorityHostsAttestation PSCommand_Invoke-CreateTrustedInfrastructureTrustAuthorityHostsAttestation PSFunction_Invoke-GetHostTrustedInfrastructureAttestation PSCommand_Invoke-GetHostTrustedInfrastructureAttestation PSFunction_Invoke-DeleteClusterVersionBaseImagesAsync PSCommand_Invoke-DeleteClusterVersionBaseImagesAsync PSFunction_Invoke-GetClusterBaseImagesAsync PSCommand_Invoke-GetClusterBaseImagesAsync PSFunction_Invoke-GetClusterVersionBaseImagesAsync PSCommand_Invoke-GetClusterVersionBaseImagesAsync PSFunction_Invoke-ImportFromImgdbClusterBaseImagesAsync PSCommand_Invoke-ImportFromImgdbClusterBaseImagesAsync PSFunction_Invoke-CreateClusterTpm2CaCertificatesAsync PSCommand_Invoke-CreateClusterTpm2CaCertificatesAsync PSFunction_Invoke-DeleteClusterNameCaCertificatesAsync PSCommand_Invoke-DeleteClusterNameCaCertificatesAsync PSFunction_Invoke-GetClusterNameCaCertificatesAsync PSCommand_Invoke-GetClusterNameCaCertificatesAsync PSFunction_Invoke-GetClusterTpm2CaCertificatesAsync PSCommand_Invoke-GetClusterTpm2CaCertificatesAsync PSFunction_Invoke-CreateClusterProviderClientCertificateAsync PSCommand_Invoke-CreateClusterProviderClientCertificateAsync PSFunction_Invoke-GetClusterProviderClientCertificateAsync PSCommand_Invoke-GetClusterProviderClientCertificateAsync PSFunction_Invoke-UpdateClusterProviderClientCertificateAsync PSCommand_Invoke-UpdateClusterProviderClientCertificateAsync PSFunction_Invoke-CreateClusterConsumerPrincipalsAsync PSCommand_Invoke-CreateClusterConsumerPrincipalsAsync PSFunction_Invoke-DeleteClusterProfileConsumerPrincipalsAsync PSCommand_Invoke-DeleteClusterProfileConsumerPrincipalsAsync PSFunction_Invoke-GetClusterProfileConsumerPrincipalsAsync PSCommand_Invoke-GetClusterProfileConsumerPrincipalsAsync PSFunction_Invoke-QueryClusterConsumerPrincipalsAsync PSCommand_Invoke-QueryClusterConsumerPrincipalsAsync PSFunction_Invoke-SetClusterProviderCredentialAsync PSCommand_Invoke-SetClusterProviderCredentialAsync PSFunction_Invoke-CreateClusterProviderClientCertificateCsrAsync PSCommand_Invoke-CreateClusterProviderClientCertificateCsrAsync PSFunction_Invoke-GetClusterProviderClientCertificateCsrAsync PSCommand_Invoke-GetClusterProviderClientCertificateCsrAsync PSFunction_Invoke-GetClusterProviderPeerCertsCurrentAsync PSCommand_Invoke-GetClusterProviderPeerCertsCurrentAsync PSFunction_Invoke-CreateClusterTpm2EndorsementKeysAsync PSCommand_Invoke-CreateClusterTpm2EndorsementKeysAsync PSFunction_Invoke-DeleteClusterNameEndorsementKeysAsync PSCommand_Invoke-DeleteClusterNameEndorsementKeysAsync PSFunction_Invoke-GetClusterNameEndorsementKeysAsync PSCommand_Invoke-GetClusterNameEndorsementKeysAsync PSFunction_Invoke-GetClusterTpm2EndorsementKeysAsync PSCommand_Invoke-GetClusterTpm2EndorsementKeysAsync PSFunction_Invoke-GetHostTpmKeyHardwareEndorsementKeys PSCommand_Invoke-GetHostTpmKeyHardwareEndorsementKeys PSFunction_Invoke-ListHostTpmHardwareHostEndorsementKeys PSCommand_Invoke-ListHostTpmHardwareHostEndorsementKeys PSFunction_Invoke-UnsealHostTpmKey PSCommand_Invoke-UnsealHostTpmKey PSFunction_Invoke-GetHostTpmHardwareHostEventLog PSCommand_Invoke-GetHostTpmHardwareHostEventLog PSFunction_Invoke-GetHostTrustedInfrastructureKms PSCommand_Invoke-GetHostTrustedInfrastructureKms PSFunction_Invoke-QueryTrustAuthorityHostsKms PSCommand_Invoke-QueryTrustAuthorityHostsKms PSFunction_Invoke-GetTrustedInfrastructurePrincipal PSCommand_Invoke-GetTrustedInfrastructurePrincipal PSFunction_Invoke-CreateClusterKmsProvidersAsync PSCommand_Invoke-CreateClusterKmsProvidersAsync PSFunction_Invoke-DeleteClusterProviderAsync PSCommand_Invoke-DeleteClusterProviderAsync PSFunction_Invoke-GetClusterKmsProvidersAsync PSCommand_Invoke-GetClusterKmsProvidersAsync PSFunction_Invoke-GetClusterProviderAsync PSCommand_Invoke-GetClusterProviderAsync PSFunction_Invoke-UpdateClusterProviderAsync PSCommand_Invoke-UpdateClusterProviderAsync PSFunction_Invoke-CreateClusterAttestationServicesAsync PSCommand_Invoke-CreateClusterAttestationServicesAsync PSFunction_Invoke-CreateClusterKmsServicesAsync PSCommand_Invoke-CreateClusterKmsServicesAsync PSFunction_Invoke-CreateTrustedInfrastructureAttestationServices PSCommand_Invoke-CreateTrustedInfrastructureAttestationServices PSFunction_Invoke-CreateTrustedInfrastructureKmsServices PSCommand_Invoke-CreateTrustedInfrastructureKmsServices PSFunction_Invoke-DeleteClusterServiceAsync PSCommand_Invoke-DeleteClusterServiceAsync PSFunction_Invoke-DeleteClusterServiceAsync_0 PSCommand_Invoke-DeleteClusterServiceAsync_0 PSFunction_Invoke-DeleteServiceAttestation PSCommand_Invoke-DeleteServiceAttestation PSFunction_Invoke-DeleteServiceKms PSCommand_Invoke-DeleteServiceKms PSFunction_Invoke-GetClusterServiceAttestation PSCommand_Invoke-GetClusterServiceAttestation PSFunction_Invoke-GetClusterServiceKms PSCommand_Invoke-GetClusterServiceKms PSFunction_Invoke-GetServiceAttestation PSCommand_Invoke-GetServiceAttestation PSFunction_Invoke-GetServiceKms PSCommand_Invoke-GetServiceKms PSFunction_Invoke-QueryAttestationServices PSCommand_Invoke-QueryAttestationServices PSFunction_Invoke-QueryClusterAttestationServices PSCommand_Invoke-QueryClusterAttestationServices PSFunction_Invoke-QueryClusterKmsServices PSCommand_Invoke-QueryClusterKmsServices PSFunction_Invoke-QueryKmsServices PSCommand_Invoke-QueryKmsServices PSFunction_Invoke-DeleteClusterAttestationServicesAppliedConfigAsync PSCommand_Invoke-DeleteClusterAttestationServicesAppliedConfigAsync PSFunction_Invoke-DeleteClusterKmsServicesAppliedConfigAsync PSCommand_Invoke-DeleteClusterKmsServicesAppliedConfigAsync PSFunction_Invoke-DeleteClusterServicesAppliedConfigAsync PSCommand_Invoke-DeleteClusterServicesAppliedConfigAsync PSFunction_Invoke-GetClusterAttestationServicesAppliedConfigAsync PSCommand_Invoke-GetClusterAttestationServicesAppliedConfigAsync PSFunction_Invoke-GetClusterKmsServicesAppliedConfigAsync PSCommand_Invoke-GetClusterKmsServicesAppliedConfigAsync PSFunction_Invoke-GetClusterServicesAppliedConfigAsync PSCommand_Invoke-GetClusterServicesAppliedConfigAsync PSFunction_Invoke-QueryClusterAttestationServicesAppliedConfigAsync PSCommand_Invoke-QueryClusterAttestationServicesAppliedConfigAsync PSFunction_Invoke-QueryClusterKmsServicesAppliedConfigAsync PSCommand_Invoke-QueryClusterKmsServicesAppliedConfigAsync PSFunction_Invoke-UpdateClusterAttestationServicesAppliedConfigAsync PSCommand_Invoke-UpdateClusterAttestationServicesAppliedConfigAsync PSFunction_Invoke-UpdateClusterKmsServicesAppliedConfigAsync PSCommand_Invoke-UpdateClusterKmsServicesAppliedConfigAsync PSFunction_Invoke-UpdateClusterServicesAppliedConfigAsync PSCommand_Invoke-UpdateClusterServicesAppliedConfigAsync PSFunction_Invoke-GetClusterAttestationServiceStatusAsync PSCommand_Invoke-GetClusterAttestationServiceStatusAsync PSFunction_Invoke-GetClusterKmsServiceStatusAsync PSCommand_Invoke-GetClusterKmsServiceStatusAsync PSFunction_Invoke-GetClusterTpm2SettingsAsync PSCommand_Invoke-GetClusterTpm2SettingsAsync PSFunction_Invoke-UpdateClusterTpm2SettingsAsync PSCommand_Invoke-UpdateClusterTpm2SettingsAsync PSFunction_Invoke-GetHostTpmHardware PSCommand_Invoke-GetHostTpmHardware PSFunction_Invoke-ListHostTrustedInfrastructureHardwareTpm PSCommand_Invoke-ListHostTrustedInfrastructureHardwareTpm PSFunction_Invoke-GetClusterTrustedInfrastructureTrustAuthorityClusters PSCommand_Invoke-GetClusterTrustedInfrastructureTrustAuthorityClusters PSFunction_Invoke-ListTrustedInfrastructureTrustAuthorityClusters PSCommand_Invoke-ListTrustedInfrastructureTrustAuthorityClusters PSFunction_Invoke-UpdateClusterAsync PSCommand_Invoke-UpdateClusterAsync PSFunction_Invoke-GetClusterProviderPeerCertsTrustedAsync PSCommand_Invoke-GetClusterProviderPeerCertsTrustedAsync PSFunction_Invoke-UpdateClusterProviderPeerCertsTrustedAsync PSCommand_Invoke-UpdateClusterProviderPeerCertsTrustedAsync PSFunction_Initialize-TrustedInfrastructureAttestationServicesCreateSpec PSCommand_Initialize-TrustedInfrastructureAttestationServicesCreateSpec PSFunction_Initialize-TrustedInfrastructureAttestationServicesFilterSpec PSCommand_Initialize-TrustedInfrastructureAttestationServicesFilterSpec PSFunction_Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysPolicyPcrSpec PSCommand_Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysPolicyPcrSpec PSFunction_Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysUnsealSpec PSCommand_Initialize-TrustedInfrastructureHostsHardwareTpmEndorsementKeysUnsealSpec PSFunction_Initialize-TrustedInfrastructureKmsServicesCreateSpec PSCommand_Initialize-TrustedInfrastructureKmsServicesCreateSpec PSFunction_Initialize-TrustedInfrastructureKmsServicesFilterSpec PSCommand_Initialize-TrustedInfrastructureKmsServicesFilterSpec PSFunction_Initialize-TrustedInfrastructureNetworkAddress PSCommand_Initialize-TrustedInfrastructureNetworkAddress PSFunction_Initialize-TrustedInfrastructureStsPrincipal PSCommand_Initialize-TrustedInfrastructureStsPrincipal PSFunction_Initialize-TrustedInfrastructureStsPrincipalId PSCommand_Initialize-TrustedInfrastructureStsPrincipalId PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2CaCertificatesCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2CaCertificatesCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2EndorsementKeysCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2EndorsementKeysCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2SettingsUpdateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersAttestationTpm2SettingsUpdateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsFilterSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsFilterSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersClientCertificateUpdateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersClientCertificateUpdateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerUpdateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerUpdateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerUpdateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerUpdateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersServer PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersServer PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersTrustedPeerCertificatesUpdateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersTrustedPeerCertificatesUpdateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersUpdateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersKmsProvidersUpdateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityClustersUpdateSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityClustersUpdateSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityHostsAttestationFilterSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityHostsAttestationFilterSpec PSFunction_Initialize-TrustedInfrastructureTrustAuthorityHostsKmsFilterSpec PSCommand_Initialize-TrustedInfrastructureTrustAuthorityHostsKmsFilterSpec PSFunction_Initialize-TrustedInfrastructureTrustedClustersAttestationServicesAppliedConfigFilterSpec PSCommand_Initialize-TrustedInfrastructureTrustedClustersAttestationServicesAppliedConfigFilterSpec PSFunction_Initialize-TrustedInfrastructureTrustedClustersAttestationServicesCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustedClustersAttestationServicesCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustedClustersAttestationServicesFilterSpec PSCommand_Initialize-TrustedInfrastructureTrustedClustersAttestationServicesFilterSpec PSFunction_Initialize-TrustedInfrastructureTrustedClustersKmsServicesAppliedConfigFilterSpec PSCommand_Initialize-TrustedInfrastructureTrustedClustersKmsServicesAppliedConfigFilterSpec PSFunction_Initialize-TrustedInfrastructureTrustedClustersKmsServicesCreateSpec PSCommand_Initialize-TrustedInfrastructureTrustedClustersKmsServicesCreateSpec PSFunction_Initialize-TrustedInfrastructureTrustedClustersKmsServicesFilterSpec PSCommand_Initialize-TrustedInfrastructureTrustedClustersKmsServicesFilterSpec PSFunction_Initialize-TrustedInfrastructureX509CertChain PSCommand_Initialize-TrustedInfrastructureX509CertChain PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.TrustedInfrastructure.nuspec|README.md|Api\AttestationApi.ps1|Api\CredentialApi.ps1|Api\KmsApi.ps1|Api\ServiceStatusApi.ps1|Model\TrustedInfrastructureAttestationServicesCreateSpec.ps1|Model\TrustedInfrastructureKmsServicesFilterSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersAttestationTpm2EndorsementKeysCreateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersCreateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersServer.ps1|Model\TrustedInfrastructureTrustAuthorityHostsKmsFilterSpec.ps1|Model\TrustedInfrastructureTrustedClustersKmsServicesAppliedConfigFilterSpec.ps1|VMware.Sdk.vSphere.vCenter.TrustedInfrastructure.cat|Api\BaseImagesApi.ps1|Api\CsrApi.ps1|Api\PrincipalApi.ps1|Api\SettingsApi.ps1|Model\TrustedInfrastructureAttestationServicesFilterSpec.ps1|Model\TrustedInfrastructureNetworkAddress.ps1|Model\TrustedInfrastructureTrustAuthorityClustersAttestationTpm2SettingsUpdateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerCreateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersTrustedPeerCertificatesUpdateSpec.ps1|Model\TrustedInfrastructureTrustedClustersAttestationServicesAppliedConfigFilterSpec.ps1|Model\TrustedInfrastructureTrustedClustersKmsServicesCreateSpec.ps1|Api\CaCertificatesApi.ps1|Api\CurrentPeerCertificatesApi.ps1|Api\ProvidersApi.ps1|Api\TpmApi.ps1|Model\TrustedInfrastructureHostsHardwareTpmEndorsementKeysPolicyPcrSpec.ps1|Model\TrustedInfrastructureStsPrincipal.ps1|Model\TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsCreateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersKeyServerUpdateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersUpdateSpec.ps1|Model\TrustedInfrastructureTrustedClustersAttestationServicesCreateSpec.ps1|Model\TrustedInfrastructureTrustedClustersKmsServicesFilterSpec.ps1|VMware.Sdk.vSphere.vCenter.TrustedInfrastructure.psd1|Api\ClientCertificateApi.ps1|Api\EndorsementKeysApi.ps1|Api\ServicesApi.ps1|Api\TrustAuthorityClustersApi.ps1|Model\TrustedInfrastructureHostsHardwareTpmEndorsementKeysUnsealSpec.ps1|Model\TrustedInfrastructureStsPrincipalId.ps1|Model\TrustedInfrastructureTrustAuthorityClustersConsumerPrincipalsFilterSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerCreateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersUpdateSpec.ps1|Model\TrustedInfrastructureTrustedClustersAttestationServicesFilterSpec.ps1|Model\TrustedInfrastructureX509CertChain.ps1|VMware.Sdk.vSphere.vCenter.TrustedInfrastructure.psm1|Api\ConsumerPrincipalsApi.ps1|Api\EventLogApi.ps1|Api\ServicesAppliedConfigApi.ps1|Api\TrustedPeerCertificatesApi.ps1|Model\TrustedInfrastructureKmsServicesCreateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersAttestationTpm2CaCertificatesCreateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersClientCertificateUpdateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityClustersKmsProvidersKmipServerUpdateSpec.ps1|Model\TrustedInfrastructureTrustAuthorityHostsAttestationFilterSpec.ps1</S>
+          <S N="GUID">fc0a73c3-d65c-4537-8500-aa0dee5bd1ad</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter.TrustedInfrastructure/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

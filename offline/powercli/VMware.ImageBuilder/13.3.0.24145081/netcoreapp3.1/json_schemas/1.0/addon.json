@@ -1,0 +1,78 @@
+{
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "description": "The json schema for ESXi addon spec",
+   "type": "object",
+   "required": [ "releaseType",
+                 "schemaVersion",
+                 "category",
+                 "vendor",
+                 "description",
+                 "summary",
+                 "docURL",
+                 "acceptanceLevel",
+                 "releaseDate",
+                 "nameSpec",
+                 "versionSpec",
+                 "removedComponents",
+                 "components",
+                 "supportedBaseImageVersions"],
+   "properties": {
+      "releaseID": {
+         "$ref": "#/definitions/releaseID"
+      },
+      "releaseType": {
+         "allOf": [
+            {"$ref": "#/definitions/releaseType"},
+            {"pattern": "addon"}
+         ]
+      },
+      "schemaVersion": {
+         "$ref": "#/definitions/schemaVersion"
+      },
+      "category": {
+         "$ref": "#/definitions/category"
+      },
+      "vendor": {
+         "$ref": "#/definitions/vendor"
+      },
+      "description": {
+         "$ref": "#/definitions/description"
+      },
+      "summary": {
+         "$ref": "#/definitions/summary"
+      },
+      "docURL": {
+         "$ref": "#/definitions/docURL"
+      },
+      "acceptanceLevel": {
+         "$ref": "#/definitions/acceptanceLevel"
+      },
+      "removedComponents": {
+         "type": "array",
+         "items" : {
+            "$ref": "#/definitions/nameSimple"
+         }
+      },
+      "releaseDate": {
+         "$ref": "#/definitions/releaseDate"
+      },
+      "nameSpec": {
+         "$ref": "#/definitions/nameSpec"
+      },
+      "versionSpec": {
+         "$ref": "#/definitions/versionSpecPattern"
+      },
+      "components": {
+         "allOf": [
+            {"$ref": "#/definitions/components"},
+            {"propertyNames": {
+                   "pattern": "^(?!ESXi$).+" 
+              }
+            }
+         ]
+      },
+      "supportedBaseImageVersions": {
+         "$ref": "#/definitions/supportedBaseImageVersions"
+      }
+   }
+}

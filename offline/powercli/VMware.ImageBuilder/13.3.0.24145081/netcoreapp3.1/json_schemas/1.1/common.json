@@ -1,0 +1,28 @@
+{
+   "$id": "https://www.vmware.com/esxupdate/1.1/common.json",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "allOf": [
+      {
+         "$ref": "https://www.vmware.com/esxupdate/common.json"
+      }
+   ],
+   "definitions": {
+      "quickPatchCompatibleVersions": {
+         "description": "The base image versions that can update to this base image using Quick Patch.",
+         "type": "array",
+         "uniqueItems": true,
+         "items": {
+            "type": "object",
+            "properties": {
+               "version": {
+                  "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/versionPattern"
+               },
+               "uiString": {
+                  "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/uiStringDef"
+               }
+            },
+            "additionalProperties": false
+         }
+      }
+   }
+}

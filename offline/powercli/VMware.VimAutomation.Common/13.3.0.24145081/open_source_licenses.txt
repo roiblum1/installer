@@ -1,0 +1,194 @@
+open_source_license.txt
+
+VMware PowerCLI 13.3 GA
+======================================================================
+
+The following copyright statements and licenses apply to open source
+software ("OSS") distributed with the Broadcom product (the "Licensed
+Product"). The term "Broadcom" refers solely to the Broadcom Inc.
+corporate affiliate that distributes the Licensed Product. The
+Licensed Product does not necessarily use all the OSS referred to
+below and may also only use portions of a given OSS component.
+
+To the extent required under an applicable open source license,
+Broadcom will make source code available for applicable OSS upon
+request. Please send an inquiry to opensource@broadcom.com including
+your name, address, the product name and version, operating system,
+and the place of purchase.
+
+To the extent the Licensed Product includes OSS, the OSS is typically
+not owned by Broadcom. THE OSS IS PROVIDED AS IS WITHOUT WARRANTY OR
+CONDITION OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT
+LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE. To the full extent permitted under applicable
+law, Broadcom and its corporate affiliates disclaim all warranties
+and liability arising from or related to any use of the OSS.
+
+To the extent the Licensed Product includes OSS licensed under the
+GNU General Public License ("GPL") or the GNU Lesser General Public
+License (“LGPL”), the use, copying, distribution and modification of
+the GPL OSS or LGPL OSS is governed, respectively, by the GPL or LGPL.
+A copy of the GPL or LGPL license may be found with the applicable OSS.
+Additionally, a copy of the GPL License or LGPL License can be found
+at https://www.gnu.org/licenses or obtained by writing to the Free
+Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+MA 02111-1307 USA.
+
+==================== TABLE OF CONTENTS ====================
+
+The following is a listing of the open source components detailed in
+this document. This list is provided for your convenience; please read
+further if you wish to review the copyright notice(s) and the full text
+of the license associated with each component.
+
+PART 1. APPLICATION LAYER
+
+SECTION 1: BSD-STYLE, MIT-STYLE, OR SIMILAR STYLE LICENSES
+
+   >>> newtonsoft.json-10.0.3
+   >>> dotnet-wcf-2.0.0
+   >>> jsonsubtypes-1.8.0
+   >>> SharpZipLib-1.3.3
+
+==================== PART 1. APPLICATION LAYER ====================
+
+-------------------- SECTION 1: BSD-STYLE, MIT-STYLE, OR SIMILAR STYLE LICENSES --------------------
+
+   >>> newtonsoft.json-10.0.3
+
+       The MIT License (MIT)
+
+       Copyright (c) 2007 James Newton-King
+
+       Permission is hereby granted, free of charge, to any person obtaining a copy of
+       this software and associated documentation files (the "Software"), to deal in
+       the Software without restriction, including without limitation the rights to
+       use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+       the Software, and to permit persons to whom the Software is furnished to do so,
+       subject to the following conditions:
+
+       The above copyright notice and this permission notice shall be included in all
+       copies or substantial portions of the Software.
+
+       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+       FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+       COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+       IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+       CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+   >>> dotnet-wcf-2.0.0
+
+       The MIT License (MIT)
+
+       Copyright (c) .NET Foundation and Contributors
+
+       All rights reserved.
+
+       Permission is hereby granted, free of charge, to any person obtaining a copy
+       of this software and associated documentation files (the "Software"), to deal
+       in the Software without restriction, including without limitation the rights
+       to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+       copies of the Software, and to permit persons to whom the Software is
+       furnished to do so, subject to the following conditions:
+
+       The above copyright notice and this permission notice shall be included in all
+       copies or substantial portions of the Software.
+
+       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+       FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+       AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+       SOFTWARE.
+
+       ADDITIONAL LICENSE INFORMATION :
+
+       wcf-2.0.0.tar.gz\wcf-2.0.0.tar\wcf-2.0.0\THIRD-PARTY-NOTICES.TXT
+
+       .NET Core uses third-party libraries or other resources that may be
+       distributed under licenses different than the .NET Core software.
+
+       Attributions and license notices for test cases originally authored by
+       third parties can be found in the respective test directories.
+
+       In the event that we accidentally failed to list a required notice, please
+       bring it to our attention. Post an issue or email us:
+
+                  dotnet@microsoft.com
+
+       The attached notices are provided for information only.
+
+       License notice for Bouncy Castle
+       --------------------------------
+
+       Bouncy Castle C# Crypto Library v1.7.4137.9688
+       Copyright (c) 2000-2014 The Legion of the Bouncy Castle Inc. (http://www.bouncycastle.org)
+       Provided for Informational Purposes Only
+       MIT License 
+       Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+       The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+       MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+       NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
+       LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
+       OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION 
+       WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+       License notice for .NET Foundation and Contributors (CoreFX)
+       ------------------------------------------------------------
+
+       The MIT License (MIT)
+
+       Copyright (c) .NET Foundation and Contributors
+
+       Permission is hereby granted, free of charge, to any person obtaining a copy
+       of this software and associated documentation files (the "Software"), to deal
+       in the Software without restriction, including without limitation the rights
+       to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+       copies of the Software, and to permit persons to whom the Software is
+       furnished to do so, subject to the following conditions:
+
+       The above copyright notice and this permission notice shall be included in all
+       copies or substantial portions of the Software.
+
+       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+       FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+       AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+       SOFTWARE.
+
+
+   >>> jsonsubtypes-1.8.0
+
+       MIT License
+
+       Copyright (c) 2017 Emmanuel Counasse
+
+       Permission is hereby granted, free of charge, to any person obtaining a copy
+       of this software and associated documentation files (the "Software"), to deal
+       in the Software without restriction, including without limitation the rights
+       to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+       copies of the Software, and to permit persons to whom the Software is
+       furnished to do so, subject to the following conditions:
+
+       The above copyright notice and this permission notice shall be included in all
+       copies or substantial portions of the Software.
+
+       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+       FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+       AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+       SOFTWARE.
+
+
+
+   >>> SharpZipLib-1.3.3
+
+

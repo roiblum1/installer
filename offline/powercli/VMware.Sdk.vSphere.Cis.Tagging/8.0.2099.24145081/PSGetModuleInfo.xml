@@ -1,0 +1,240 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.Cis.Tagging</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Cis.Tagging.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T13:00:24+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-AddToUsedByCategoryId</S>
+                <S>Invoke-CreateCategory</S>
+                <S>Invoke-DeleteCategoryId</S>
+                <S>Invoke-GetCategoryId</S>
+                <S>Invoke-ListCategory</S>
+                <S>Invoke-ListUsedCategoriesCategory</S>
+                <S>Invoke-RemoveFromUsedByCategoryId</S>
+                <S>Invoke-RevokePropagatingPermissionsCategoryId</S>
+                <S>Invoke-UpdateCategoryId</S>
+                <S>Invoke-AddToUsedByTagId</S>
+                <S>Invoke-CreateTag</S>
+                <S>Invoke-DeleteTagId</S>
+                <S>Invoke-GetTagId</S>
+                <S>Invoke-ListTag</S>
+                <S>Invoke-ListTagsForCategory</S>
+                <S>Invoke-ListUsedTags</S>
+                <S>Invoke-RemoveFromUsedByTagId</S>
+                <S>Invoke-RevokePropagatingPermissionsTagId</S>
+                <S>Invoke-UpdateTagId</S>
+                <S>Invoke-AttachMultipleTagsToObjectTagAssociation</S>
+                <S>Invoke-AttachTagIdTagAssociation</S>
+                <S>Invoke-AttachTagToMultipleObjectsTagIdTagAssociation</S>
+                <S>Invoke-DetachMultipleTagsFromObjectTagAssociation</S>
+                <S>Invoke-DetachTagFromMultipleObjectsTagIdTagAssociation</S>
+                <S>Invoke-DetachTagIdTagAssociation</S>
+                <S>Invoke-ListAttachableTagsTagAssociation</S>
+                <S>Invoke-ListAttachedObjectsOnTagsTagAssociation</S>
+                <S>Invoke-ListAttachedObjectsTagIdTagAssociation</S>
+                <S>Invoke-ListAttachedTagsOnObjectsTagAssociation</S>
+                <S>Invoke-ListAttachedTagsTagAssociation</S>
+                <S>Initialize-StdDynamicID</S>
+                <S>Initialize-TaggingCategoryAddToUsedByRequestBody</S>
+                <S>Initialize-TaggingCategoryCreateSpec</S>
+                <S>Initialize-TaggingCategoryListUsedCategoriesRequestBody</S>
+                <S>Initialize-TaggingCategoryRemoveFromUsedByRequestBody</S>
+                <S>Initialize-TaggingCategoryUpdateSpec</S>
+                <S>Initialize-TaggingTagAddToUsedByRequestBody</S>
+                <S>Initialize-TaggingTagAssociationAttachMultipleTagsToObjectRequestBody</S>
+                <S>Initialize-TaggingTagAssociationAttachRequestBody</S>
+                <S>Initialize-TaggingTagAssociationAttachTagToMultipleObjectsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationDetachMultipleTagsFromObjectRequestBody</S>
+                <S>Initialize-TaggingTagAssociationDetachRequestBody</S>
+                <S>Initialize-TaggingTagAssociationDetachTagFromMultipleObjectsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachableTagsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachedObjectsOnTagsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachedTagsOnObjectsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachedTagsRequestBody</S>
+                <S>Initialize-TaggingTagCreateSpec</S>
+                <S>Initialize-TaggingTagListTagsForCategoryRequestBody</S>
+                <S>Initialize-TaggingTagListUsedTagsRequestBody</S>
+                <S>Initialize-TaggingTagRemoveFromUsedByRequestBody</S>
+                <S>Initialize-TaggingTagUpdateSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-AddToUsedByCategoryId</S>
+                <S>Invoke-CreateCategory</S>
+                <S>Invoke-DeleteCategoryId</S>
+                <S>Invoke-GetCategoryId</S>
+                <S>Invoke-ListCategory</S>
+                <S>Invoke-ListUsedCategoriesCategory</S>
+                <S>Invoke-RemoveFromUsedByCategoryId</S>
+                <S>Invoke-RevokePropagatingPermissionsCategoryId</S>
+                <S>Invoke-UpdateCategoryId</S>
+                <S>Invoke-AddToUsedByTagId</S>
+                <S>Invoke-CreateTag</S>
+                <S>Invoke-DeleteTagId</S>
+                <S>Invoke-GetTagId</S>
+                <S>Invoke-ListTag</S>
+                <S>Invoke-ListTagsForCategory</S>
+                <S>Invoke-ListUsedTags</S>
+                <S>Invoke-RemoveFromUsedByTagId</S>
+                <S>Invoke-RevokePropagatingPermissionsTagId</S>
+                <S>Invoke-UpdateTagId</S>
+                <S>Invoke-AttachMultipleTagsToObjectTagAssociation</S>
+                <S>Invoke-AttachTagIdTagAssociation</S>
+                <S>Invoke-AttachTagToMultipleObjectsTagIdTagAssociation</S>
+                <S>Invoke-DetachMultipleTagsFromObjectTagAssociation</S>
+                <S>Invoke-DetachTagFromMultipleObjectsTagIdTagAssociation</S>
+                <S>Invoke-DetachTagIdTagAssociation</S>
+                <S>Invoke-ListAttachableTagsTagAssociation</S>
+                <S>Invoke-ListAttachedObjectsOnTagsTagAssociation</S>
+                <S>Invoke-ListAttachedObjectsTagIdTagAssociation</S>
+                <S>Invoke-ListAttachedTagsOnObjectsTagAssociation</S>
+                <S>Invoke-ListAttachedTagsTagAssociation</S>
+                <S>Initialize-StdDynamicID</S>
+                <S>Initialize-TaggingCategoryAddToUsedByRequestBody</S>
+                <S>Initialize-TaggingCategoryCreateSpec</S>
+                <S>Initialize-TaggingCategoryListUsedCategoriesRequestBody</S>
+                <S>Initialize-TaggingCategoryRemoveFromUsedByRequestBody</S>
+                <S>Initialize-TaggingCategoryUpdateSpec</S>
+                <S>Initialize-TaggingTagAddToUsedByRequestBody</S>
+                <S>Initialize-TaggingTagAssociationAttachMultipleTagsToObjectRequestBody</S>
+                <S>Initialize-TaggingTagAssociationAttachRequestBody</S>
+                <S>Initialize-TaggingTagAssociationAttachTagToMultipleObjectsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationDetachMultipleTagsFromObjectRequestBody</S>
+                <S>Initialize-TaggingTagAssociationDetachRequestBody</S>
+                <S>Initialize-TaggingTagAssociationDetachTagFromMultipleObjectsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachableTagsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachedObjectsOnTagsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachedTagsOnObjectsRequestBody</S>
+                <S>Initialize-TaggingTagAssociationListAttachedTagsRequestBody</S>
+                <S>Initialize-TaggingTagCreateSpec</S>
+                <S>Initialize-TaggingTagListTagsForCategoryRequestBody</S>
+                <S>Initialize-TaggingTagListUsedTagsRequestBody</S>
+                <S>Initialize-TaggingTagRemoveFromUsedByRequestBody</S>
+                <S>Initialize-TaggingTagUpdateSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Cis.Tagging.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2497057</S>
+          <S N="downloadCount">6961891</S>
+          <S N="packageSize">325330</S>
+          <S N="published">7/25/2024 1:00:24 PM +03:00</S>
+          <S N="created">7/25/2024 1:00:24 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-AddToUsedByCategoryId PSCommand_Invoke-AddToUsedByCategoryId PSFunction_Invoke-CreateCategory PSCommand_Invoke-CreateCategory PSFunction_Invoke-DeleteCategoryId PSCommand_Invoke-DeleteCategoryId PSFunction_Invoke-GetCategoryId PSCommand_Invoke-GetCategoryId PSFunction_Invoke-ListCategory PSCommand_Invoke-ListCategory PSFunction_Invoke-ListUsedCategoriesCategory PSCommand_Invoke-ListUsedCategoriesCategory PSFunction_Invoke-RemoveFromUsedByCategoryId PSCommand_Invoke-RemoveFromUsedByCategoryId PSFunction_Invoke-RevokePropagatingPermissionsCategoryId PSCommand_Invoke-RevokePropagatingPermissionsCategoryId PSFunction_Invoke-UpdateCategoryId PSCommand_Invoke-UpdateCategoryId PSFunction_Invoke-AddToUsedByTagId PSCommand_Invoke-AddToUsedByTagId PSFunction_Invoke-CreateTag PSCommand_Invoke-CreateTag PSFunction_Invoke-DeleteTagId PSCommand_Invoke-DeleteTagId PSFunction_Invoke-GetTagId PSCommand_Invoke-GetTagId PSFunction_Invoke-ListTag PSCommand_Invoke-ListTag PSFunction_Invoke-ListTagsForCategory PSCommand_Invoke-ListTagsForCategory PSFunction_Invoke-ListUsedTags PSCommand_Invoke-ListUsedTags PSFunction_Invoke-RemoveFromUsedByTagId PSCommand_Invoke-RemoveFromUsedByTagId PSFunction_Invoke-RevokePropagatingPermissionsTagId PSCommand_Invoke-RevokePropagatingPermissionsTagId PSFunction_Invoke-UpdateTagId PSCommand_Invoke-UpdateTagId PSFunction_Invoke-AttachMultipleTagsToObjectTagAssociation PSCommand_Invoke-AttachMultipleTagsToObjectTagAssociation PSFunction_Invoke-AttachTagIdTagAssociation PSCommand_Invoke-AttachTagIdTagAssociation PSFunction_Invoke-AttachTagToMultipleObjectsTagIdTagAssociation PSCommand_Invoke-AttachTagToMultipleObjectsTagIdTagAssociation PSFunction_Invoke-DetachMultipleTagsFromObjectTagAssociation PSCommand_Invoke-DetachMultipleTagsFromObjectTagAssociation PSFunction_Invoke-DetachTagFromMultipleObjectsTagIdTagAssociation PSCommand_Invoke-DetachTagFromMultipleObjectsTagIdTagAssociation PSFunction_Invoke-DetachTagIdTagAssociation PSCommand_Invoke-DetachTagIdTagAssociation PSFunction_Invoke-ListAttachableTagsTagAssociation PSCommand_Invoke-ListAttachableTagsTagAssociation PSFunction_Invoke-ListAttachedObjectsOnTagsTagAssociation PSCommand_Invoke-ListAttachedObjectsOnTagsTagAssociation PSFunction_Invoke-ListAttachedObjectsTagIdTagAssociation PSCommand_Invoke-ListAttachedObjectsTagIdTagAssociation PSFunction_Invoke-ListAttachedTagsOnObjectsTagAssociation PSCommand_Invoke-ListAttachedTagsOnObjectsTagAssociation PSFunction_Invoke-ListAttachedTagsTagAssociation PSCommand_Invoke-ListAttachedTagsTagAssociation PSFunction_Initialize-StdDynamicID PSCommand_Initialize-StdDynamicID PSFunction_Initialize-TaggingCategoryAddToUsedByRequestBody PSCommand_Initialize-TaggingCategoryAddToUsedByRequestBody PSFunction_Initialize-TaggingCategoryCreateSpec PSCommand_Initialize-TaggingCategoryCreateSpec PSFunction_Initialize-TaggingCategoryListUsedCategoriesRequestBody PSCommand_Initialize-TaggingCategoryListUsedCategoriesRequestBody PSFunction_Initialize-TaggingCategoryRemoveFromUsedByRequestBody PSCommand_Initialize-TaggingCategoryRemoveFromUsedByRequestBody PSFunction_Initialize-TaggingCategoryUpdateSpec PSCommand_Initialize-TaggingCategoryUpdateSpec PSFunction_Initialize-TaggingTagAddToUsedByRequestBody PSCommand_Initialize-TaggingTagAddToUsedByRequestBody PSFunction_Initialize-TaggingTagAssociationAttachMultipleTagsToObjectRequestBody PSCommand_Initialize-TaggingTagAssociationAttachMultipleTagsToObjectRequestBody PSFunction_Initialize-TaggingTagAssociationAttachRequestBody PSCommand_Initialize-TaggingTagAssociationAttachRequestBody PSFunction_Initialize-TaggingTagAssociationAttachTagToMultipleObjectsRequestBody PSCommand_Initialize-TaggingTagAssociationAttachTagToMultipleObjectsRequestBody PSFunction_Initialize-TaggingTagAssociationDetachMultipleTagsFromObjectRequestBody PSCommand_Initialize-TaggingTagAssociationDetachMultipleTagsFromObjectRequestBody PSFunction_Initialize-TaggingTagAssociationDetachRequestBody PSCommand_Initialize-TaggingTagAssociationDetachRequestBody PSFunction_Initialize-TaggingTagAssociationDetachTagFromMultipleObjectsRequestBody PSCommand_Initialize-TaggingTagAssociationDetachTagFromMultipleObjectsRequestBody PSFunction_Initialize-TaggingTagAssociationListAttachableTagsRequestBody PSCommand_Initialize-TaggingTagAssociationListAttachableTagsRequestBody PSFunction_Initialize-TaggingTagAssociationListAttachedObjectsOnTagsRequestBody PSCommand_Initialize-TaggingTagAssociationListAttachedObjectsOnTagsRequestBody PSFunction_Initialize-TaggingTagAssociationListAttachedTagsOnObjectsRequestBody PSCommand_Initialize-TaggingTagAssociationListAttachedTagsOnObjectsRequestBody PSFunction_Initialize-TaggingTagAssociationListAttachedTagsRequestBody PSCommand_Initialize-TaggingTagAssociationListAttachedTagsRequestBody PSFunction_Initialize-TaggingTagCreateSpec PSCommand_Initialize-TaggingTagCreateSpec PSFunction_Initialize-TaggingTagListTagsForCategoryRequestBody PSCommand_Initialize-TaggingTagListTagsForCategoryRequestBody PSFunction_Initialize-TaggingTagListUsedTagsRequestBody PSCommand_Initialize-TaggingTagListUsedTagsRequestBody PSFunction_Initialize-TaggingTagRemoveFromUsedByRequestBody PSCommand_Initialize-TaggingTagRemoveFromUsedByRequestBody PSFunction_Initialize-TaggingTagUpdateSpec PSCommand_Initialize-TaggingTagUpdateSpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.Cis.Tagging.nuspec|README.md|VMware.Sdk.vSphere.Cis.Tagging.psd1|Api\TagApi.ps1|Model\TaggingCategoryAddToUsedByRequestBody.ps1|Model\TaggingCategoryRemoveFromUsedByRequestBody.ps1|Model\TaggingTagAssociationAttachMultipleTagsToObjectRequestBody.ps1|Model\TaggingTagAssociationDetachMultipleTagsFromObjectRequestBody.ps1|Model\TaggingTagAssociationDetachTagFromMultipleObjectsRequestBody.ps1|Model\TaggingTagAssociationListAttachedObjectsOnTagsRequestBody.ps1|Model\TaggingTagAssociationListAttachedTagsRequestBody.ps1|Model\TaggingTagListTagsForCategoryRequestBody.ps1|Model\TaggingTagRemoveFromUsedByRequestBody.ps1|VMware.Sdk.vSphere.Cis.Tagging.cat|VMware.Sdk.vSphere.Cis.Tagging.psm1|Api\TagAssociationApi.ps1|Model\TaggingCategoryCreateSpec.ps1|Model\TaggingCategoryUpdateSpec.ps1|Model\TaggingTagAssociationAttachRequestBody.ps1|Model\TaggingTagAssociationDetachRequestBody.ps1|Model\TaggingTagAssociationListAttachableTagsRequestBody.ps1|Model\TaggingTagAssociationListAttachedTagsOnObjectsRequestBody.ps1|Model\TaggingTagCreateSpec.ps1|Model\TaggingTagListUsedTagsRequestBody.ps1|Model\TaggingTagUpdateSpec.ps1|Api\CategoryApi.ps1|Model\StdDynamicID.ps1|Model\TaggingCategoryListUsedCategoriesRequestBody.ps1|Model\TaggingTagAddToUsedByRequestBody.ps1|Model\TaggingTagAssociationAttachTagToMultipleObjectsRequestBody.ps1</S>
+          <S N="GUID">bcae82bc-4396-4a81-8157-920ce94d41a7</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.Cis.Tagging/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

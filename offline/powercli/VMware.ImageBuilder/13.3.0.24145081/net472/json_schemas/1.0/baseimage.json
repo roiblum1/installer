@@ -1,0 +1,70 @@
+{
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "description": "The json schema for ESXi base image spec",
+   "type": "object",
+   "required": [ "releaseType",
+                 "schemaVersion",
+                 "category",
+                 "vendor",
+                 "description",
+                 "summary",
+                 "docURL",
+                 "acceptanceLevel",
+                 "releaseDate",
+                 "versionSpec",
+                 "components"],
+   "properties": {
+      "releaseID": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/releaseID",
+         "minLength": 19,
+         "pattern": ".+:.+"
+      },
+      "releaseType": {
+         "allOf": [
+            {"$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/releaseType"},
+            {"pattern": "baseImage"}
+         ]
+      },
+      "schemaVersion": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/schemaVersion"
+      },
+      "category": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/category"
+      },
+      "vendor": {
+         "allOf": [
+            {"$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/vendor"},
+            {"pattern": "VMware, Inc."}
+         ]
+      },
+      "description": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/description"
+      },
+      "summary": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/summary"
+      },
+      "docURL": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/docURL"
+      },
+      "acceptanceLevel": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/acceptanceLevel"
+      },
+      "releaseDate": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/releaseDate"
+      },
+      "versionSpec": {
+         "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/versionSpecPattern"
+      },
+      "components": {
+         "allOf": [
+            {
+               "$ref": "https://www.vmware.com/esxupdate/common.json#/definitions/components"
+            },
+            {
+               "required": [ "ESXi"],
+               "minProperties": 1
+            }
+         ]
+      }
+   }
+}

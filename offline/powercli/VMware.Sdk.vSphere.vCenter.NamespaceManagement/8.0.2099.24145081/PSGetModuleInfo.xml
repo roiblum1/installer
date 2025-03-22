@@ -1,0 +1,502 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter.NamespaceManagement</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.NamespaceManagement.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:51:31+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-ListRecoveryBackupArchives</S>
+                <S>Invoke-ListNamespaceManagementSoftwareClusterAvailableVersions</S>
+                <S>Invoke-GetNamespaceManagementClusterCompatibilityV2</S>
+                <S>Invoke-ListNamespaceManagementClusterCompatibility</S>
+                <S>Invoke-DisableCluster</S>
+                <S>Invoke-EnableCluster</S>
+                <S>Invoke-GetClusterNamespaceManagement</S>
+                <S>Invoke-GetClusterNamespaceManagementSoftware</S>
+                <S>Invoke-ListNamespaceManagementClusters</S>
+                <S>Invoke-ListNamespaceManagementSoftwareClusters</S>
+                <S>Invoke-RotatePasswordCluster</S>
+                <S>Invoke-SetClusterNamespaceManagement</S>
+                <S>Invoke-UpdateClusterNamespaceManagement</S>
+                <S>Invoke-UpgradeCluster</S>
+                <S>Invoke-UpgradeMultipleSoftwareClusters</S>
+                <S>Invoke-GetNamespaceManagementClusterSizeInfo</S>
+                <S>Invoke-CreateClusterNamespaceManagementSupervisorServices</S>
+                <S>Invoke-DeleteClusterSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-GetClusterSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-ListClusterNamespaceManagementSupervisorServices</S>
+                <S>Invoke-SetClusterSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-CheckCompatibilityNsxDistributedSwitches</S>
+                <S>Invoke-CheckCompatibilityNsxEdges</S>
+                <S>Invoke-GetSupervisorNamespaceManagementConditions</S>
+                <S>Invoke-CreateSupervisorNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-DeleteSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-GetSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-ListSupervisorNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-UpdateSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-ListNamespaceManagementDistributedSwitchCompatibility</S>
+                <S>Invoke-ListNetworksNsxDistributedSwitches</S>
+                <S>Invoke-ListNamespaceManagementEdgeClusterCompatibility</S>
+                <S>Invoke-ListNetworksNsxEdges</S>
+                <S>Invoke-GetNamespaceManagementCapability</S>
+                <S>Invoke-CreateSupervisorArchiveRestoreJobs</S>
+                <S>Invoke-CreateSupervisorRecoveryBackupJobs</S>
+                <S>Invoke-GetClusterIdNamespaceManagementLoadBalancers</S>
+                <S>Invoke-ListClusterNamespaceManagementLoadBalancers</S>
+                <S>Invoke-SetClusterIdNamespaceManagementLoadBalancers</S>
+                <S>Invoke-UpdateClusterIdNamespaceManagementLoadBalancers</S>
+                <S>Invoke-GetClusterNamespaceManagementWorkloadResourceOptions</S>
+                <S>Invoke-CreateClusterNamespaceManagementNetworks</S>
+                <S>Invoke-DeleteClusterNetworkNamespaceManagement</S>
+                <S>Invoke-GetClusterNetworkNamespaceManagement</S>
+                <S>Invoke-ListClusterNamespaceManagementNetworks</S>
+                <S>Invoke-SetClusterNetworkNamespaceManagement</S>
+                <S>Invoke-UpdateClusterNetworkNamespaceManagement</S>
+                <S>Invoke-ListNamespaceManagementNsxTier0Gateways</S>
+                <S>Invoke-GetSupervisorSoftwarePrechecks</S>
+                <S>Invoke-RunSupervisorPrechecks</S>
+                <S>Invoke-CheckCompatibilityStorageProfiles</S>
+                <S>Invoke-CreateSupervisorNamespaceManagementIdentityProviders</S>
+                <S>Invoke-DeleteSupervisorProviderIdentity</S>
+                <S>Invoke-GetSupervisorProviderIdentity</S>
+                <S>Invoke-ListSupervisorNamespaceManagementIdentityProviders</S>
+                <S>Invoke-SetSupervisorProviderIdentity</S>
+                <S>Invoke-UpdateSupervisorProviderIdentity</S>
+                <S>Invoke-GetSupervisorNamespaceManagementSummary</S>
+                <S>Invoke-ListNamespaceManagementSupervisorsSummaries</S>
+                <S>Invoke-EnableOnComputeClusterClusterSupervisors</S>
+                <S>Invoke-EnableOnZonesNamespaceManagementSupervisors</S>
+                <S>Invoke-CheckContentNamespaceManagementSupervisorServices</S>
+                <S>Invoke-CreateNamespaceManagementSupervisorServices</S>
+                <S>Invoke-DeleteSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-GetSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-GetSupervisorSupervisorServiceTargetVersionSupervisorServicesPrecheck</S>
+                <S>Invoke-ListNamespaceManagementSupervisorServices</S>
+                <S>Invoke-PrecheckSupervisorSupervisorService</S>
+                <S>Invoke-UpdateSupervisorService</S>
+                <S>Invoke-UpdateSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-UpdateSupervisorService_0</S>
+                <S>Invoke-CreateClusterNamespaceManagementSupportBundle</S>
+                <S>Invoke-GetNamespaceManagementStatsTimeSeries</S>
+                <S>Invoke-GetClusterNamespaceManagementTopology</S>
+                <S>Invoke-GetSupervisorNamespaceManagementTopology</S>
+                <S>Invoke-CreateSupervisorServiceNamespaceManagementVersions</S>
+                <S>Invoke-DeleteSupervisorServiceVersionNamespaceManagement</S>
+                <S>Invoke-GetSupervisorServiceVersionNamespaceManagement</S>
+                <S>Invoke-ListSupervisorServiceNamespaceManagementVersions</S>
+                <S>Invoke-UpdateSupervisorServiceVersion</S>
+                <S>Invoke-UpdateSupervisorServiceVersion_0</S>
+                <S>Invoke-CreateNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-DeleteVmClassNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-GetVmClassNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-ListNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-UpdateVmClassNamespaceManagementVirtualMachineClasses</S>
+                <S>Initialize-NamespaceManagementClustersContentLibrarySpec</S>
+                <S>Initialize-NamespaceManagementClustersEnableSpec</S>
+                <S>Initialize-NamespaceManagementClustersImageRegistry</S>
+                <S>Initialize-NamespaceManagementClustersImageStorageSpec</S>
+                <S>Initialize-NamespaceManagementClustersIpv4Range</S>
+                <S>Initialize-NamespaceManagementClustersNCPClusterNetworkEnableSpec</S>
+                <S>Initialize-NamespaceManagementClustersNCPClusterNetworkSetSpec</S>
+                <S>Initialize-NamespaceManagementClustersNCPClusterNetworkUpdateSpec</S>
+                <S>Initialize-NamespaceManagementClustersNetworkSpec</S>
+                <S>Initialize-NamespaceManagementClustersSetSpec</S>
+                <S>Initialize-NamespaceManagementClustersUpdateSpec</S>
+                <S>Initialize-NamespaceManagementClustersWorkloadNetworksEnableSpec</S>
+                <S>Initialize-NamespaceManagementCNSFileConfig</S>
+                <S>Initialize-NamespaceManagementIPRange</S>
+                <S>Initialize-NamespaceManagementIpv4Cidr</S>
+                <S>Initialize-NamespaceManagementLoadBalancersAviConfigCreateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersAviConfigSetSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersAviConfigUpdateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersConfigSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersHAProxyConfigCreateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersHAProxyConfigSetSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersHAProxyConfigUpdateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersServer</S>
+                <S>Initialize-NamespaceManagementLoadBalancersSetSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersUpdateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksCreateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesEdge</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesHAProxyConfig</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesNSXAdvancedLBConfig</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesNSXConfig</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesServer</S>
+                <S>Initialize-NamespaceManagementNetworksIPAssignment</S>
+                <S>Initialize-NamespaceManagementNetworksIPManagement</S>
+                <S>Initialize-NamespaceManagementNetworksIPRange</S>
+                <S>Initialize-NamespaceManagementNetworksNsxDistributedSwitchesFilterSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxEdgesFilterSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxNetworkCreateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxNetworkSetSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxNetworkUpdateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksServiceDNS</S>
+                <S>Initialize-NamespaceManagementNetworksServiceNTP</S>
+                <S>Initialize-NamespaceManagementNetworksServices</S>
+                <S>Initialize-NamespaceManagementNetworksSetSpec</S>
+                <S>Initialize-NamespaceManagementNetworksUpdateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksVsphereDVPGNetworkCreateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksVsphereDVPGNetworkSetSpec</S>
+                <S>Initialize-NamespaceManagementNetworksVsphereDVPGNetworkUpdateSpec</S>
+                <S>Initialize-NamespaceManagementProxyConfiguration</S>
+                <S>Initialize-NamespaceManagementSoftwareClustersUpgradeSpec</S>
+                <S>Initialize-NamespaceManagementSoftwareSupervisorsPrechecksPrecheckSpec</S>
+                <S>Initialize-NamespaceManagementStatsTimeSeriesPodIdentifier</S>
+                <S>Initialize-NamespaceManagementStorageProfilesFilterSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsCNSFileConfig</S>
+                <S>Initialize-NamespaceManagementSupervisorsContainerImageRegistriesCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsContainerImageRegistriesUpdateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsContentLibrarySpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsControlPlane</S>
+                <S>Initialize-NamespaceManagementSupervisorsEnableOnComputeClusterSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsEnableOnZonesSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCarvelCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCheckContentRequestBody</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesSetSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesContentCheckSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCustomCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesUpdateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsCarvelCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsCustomCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsVsphereCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVsphereCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsIdentityProvidersCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsIdentityProvidersSetSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsIdentityProvidersUpdateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsImageRegistry</S>
+                <S>Initialize-NamespaceManagementSupervisorsImageSyncConfig</S>
+                <S>Initialize-NamespaceManagementSupervisorsKubeAPIServerOptions</S>
+                <S>Initialize-NamespaceManagementSupervisorsKubeAPIServerSecurity</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksManagementNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksManagementNetworkBacking</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksManagementProxyConfiguration</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksNetworkSegment</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksWorkloadNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksWorkloadNsxNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksWorkloadVSphereNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsRecoveryBackupJobsCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsSupervisorServicesPrecheckSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsWorkloads</S>
+                <S>Initialize-NamespaceManagementSupervisorsWorkloadsStorageConfig</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesCreateSpec</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesDynamicDirectPathIODevice</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesInstanceStorage</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesInstanceStorageVolume</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesUpdateSpec</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesVGPUDevice</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesVirtualDevices</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-ListRecoveryBackupArchives</S>
+                <S>Invoke-ListNamespaceManagementSoftwareClusterAvailableVersions</S>
+                <S>Invoke-GetNamespaceManagementClusterCompatibilityV2</S>
+                <S>Invoke-ListNamespaceManagementClusterCompatibility</S>
+                <S>Invoke-DisableCluster</S>
+                <S>Invoke-EnableCluster</S>
+                <S>Invoke-GetClusterNamespaceManagement</S>
+                <S>Invoke-GetClusterNamespaceManagementSoftware</S>
+                <S>Invoke-ListNamespaceManagementClusters</S>
+                <S>Invoke-ListNamespaceManagementSoftwareClusters</S>
+                <S>Invoke-RotatePasswordCluster</S>
+                <S>Invoke-SetClusterNamespaceManagement</S>
+                <S>Invoke-UpdateClusterNamespaceManagement</S>
+                <S>Invoke-UpgradeCluster</S>
+                <S>Invoke-UpgradeMultipleSoftwareClusters</S>
+                <S>Invoke-GetNamespaceManagementClusterSizeInfo</S>
+                <S>Invoke-CreateClusterNamespaceManagementSupervisorServices</S>
+                <S>Invoke-DeleteClusterSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-GetClusterSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-ListClusterNamespaceManagementSupervisorServices</S>
+                <S>Invoke-SetClusterSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-CheckCompatibilityNsxDistributedSwitches</S>
+                <S>Invoke-CheckCompatibilityNsxEdges</S>
+                <S>Invoke-GetSupervisorNamespaceManagementConditions</S>
+                <S>Invoke-CreateSupervisorNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-DeleteSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-GetSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-ListSupervisorNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-UpdateSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries</S>
+                <S>Invoke-ListNamespaceManagementDistributedSwitchCompatibility</S>
+                <S>Invoke-ListNetworksNsxDistributedSwitches</S>
+                <S>Invoke-ListNamespaceManagementEdgeClusterCompatibility</S>
+                <S>Invoke-ListNetworksNsxEdges</S>
+                <S>Invoke-GetNamespaceManagementCapability</S>
+                <S>Invoke-CreateSupervisorArchiveRestoreJobs</S>
+                <S>Invoke-CreateSupervisorRecoveryBackupJobs</S>
+                <S>Invoke-GetClusterIdNamespaceManagementLoadBalancers</S>
+                <S>Invoke-ListClusterNamespaceManagementLoadBalancers</S>
+                <S>Invoke-SetClusterIdNamespaceManagementLoadBalancers</S>
+                <S>Invoke-UpdateClusterIdNamespaceManagementLoadBalancers</S>
+                <S>Invoke-GetClusterNamespaceManagementWorkloadResourceOptions</S>
+                <S>Invoke-CreateClusterNamespaceManagementNetworks</S>
+                <S>Invoke-DeleteClusterNetworkNamespaceManagement</S>
+                <S>Invoke-GetClusterNetworkNamespaceManagement</S>
+                <S>Invoke-ListClusterNamespaceManagementNetworks</S>
+                <S>Invoke-SetClusterNetworkNamespaceManagement</S>
+                <S>Invoke-UpdateClusterNetworkNamespaceManagement</S>
+                <S>Invoke-ListNamespaceManagementNsxTier0Gateways</S>
+                <S>Invoke-GetSupervisorSoftwarePrechecks</S>
+                <S>Invoke-RunSupervisorPrechecks</S>
+                <S>Invoke-CheckCompatibilityStorageProfiles</S>
+                <S>Invoke-CreateSupervisorNamespaceManagementIdentityProviders</S>
+                <S>Invoke-DeleteSupervisorProviderIdentity</S>
+                <S>Invoke-GetSupervisorProviderIdentity</S>
+                <S>Invoke-ListSupervisorNamespaceManagementIdentityProviders</S>
+                <S>Invoke-SetSupervisorProviderIdentity</S>
+                <S>Invoke-UpdateSupervisorProviderIdentity</S>
+                <S>Invoke-GetSupervisorNamespaceManagementSummary</S>
+                <S>Invoke-ListNamespaceManagementSupervisorsSummaries</S>
+                <S>Invoke-EnableOnComputeClusterClusterSupervisors</S>
+                <S>Invoke-EnableOnZonesNamespaceManagementSupervisors</S>
+                <S>Invoke-CheckContentNamespaceManagementSupervisorServices</S>
+                <S>Invoke-CreateNamespaceManagementSupervisorServices</S>
+                <S>Invoke-DeleteSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-GetSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-GetSupervisorSupervisorServiceTargetVersionSupervisorServicesPrecheck</S>
+                <S>Invoke-ListNamespaceManagementSupervisorServices</S>
+                <S>Invoke-PrecheckSupervisorSupervisorService</S>
+                <S>Invoke-UpdateSupervisorService</S>
+                <S>Invoke-UpdateSupervisorServiceNamespaceManagement</S>
+                <S>Invoke-UpdateSupervisorService_0</S>
+                <S>Invoke-CreateClusterNamespaceManagementSupportBundle</S>
+                <S>Invoke-GetNamespaceManagementStatsTimeSeries</S>
+                <S>Invoke-GetClusterNamespaceManagementTopology</S>
+                <S>Invoke-GetSupervisorNamespaceManagementTopology</S>
+                <S>Invoke-CreateSupervisorServiceNamespaceManagementVersions</S>
+                <S>Invoke-DeleteSupervisorServiceVersionNamespaceManagement</S>
+                <S>Invoke-GetSupervisorServiceVersionNamespaceManagement</S>
+                <S>Invoke-ListSupervisorServiceNamespaceManagementVersions</S>
+                <S>Invoke-UpdateSupervisorServiceVersion</S>
+                <S>Invoke-UpdateSupervisorServiceVersion_0</S>
+                <S>Invoke-CreateNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-DeleteVmClassNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-GetVmClassNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-ListNamespaceManagementVirtualMachineClasses</S>
+                <S>Invoke-UpdateVmClassNamespaceManagementVirtualMachineClasses</S>
+                <S>Initialize-NamespaceManagementClustersContentLibrarySpec</S>
+                <S>Initialize-NamespaceManagementClustersEnableSpec</S>
+                <S>Initialize-NamespaceManagementClustersImageRegistry</S>
+                <S>Initialize-NamespaceManagementClustersImageStorageSpec</S>
+                <S>Initialize-NamespaceManagementClustersIpv4Range</S>
+                <S>Initialize-NamespaceManagementClustersNCPClusterNetworkEnableSpec</S>
+                <S>Initialize-NamespaceManagementClustersNCPClusterNetworkSetSpec</S>
+                <S>Initialize-NamespaceManagementClustersNCPClusterNetworkUpdateSpec</S>
+                <S>Initialize-NamespaceManagementClustersNetworkSpec</S>
+                <S>Initialize-NamespaceManagementClustersSetSpec</S>
+                <S>Initialize-NamespaceManagementClustersUpdateSpec</S>
+                <S>Initialize-NamespaceManagementClustersWorkloadNetworksEnableSpec</S>
+                <S>Initialize-NamespaceManagementCNSFileConfig</S>
+                <S>Initialize-NamespaceManagementIPRange</S>
+                <S>Initialize-NamespaceManagementIpv4Cidr</S>
+                <S>Initialize-NamespaceManagementLoadBalancersAviConfigCreateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersAviConfigSetSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersAviConfigUpdateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersConfigSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersHAProxyConfigCreateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersHAProxyConfigSetSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersHAProxyConfigUpdateSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersServer</S>
+                <S>Initialize-NamespaceManagementLoadBalancersSetSpec</S>
+                <S>Initialize-NamespaceManagementLoadBalancersUpdateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksCreateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesEdge</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesHAProxyConfig</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesNSXAdvancedLBConfig</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesNSXConfig</S>
+                <S>Initialize-NamespaceManagementNetworksEdgesServer</S>
+                <S>Initialize-NamespaceManagementNetworksIPAssignment</S>
+                <S>Initialize-NamespaceManagementNetworksIPManagement</S>
+                <S>Initialize-NamespaceManagementNetworksIPRange</S>
+                <S>Initialize-NamespaceManagementNetworksNsxDistributedSwitchesFilterSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxEdgesFilterSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxNetworkCreateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxNetworkSetSpec</S>
+                <S>Initialize-NamespaceManagementNetworksNsxNetworkUpdateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksServiceDNS</S>
+                <S>Initialize-NamespaceManagementNetworksServiceNTP</S>
+                <S>Initialize-NamespaceManagementNetworksServices</S>
+                <S>Initialize-NamespaceManagementNetworksSetSpec</S>
+                <S>Initialize-NamespaceManagementNetworksUpdateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksVsphereDVPGNetworkCreateSpec</S>
+                <S>Initialize-NamespaceManagementNetworksVsphereDVPGNetworkSetSpec</S>
+                <S>Initialize-NamespaceManagementNetworksVsphereDVPGNetworkUpdateSpec</S>
+                <S>Initialize-NamespaceManagementProxyConfiguration</S>
+                <S>Initialize-NamespaceManagementSoftwareClustersUpgradeSpec</S>
+                <S>Initialize-NamespaceManagementSoftwareSupervisorsPrechecksPrecheckSpec</S>
+                <S>Initialize-NamespaceManagementStatsTimeSeriesPodIdentifier</S>
+                <S>Initialize-NamespaceManagementStorageProfilesFilterSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsCNSFileConfig</S>
+                <S>Initialize-NamespaceManagementSupervisorsContainerImageRegistriesCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsContainerImageRegistriesUpdateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsContentLibrarySpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsControlPlane</S>
+                <S>Initialize-NamespaceManagementSupervisorsEnableOnComputeClusterSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsEnableOnZonesSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCarvelCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCheckContentRequestBody</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesSetSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesContentCheckSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesCustomCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesUpdateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsCarvelCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsCustomCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVersionsVsphereCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorServicesVsphereCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsIdentityProvidersCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsIdentityProvidersSetSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsIdentityProvidersUpdateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsImageRegistry</S>
+                <S>Initialize-NamespaceManagementSupervisorsImageSyncConfig</S>
+                <S>Initialize-NamespaceManagementSupervisorsKubeAPIServerOptions</S>
+                <S>Initialize-NamespaceManagementSupervisorsKubeAPIServerSecurity</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksManagementNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksManagementNetworkBacking</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksManagementProxyConfiguration</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksNetworkSegment</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksWorkloadNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksWorkloadNsxNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsNetworksWorkloadVSphereNetwork</S>
+                <S>Initialize-NamespaceManagementSupervisorsRecoveryBackupJobsCreateSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsSupervisorServicesPrecheckSpec</S>
+                <S>Initialize-NamespaceManagementSupervisorsWorkloads</S>
+                <S>Initialize-NamespaceManagementSupervisorsWorkloadsStorageConfig</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesCreateSpec</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesDynamicDirectPathIODevice</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesInstanceStorage</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesInstanceStorageVolume</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesUpdateSpec</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesVGPUDevice</S>
+                <S>Initialize-NamespaceManagementVirtualMachineClassesVirtualDevices</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.NamespaceManagement.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2448768</S>
+          <S N="downloadCount">6875360</S>
+          <S N="packageSize">1382244</S>
+          <S N="published">7/25/2024 12:51:31 PM +03:00</S>
+          <S N="created">7/25/2024 12:51:31 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-ListRecoveryBackupArchives PSCommand_Invoke-ListRecoveryBackupArchives PSFunction_Invoke-ListNamespaceManagementSoftwareClusterAvailableVersions PSCommand_Invoke-ListNamespaceManagementSoftwareClusterAvailableVersions PSFunction_Invoke-GetNamespaceManagementClusterCompatibilityV2 PSCommand_Invoke-GetNamespaceManagementClusterCompatibilityV2 PSFunction_Invoke-ListNamespaceManagementClusterCompatibility PSCommand_Invoke-ListNamespaceManagementClusterCompatibility PSFunction_Invoke-DisableCluster PSCommand_Invoke-DisableCluster PSFunction_Invoke-EnableCluster PSCommand_Invoke-EnableCluster PSFunction_Invoke-GetClusterNamespaceManagement PSCommand_Invoke-GetClusterNamespaceManagement PSFunction_Invoke-GetClusterNamespaceManagementSoftware PSCommand_Invoke-GetClusterNamespaceManagementSoftware PSFunction_Invoke-ListNamespaceManagementClusters PSCommand_Invoke-ListNamespaceManagementClusters PSFunction_Invoke-ListNamespaceManagementSoftwareClusters PSCommand_Invoke-ListNamespaceManagementSoftwareClusters PSFunction_Invoke-RotatePasswordCluster PSCommand_Invoke-RotatePasswordCluster PSFunction_Invoke-SetClusterNamespaceManagement PSCommand_Invoke-SetClusterNamespaceManagement PSFunction_Invoke-UpdateClusterNamespaceManagement PSCommand_Invoke-UpdateClusterNamespaceManagement PSFunction_Invoke-UpgradeCluster PSCommand_Invoke-UpgradeCluster PSFunction_Invoke-UpgradeMultipleSoftwareClusters PSCommand_Invoke-UpgradeMultipleSoftwareClusters PSFunction_Invoke-GetNamespaceManagementClusterSizeInfo PSCommand_Invoke-GetNamespaceManagementClusterSizeInfo PSFunction_Invoke-CreateClusterNamespaceManagementSupervisorServices PSCommand_Invoke-CreateClusterNamespaceManagementSupervisorServices PSFunction_Invoke-DeleteClusterSupervisorServiceNamespaceManagement PSCommand_Invoke-DeleteClusterSupervisorServiceNamespaceManagement PSFunction_Invoke-GetClusterSupervisorServiceNamespaceManagement PSCommand_Invoke-GetClusterSupervisorServiceNamespaceManagement PSFunction_Invoke-ListClusterNamespaceManagementSupervisorServices PSCommand_Invoke-ListClusterNamespaceManagementSupervisorServices PSFunction_Invoke-SetClusterSupervisorServiceNamespaceManagement PSCommand_Invoke-SetClusterSupervisorServiceNamespaceManagement PSFunction_Invoke-CheckCompatibilityNsxDistributedSwitches PSCommand_Invoke-CheckCompatibilityNsxDistributedSwitches PSFunction_Invoke-CheckCompatibilityNsxEdges PSCommand_Invoke-CheckCompatibilityNsxEdges PSFunction_Invoke-GetSupervisorNamespaceManagementConditions PSCommand_Invoke-GetSupervisorNamespaceManagementConditions PSFunction_Invoke-CreateSupervisorNamespaceManagementContainerImageRegistries PSCommand_Invoke-CreateSupervisorNamespaceManagementContainerImageRegistries PSFunction_Invoke-DeleteSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries PSCommand_Invoke-DeleteSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries PSFunction_Invoke-GetSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries PSCommand_Invoke-GetSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries PSFunction_Invoke-ListSupervisorNamespaceManagementContainerImageRegistries PSCommand_Invoke-ListSupervisorNamespaceManagementContainerImageRegistries PSFunction_Invoke-UpdateSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries PSCommand_Invoke-UpdateSupervisorContainerImageRegistryNamespaceManagementContainerImageRegistries PSFunction_Invoke-ListNamespaceManagementDistributedSwitchCompatibility PSCommand_Invoke-ListNamespaceManagementDistributedSwitchCompatibility PSFunction_Invoke-ListNetworksNsxDistributedSwitches PSCommand_Invoke-ListNetworksNsxDistributedSwitches PSFunction_Invoke-ListNamespaceManagementEdgeClusterCompatibility PSCommand_Invoke-ListNamespaceManagementEdgeClusterCompatibility PSFunction_Invoke-ListNetworksNsxEdges PSCommand_Invoke-ListNetworksNsxEdges PSFunction_Invoke-GetNamespaceManagementCapability PSCommand_Invoke-GetNamespaceManagementCapability PSFunction_Invoke-CreateSupervisorArchiveRestoreJobs PSCommand_Invoke-CreateSupervisorArchiveRestoreJobs PSFunction_Invoke-CreateSupervisorRecoveryBackupJobs PSCommand_Invoke-CreateSupervisorRecoveryBackupJobs PSFunction_Invoke-GetClusterIdNamespaceManagementLoadBalancers PSCommand_Invoke-GetClusterIdNamespaceManagementLoadBalancers PSFunction_Invoke-ListClusterNamespaceManagementLoadBalancers PSCommand_Invoke-ListClusterNamespaceManagementLoadBalancers PSFunction_Invoke-SetClusterIdNamespaceManagementLoadBalancers PSCommand_Invoke-SetClusterIdNamespaceManagementLoadBalancers PSFunction_Invoke-UpdateClusterIdNamespaceManagementLoadBalancers PSCommand_Invoke-UpdateClusterIdNamespaceManagementLoadBalancers PSFunction_Invoke-GetClusterNamespaceManagementWorkloadResourceOptions PSCommand_Invoke-GetClusterNamespaceManagementWorkloadResourceOptions PSFunction_Invoke-CreateClusterNamespaceManagementNetworks PSCommand_Invoke-CreateClusterNamespaceManagementNetworks PSFunction_Invoke-DeleteClusterNetworkNamespaceManagement PSCommand_Invoke-DeleteClusterNetworkNamespaceManagement PSFunction_Invoke-GetClusterNetworkNamespaceManagement PSCommand_Invoke-GetClusterNetworkNamespaceManagement PSFunction_Invoke-ListClusterNamespaceManagementNetworks PSCommand_Invoke-ListClusterNamespaceManagementNetworks PSFunction_Invoke-SetClusterNetworkNamespaceManagement PSCommand_Invoke-SetClusterNetworkNamespaceManagement PSFunction_Invoke-UpdateClusterNetworkNamespaceManagement PSCommand_Invoke-UpdateClusterNetworkNamespaceManagement PSFunction_Invoke-ListNamespaceManagementNsxTier0Gateways PSCommand_Invoke-ListNamespaceManagementNsxTier0Gateways PSFunction_Invoke-GetSupervisorSoftwarePrechecks PSCommand_Invoke-GetSupervisorSoftwarePrechecks PSFunction_Invoke-RunSupervisorPrechecks PSCommand_Invoke-RunSupervisorPrechecks PSFunction_Invoke-CheckCompatibilityStorageProfiles PSCommand_Invoke-CheckCompatibilityStorageProfiles PSFunction_Invoke-CreateSupervisorNamespaceManagementIdentityProviders PSCommand_Invoke-CreateSupervisorNamespaceManagementIdentityProviders PSFunction_Invoke-DeleteSupervisorProviderIdentity PSCommand_Invoke-DeleteSupervisorProviderIdentity PSFunction_Invoke-GetSupervisorProviderIdentity PSCommand_Invoke-GetSupervisorProviderIdentity PSFunction_Invoke-ListSupervisorNamespaceManagementIdentityProviders PSCommand_Invoke-ListSupervisorNamespaceManagementIdentityProviders PSFunction_Invoke-SetSupervisorProviderIdentity PSCommand_Invoke-SetSupervisorProviderIdentity PSFunction_Invoke-UpdateSupervisorProviderIdentity PSCommand_Invoke-UpdateSupervisorProviderIdentity PSFunction_Invoke-GetSupervisorNamespaceManagementSummary PSCommand_Invoke-GetSupervisorNamespaceManagementSummary PSFunction_Invoke-ListNamespaceManagementSupervisorsSummaries PSCommand_Invoke-ListNamespaceManagementSupervisorsSummaries PSFunction_Invoke-EnableOnComputeClusterClusterSupervisors PSCommand_Invoke-EnableOnComputeClusterClusterSupervisors PSFunction_Invoke-EnableOnZonesNamespaceManagementSupervisors PSCommand_Invoke-EnableOnZonesNamespaceManagementSupervisors PSFunction_Invoke-CheckContentNamespaceManagementSupervisorServices PSCommand_Invoke-CheckContentNamespaceManagementSupervisorServices PSFunction_Invoke-CreateNamespaceManagementSupervisorServices PSCommand_Invoke-CreateNamespaceManagementSupervisorServices PSFunction_Invoke-DeleteSupervisorServiceNamespaceManagement PSCommand_Invoke-DeleteSupervisorServiceNamespaceManagement PSFunction_Invoke-GetSupervisorServiceNamespaceManagement PSCommand_Invoke-GetSupervisorServiceNamespaceManagement PSFunction_Invoke-GetSupervisorSupervisorServiceTargetVersionSupervisorServicesPrecheck PSCommand_Invoke-GetSupervisorSupervisorServiceTargetVersionSupervisorServicesPrecheck PSFunction_Invoke-ListNamespaceManagementSupervisorServices PSCommand_Invoke-ListNamespaceManagementSupervisorServices PSFunction_Invoke-PrecheckSupervisorSupervisorService PSCommand_Invoke-PrecheckSupervisorSupervisorService PSFunction_Invoke-UpdateSupervisorService PSCommand_Invoke-UpdateSupervisorService PSFunction_Invoke-UpdateSupervisorServiceNamespaceManagement PSCommand_Invoke-UpdateSupervisorServiceNamespaceManagement PSFunction_Invoke-UpdateSupervisorService_0 PSCommand_Invoke-UpdateSupervisorService_0 PSFunction_Invoke-CreateClusterNamespaceManagementSupportBundle PSCommand_Invoke-CreateClusterNamespaceManagementSupportBundle PSFunction_Invoke-GetNamespaceManagementStatsTimeSeries PSCommand_Invoke-GetNamespaceManagementStatsTimeSeries PSFunction_Invoke-GetClusterNamespaceManagementTopology PSCommand_Invoke-GetClusterNamespaceManagementTopology PSFunction_Invoke-GetSupervisorNamespaceManagementTopology PSCommand_Invoke-GetSupervisorNamespaceManagementTopology PSFunction_Invoke-CreateSupervisorServiceNamespaceManagementVersions PSCommand_Invoke-CreateSupervisorServiceNamespaceManagementVersions PSFunction_Invoke-DeleteSupervisorServiceVersionNamespaceManagement PSCommand_Invoke-DeleteSupervisorServiceVersionNamespaceManagement PSFunction_Invoke-GetSupervisorServiceVersionNamespaceManagement PSCommand_Invoke-GetSupervisorServiceVersionNamespaceManagement PSFunction_Invoke-ListSupervisorServiceNamespaceManagementVersions PSCommand_Invoke-ListSupervisorServiceNamespaceManagementVersions PSFunction_Invoke-UpdateSupervisorServiceVersion PSCommand_Invoke-UpdateSupervisorServiceVersion PSFunction_Invoke-UpdateSupervisorServiceVersion_0 PSCommand_Invoke-UpdateSupervisorServiceVersion_0 PSFunction_Invoke-CreateNamespaceManagementVirtualMachineClasses PSCommand_Invoke-CreateNamespaceManagementVirtualMachineClasses PSFunction_Invoke-DeleteVmClassNamespaceManagementVirtualMachineClasses PSCommand_Invoke-DeleteVmClassNamespaceManagementVirtualMachineClasses PSFunction_Invoke-GetVmClassNamespaceManagementVirtualMachineClasses PSCommand_Invoke-GetVmClassNamespaceManagementVirtualMachineClasses PSFunction_Invoke-ListNamespaceManagementVirtualMachineClasses PSCommand_Invoke-ListNamespaceManagementVirtualMachineClasses PSFunction_Invoke-UpdateVmClassNamespaceManagementVirtualMachineClasses PSCommand_Invoke-UpdateVmClassNamespaceManagementVirtualMachineClasses PSFunction_Initialize-NamespaceManagementClustersContentLibrarySpec PSCommand_Initialize-NamespaceManagementClustersContentLibrarySpec PSFunction_Initialize-NamespaceManagementClustersEnableSpec PSCommand_Initialize-NamespaceManagementClustersEnableSpec PSFunction_Initialize-NamespaceManagementClustersImageRegistry PSCommand_Initialize-NamespaceManagementClustersImageRegistry PSFunction_Initialize-NamespaceManagementClustersImageStorageSpec PSCommand_Initialize-NamespaceManagementClustersImageStorageSpec PSFunction_Initialize-NamespaceManagementClustersIpv4Range PSCommand_Initialize-NamespaceManagementClustersIpv4Range PSFunction_Initialize-NamespaceManagementClustersNCPClusterNetworkEnableSpec PSCommand_Initialize-NamespaceManagementClustersNCPClusterNetworkEnableSpec PSFunction_Initialize-NamespaceManagementClustersNCPClusterNetworkSetSpec PSCommand_Initialize-NamespaceManagementClustersNCPClusterNetworkSetSpec PSFunction_Initialize-NamespaceManagementClustersNCPClusterNetworkUpdateSpec PSCommand_Initialize-NamespaceManagementClustersNCPClusterNetworkUpdateSpec PSFunction_Initialize-NamespaceManagementClustersNetworkSpec PSCommand_Initialize-NamespaceManagementClustersNetworkSpec PSFunction_Initialize-NamespaceManagementClustersSetSpec PSCommand_Initialize-NamespaceManagementClustersSetSpec PSFunction_Initialize-NamespaceManagementClustersUpdateSpec PSCommand_Initialize-NamespaceManagementClustersUpdateSpec PSFunction_Initialize-NamespaceManagementClustersWorkloadNetworksEnableSpec PSCommand_Initialize-NamespaceManagementClustersWorkloadNetworksEnableSpec PSFunction_Initialize-NamespaceManagementCNSFileConfig PSCommand_Initialize-NamespaceManagementCNSFileConfig PSFunction_Initialize-NamespaceManagementIPRange PSCommand_Initialize-NamespaceManagementIPRange PSFunction_Initialize-NamespaceManagementIpv4Cidr PSCommand_Initialize-NamespaceManagementIpv4Cidr PSFunction_Initialize-NamespaceManagementLoadBalancersAviConfigCreateSpec PSCommand_Initialize-NamespaceManagementLoadBalancersAviConfigCreateSpec PSFunction_Initialize-NamespaceManagementLoadBalancersAviConfigSetSpec PSCommand_Initialize-NamespaceManagementLoadBalancersAviConfigSetSpec PSFunction_Initialize-NamespaceManagementLoadBalancersAviConfigUpdateSpec PSCommand_Initialize-NamespaceManagementLoadBalancersAviConfigUpdateSpec PSFunction_Initialize-NamespaceManagementLoadBalancersConfigSpec PSCommand_Initialize-NamespaceManagementLoadBalancersConfigSpec PSFunction_Initialize-NamespaceManagementLoadBalancersHAProxyConfigCreateSpec PSCommand_Initialize-NamespaceManagementLoadBalancersHAProxyConfigCreateSpec PSFunction_Initialize-NamespaceManagementLoadBalancersHAProxyConfigSetSpec PSCommand_Initialize-NamespaceManagementLoadBalancersHAProxyConfigSetSpec PSFunction_Initialize-NamespaceManagementLoadBalancersHAProxyConfigUpdateSpec PSCommand_Initialize-NamespaceManagementLoadBalancersHAProxyConfigUpdateSpec PSFunction_Initialize-NamespaceManagementLoadBalancersServer PSCommand_Initialize-NamespaceManagementLoadBalancersServer PSFunction_Initialize-NamespaceManagementLoadBalancersSetSpec PSCommand_Initialize-NamespaceManagementLoadBalancersSetSpec PSFunction_Initialize-NamespaceManagementLoadBalancersUpdateSpec PSCommand_Initialize-NamespaceManagementLoadBalancersUpdateSpec PSFunction_Initialize-NamespaceManagementNetworksCreateSpec PSCommand_Initialize-NamespaceManagementNetworksCreateSpec PSFunction_Initialize-NamespaceManagementNetworksEdgesEdge PSCommand_Initialize-NamespaceManagementNetworksEdgesEdge PSFunction_Initialize-NamespaceManagementNetworksEdgesHAProxyConfig PSCommand_Initialize-NamespaceManagementNetworksEdgesHAProxyConfig PSFunction_Initialize-NamespaceManagementNetworksEdgesNSXAdvancedLBConfig PSCommand_Initialize-NamespaceManagementNetworksEdgesNSXAdvancedLBConfig PSFunction_Initialize-NamespaceManagementNetworksEdgesNSXConfig PSCommand_Initialize-NamespaceManagementNetworksEdgesNSXConfig PSFunction_Initialize-NamespaceManagementNetworksEdgesServer PSCommand_Initialize-NamespaceManagementNetworksEdgesServer PSFunction_Initialize-NamespaceManagementNetworksIPAssignment PSCommand_Initialize-NamespaceManagementNetworksIPAssignment PSFunction_Initialize-NamespaceManagementNetworksIPManagement PSCommand_Initialize-NamespaceManagementNetworksIPManagement PSFunction_Initialize-NamespaceManagementNetworksIPRange PSCommand_Initialize-NamespaceManagementNetworksIPRange PSFunction_Initialize-NamespaceManagementNetworksNsxDistributedSwitchesFilterSpec PSCommand_Initialize-NamespaceManagementNetworksNsxDistributedSwitchesFilterSpec PSFunction_Initialize-NamespaceManagementNetworksNsxEdgesFilterSpec PSCommand_Initialize-NamespaceManagementNetworksNsxEdgesFilterSpec PSFunction_Initialize-NamespaceManagementNetworksNsxNetworkCreateSpec PSCommand_Initialize-NamespaceManagementNetworksNsxNetworkCreateSpec PSFunction_Initialize-NamespaceManagementNetworksNsxNetworkSetSpec PSCommand_Initialize-NamespaceManagementNetworksNsxNetworkSetSpec PSFunction_Initialize-NamespaceManagementNetworksNsxNetworkUpdateSpec PSCommand_Initialize-NamespaceManagementNetworksNsxNetworkUpdateSpec PSFunction_Initialize-NamespaceManagementNetworksServiceDNS PSCommand_Initialize-NamespaceManagementNetworksServiceDNS PSFunction_Initialize-NamespaceManagementNetworksServiceNTP PSCommand_Initialize-NamespaceManagementNetworksServiceNTP PSFunction_Initialize-NamespaceManagementNetworksServices PSCommand_Initialize-NamespaceManagementNetworksServices PSFunction_Initialize-NamespaceManagementNetworksSetSpec PSCommand_Initialize-NamespaceManagementNetworksSetSpec PSFunction_Initialize-NamespaceManagementNetworksUpdateSpec PSCommand_Initialize-NamespaceManagementNetworksUpdateSpec PSFunction_Initialize-NamespaceManagementNetworksVsphereDVPGNetworkCreateSpec PSCommand_Initialize-NamespaceManagementNetworksVsphereDVPGNetworkCreateSpec PSFunction_Initialize-NamespaceManagementNetworksVsphereDVPGNetworkSetSpec PSCommand_Initialize-NamespaceManagementNetworksVsphereDVPGNetworkSetSpec PSFunction_Initialize-NamespaceManagementNetworksVsphereDVPGNetworkUpdateSpec PSCommand_Initialize-NamespaceManagementNetworksVsphereDVPGNetworkUpdateSpec PSFunction_Initialize-NamespaceManagementProxyConfiguration PSCommand_Initialize-NamespaceManagementProxyConfiguration PSFunction_Initialize-NamespaceManagementSoftwareClustersUpgradeSpec PSCommand_Initialize-NamespaceManagementSoftwareClustersUpgradeSpec PSFunction_Initialize-NamespaceManagementSoftwareSupervisorsPrechecksPrecheckSpec PSCommand_Initialize-NamespaceManagementSoftwareSupervisorsPrechecksPrecheckSpec PSFunction_Initialize-NamespaceManagementStatsTimeSeriesPodIdentifier PSCommand_Initialize-NamespaceManagementStatsTimeSeriesPodIdentifier PSFunction_Initialize-NamespaceManagementStorageProfilesFilterSpec PSCommand_Initialize-NamespaceManagementStorageProfilesFilterSpec PSFunction_Initialize-NamespaceManagementSupervisorsCNSFileConfig PSCommand_Initialize-NamespaceManagementSupervisorsCNSFileConfig PSFunction_Initialize-NamespaceManagementSupervisorsContainerImageRegistriesCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorsContainerImageRegistriesCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorsContainerImageRegistriesUpdateSpec PSCommand_Initialize-NamespaceManagementSupervisorsContainerImageRegistriesUpdateSpec PSFunction_Initialize-NamespaceManagementSupervisorsContentLibrarySpec PSCommand_Initialize-NamespaceManagementSupervisorsContentLibrarySpec PSFunction_Initialize-NamespaceManagementSupervisorsControlPlane PSCommand_Initialize-NamespaceManagementSupervisorsControlPlane PSFunction_Initialize-NamespaceManagementSupervisorsEnableOnComputeClusterSpec PSCommand_Initialize-NamespaceManagementSupervisorsEnableOnComputeClusterSpec PSFunction_Initialize-NamespaceManagementSupervisorsEnableOnZonesSpec PSCommand_Initialize-NamespaceManagementSupervisorsEnableOnZonesSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesCarvelCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesCarvelCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesCheckContentRequestBody PSCommand_Initialize-NamespaceManagementSupervisorServicesCheckContentRequestBody PSFunction_Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesSetSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesClusterSupervisorServicesSetSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesContentCheckSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesContentCheckSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesCustomCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesCustomCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesUpdateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesUpdateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesVersionsCarvelCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesVersionsCarvelCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesVersionsCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesVersionsCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesVersionsCustomCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesVersionsCustomCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesVersionsVsphereCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesVersionsVsphereCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorServicesVsphereCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorServicesVsphereCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorsIdentityProvidersCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorsIdentityProvidersCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorsIdentityProvidersSetSpec PSCommand_Initialize-NamespaceManagementSupervisorsIdentityProvidersSetSpec PSFunction_Initialize-NamespaceManagementSupervisorsIdentityProvidersUpdateSpec PSCommand_Initialize-NamespaceManagementSupervisorsIdentityProvidersUpdateSpec PSFunction_Initialize-NamespaceManagementSupervisorsImageRegistry PSCommand_Initialize-NamespaceManagementSupervisorsImageRegistry PSFunction_Initialize-NamespaceManagementSupervisorsImageSyncConfig PSCommand_Initialize-NamespaceManagementSupervisorsImageSyncConfig PSFunction_Initialize-NamespaceManagementSupervisorsKubeAPIServerOptions PSCommand_Initialize-NamespaceManagementSupervisorsKubeAPIServerOptions PSFunction_Initialize-NamespaceManagementSupervisorsKubeAPIServerSecurity PSCommand_Initialize-NamespaceManagementSupervisorsKubeAPIServerSecurity PSFunction_Initialize-NamespaceManagementSupervisorsNetworksManagementNetwork PSCommand_Initialize-NamespaceManagementSupervisorsNetworksManagementNetwork PSFunction_Initialize-NamespaceManagementSupervisorsNetworksManagementNetworkBacking PSCommand_Initialize-NamespaceManagementSupervisorsNetworksManagementNetworkBacking PSFunction_Initialize-NamespaceManagementSupervisorsNetworksManagementProxyConfiguration PSCommand_Initialize-NamespaceManagementSupervisorsNetworksManagementProxyConfiguration PSFunction_Initialize-NamespaceManagementSupervisorsNetworksNetworkSegment PSCommand_Initialize-NamespaceManagementSupervisorsNetworksNetworkSegment PSFunction_Initialize-NamespaceManagementSupervisorsNetworksWorkloadNetwork PSCommand_Initialize-NamespaceManagementSupervisorsNetworksWorkloadNetwork PSFunction_Initialize-NamespaceManagementSupervisorsNetworksWorkloadNsxNetwork PSCommand_Initialize-NamespaceManagementSupervisorsNetworksWorkloadNsxNetwork PSFunction_Initialize-NamespaceManagementSupervisorsNetworksWorkloadVSphereNetwork PSCommand_Initialize-NamespaceManagementSupervisorsNetworksWorkloadVSphereNetwork PSFunction_Initialize-NamespaceManagementSupervisorsRecoveryBackupJobsCreateSpec PSCommand_Initialize-NamespaceManagementSupervisorsRecoveryBackupJobsCreateSpec PSFunction_Initialize-NamespaceManagementSupervisorsSupervisorServicesPrecheckSpec PSCommand_Initialize-NamespaceManagementSupervisorsSupervisorServicesPrecheckSpec PSFunction_Initialize-NamespaceManagementSupervisorsWorkloads PSCommand_Initialize-NamespaceManagementSupervisorsWorkloads PSFunction_Initialize-NamespaceManagementSupervisorsWorkloadsStorageConfig PSCommand_Initialize-NamespaceManagementSupervisorsWorkloadsStorageConfig PSFunction_Initialize-NamespaceManagementVirtualMachineClassesCreateSpec PSCommand_Initialize-NamespaceManagementVirtualMachineClassesCreateSpec PSFunction_Initialize-NamespaceManagementVirtualMachineClassesDynamicDirectPathIODevice PSCommand_Initialize-NamespaceManagementVirtualMachineClassesDynamicDirectPathIODevice PSFunction_Initialize-NamespaceManagementVirtualMachineClassesInstanceStorage PSCommand_Initialize-NamespaceManagementVirtualMachineClassesInstanceStorage PSFunction_Initialize-NamespaceManagementVirtualMachineClassesInstanceStorageVolume PSCommand_Initialize-NamespaceManagementVirtualMachineClassesInstanceStorageVolume PSFunction_Initialize-NamespaceManagementVirtualMachineClassesUpdateSpec PSCommand_Initialize-NamespaceManagementVirtualMachineClassesUpdateSpec PSFunction_Initialize-NamespaceManagementVirtualMachineClassesVGPUDevice PSCommand_Initialize-NamespaceManagementVirtualMachineClassesVGPUDevice PSFunction_Initialize-NamespaceManagementVirtualMachineClassesVirtualDevices PSCommand_Initialize-NamespaceManagementVirtualMachineClassesVirtualDevices PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.NamespaceManagement.nuspec|Model\NamespaceManagementClustersWorkloadNetworksEnableSpec.ps1|Model\NamespaceManagementLoadBalancersHAProxyConfigUpdateSpec.ps1|Model\NamespaceManagementNetworksIPAssignment.ps1|Model\NamespaceManagementNetworksServices.ps1|Model\NamespaceManagementSupervisorsCNSFileConfig.ps1|Model\NamespaceManagementSupervisorServicesCreateSpec.ps1|Model\NamespaceManagementSupervisorsIdentityProvidersUpdateSpec.ps1|Model\NamespaceManagementSupervisorsNetworksWorkloadVSphereNetwork.ps1|README.md|Api\ConditionsApi.ps1|Api\ProvidersApi.ps1|Model\NamespaceManagementClustersEnableSpec.ps1|Model\NamespaceManagementCNSFileConfig.ps1|Model\NamespaceManagementLoadBalancersServer.ps1|Model\NamespaceManagementNetworksIPManagement.ps1|Model\NamespaceManagementNetworksSetSpec.ps1|Model\NamespaceManagementSupervisorsContentLibrarySpec.ps1|Model\NamespaceManagementSupervisorServicesCustomCreateSpec.ps1|Model\NamespaceManagementSupervisorsImageRegistry.ps1|Model\NamespaceManagementSupervisorsWorkloads.ps1|VMware.Sdk.vSphere.vCenter.NamespaceManagement.cat|Api\DistributedSwitchCompatibilityApi.ps1|Api\SummaryApi.ps1|Model\NamespaceManagementClustersImageRegistry.ps1|Model\NamespaceManagementIPRange.ps1|Model\NamespaceManagementLoadBalancersSetSpec.ps1|Model\NamespaceManagementNetworksIPRange.ps1|Model\NamespaceManagementNetworksUpdateSpec.ps1|Model\NamespaceManagementSupervisorsControlPlane.ps1|Model\NamespaceManagementSupervisorServicesUpdateSpec.ps1|Model\NamespaceManagementSupervisorsImageSyncConfig.ps1|Model\NamespaceManagementSupervisorsWorkloadsStorageConfig.ps1|Api\DistributedSwitchesApi.ps1|Api\SupervisorsApi.ps1|Model\NamespaceManagementClustersImageStorageSpec.ps1|Model\NamespaceManagementIpv4Cidr.ps1|Model\NamespaceManagementLoadBalancersUpdateSpec.ps1|Model\NamespaceManagementNetworksNsxDistributedSwitchesFilterSpec.ps1|Model\NamespaceManagementNetworksVsphereDVPGNetworkCreateSpec.ps1|Model\NamespaceManagementSupervisorsEnableOnComputeClusterSpec.ps1|Model\NamespaceManagementSupervisorServicesVersionsCarvelCreateSpec.ps1|Model\NamespaceManagementSupervisorsKubeAPIServerOptions.ps1|Model\NamespaceManagementVirtualMachineClassesCreateSpec.ps1|VMware.Sdk.vSphere.vCenter.NamespaceManagement.psd1|Api\EdgeClusterCompatibilityApi.ps1|Api\SupervisorServicesApi.ps1|Model\NamespaceManagementClustersIpv4Range.ps1|Model\NamespaceManagementLoadBalancersAviConfigCreateSpec.ps1|Model\NamespaceManagementNetworksCreateSpec.ps1|Model\NamespaceManagementNetworksNsxEdgesFilterSpec.ps1|Model\NamespaceManagementNetworksVsphereDVPGNetworkSetSpec.ps1|Model\NamespaceManagementSupervisorsEnableOnZonesSpec.ps1|Model\NamespaceManagementSupervisorServicesVersionsCreateSpec.ps1|Model\NamespaceManagementSupervisorsKubeAPIServerSecurity.ps1|Model\NamespaceManagementVirtualMachineClassesDynamicDirectPathIODevice.ps1|VMware.Sdk.vSphere.vCenter.NamespaceManagement.psm1|Api\EdgesApi.ps1|Api\SupportBundleApi.ps1|Model\NamespaceManagementClustersNCPClusterNetworkEnableSpec.ps1|Model\NamespaceManagementLoadBalancersAviConfigSetSpec.ps1|Model\NamespaceManagementNetworksEdgesEdge.ps1|Model\NamespaceManagementNetworksNsxNetworkCreateSpec.ps1|Model\NamespaceManagementNetworksVsphereDVPGNetworkUpdateSpec.ps1|Model\NamespaceManagementSupervisorServicesCarvelCreateSpec.ps1|Model\NamespaceManagementSupervisorServicesVersionsCustomCreateSpec.ps1|Model\NamespaceManagementSupervisorsNetworksManagementNetwork.ps1|Model\NamespaceManagementVirtualMachineClassesInstanceStorage.ps1|Api\ClusterAvailableVersionsApi.ps1|Api\HostsConfigApi.ps1|Api\TimeSeriesApi.ps1|Model\NamespaceManagementClustersNCPClusterNetworkSetSpec.ps1|Model\NamespaceManagementLoadBalancersAviConfigUpdateSpec.ps1|Model\NamespaceManagementNetworksEdgesHAProxyConfig.ps1|Model\NamespaceManagementNetworksNsxNetworkSetSpec.ps1|Model\NamespaceManagementProxyConfiguration.ps1|Model\NamespaceManagementSupervisorServicesCheckContentRequestBody.ps1|Model\NamespaceManagementSupervisorServicesVersionsVsphereCreateSpec.ps1|Model\NamespaceManagementSupervisorsNetworksManagementNetworkBacking.ps1|Model\NamespaceManagementVirtualMachineClassesInstanceStorageVolume.ps1|Api\ClusterCompatibilityApi.ps1|Api\LoadBalancersApi.ps1|Api\TopologyApi.ps1|Model\NamespaceManagementClustersNCPClusterNetworkUpdateSpec.ps1|Model\NamespaceManagementLoadBalancersConfigSpec.ps1|Model\NamespaceManagementNetworksEdgesNSXAdvancedLBConfig.ps1|Model\NamespaceManagementNetworksNsxNetworkUpdateSpec.ps1|Model\NamespaceManagementSoftwareClustersUpgradeSpec.ps1|Model\NamespaceManagementSupervisorServicesClusterSupervisorServicesCreateSpec.ps1|Model\NamespaceManagementSupervisorServicesVsphereCreateSpec.ps1|Model\NamespaceManagementSupervisorsNetworksManagementProxyConfiguration.ps1|Model\NamespaceManagementVirtualMachineClassesUpdateSpec.ps1|Api\ClustersApi.ps1|Api\NamespaceResourceOptionsApi.ps1|Api\VersionsApi.ps1|Model\NamespaceManagementClustersNetworkSpec.ps1|Model\NamespaceManagementLoadBalancersHAProxyConfigCreateSpec.ps1|Model\NamespaceManagementNetworksEdgesNSXConfig.ps1|Model\NamespaceManagementNetworksServiceDNS.ps1|Model\NamespaceManagementStatsTimeSeriesPodIdentifier.ps1|Model\NamespaceManagementSupervisorServicesClusterSupervisorServicesSetSpec.ps1|Model\NamespaceManagementSupervisorsIdentityProvidersCreateSpec.ps1|Model\NamespaceManagementSupervisorsNetworksWorkloadNetwork.ps1|Model\NamespaceManagementVirtualMachineClassesVGPUDevice.ps1|Api\ClusterSizeInfoApi.ps1|Api\NetworksApi.ps1|Api\VirtualMachineClassesApi.ps1|Model\NamespaceManagementClustersSetSpec.ps1|Model\NamespaceManagementLoadBalancersHAProxyConfigSetSpec.ps1|Model\NamespaceManagementNetworksEdgesServer.ps1|Model\NamespaceManagementNetworksServiceNTP.ps1|Model\NamespaceManagementStorageProfilesFilterSpec.ps1|Model\NamespaceManagementSupervisorServicesContentCheckSpec.ps1|Model\NamespaceManagementSupervisorsIdentityProvidersSetSpec.ps1|Model\NamespaceManagementSupervisorsNetworksWorkloadNsxNetwork.ps1|Model\NamespaceManagementVirtualMachineClassesVirtualDevices.ps1|Api\ClusterSupervisorServicesApi.ps1|Api\NsxTier0GatewayApi.ps1|Model\NamespaceManagementClustersContentLibrarySpec.ps1|Model\NamespaceManagementClustersUpdateSpec.ps1|Api\CompatibilityApi.ps1|Api\ProfilesApi.ps1</S>
+          <S N="GUID">5f0a237e-2b51-4def-b57e-4338b56e3ddc</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter.NamespaceManagement/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

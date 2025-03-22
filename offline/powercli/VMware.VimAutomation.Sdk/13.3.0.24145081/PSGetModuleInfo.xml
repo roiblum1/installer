@@ -1,0 +1,119 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Sdk</S>
+      <S N="Version">13.3.0.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerCLI Sdk.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:46:15+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-ErrorReport</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-ErrorReport</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="7">
+        <TN RefId="3">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerCLI Sdk.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">5426787</S>
+          <S N="downloadCount">24326980</S>
+          <S N="packageSize">789725</S>
+          <S N="published">7/25/2024 12:46:15 PM +03:00</S>
+          <S N="created">7/25/2024 12:46:15 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSCmdlet_Get-ErrorReport PSCommand_Get-ErrorReport PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">13.3.0.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Sdk.nuspec|about_ceip.help.txt|about_runasync.help.txt|open_source_licenses.txt|VMware.VimAutomation.Sdk.psm1|net472\phclient.dll|net472\VMware.VimAutomation.Sdk.Impl.dll|net472\VMware.VimAutomation.Sdk.psd1|net472\VMware.VimAutomation.Sdk.Util10Ps.dll|netcoreapp3.1\open_source_licenses.txt|netcoreapp3.1\VMware.VimAutomation.Ceip.dll|netcoreapp3.1\VMware.VimAutomation.Sdk.ps1|netcoreapp3.1\VMware.VimAutomation.Sdk.Util10.dll|about_invalid_certificates.help.txt|about_security_context.help.txt|VMware.VimAutomation.Sdk.cat|net472\log4net.dll|net472\VMware.Security.CredentialStore.dll|net472\VMware.VimAutomation.Sdk.Interop.dll|net472\VMware.VimAutomation.Sdk.Types.dll|net472\VMware.VimAutomation.Sdk.Util10Ps.dll-Help.xml|netcoreapp3.1\ParameterCompleter.ps1|netcoreapp3.1\VMware.VimAutomation.Sdk.Impl.dll|netcoreapp3.1\VMware.VimAutomation.Sdk.psd1|netcoreapp3.1\VMware.VimAutomation.Sdk.Util10Ps.dll|about_obn.help.txt|about_uid.help.txt|net472\open_source_licenses.txt|net472\VMware.VimAutomation.Ceip.dll|net472\VMware.VimAutomation.Sdk.ps1|net472\VMware.VimAutomation.Sdk.Util10.dll|netcoreapp3.1\log4net.dll|netcoreapp3.1\phclient.dll|netcoreapp3.1\VMware.VimAutomation.Sdk.Interop.dll|netcoreapp3.1\VMware.VimAutomation.Sdk.Types.dll|netcoreapp3.1\VMware.VimAutomation.Sdk.Util10Ps.dll-Help.xml|about_powercli_objects.help.txt|EULA.rtf|VMware.VimAutomation.Sdk.psd1|net472\ParameterCompleter.ps1</S>
+          <S N="GUID">b6ed108a-22bc-4888-afc8-6ee6c13513a7</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.VimAutomation.Sdk/13.3.0.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,230 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter.Namespaces</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.Namespaces.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:54:47+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CreateNamespaceDomainSubjectAccess</S>
+                <S>Invoke-DeleteNamespaceDomainSubjectAccess</S>
+                <S>Invoke-GetNamespaceDomainSubjectAccess</S>
+                <S>Invoke-SetNamespaceDomainSubjectAccess</S>
+                <S>Invoke-CreateNamespaceInstancesRegistervm</S>
+                <S>Invoke-CreateNamespacesInstances</S>
+                <S>Invoke-CreateNamespacesInstancesV2</S>
+                <S>Invoke-DeleteNamespaceInstances</S>
+                <S>Invoke-GetNamespaceInstances</S>
+                <S>Invoke-GetNamespaceInstancesV2</S>
+                <S>Invoke-GetNamespacesInstancesV2</S>
+                <S>Invoke-ListNamespacesInstances</S>
+                <S>Invoke-ListNamespacesUser</S>
+                <S>Invoke-SetNamespaceInstances</S>
+                <S>Invoke-UpdateNamespaceInstances</S>
+                <S>Invoke-ActivateClusterNamespaceSelfService</S>
+                <S>Invoke-ActivateWithTemplateClusterNamespaceSelfService</S>
+                <S>Invoke-DeactivateClusterNamespaceSelfService</S>
+                <S>Invoke-GetClusterNamespacesNamespaceSelfService</S>
+                <S>Invoke-ListNamespacesNamespaceSelfService</S>
+                <S>Invoke-CreateClusterNamespacesNamespaceTemplates</S>
+                <S>Invoke-CreateSupervisorNamespaceTemplates</S>
+                <S>Invoke-GetClusterTemplateNamespaceTemplatesNamespaces</S>
+                <S>Invoke-GetSupervisorNamespaceTemplates</S>
+                <S>Invoke-GetSupervisorTemplateNamespaceTemplates</S>
+                <S>Invoke-ListClusterNamespacesNamespaceTemplates</S>
+                <S>Invoke-UpdateClusterTemplateNamespaceTemplatesNamespaces</S>
+                <S>Invoke-UpdateSupervisorTemplateNamespaceTemplates</S>
+                <S>Initialize-NamespacesAccessCreateSpec</S>
+                <S>Initialize-NamespacesAccessSetSpec</S>
+                <S>Initialize-NamespacesInstancesAccess</S>
+                <S>Initialize-NamespacesInstancesContentLibrarySpec</S>
+                <S>Initialize-NamespacesInstancesCreateSpec</S>
+                <S>Initialize-NamespacesInstancesCreateSpecV2</S>
+                <S>Initialize-NamespacesInstancesIpv4Cidr</S>
+                <S>Initialize-NamespacesInstancesNetworkCreateSpec</S>
+                <S>Initialize-NamespacesInstancesNsxNetworkCreateSpec</S>
+                <S>Initialize-NamespacesInstancesPrincipal</S>
+                <S>Initialize-NamespacesInstancesRegisterVMSpec</S>
+                <S>Initialize-NamespacesInstancesSetSpec</S>
+                <S>Initialize-NamespacesInstancesStorageSpec</S>
+                <S>Initialize-NamespacesInstancesUpdateSpec</S>
+                <S>Initialize-NamespacesInstancesVMServiceSpec</S>
+                <S>Initialize-NamespacesNamespaceSelfServiceActivateTemplateSpec</S>
+                <S>Initialize-NamespacesNamespaceTemplatesCreateSpec</S>
+                <S>Initialize-NamespacesNamespaceTemplatesSubject</S>
+                <S>Initialize-NamespacesNamespaceTemplatesUpdateSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CreateNamespaceDomainSubjectAccess</S>
+                <S>Invoke-DeleteNamespaceDomainSubjectAccess</S>
+                <S>Invoke-GetNamespaceDomainSubjectAccess</S>
+                <S>Invoke-SetNamespaceDomainSubjectAccess</S>
+                <S>Invoke-CreateNamespaceInstancesRegistervm</S>
+                <S>Invoke-CreateNamespacesInstances</S>
+                <S>Invoke-CreateNamespacesInstancesV2</S>
+                <S>Invoke-DeleteNamespaceInstances</S>
+                <S>Invoke-GetNamespaceInstances</S>
+                <S>Invoke-GetNamespaceInstancesV2</S>
+                <S>Invoke-GetNamespacesInstancesV2</S>
+                <S>Invoke-ListNamespacesInstances</S>
+                <S>Invoke-ListNamespacesUser</S>
+                <S>Invoke-SetNamespaceInstances</S>
+                <S>Invoke-UpdateNamespaceInstances</S>
+                <S>Invoke-ActivateClusterNamespaceSelfService</S>
+                <S>Invoke-ActivateWithTemplateClusterNamespaceSelfService</S>
+                <S>Invoke-DeactivateClusterNamespaceSelfService</S>
+                <S>Invoke-GetClusterNamespacesNamespaceSelfService</S>
+                <S>Invoke-ListNamespacesNamespaceSelfService</S>
+                <S>Invoke-CreateClusterNamespacesNamespaceTemplates</S>
+                <S>Invoke-CreateSupervisorNamespaceTemplates</S>
+                <S>Invoke-GetClusterTemplateNamespaceTemplatesNamespaces</S>
+                <S>Invoke-GetSupervisorNamespaceTemplates</S>
+                <S>Invoke-GetSupervisorTemplateNamespaceTemplates</S>
+                <S>Invoke-ListClusterNamespacesNamespaceTemplates</S>
+                <S>Invoke-UpdateClusterTemplateNamespaceTemplatesNamespaces</S>
+                <S>Invoke-UpdateSupervisorTemplateNamespaceTemplates</S>
+                <S>Initialize-NamespacesAccessCreateSpec</S>
+                <S>Initialize-NamespacesAccessSetSpec</S>
+                <S>Initialize-NamespacesInstancesAccess</S>
+                <S>Initialize-NamespacesInstancesContentLibrarySpec</S>
+                <S>Initialize-NamespacesInstancesCreateSpec</S>
+                <S>Initialize-NamespacesInstancesCreateSpecV2</S>
+                <S>Initialize-NamespacesInstancesIpv4Cidr</S>
+                <S>Initialize-NamespacesInstancesNetworkCreateSpec</S>
+                <S>Initialize-NamespacesInstancesNsxNetworkCreateSpec</S>
+                <S>Initialize-NamespacesInstancesPrincipal</S>
+                <S>Initialize-NamespacesInstancesRegisterVMSpec</S>
+                <S>Initialize-NamespacesInstancesSetSpec</S>
+                <S>Initialize-NamespacesInstancesStorageSpec</S>
+                <S>Initialize-NamespacesInstancesUpdateSpec</S>
+                <S>Initialize-NamespacesInstancesVMServiceSpec</S>
+                <S>Initialize-NamespacesNamespaceSelfServiceActivateTemplateSpec</S>
+                <S>Initialize-NamespacesNamespaceTemplatesCreateSpec</S>
+                <S>Initialize-NamespacesNamespaceTemplatesSubject</S>
+                <S>Initialize-NamespacesNamespaceTemplatesUpdateSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.Namespaces.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2444330</S>
+          <S N="downloadCount">6868939</S>
+          <S N="packageSize">301741</S>
+          <S N="published">7/25/2024 12:54:47 PM +03:00</S>
+          <S N="created">7/25/2024 12:54:47 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-CreateNamespaceDomainSubjectAccess PSCommand_Invoke-CreateNamespaceDomainSubjectAccess PSFunction_Invoke-DeleteNamespaceDomainSubjectAccess PSCommand_Invoke-DeleteNamespaceDomainSubjectAccess PSFunction_Invoke-GetNamespaceDomainSubjectAccess PSCommand_Invoke-GetNamespaceDomainSubjectAccess PSFunction_Invoke-SetNamespaceDomainSubjectAccess PSCommand_Invoke-SetNamespaceDomainSubjectAccess PSFunction_Invoke-CreateNamespaceInstancesRegistervm PSCommand_Invoke-CreateNamespaceInstancesRegistervm PSFunction_Invoke-CreateNamespacesInstances PSCommand_Invoke-CreateNamespacesInstances PSFunction_Invoke-CreateNamespacesInstancesV2 PSCommand_Invoke-CreateNamespacesInstancesV2 PSFunction_Invoke-DeleteNamespaceInstances PSCommand_Invoke-DeleteNamespaceInstances PSFunction_Invoke-GetNamespaceInstances PSCommand_Invoke-GetNamespaceInstances PSFunction_Invoke-GetNamespaceInstancesV2 PSCommand_Invoke-GetNamespaceInstancesV2 PSFunction_Invoke-GetNamespacesInstancesV2 PSCommand_Invoke-GetNamespacesInstancesV2 PSFunction_Invoke-ListNamespacesInstances PSCommand_Invoke-ListNamespacesInstances PSFunction_Invoke-ListNamespacesUser PSCommand_Invoke-ListNamespacesUser PSFunction_Invoke-SetNamespaceInstances PSCommand_Invoke-SetNamespaceInstances PSFunction_Invoke-UpdateNamespaceInstances PSCommand_Invoke-UpdateNamespaceInstances PSFunction_Invoke-ActivateClusterNamespaceSelfService PSCommand_Invoke-ActivateClusterNamespaceSelfService PSFunction_Invoke-ActivateWithTemplateClusterNamespaceSelfService PSCommand_Invoke-ActivateWithTemplateClusterNamespaceSelfService PSFunction_Invoke-DeactivateClusterNamespaceSelfService PSCommand_Invoke-DeactivateClusterNamespaceSelfService PSFunction_Invoke-GetClusterNamespacesNamespaceSelfService PSCommand_Invoke-GetClusterNamespacesNamespaceSelfService PSFunction_Invoke-ListNamespacesNamespaceSelfService PSCommand_Invoke-ListNamespacesNamespaceSelfService PSFunction_Invoke-CreateClusterNamespacesNamespaceTemplates PSCommand_Invoke-CreateClusterNamespacesNamespaceTemplates PSFunction_Invoke-CreateSupervisorNamespaceTemplates PSCommand_Invoke-CreateSupervisorNamespaceTemplates PSFunction_Invoke-GetClusterTemplateNamespaceTemplatesNamespaces PSCommand_Invoke-GetClusterTemplateNamespaceTemplatesNamespaces PSFunction_Invoke-GetSupervisorNamespaceTemplates PSCommand_Invoke-GetSupervisorNamespaceTemplates PSFunction_Invoke-GetSupervisorTemplateNamespaceTemplates PSCommand_Invoke-GetSupervisorTemplateNamespaceTemplates PSFunction_Invoke-ListClusterNamespacesNamespaceTemplates PSCommand_Invoke-ListClusterNamespacesNamespaceTemplates PSFunction_Invoke-UpdateClusterTemplateNamespaceTemplatesNamespaces PSCommand_Invoke-UpdateClusterTemplateNamespaceTemplatesNamespaces PSFunction_Invoke-UpdateSupervisorTemplateNamespaceTemplates PSCommand_Invoke-UpdateSupervisorTemplateNamespaceTemplates PSFunction_Initialize-NamespacesAccessCreateSpec PSCommand_Initialize-NamespacesAccessCreateSpec PSFunction_Initialize-NamespacesAccessSetSpec PSCommand_Initialize-NamespacesAccessSetSpec PSFunction_Initialize-NamespacesInstancesAccess PSCommand_Initialize-NamespacesInstancesAccess PSFunction_Initialize-NamespacesInstancesContentLibrarySpec PSCommand_Initialize-NamespacesInstancesContentLibrarySpec PSFunction_Initialize-NamespacesInstancesCreateSpec PSCommand_Initialize-NamespacesInstancesCreateSpec PSFunction_Initialize-NamespacesInstancesCreateSpecV2 PSCommand_Initialize-NamespacesInstancesCreateSpecV2 PSFunction_Initialize-NamespacesInstancesIpv4Cidr PSCommand_Initialize-NamespacesInstancesIpv4Cidr PSFunction_Initialize-NamespacesInstancesNetworkCreateSpec PSCommand_Initialize-NamespacesInstancesNetworkCreateSpec PSFunction_Initialize-NamespacesInstancesNsxNetworkCreateSpec PSCommand_Initialize-NamespacesInstancesNsxNetworkCreateSpec PSFunction_Initialize-NamespacesInstancesPrincipal PSCommand_Initialize-NamespacesInstancesPrincipal PSFunction_Initialize-NamespacesInstancesRegisterVMSpec PSCommand_Initialize-NamespacesInstancesRegisterVMSpec PSFunction_Initialize-NamespacesInstancesSetSpec PSCommand_Initialize-NamespacesInstancesSetSpec PSFunction_Initialize-NamespacesInstancesStorageSpec PSCommand_Initialize-NamespacesInstancesStorageSpec PSFunction_Initialize-NamespacesInstancesUpdateSpec PSCommand_Initialize-NamespacesInstancesUpdateSpec PSFunction_Initialize-NamespacesInstancesVMServiceSpec PSCommand_Initialize-NamespacesInstancesVMServiceSpec PSFunction_Initialize-NamespacesNamespaceSelfServiceActivateTemplateSpec PSCommand_Initialize-NamespacesNamespaceSelfServiceActivateTemplateSpec PSFunction_Initialize-NamespacesNamespaceTemplatesCreateSpec PSCommand_Initialize-NamespacesNamespaceTemplatesCreateSpec PSFunction_Initialize-NamespacesNamespaceTemplatesSubject PSCommand_Initialize-NamespacesNamespaceTemplatesSubject PSFunction_Initialize-NamespacesNamespaceTemplatesUpdateSpec PSCommand_Initialize-NamespacesNamespaceTemplatesUpdateSpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.Namespaces.nuspec|README.md|VMware.Sdk.vSphere.vCenter.Namespaces.psd1|Api\InstancesApi.ps1|Model\NamespacesAccessCreateSpec.ps1|Model\NamespacesInstancesAccess.ps1|Model\NamespacesInstancesCreateSpec.ps1|Model\NamespacesInstancesIpv4Cidr.ps1|Model\NamespacesInstancesNsxNetworkCreateSpec.ps1|Model\NamespacesInstancesSetSpec.ps1|Model\NamespacesInstancesUpdateSpec.ps1|Model\NamespacesNamespaceSelfServiceActivateTemplateSpec.ps1|Model\NamespacesNamespaceTemplatesSubject.ps1|VMware.Sdk.vSphere.vCenter.Namespaces.cat|VMware.Sdk.vSphere.vCenter.Namespaces.psm1|Api\NamespaceSelfServiceApi.ps1|Model\NamespacesAccessSetSpec.ps1|Model\NamespacesInstancesContentLibrarySpec.ps1|Model\NamespacesInstancesCreateSpecV2.ps1|Model\NamespacesInstancesNetworkCreateSpec.ps1|Model\NamespacesInstancesPrincipal.ps1|Model\NamespacesInstancesStorageSpec.ps1|Model\NamespacesInstancesVMServiceSpec.ps1|Model\NamespacesNamespaceTemplatesCreateSpec.ps1|Model\NamespacesNamespaceTemplatesUpdateSpec.ps1|Api\AccessApi.ps1|Api\NamespaceTemplatesApi.ps1</S>
+          <S N="GUID">662568dd-c65c-4b82-8336-7d70eeadaa41</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter.Namespaces/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

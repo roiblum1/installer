@@ -1,0 +1,139 @@
+{
+   "$id": "https://www.vmware.com/esxupdate/common.json",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "description": "The common json schema for ESXi release unit spec",
+   "definitions": {
+      "releaseID": {
+         "description": "The release unit identifier",
+         "type": "string"
+      },
+      "releaseType": {
+         "description": "The release unit type",
+         "type": "string",
+         "enum": ["baseImage", "addon", "solution", "manifest"]
+      },
+      "category": {
+         "description": "The category of release unit",
+         "type": "string",
+         "enum": ["enhancement", "security", "bugfix"]
+      },
+      "vendor": {
+         "description": "The vendor of release unit",
+         "type": "string",
+         "minLength": 3,
+         "maxLength": 35
+      },
+      "description": {
+         "description": "The description string of release unit",
+         "type": "string",
+         "maxlength": 2048
+      },
+      "summary": {
+         "description": "The summary string of release unit",
+         "type": "string",
+         "maxlength": 2048
+      },
+      "docURL": {
+         "description": "The url for the docs of release unit",
+         "type": "string",
+         "pattern": "^(|(http[s]?://(\\w+|[\\-._~:/?#\\[\\]@!$&'\\(\\)*+,;=])+))$"
+      },
+      "acceptanceLevel": {
+         "description": "The acceptance level of release unit",
+         "type": "string",
+         "enum": ["partner", "community", "accepted", "certified"]
+      },
+      "releaseDate": {
+         "description": "The release date of release unit",
+         "type": "string",
+         "format" : "date-time"
+      },
+      "uiStringDef": {
+         "type": "string",
+         "minLength": 3,
+         "maxLength": 70
+      },
+      "schemaVersion": {
+         "type": "string",
+         "minLength": 3,
+         "pattern": "^([0-9]+)\\.([0-9]+)$"
+      },
+      "versionPattern": {
+         "type": "string",
+         "pattern": "^[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)*-[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)*$",
+         "minLength": 3,
+         "maxLength": 35
+      },
+      "versionSimple": {
+         "type": "string",
+         "minLength": 3
+      },
+      "nameSimple": {
+         "type": "string",
+         "minLength": 3,
+         "maxLength": 35,
+         "pattern": "^[a-zA-Z0-9-]+$"
+      },
+      "nameSpec": {
+         "description": "The name spec of release unit",
+         "type": "object",
+         "required": [ "name", "uiString"],
+         "properties": {
+            "name": {
+               "$ref": "#/definitions/nameSimple"
+            },
+            "uiString": {
+               "$ref": "#/definitions/uiStringDef"
+            }
+         }
+      },
+      "versionSpecPattern": {
+         "description": "The version spec of release unit",
+         "type": "object",
+         "required": [ "version", "uiString"],
+         "properties": {
+            "version": {
+               "$ref": "#/definitions/versionPattern"
+            },
+            "uiString": {
+               "$ref": "#/definitions/uiStringDef"
+            }
+         }
+      },
+      "versionSpecSimple": {
+         "description": "The version spec of release unit",
+         "type": "object",
+         "required": [ "version", "uiString"],
+         "properties": {
+            "version": {
+               "$ref": "#/definitions/versionSimple"
+            },
+            "uiString": {
+               "$ref": "#/definitions/uiStringDef"
+            }
+         }
+      },
+      "components": {
+         "description": "The component name/version pairs of the release unit",
+         "type": "object",
+         "propertyNames": {
+             "pattern": "^[a-zA-Z].*$"
+         },
+         "patternProperties": {
+            "^.+" : { "type" : "string" }
+         }
+      },
+      "supportedBaseImageVersions": {
+         "description": "The addon/manifest supported base image versions",
+         "type": "array",
+         "uniqueItems": true,
+         "minItems": 1,
+         "items" : {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+){,2}(-[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)*)*$",
+            "minLength": 1,
+            "maxLength": 35
+         }
+      }
+   }
+}

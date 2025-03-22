@@ -1,0 +1,252 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:55:02+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetCluster</S>
+                <S>Invoke-ListCluster</S>
+                <S>Invoke-CreateDatacenter</S>
+                <S>Invoke-DeleteDatacenter</S>
+                <S>Invoke-GetDatacenter</S>
+                <S>Invoke-ListDatacenter</S>
+                <S>Invoke-GetDatastore</S>
+                <S>Invoke-ListDatastore</S>
+                <S>Invoke-GetDeployment</S>
+                <S>Invoke-RollbackDeployment</S>
+                <S>Invoke-ListFolder</S>
+                <S>Invoke-ConnectHost</S>
+                <S>Invoke-CreateHost</S>
+                <S>Invoke-DeleteHost</S>
+                <S>Invoke-DisconnectHost</S>
+                <S>Invoke-ListHost</S>
+                <S>Invoke-ListNetwork</S>
+                <S>Invoke-CreateResourcePool</S>
+                <S>Invoke-DeleteResourcePool</S>
+                <S>Invoke-GetResourcePool</S>
+                <S>Invoke-ListResourcePool</S>
+                <S>Invoke-UpdateResourcePool</S>
+                <S>Invoke-HelloSystem</S>
+                <S>Invoke-CloneVm</S>
+                <S>Invoke-CloneVmAsync</S>
+                <S>Invoke-CreateVm</S>
+                <S>Invoke-DeleteVm</S>
+                <S>Invoke-GetVm</S>
+                <S>Invoke-InstantCloneVm</S>
+                <S>Invoke-ListVm</S>
+                <S>Invoke-RegisterVm</S>
+                <S>Invoke-RelocateVm</S>
+                <S>Invoke-RelocateVmAsync</S>
+                <S>Invoke-UnregisterVm</S>
+                <S>Initialize-DatacenterCreateSpec</S>
+                <S>Initialize-HostCreateSpec</S>
+                <S>Initialize-ResourcePoolCreateSpec</S>
+                <S>Initialize-ResourcePoolResourceAllocationCreateSpec</S>
+                <S>Initialize-ResourcePoolResourceAllocationUpdateSpec</S>
+                <S>Initialize-ResourcePoolSharesInfo</S>
+                <S>Initialize-ResourcePoolUpdateSpec</S>
+                <S>Initialize-SystemHelloSpec</S>
+                <S>Initialize-VMClonePlacementSpec</S>
+                <S>Initialize-VMCloneSpec</S>
+                <S>Initialize-VMCreateSpec</S>
+                <S>Initialize-VMDiskCloneSpec</S>
+                <S>Initialize-VMDiskRelocateSpec</S>
+                <S>Initialize-VMGuestCustomizationSpec</S>
+                <S>Initialize-VmHardwareBootCreateSpec</S>
+                <S>Initialize-VmHardwareBootDeviceEntryCreateSpec</S>
+                <S>Initialize-VMInstantClonePlacementSpec</S>
+                <S>Initialize-VMInstantCloneSpec</S>
+                <S>Initialize-VMPlacementSpec</S>
+                <S>Initialize-VMRegisterPlacementSpec</S>
+                <S>Initialize-VMRegisterSpec</S>
+                <S>Initialize-VMRelocatePlacementSpec</S>
+                <S>Initialize-VMRelocateSpec</S>
+                <S>Initialize-VMStoragePolicySpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-GetCluster</S>
+                <S>Invoke-ListCluster</S>
+                <S>Invoke-CreateDatacenter</S>
+                <S>Invoke-DeleteDatacenter</S>
+                <S>Invoke-GetDatacenter</S>
+                <S>Invoke-ListDatacenter</S>
+                <S>Invoke-GetDatastore</S>
+                <S>Invoke-ListDatastore</S>
+                <S>Invoke-GetDeployment</S>
+                <S>Invoke-RollbackDeployment</S>
+                <S>Invoke-ListFolder</S>
+                <S>Invoke-ConnectHost</S>
+                <S>Invoke-CreateHost</S>
+                <S>Invoke-DeleteHost</S>
+                <S>Invoke-DisconnectHost</S>
+                <S>Invoke-ListHost</S>
+                <S>Invoke-ListNetwork</S>
+                <S>Invoke-CreateResourcePool</S>
+                <S>Invoke-DeleteResourcePool</S>
+                <S>Invoke-GetResourcePool</S>
+                <S>Invoke-ListResourcePool</S>
+                <S>Invoke-UpdateResourcePool</S>
+                <S>Invoke-HelloSystem</S>
+                <S>Invoke-CloneVm</S>
+                <S>Invoke-CloneVmAsync</S>
+                <S>Invoke-CreateVm</S>
+                <S>Invoke-DeleteVm</S>
+                <S>Invoke-GetVm</S>
+                <S>Invoke-InstantCloneVm</S>
+                <S>Invoke-ListVm</S>
+                <S>Invoke-RegisterVm</S>
+                <S>Invoke-RelocateVm</S>
+                <S>Invoke-RelocateVmAsync</S>
+                <S>Invoke-UnregisterVm</S>
+                <S>Initialize-DatacenterCreateSpec</S>
+                <S>Initialize-HostCreateSpec</S>
+                <S>Initialize-ResourcePoolCreateSpec</S>
+                <S>Initialize-ResourcePoolResourceAllocationCreateSpec</S>
+                <S>Initialize-ResourcePoolResourceAllocationUpdateSpec</S>
+                <S>Initialize-ResourcePoolSharesInfo</S>
+                <S>Initialize-ResourcePoolUpdateSpec</S>
+                <S>Initialize-SystemHelloSpec</S>
+                <S>Initialize-VMClonePlacementSpec</S>
+                <S>Initialize-VMCloneSpec</S>
+                <S>Initialize-VMCreateSpec</S>
+                <S>Initialize-VMDiskCloneSpec</S>
+                <S>Initialize-VMDiskRelocateSpec</S>
+                <S>Initialize-VMGuestCustomizationSpec</S>
+                <S>Initialize-VmHardwareBootCreateSpec</S>
+                <S>Initialize-VmHardwareBootDeviceEntryCreateSpec</S>
+                <S>Initialize-VMInstantClonePlacementSpec</S>
+                <S>Initialize-VMInstantCloneSpec</S>
+                <S>Initialize-VMPlacementSpec</S>
+                <S>Initialize-VMRegisterPlacementSpec</S>
+                <S>Initialize-VMRegisterSpec</S>
+                <S>Initialize-VMRelocatePlacementSpec</S>
+                <S>Initialize-VMRelocateSpec</S>
+                <S>Initialize-VMStoragePolicySpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2462395</S>
+          <S N="downloadCount">6906091</S>
+          <S N="packageSize">722115</S>
+          <S N="published">7/25/2024 12:55:02 PM +03:00</S>
+          <S N="created">7/25/2024 12:55:02 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-GetCluster PSCommand_Invoke-GetCluster PSFunction_Invoke-ListCluster PSCommand_Invoke-ListCluster PSFunction_Invoke-CreateDatacenter PSCommand_Invoke-CreateDatacenter PSFunction_Invoke-DeleteDatacenter PSCommand_Invoke-DeleteDatacenter PSFunction_Invoke-GetDatacenter PSCommand_Invoke-GetDatacenter PSFunction_Invoke-ListDatacenter PSCommand_Invoke-ListDatacenter PSFunction_Invoke-GetDatastore PSCommand_Invoke-GetDatastore PSFunction_Invoke-ListDatastore PSCommand_Invoke-ListDatastore PSFunction_Invoke-GetDeployment PSCommand_Invoke-GetDeployment PSFunction_Invoke-RollbackDeployment PSCommand_Invoke-RollbackDeployment PSFunction_Invoke-ListFolder PSCommand_Invoke-ListFolder PSFunction_Invoke-ConnectHost PSCommand_Invoke-ConnectHost PSFunction_Invoke-CreateHost PSCommand_Invoke-CreateHost PSFunction_Invoke-DeleteHost PSCommand_Invoke-DeleteHost PSFunction_Invoke-DisconnectHost PSCommand_Invoke-DisconnectHost PSFunction_Invoke-ListHost PSCommand_Invoke-ListHost PSFunction_Invoke-ListNetwork PSCommand_Invoke-ListNetwork PSFunction_Invoke-CreateResourcePool PSCommand_Invoke-CreateResourcePool PSFunction_Invoke-DeleteResourcePool PSCommand_Invoke-DeleteResourcePool PSFunction_Invoke-GetResourcePool PSCommand_Invoke-GetResourcePool PSFunction_Invoke-ListResourcePool PSCommand_Invoke-ListResourcePool PSFunction_Invoke-UpdateResourcePool PSCommand_Invoke-UpdateResourcePool PSFunction_Invoke-HelloSystem PSCommand_Invoke-HelloSystem PSFunction_Invoke-CloneVm PSCommand_Invoke-CloneVm PSFunction_Invoke-CloneVmAsync PSCommand_Invoke-CloneVmAsync PSFunction_Invoke-CreateVm PSCommand_Invoke-CreateVm PSFunction_Invoke-DeleteVm PSCommand_Invoke-DeleteVm PSFunction_Invoke-GetVm PSCommand_Invoke-GetVm PSFunction_Invoke-InstantCloneVm PSCommand_Invoke-InstantCloneVm PSFunction_Invoke-ListVm PSCommand_Invoke-ListVm PSFunction_Invoke-RegisterVm PSCommand_Invoke-RegisterVm PSFunction_Invoke-RelocateVm PSCommand_Invoke-RelocateVm PSFunction_Invoke-RelocateVmAsync PSCommand_Invoke-RelocateVmAsync PSFunction_Invoke-UnregisterVm PSCommand_Invoke-UnregisterVm PSFunction_Initialize-DatacenterCreateSpec PSCommand_Initialize-DatacenterCreateSpec PSFunction_Initialize-HostCreateSpec PSCommand_Initialize-HostCreateSpec PSFunction_Initialize-ResourcePoolCreateSpec PSCommand_Initialize-ResourcePoolCreateSpec PSFunction_Initialize-ResourcePoolResourceAllocationCreateSpec PSCommand_Initialize-ResourcePoolResourceAllocationCreateSpec PSFunction_Initialize-ResourcePoolResourceAllocationUpdateSpec PSCommand_Initialize-ResourcePoolResourceAllocationUpdateSpec PSFunction_Initialize-ResourcePoolSharesInfo PSCommand_Initialize-ResourcePoolSharesInfo PSFunction_Initialize-ResourcePoolUpdateSpec PSCommand_Initialize-ResourcePoolUpdateSpec PSFunction_Initialize-SystemHelloSpec PSCommand_Initialize-SystemHelloSpec PSFunction_Initialize-VMClonePlacementSpec PSCommand_Initialize-VMClonePlacementSpec PSFunction_Initialize-VMCloneSpec PSCommand_Initialize-VMCloneSpec PSFunction_Initialize-VMCreateSpec PSCommand_Initialize-VMCreateSpec PSFunction_Initialize-VMDiskCloneSpec PSCommand_Initialize-VMDiskCloneSpec PSFunction_Initialize-VMDiskRelocateSpec PSCommand_Initialize-VMDiskRelocateSpec PSFunction_Initialize-VMGuestCustomizationSpec PSCommand_Initialize-VMGuestCustomizationSpec PSFunction_Initialize-VmHardwareBootCreateSpec PSCommand_Initialize-VmHardwareBootCreateSpec PSFunction_Initialize-VmHardwareBootDeviceEntryCreateSpec PSCommand_Initialize-VmHardwareBootDeviceEntryCreateSpec PSFunction_Initialize-VMInstantClonePlacementSpec PSCommand_Initialize-VMInstantClonePlacementSpec PSFunction_Initialize-VMInstantCloneSpec PSCommand_Initialize-VMInstantCloneSpec PSFunction_Initialize-VMPlacementSpec PSCommand_Initialize-VMPlacementSpec PSFunction_Initialize-VMRegisterPlacementSpec PSCommand_Initialize-VMRegisterPlacementSpec PSFunction_Initialize-VMRegisterSpec PSCommand_Initialize-VMRegisterSpec PSFunction_Initialize-VMRelocatePlacementSpec PSCommand_Initialize-VMRelocatePlacementSpec PSFunction_Initialize-VMRelocateSpec PSCommand_Initialize-VMRelocateSpec PSFunction_Initialize-VMStoragePolicySpec PSCommand_Initialize-VMStoragePolicySpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.nuspec|README.md|Api\DatacenterApi.ps1|Api\ResourcePoolApi.ps1|Model\ResourcePoolResourceAllocationCreateSpec.ps1|Model\VMCloneSpec.ps1|Model\VmHardwareAdapterSataCreateSpec.ps1|Model\VmHardwareCdromCreateSpec.ps1|Model\VmHardwareDiskVmdkCreateSpec.ps1|Model\VmHardwareFloppyCreateSpec.ps1|Model\VmHardwareParallelCreateSpec.ps1|Model\VmHardwareSerialCreateSpec.ps1|Model\VMRegisterPlacementSpec.ps1|VMware.Sdk.vSphere.vCenter.cat|Api\DatastoreApi.ps1|Api\SystemApi.ps1|Model\ResourcePoolResourceAllocationUpdateSpec.ps1|Model\VMCreateSpec.ps1|Model\VmHardwareAdapterScsiCreateSpec.ps1|Model\VmHardwareCpuUpdateSpec.ps1|Model\VmHardwareEthernetBackingSpec.ps1|Model\VmHardwareIdeAddressSpec.ps1|Model\VmHardwareParallelUpdateSpec.ps1|Model\VmHardwareSerialUpdateSpec.ps1|Model\VMRegisterSpec.ps1|Api\DeploymentApi.ps1|Api\VmApi.ps1|Model\ResourcePoolSharesInfo.ps1|Model\VMDiskCloneSpec.ps1|Model\VmHardwareBootCreateSpec.ps1|Model\VmHardwareDiskBackingSpec.ps1|Model\VmHardwareEthernetCreateSpec.ps1|Model\VmHardwareMemoryUpdateSpec.ps1|Model\VmHardwareSataAddressSpec.ps1|Model\VMInstantClonePlacementSpec.ps1|Model\VMRelocatePlacementSpec.ps1|VMware.Sdk.vSphere.vCenter.psd1|Api\FolderApi.ps1|Model\DatacenterCreateSpec.ps1|Model\ResourcePoolUpdateSpec.ps1|Model\VMDiskRelocateSpec.ps1|Model\VmHardwareBootDeviceEntryCreateSpec.ps1|Model\VmHardwareDiskCreateSpec.ps1|Model\VmHardwareEthernetUpdateSpec.ps1|Model\VmHardwareNvmeAddressSpec.ps1|Model\VmHardwareScsiAddressSpec.ps1|Model\VMInstantCloneSpec.ps1|Model\VMRelocateSpec.ps1|VMware.Sdk.vSphere.vCenter.psm1|Api\HostApi.ps1|Model\HostCreateSpec.ps1|Model\SystemHelloSpec.ps1|Model\VMGuestCustomizationSpec.ps1|Model\VmHardwareCdromBackingSpec.ps1|Model\VmHardwareDiskStoragePolicySpec.ps1|Model\VmHardwareFloppyBackingSpec.ps1|Model\VmHardwareParallelBackingSpec.ps1|Model\VmHardwareSerialBackingSpec.ps1|Model\VMPlacementSpec.ps1|Model\VMStoragePolicySpec.ps1|Api\ClusterApi.ps1|Api\NetworkApi.ps1|Model\ResourcePoolCreateSpec.ps1|Model\VMClonePlacementSpec.ps1|Model\VmHardwareAdapterNvmeCreateSpec.ps1</S>
+          <S N="GUID">e0333dc6-5751-47b7-b780-dd0de63c211a</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

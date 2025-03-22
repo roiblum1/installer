@@ -1,0 +1,234 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.Appliance</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:57:18+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-ListSupportBundleCores</S>
+                <S>Invoke-GetItemHealthMessages</S>
+                <S>Invoke-GetHealthSettings</S>
+                <S>Invoke-UpdateHealthSettings</S>
+                <S>Invoke-CreateLocalAccounts</S>
+                <S>Invoke-DeleteUsernameLocalAccounts</S>
+                <S>Invoke-GetUsernameLocalAccounts</S>
+                <S>Invoke-ListLocalAccounts</S>
+                <S>Invoke-SetUsernameLocalAccounts</S>
+                <S>Invoke-UpdateUsernameLocalAccounts</S>
+                <S>Invoke-GetMonitoringQuery</S>
+                <S>Invoke-GetStatIdMonitoring</S>
+                <S>Invoke-ListMonitoring</S>
+                <S>Invoke-ChangeNetworkingAsync</S>
+                <S>Invoke-GetNetworking</S>
+                <S>Invoke-ResetNetworking</S>
+                <S>Invoke-UpdateNetworking</S>
+                <S>Invoke-GetNtp</S>
+                <S>Invoke-SetNtp</S>
+                <S>Invoke-TestNtp</S>
+                <S>Invoke-GetRecovery</S>
+                <S>Invoke-ApplianceGetService</S>
+                <S>Invoke-ApplianceListServices</S>
+                <S>Invoke-ApplianceRestartService</S>
+                <S>Invoke-ApplianceStartService</S>
+                <S>Invoke-ApplianceStopService</S>
+                <S>Invoke-CancelShutdown</S>
+                <S>Invoke-GetShutdown</S>
+                <S>Invoke-PoweroffShutdown</S>
+                <S>Invoke-RebootShutdown</S>
+                <S>Invoke-CreateSupportBundleAsync</S>
+                <S>Invoke-DeleteIdSupportBundle</S>
+                <S>Invoke-ListSupportBundle</S>
+                <S>Invoke-GetTimesync</S>
+                <S>Invoke-SetTimesync</S>
+                <S>Invoke-CancelUpdate</S>
+                <S>Invoke-GetUpdate</S>
+                <S>Initialize-HealthCheckSettingsUpdateSpec</S>
+                <S>Initialize-LocalAccountsConfig</S>
+                <S>Initialize-LocalAccountsCreateRequestBody</S>
+                <S>Initialize-LocalAccountsUpdateConfig</S>
+                <S>Initialize-NetworkingChangeSpec</S>
+                <S>Initialize-NetworkingUpdateSpec</S>
+                <S>Initialize-NtpSetRequestBody</S>
+                <S>Initialize-NtpTestRequestBody</S>
+                <S>Initialize-ShutdownPoweroffRequestBody</S>
+                <S>Initialize-ShutdownRebootRequestBody</S>
+                <S>Initialize-SupportBundleCreateSpec</S>
+                <S>Initialize-TimesyncSetRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-ListSupportBundleCores</S>
+                <S>Invoke-GetItemHealthMessages</S>
+                <S>Invoke-GetHealthSettings</S>
+                <S>Invoke-UpdateHealthSettings</S>
+                <S>Invoke-CreateLocalAccounts</S>
+                <S>Invoke-DeleteUsernameLocalAccounts</S>
+                <S>Invoke-GetUsernameLocalAccounts</S>
+                <S>Invoke-ListLocalAccounts</S>
+                <S>Invoke-SetUsernameLocalAccounts</S>
+                <S>Invoke-UpdateUsernameLocalAccounts</S>
+                <S>Invoke-GetMonitoringQuery</S>
+                <S>Invoke-GetStatIdMonitoring</S>
+                <S>Invoke-ListMonitoring</S>
+                <S>Invoke-ChangeNetworkingAsync</S>
+                <S>Invoke-GetNetworking</S>
+                <S>Invoke-ResetNetworking</S>
+                <S>Invoke-UpdateNetworking</S>
+                <S>Invoke-GetNtp</S>
+                <S>Invoke-SetNtp</S>
+                <S>Invoke-TestNtp</S>
+                <S>Invoke-GetRecovery</S>
+                <S>Invoke-ApplianceGetService</S>
+                <S>Invoke-ApplianceListServices</S>
+                <S>Invoke-ApplianceRestartService</S>
+                <S>Invoke-ApplianceStartService</S>
+                <S>Invoke-ApplianceStopService</S>
+                <S>Invoke-CancelShutdown</S>
+                <S>Invoke-GetShutdown</S>
+                <S>Invoke-PoweroffShutdown</S>
+                <S>Invoke-RebootShutdown</S>
+                <S>Invoke-CreateSupportBundleAsync</S>
+                <S>Invoke-DeleteIdSupportBundle</S>
+                <S>Invoke-ListSupportBundle</S>
+                <S>Invoke-GetTimesync</S>
+                <S>Invoke-SetTimesync</S>
+                <S>Invoke-CancelUpdate</S>
+                <S>Invoke-GetUpdate</S>
+                <S>Initialize-HealthCheckSettingsUpdateSpec</S>
+                <S>Initialize-LocalAccountsConfig</S>
+                <S>Initialize-LocalAccountsCreateRequestBody</S>
+                <S>Initialize-LocalAccountsUpdateConfig</S>
+                <S>Initialize-NetworkingChangeSpec</S>
+                <S>Initialize-NetworkingUpdateSpec</S>
+                <S>Initialize-NtpSetRequestBody</S>
+                <S>Initialize-NtpTestRequestBody</S>
+                <S>Initialize-ShutdownPoweroffRequestBody</S>
+                <S>Initialize-ShutdownRebootRequestBody</S>
+                <S>Initialize-SupportBundleCreateSpec</S>
+                <S>Initialize-TimesyncSetRequestBody</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.Appliance.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2537593</S>
+          <S N="downloadCount">7049280</S>
+          <S N="packageSize">371806</S>
+          <S N="published">7/25/2024 12:57:18 PM +03:00</S>
+          <S N="created">7/25/2024 12:57:18 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-ListSupportBundleCores PSCommand_Invoke-ListSupportBundleCores PSFunction_Invoke-GetItemHealthMessages PSCommand_Invoke-GetItemHealthMessages PSFunction_Invoke-GetHealthSettings PSCommand_Invoke-GetHealthSettings PSFunction_Invoke-UpdateHealthSettings PSCommand_Invoke-UpdateHealthSettings PSFunction_Invoke-CreateLocalAccounts PSCommand_Invoke-CreateLocalAccounts PSFunction_Invoke-DeleteUsernameLocalAccounts PSCommand_Invoke-DeleteUsernameLocalAccounts PSFunction_Invoke-GetUsernameLocalAccounts PSCommand_Invoke-GetUsernameLocalAccounts PSFunction_Invoke-ListLocalAccounts PSCommand_Invoke-ListLocalAccounts PSFunction_Invoke-SetUsernameLocalAccounts PSCommand_Invoke-SetUsernameLocalAccounts PSFunction_Invoke-UpdateUsernameLocalAccounts PSCommand_Invoke-UpdateUsernameLocalAccounts PSFunction_Invoke-GetMonitoringQuery PSCommand_Invoke-GetMonitoringQuery PSFunction_Invoke-GetStatIdMonitoring PSCommand_Invoke-GetStatIdMonitoring PSFunction_Invoke-ListMonitoring PSCommand_Invoke-ListMonitoring PSFunction_Invoke-ChangeNetworkingAsync PSCommand_Invoke-ChangeNetworkingAsync PSFunction_Invoke-GetNetworking PSCommand_Invoke-GetNetworking PSFunction_Invoke-ResetNetworking PSCommand_Invoke-ResetNetworking PSFunction_Invoke-UpdateNetworking PSCommand_Invoke-UpdateNetworking PSFunction_Invoke-GetNtp PSCommand_Invoke-GetNtp PSFunction_Invoke-SetNtp PSCommand_Invoke-SetNtp PSFunction_Invoke-TestNtp PSCommand_Invoke-TestNtp PSFunction_Invoke-GetRecovery PSCommand_Invoke-GetRecovery PSFunction_Invoke-ApplianceGetService PSCommand_Invoke-ApplianceGetService PSFunction_Invoke-ApplianceListServices PSCommand_Invoke-ApplianceListServices PSFunction_Invoke-ApplianceRestartService PSCommand_Invoke-ApplianceRestartService PSFunction_Invoke-ApplianceStartService PSCommand_Invoke-ApplianceStartService PSFunction_Invoke-ApplianceStopService PSCommand_Invoke-ApplianceStopService PSFunction_Invoke-CancelShutdown PSCommand_Invoke-CancelShutdown PSFunction_Invoke-GetShutdown PSCommand_Invoke-GetShutdown PSFunction_Invoke-PoweroffShutdown PSCommand_Invoke-PoweroffShutdown PSFunction_Invoke-RebootShutdown PSCommand_Invoke-RebootShutdown PSFunction_Invoke-CreateSupportBundleAsync PSCommand_Invoke-CreateSupportBundleAsync PSFunction_Invoke-DeleteIdSupportBundle PSCommand_Invoke-DeleteIdSupportBundle PSFunction_Invoke-ListSupportBundle PSCommand_Invoke-ListSupportBundle PSFunction_Invoke-GetTimesync PSCommand_Invoke-GetTimesync PSFunction_Invoke-SetTimesync PSCommand_Invoke-SetTimesync PSFunction_Invoke-CancelUpdate PSCommand_Invoke-CancelUpdate PSFunction_Invoke-GetUpdate PSCommand_Invoke-GetUpdate PSFunction_Initialize-HealthCheckSettingsUpdateSpec PSCommand_Initialize-HealthCheckSettingsUpdateSpec PSFunction_Initialize-LocalAccountsConfig PSCommand_Initialize-LocalAccountsConfig PSFunction_Initialize-LocalAccountsCreateRequestBody PSCommand_Initialize-LocalAccountsCreateRequestBody PSFunction_Initialize-LocalAccountsUpdateConfig PSCommand_Initialize-LocalAccountsUpdateConfig PSFunction_Initialize-NetworkingChangeSpec PSCommand_Initialize-NetworkingChangeSpec PSFunction_Initialize-NetworkingUpdateSpec PSCommand_Initialize-NetworkingUpdateSpec PSFunction_Initialize-NtpSetRequestBody PSCommand_Initialize-NtpSetRequestBody PSFunction_Initialize-NtpTestRequestBody PSCommand_Initialize-NtpTestRequestBody PSFunction_Initialize-ShutdownPoweroffRequestBody PSCommand_Initialize-ShutdownPoweroffRequestBody PSFunction_Initialize-ShutdownRebootRequestBody PSCommand_Initialize-ShutdownRebootRequestBody PSFunction_Initialize-SupportBundleCreateSpec PSCommand_Initialize-SupportBundleCreateSpec PSFunction_Initialize-TimesyncSetRequestBody PSCommand_Initialize-TimesyncSetRequestBody PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.Appliance.nuspec|README.md|VMware.Sdk.vSphere.Appliance.psd1|Api\HealthCheckSettingsApi.ps1|Api\NetworkingApi.ps1|Api\ServicesApi.ps1|Api\TimesyncApi.ps1|Model\LocalAccountsConfig.ps1|Model\NetworkingChangeSpec.ps1|Model\NetworkingInterfacesIpv6Address.ps1|Model\NtpSetRequestBody.ps1|Model\ShutdownPoweroffRequestBody.ps1|Model\SupportBundleCreateSpec.ps1|VMware.Sdk.vSphere.Appliance.cat|VMware.Sdk.vSphere.Appliance.psm1|Api\LocalAccountsApi.ps1|Api\NtpApi.ps1|Api\ShutdownApi.ps1|Api\UpdateApi.ps1|Model\LocalAccountsCreateRequestBody.ps1|Model\NetworkingDnsServersDNSServerConfig.ps1|Model\NetworkingInterfacesIpv6Config.ps1|Model\NtpTestRequestBody.ps1|Model\ShutdownRebootRequestBody.ps1|Model\TimesyncSetRequestBody.ps1|Api\HealthApi.ps1|Api\MonitoringApi.ps1|Api\RecoveryApi.ps1|Api\SupportBundleApi.ps1|Model\HealthCheckSettingsUpdateSpec.ps1|Model\LocalAccountsUpdateConfig.ps1|Model\NetworkingInterfacesIpv4Config.ps1|Model\NetworkingUpdateSpec.ps1</S>
+          <S N="GUID">537acba1-6d7f-4726-a2a8-b919e7882cb2</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.Appliance/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

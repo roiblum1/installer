@@ -1,0 +1,166 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter.OVF</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.OVF.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:51:59+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-ListOvfExportFlag</S>
+                <S>Invoke-ListOvfImportFlag</S>
+                <S>Invoke-CreateOvfLibraryItem</S>
+                <S>Invoke-DeployOvfLibraryItemId</S>
+                <S>Invoke-FilterOvfLibraryItemId</S>
+                <S>Initialize-OvfLibraryItemCreateRequestBody</S>
+                <S>Initialize-OvfLibraryItemCreateSpec</S>
+                <S>Initialize-OvfLibraryItemCreateTarget</S>
+                <S>Initialize-OvfLibraryItemDeployableIdentity</S>
+                <S>Initialize-OvfLibraryItemDeploymentTarget</S>
+                <S>Initialize-OvfLibraryItemDeployRequestBody</S>
+                <S>Initialize-OvfLibraryItemFilterRequestBody</S>
+                <S>Initialize-OvfLibraryItemResourcePoolDeploymentSpec</S>
+                <S>Initialize-OvfLibraryItemStorageGroupMapping</S>
+                <S>Initialize-OvfLibraryItemVmConfigSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-ListOvfExportFlag</S>
+                <S>Invoke-ListOvfImportFlag</S>
+                <S>Invoke-CreateOvfLibraryItem</S>
+                <S>Invoke-DeployOvfLibraryItemId</S>
+                <S>Invoke-FilterOvfLibraryItemId</S>
+                <S>Initialize-OvfLibraryItemCreateRequestBody</S>
+                <S>Initialize-OvfLibraryItemCreateSpec</S>
+                <S>Initialize-OvfLibraryItemCreateTarget</S>
+                <S>Initialize-OvfLibraryItemDeployableIdentity</S>
+                <S>Initialize-OvfLibraryItemDeploymentTarget</S>
+                <S>Initialize-OvfLibraryItemDeployRequestBody</S>
+                <S>Initialize-OvfLibraryItemFilterRequestBody</S>
+                <S>Initialize-OvfLibraryItemResourcePoolDeploymentSpec</S>
+                <S>Initialize-OvfLibraryItemStorageGroupMapping</S>
+                <S>Initialize-OvfLibraryItemVmConfigSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.OVF.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2428733</S>
+          <S N="downloadCount">6849183</S>
+          <S N="packageSize">184796</S>
+          <S N="published">7/25/2024 12:51:59 PM +03:00</S>
+          <S N="created">7/25/2024 12:51:59 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-ListOvfExportFlag PSCommand_Invoke-ListOvfExportFlag PSFunction_Invoke-ListOvfImportFlag PSCommand_Invoke-ListOvfImportFlag PSFunction_Invoke-CreateOvfLibraryItem PSCommand_Invoke-CreateOvfLibraryItem PSFunction_Invoke-DeployOvfLibraryItemId PSCommand_Invoke-DeployOvfLibraryItemId PSFunction_Invoke-FilterOvfLibraryItemId PSCommand_Invoke-FilterOvfLibraryItemId PSFunction_Initialize-OvfLibraryItemCreateRequestBody PSCommand_Initialize-OvfLibraryItemCreateRequestBody PSFunction_Initialize-OvfLibraryItemCreateSpec PSCommand_Initialize-OvfLibraryItemCreateSpec PSFunction_Initialize-OvfLibraryItemCreateTarget PSCommand_Initialize-OvfLibraryItemCreateTarget PSFunction_Initialize-OvfLibraryItemDeployableIdentity PSCommand_Initialize-OvfLibraryItemDeployableIdentity PSFunction_Initialize-OvfLibraryItemDeploymentTarget PSCommand_Initialize-OvfLibraryItemDeploymentTarget PSFunction_Initialize-OvfLibraryItemDeployRequestBody PSCommand_Initialize-OvfLibraryItemDeployRequestBody PSFunction_Initialize-OvfLibraryItemFilterRequestBody PSCommand_Initialize-OvfLibraryItemFilterRequestBody PSFunction_Initialize-OvfLibraryItemResourcePoolDeploymentSpec PSCommand_Initialize-OvfLibraryItemResourcePoolDeploymentSpec PSFunction_Initialize-OvfLibraryItemStorageGroupMapping PSCommand_Initialize-OvfLibraryItemStorageGroupMapping PSFunction_Initialize-OvfLibraryItemVmConfigSpec PSCommand_Initialize-OvfLibraryItemVmConfigSpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.OVF.nuspec|README.md|VMware.Sdk.vSphere.vCenter.OVF.psm1|Api\ImportFlagApi.ps1|Model\OvfLibraryItemCreateRequestBody.ps1|Model\OvfLibraryItemCreateTarget.ps1|Model\OvfLibraryItemDeploymentTarget.ps1|Model\OvfLibraryItemDeployRequestBody.ps1|Model\OvfLibraryItemFilterRequestBody.ps1|Model\OvfLibraryItemResourcePoolDeploymentSpec.ps1|Model\OvfLibraryItemStorageGroupMapping.ps1|Model\OvfLibraryItemVmConfigSpec.ps1|VMware.Sdk.vSphere.vCenter.OVF.cat|VMware.Sdk.vSphere.vCenter.OVF.psd1|Api\ExportFlagApi.ps1|Api\LibraryItemApi.ps1|Model\OvfLibraryItemCreateSpec.ps1|Model\OvfLibraryItemDeployableIdentity.ps1</S>
+          <S N="GUID">30f059d8-7bdf-4034-b70f-9e72b1b2047c</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter.OVF/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

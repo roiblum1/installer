@@ -1,0 +1,151 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.Runtime</S>
+      <S N="Version">1.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.Runtime.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:47:19+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-ServerConfiguration</S>
+                <S>New-ServerConfiguration</S>
+                <S>Add-ServerConfiguration</S>
+                <S>Set-ServerConfiguration</S>
+                <S>Remove-ServerConfiguration</S>
+                <S>Invoke-ApiClient</S>
+                <S>Invoke-WebRequestX</S>
+                <S>Invoke-RestMethodX</S>
+                <S>ConvertFrom-JsonX</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-ServerConfiguration</S>
+                <S>New-ServerConfiguration</S>
+                <S>Add-ServerConfiguration</S>
+                <S>Set-ServerConfiguration</S>
+                <S>Remove-ServerConfiguration</S>
+                <S>Invoke-ApiClient</S>
+                <S>Invoke-WebRequestX</S>
+                <S>Invoke-RestMethodX</S>
+                <S>ConvertFrom-JsonX</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Common</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Common</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.Runtime.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2778258</S>
+          <S N="downloadCount">7628039</S>
+          <S N="packageSize">134319</S>
+          <S N="published">7/25/2024 12:47:19 PM +03:00</S>
+          <S N="created">7/25/2024 12:47:19 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSFunction_Get-ServerConfiguration PSCommand_Get-ServerConfiguration PSFunction_New-ServerConfiguration PSCommand_New-ServerConfiguration PSFunction_Add-ServerConfiguration PSCommand_Add-ServerConfiguration PSFunction_Set-ServerConfiguration PSCommand_Set-ServerConfiguration PSFunction_Remove-ServerConfiguration PSCommand_Remove-ServerConfiguration PSFunction_Invoke-ApiClient PSCommand_Invoke-ApiClient PSFunction_Invoke-WebRequestX PSCommand_Invoke-WebRequestX PSFunction_Invoke-RestMethodX PSCommand_Invoke-RestMethodX PSFunction_ConvertFrom-JsonX PSCommand_ConvertFrom-JsonX PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">1.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.Runtime.nuspec|README.md|VMware.Sdk.Runtime.psm1|Client\Configuration.ps1|Extensions\PowerShellCmdletsExtensions.ps1|net45\VMware.Sdk.Runtime.psd1|netcoreapp3.1\VMware.Sdk.Runtime.psd1|Private\ApiClient.ps1|Private\Get-CommonParameters.ps1|Private\HttpSignatureAuth.ps1|Private\Out-DebugParameter.ps1|Private\RSAEncryptionProvider.cs|VMware.Sdk.Runtime.cat|VMware.Sdk.Runtime.psd1</S>
+          <S N="GUID">ab17580b-0fb6-4049-80a5-ff5789ad61f8</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.Runtime/1.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>

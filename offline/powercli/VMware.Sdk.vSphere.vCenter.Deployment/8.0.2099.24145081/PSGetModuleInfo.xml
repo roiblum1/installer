@@ -1,0 +1,226 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Sdk.vSphere.vCenter.Deployment</S>
+      <S N="Version">8.0.2099.24145081</S>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.Deployment.</S>
+      <S N="Author">Broadcom</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+      <DT N="PublishedDate">2024-07-25T12:51:14+03:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://developer.vmware.com/powercli</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/vmware/PowerCLI-Example-Scripts/1710f7ccbdd9fe9a3ab3f000e920fa6e8e042c63/resources/powercli-psgallery-icon.svg</URI>
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CheckMigrateActiveDirectory</S>
+                <S>Invoke-CancelDeploymentHistory</S>
+                <S>Invoke-GetDeploymentHistory</S>
+                <S>Invoke-PauseDeploymentHistory</S>
+                <S>Invoke-ResumeDeploymentHistory</S>
+                <S>Invoke-StartDeploymentHistory</S>
+                <S>Invoke-CancelDeploymentInstall</S>
+                <S>Invoke-CheckDeploymentInstall</S>
+                <S>Invoke-GetDeploymentInstall</S>
+                <S>Invoke-StartDeploymentInstall</S>
+                <S>Invoke-CancelDeploymentMigrate</S>
+                <S>Invoke-CheckDeploymentMigrate</S>
+                <S>Invoke-GetDeploymentMigrate</S>
+                <S>Invoke-StartDeploymentMigrate</S>
+                <S>Invoke-AnswerDeploymentQuestion</S>
+                <S>Invoke-GetDeploymentQuestion</S>
+                <S>Invoke-CheckInstallRemotePsc</S>
+                <S>Invoke-CheckPscReplicated</S>
+                <S>Invoke-CheckPscStandalone</S>
+                <S>Invoke-GetInitialConfigRemotePscThumbprint</S>
+                <S>Invoke-CancelDeploymentUpgrade</S>
+                <S>Invoke-CheckDeploymentUpgrade</S>
+                <S>Invoke-GetDeploymentUpgrade</S>
+                <S>Invoke-StartDeploymentUpgrade</S>
+                <S>Initialize-DeploymentHistoryMigrationSpec</S>
+                <S>Initialize-DeploymentImportHistoryCreateSpec</S>
+                <S>Initialize-DeploymentInstallInstallSpec</S>
+                <S>Initialize-DeploymentInstallVcsaEmbeddedSpec</S>
+                <S>Initialize-DeploymentLocationSpec</S>
+                <S>Initialize-DeploymentMigrateActiveDirectoryCheckSpec</S>
+                <S>Initialize-DeploymentMigrateActiveDirectorySpec</S>
+                <S>Initialize-DeploymentMigrateMigrateSpec</S>
+                <S>Initialize-DeploymentMigrateMigrationAssistantSpec</S>
+                <S>Initialize-DeploymentMigratePscSpec</S>
+                <S>Initialize-DeploymentMigrateSourceVcWindows</S>
+                <S>Initialize-DeploymentMigrateVcsaEmbeddedSpec</S>
+                <S>Initialize-DeploymentQuestionAnswerSpec</S>
+                <S>Initialize-DeploymentReplicatedPscSpec</S>
+                <S>Initialize-DeploymentReplicatedSpec</S>
+                <S>Initialize-DeploymentStandalonePscSpec</S>
+                <S>Initialize-DeploymentStandaloneSpec</S>
+                <S>Initialize-DeploymentUpgradePscSpec</S>
+                <S>Initialize-DeploymentUpgradeSourceApplianceSpec</S>
+                <S>Initialize-DeploymentUpgradeUpgradeSpec</S>
+                <S>Initialize-DeploymentUpgradeVcsaEmbeddedSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Invoke-CheckMigrateActiveDirectory</S>
+                <S>Invoke-CancelDeploymentHistory</S>
+                <S>Invoke-GetDeploymentHistory</S>
+                <S>Invoke-PauseDeploymentHistory</S>
+                <S>Invoke-ResumeDeploymentHistory</S>
+                <S>Invoke-StartDeploymentHistory</S>
+                <S>Invoke-CancelDeploymentInstall</S>
+                <S>Invoke-CheckDeploymentInstall</S>
+                <S>Invoke-GetDeploymentInstall</S>
+                <S>Invoke-StartDeploymentInstall</S>
+                <S>Invoke-CancelDeploymentMigrate</S>
+                <S>Invoke-CheckDeploymentMigrate</S>
+                <S>Invoke-GetDeploymentMigrate</S>
+                <S>Invoke-StartDeploymentMigrate</S>
+                <S>Invoke-AnswerDeploymentQuestion</S>
+                <S>Invoke-GetDeploymentQuestion</S>
+                <S>Invoke-CheckInstallRemotePsc</S>
+                <S>Invoke-CheckPscReplicated</S>
+                <S>Invoke-CheckPscStandalone</S>
+                <S>Invoke-GetInitialConfigRemotePscThumbprint</S>
+                <S>Invoke-CancelDeploymentUpgrade</S>
+                <S>Invoke-CheckDeploymentUpgrade</S>
+                <S>Invoke-GetDeploymentUpgrade</S>
+                <S>Invoke-StartDeploymentUpgrade</S>
+                <S>Initialize-DeploymentHistoryMigrationSpec</S>
+                <S>Initialize-DeploymentImportHistoryCreateSpec</S>
+                <S>Initialize-DeploymentInstallInstallSpec</S>
+                <S>Initialize-DeploymentInstallVcsaEmbeddedSpec</S>
+                <S>Initialize-DeploymentLocationSpec</S>
+                <S>Initialize-DeploymentMigrateActiveDirectoryCheckSpec</S>
+                <S>Initialize-DeploymentMigrateActiveDirectorySpec</S>
+                <S>Initialize-DeploymentMigrateMigrateSpec</S>
+                <S>Initialize-DeploymentMigrateMigrationAssistantSpec</S>
+                <S>Initialize-DeploymentMigratePscSpec</S>
+                <S>Initialize-DeploymentMigrateSourceVcWindows</S>
+                <S>Initialize-DeploymentMigrateVcsaEmbeddedSpec</S>
+                <S>Initialize-DeploymentQuestionAnswerSpec</S>
+                <S>Initialize-DeploymentReplicatedPscSpec</S>
+                <S>Initialize-DeploymentReplicatedSpec</S>
+                <S>Initialize-DeploymentStandalonePscSpec</S>
+                <S>Initialize-DeploymentStandaloneSpec</S>
+                <S>Initialize-DeploymentUpgradePscSpec</S>
+                <S>Initialize-DeploymentUpgradeSourceApplianceSpec</S>
+                <S>Initialize-DeploymentUpgradeUpgradeSpec</S>
+                <S>Initialize-DeploymentUpgradeVcsaEmbeddedSpec</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="3" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="3">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.Sdk.vSphereRuntime</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.Sdk.vSphereRuntime</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) Broadcom. All Rights Reserved.</S>
+          <S N="description">This PowerShell module contains PowerShell Advanced functions for VMware.Sdk.vSphere.vCenter.Deployment.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2455119</S>
+          <S N="downloadCount">6889869</S>
+          <S N="packageSize">403913</S>
+          <S N="published">7/25/2024 12:51:14 PM +03:00</S>
+          <S N="created">7/25/2024 12:51:14 PM +03:00</S>
+          <S N="lastUpdated">3/22/2025 10:40:00 PM +02:00</S>
+          <S N="tags">PSModule PSEdition_Desktop PSEdition_Core PSFunction_Invoke-CheckMigrateActiveDirectory PSCommand_Invoke-CheckMigrateActiveDirectory PSFunction_Invoke-CancelDeploymentHistory PSCommand_Invoke-CancelDeploymentHistory PSFunction_Invoke-GetDeploymentHistory PSCommand_Invoke-GetDeploymentHistory PSFunction_Invoke-PauseDeploymentHistory PSCommand_Invoke-PauseDeploymentHistory PSFunction_Invoke-ResumeDeploymentHistory PSCommand_Invoke-ResumeDeploymentHistory PSFunction_Invoke-StartDeploymentHistory PSCommand_Invoke-StartDeploymentHistory PSFunction_Invoke-CancelDeploymentInstall PSCommand_Invoke-CancelDeploymentInstall PSFunction_Invoke-CheckDeploymentInstall PSCommand_Invoke-CheckDeploymentInstall PSFunction_Invoke-GetDeploymentInstall PSCommand_Invoke-GetDeploymentInstall PSFunction_Invoke-StartDeploymentInstall PSCommand_Invoke-StartDeploymentInstall PSFunction_Invoke-CancelDeploymentMigrate PSCommand_Invoke-CancelDeploymentMigrate PSFunction_Invoke-CheckDeploymentMigrate PSCommand_Invoke-CheckDeploymentMigrate PSFunction_Invoke-GetDeploymentMigrate PSCommand_Invoke-GetDeploymentMigrate PSFunction_Invoke-StartDeploymentMigrate PSCommand_Invoke-StartDeploymentMigrate PSFunction_Invoke-AnswerDeploymentQuestion PSCommand_Invoke-AnswerDeploymentQuestion PSFunction_Invoke-GetDeploymentQuestion PSCommand_Invoke-GetDeploymentQuestion PSFunction_Invoke-CheckInstallRemotePsc PSCommand_Invoke-CheckInstallRemotePsc PSFunction_Invoke-CheckPscReplicated PSCommand_Invoke-CheckPscReplicated PSFunction_Invoke-CheckPscStandalone PSCommand_Invoke-CheckPscStandalone PSFunction_Invoke-GetInitialConfigRemotePscThumbprint PSCommand_Invoke-GetInitialConfigRemotePscThumbprint PSFunction_Invoke-CancelDeploymentUpgrade PSCommand_Invoke-CancelDeploymentUpgrade PSFunction_Invoke-CheckDeploymentUpgrade PSCommand_Invoke-CheckDeploymentUpgrade PSFunction_Invoke-GetDeploymentUpgrade PSCommand_Invoke-GetDeploymentUpgrade PSFunction_Invoke-StartDeploymentUpgrade PSCommand_Invoke-StartDeploymentUpgrade PSFunction_Initialize-DeploymentHistoryMigrationSpec PSCommand_Initialize-DeploymentHistoryMigrationSpec PSFunction_Initialize-DeploymentImportHistoryCreateSpec PSCommand_Initialize-DeploymentImportHistoryCreateSpec PSFunction_Initialize-DeploymentInstallInstallSpec PSCommand_Initialize-DeploymentInstallInstallSpec PSFunction_Initialize-DeploymentInstallVcsaEmbeddedSpec PSCommand_Initialize-DeploymentInstallVcsaEmbeddedSpec PSFunction_Initialize-DeploymentLocationSpec PSCommand_Initialize-DeploymentLocationSpec PSFunction_Initialize-DeploymentMigrateActiveDirectoryCheckSpec PSCommand_Initialize-DeploymentMigrateActiveDirectoryCheckSpec PSFunction_Initialize-DeploymentMigrateActiveDirectorySpec PSCommand_Initialize-DeploymentMigrateActiveDirectorySpec PSFunction_Initialize-DeploymentMigrateMigrateSpec PSCommand_Initialize-DeploymentMigrateMigrateSpec PSFunction_Initialize-DeploymentMigrateMigrationAssistantSpec PSCommand_Initialize-DeploymentMigrateMigrationAssistantSpec PSFunction_Initialize-DeploymentMigratePscSpec PSCommand_Initialize-DeploymentMigratePscSpec PSFunction_Initialize-DeploymentMigrateSourceVcWindows PSCommand_Initialize-DeploymentMigrateSourceVcWindows PSFunction_Initialize-DeploymentMigrateVcsaEmbeddedSpec PSCommand_Initialize-DeploymentMigrateVcsaEmbeddedSpec PSFunction_Initialize-DeploymentQuestionAnswerSpec PSCommand_Initialize-DeploymentQuestionAnswerSpec PSFunction_Initialize-DeploymentReplicatedPscSpec PSCommand_Initialize-DeploymentReplicatedPscSpec PSFunction_Initialize-DeploymentReplicatedSpec PSCommand_Initialize-DeploymentReplicatedSpec PSFunction_Initialize-DeploymentStandalonePscSpec PSCommand_Initialize-DeploymentStandalonePscSpec PSFunction_Initialize-DeploymentStandaloneSpec PSCommand_Initialize-DeploymentStandaloneSpec PSFunction_Initialize-DeploymentUpgradePscSpec PSCommand_Initialize-DeploymentUpgradePscSpec PSFunction_Initialize-DeploymentUpgradeSourceApplianceSpec PSCommand_Initialize-DeploymentUpgradeSourceApplianceSpec PSFunction_Initialize-DeploymentUpgradeUpgradeSpec PSCommand_Initialize-DeploymentUpgradeUpgradeSpec PSFunction_Initialize-DeploymentUpgradeVcsaEmbeddedSpec PSCommand_Initialize-DeploymentUpgradeVcsaEmbeddedSpec PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-22T22:40:00Z</S>
+          <S N="NormalizedVersion">8.0.2099.24145081</S>
+          <S N="Authors">Broadcom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Sdk.vSphere.vCenter.Deployment.nuspec|README.md|VMware.Sdk.vSphere.vCenter.Deployment.psm1|Api\InstallApi.ps1|Api\RemotePscApi.ps1|Api\ThumbprintApi.ps1|Model\DeploymentImportHistoryCreateSpec.ps1|Model\DeploymentLocationSpec.ps1|Model\DeploymentMigrateMigrateSpec.ps1|Model\DeploymentMigrateSourceVcWindows.ps1|Model\DeploymentRemotePscSpec.ps1|Model\DeploymentStandalonePscSpec.ps1|Model\DeploymentUpgradeSourceApplianceSpec.ps1|VMware.Sdk.vSphere.vCenter.Deployment.cat|Api\ActiveDirectoryApi.ps1|Api\MigrateApi.ps1|Api\ReplicatedApi.ps1|Api\UpgradeApi.ps1|Model\DeploymentInstallInstallSpec.ps1|Model\DeploymentMigrateActiveDirectoryCheckSpec.ps1|Model\DeploymentMigrateMigrationAssistantSpec.ps1|Model\DeploymentMigrateVcsaEmbeddedSpec.ps1|Model\DeploymentReplicatedPscSpec.ps1|Model\DeploymentStandaloneSpec.ps1|Model\DeploymentUpgradeUpgradeSpec.ps1|Api\ImportHistoryApi.ps1|Api\QuestionApi.ps1|Api\StandaloneApi.ps1|Model\DeploymentHistoryMigrationSpec.ps1|Model\DeploymentInstallVcsaEmbeddedSpec.ps1|Model\DeploymentMigrateActiveDirectorySpec.ps1|Model\DeploymentMigratePscSpec.ps1|Model\DeploymentQuestionAnswerSpec.ps1|Model\DeploymentReplicatedSpec.ps1|Model\DeploymentUpgradePscSpec.ps1|Model\DeploymentUpgradeVcsaEmbeddedSpec.ps1|VMware.Sdk.vSphere.vCenter.Deployment.psd1</S>
+          <S N="GUID">6293e930-aae2-453d-925e-b52d466a6571</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Broadcom, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/home/roi/Downloads/installer/offline/powercli/VMware.Sdk.vSphere.vCenter.Deployment/8.0.2099.24145081</S>
+    </MS>
+  </Obj>
+</Objs>
