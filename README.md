@@ -299,13 +299,19 @@ compute_ignition_path = "./worker.ign"
 terraform init
 ```
 
-2. Apply the Terraform configuration:
+2. You need to export your password with:
+
+```bash
+export VSPHERE_PASSWORD='your-vsphere-password'
+```
+
+3. Apply the Terraform configuration:
 
 ```bash
 terraform apply -auto-approve
 ```
 
-3. Wait for the bootstrapping to complete:
+4. Wait for the bootstrapping to complete:
 
 ```bash
 ./openshift-install wait-for bootstrap-complete

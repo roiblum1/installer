@@ -21,7 +21,7 @@ vsphere_server = "vcenter.company.internal"
 vsphere_user = "administrator@vsphere.local"
 
 // Password of the user on the vSphere server.
-vsphere_password = "password"
+# vsphere_password = "password"
 
 // Name of the VM template to clone to create VMs for the cluster.
 vm_template = "rhcos-latest"
