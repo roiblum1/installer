@@ -1,0 +1,65 @@
+# === Terraform ===
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# === Secrets / Env Files ===
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.pfx
+*.cert
+*.gpg
+secrets.*.json
+credentials.*
+
+# === Bash ===
+*.swp
+*.swo
+*.sh~
+.bash_history
+bash_history
+
+# === PowerCLI / PowerShell ===
+*.ps1~
+*.tmp
+*.log
+*.bak
+Microsoft.PowerShell_profile.ps1
+
+# === Logs and Temp ===
+*.log
+*.out
+*.tmp
+*.pid
+
+# === Editor/IDE ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Misc ===
+node_modules/
+dist/
+build/
+*.tar.gz
+*.zip
+*.tgz
+*.7z
+*.rar
