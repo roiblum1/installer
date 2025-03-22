@@ -1,271 +1,381 @@
-This project shows two ways to install an UPI cluster.  We will discuss how to install using one of these two techniques:
-- Terraform
-- PowerShell
+# OpenShift UPI Installation on vSphere for Disconnected Environments
 
-# Table of Contents
-- [PowerShell](#PowerShell)
+This project demonstrates how to install an OpenShift User Provisioned Infrastructure (UPI) cluster on vSphere in disconnected (air-gapped) environments. Two installation methods are supported:
+
+- **PowerCLI** - Using VMware PowerCLI scripts
+- **Terraform** - Using HashiCorp Terraform
+
+## Table of Contents
+- [OpenShift UPI Installation on vSphere for Disconnected Environments](#openshift-upi-installation-on-vsphere-for-disconnected-environments)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites for Disconnected Installation](#prerequisites-for-disconnected-installation)
+- [PowerCLI Method](#powercli-method)
   - [Pre-Requisites](#pre-requisites)
-  - [PowerShell Setup](#powershell-setup)
-    - [VMware.PowerCLI](#vmwarepowercli)
-    - [EPS](#eps)
-  - [Script Configuration]
-  - [OpenShift Installation Configuration]()
-- [Terraform](#Terraform)
+  - [PowerCLI Setup](#powercli-setup)
+    - [Generating CLI Credentials](#generating-cli-credentials)
+  - [Preparing for Disconnected Installation](#preparing-for-disconnected-installation)
+  - [Configuration](#configuration)
+    - [Network Settings](#network-settings)
+    - [Bootstrap Management Options](#bootstrap-management-options)
+    - [Node Configuration](#node-configuration)
+  - [Build a Cluster with PowerCLI](#build-a-cluster-with-powercli)
+    - [1. Configure Your Environment](#1-configure-your-environment)
+    - [2. Run the Deployment Script](#2-run-the-deployment-script)
+    - [3. Monitor the Installation](#3-monitor-the-installation)
+  - [Bootstrap Completion](#bootstrap-completion)
+  - [Post-Installation Configuration](#post-installation-configuration)
+- [Terraform Method](#terraform-method)
   - [Pre-Requisites](#pre-requisites-1)
-  - [Build a Cluster](#build-a-cluster-1)
+  - [Preparing for Disconnected Installation](#preparing-for-disconnected-installation-1)
+  - [Build a Cluster with Terraform](#build-a-cluster-with-terraform)
+  - [Bootstrap Completion (Terraform)](#bootstrap-completion-terraform)
+  - [Infrastructure Nodes](#infrastructure-nodes)
+  - [DNS Configuration](#dns-configuration)
+  - [Troubleshooting](#troubleshooting)
+    - [Common Issues in Disconnected Environments](#common-issues-in-disconnected-environments)
 
-# PowerShell
-This section will describe the process to generate the vSphere VMs using PowerShell and the supplied scripts in this module.
+## Prerequisites for Disconnected Installation
 
-## Pre-requisites
+For a disconnected (air-gapped) installation, you need the following components prepared in advance:
+
+1. **RHCOS OVA Template** - Download the Red Hat CoreOS (RHCOS) OVA template matching your OpenShift version
+2. **OpenShift Installer Binary** - Download the `openshift-install` binary for your target version
+3. **Local Registry** - A container registry accessible in your disconnected environment with OpenShift images
+4. **DNS Server** - A DNS server for your cluster's domain name resolution 
+5. **Pull Secret** - A modified pull secret that includes authentication for your local registry
+
+# PowerCLI Method
+
+This section describes the process to generate the vSphere VMs using PowerShell, VMware.PowerCLI and the supplied scripts in this module.
+
+## Pre-Requisites
+
 * PowerShell
 * PowerShell VMware.PowerCLI Module
-* PowerShell EPS Module
 
-## PowerShell Setup
+## PowerCLI Setup
 
-PowerShell will need to have a couple of plugin installed in order for our script to work.  The plugins we need to install are VMware.PowerCLI and EPS.
-
-### VMware.PowerCLI
-
-To install the VMware.PowerCLI, you can run the following command:
+PowerShell will need to have VMware.PowerCLI plugin installed:
 
 ```shell
 pwsh -Command 'Install-Module VMware.PowerCLI -Force -Scope CurrentUser'
 ```
 
-### EPS
-
-To install the EPS module, you can run the following command:
-
-```shell
-pwsh -Command 'Install-Module -Name EPS -RequiredVersion 1.0 -Force -Scope CurrentUser'
-```
-
 ### Generating CLI Credentials
 
-The PowerShell scripts require that a credentials file be generated with the credentials to be used for generating the vSphere resources.  This does not have to be the credentials used by the OpenShift cluster via the install-config.yaml, but must have all permissions to create folders, tags, templates, and vms.  To generate the credentials files, run:
+The PowerShell scripts require that a credentials file be generated with the credentials to be used for generating the vSphere resources. This does not have to be the credentials used by the OpenShift cluster via the install-config.yaml, but must have all permissions to create folders, tags, templates, and vms. To generate the credentials files, run:
 
 ```shell
-pwsh -command "\$User='<username>';\$Password=ConvertTo-SecureString -String '<password>' -AsPlainText -Force;\$Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList \$User, \$Password;\$Credential | Export-Clixml secrets/vcenter-creds.xml"
+pwsh -command "$User='<username>';$Password=ConvertTo-SecureString -String '<password>' -AsPlainText -Force;$Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $Password;$Credential | Export-Clixml secrets/vcenter-creds.xml"
 ```
 
-Be sure to modify `<username>` to be the username for vCenter and `<password>` to the your password.  The output of this needs to go into `secrets/vcenter-creds.xml`.  Make sure the secrets directory exists before running the credentials generation command above.
+Be sure to modify `<username>` to be the username for vCenter and `<password>` to the your password. The output of this needs to go into `secrets/vcenter-creds.xml`. Make sure the secrets directory exists before running the credentials generation command above.
 
-## Script Configuration
+## Preparing for Disconnected Installation
 
-The PowerShell script provided by this project provides examples on how to do several aspects to creating a UPI cluster environment.  It is configurable to do as much or as little as you need.  For the CI build process, we will handle all install-config.yaml configuration, uploading of templates, and monitoring of installation progress.  This project can handle doing all that as well if configured appropriately.
+1. Download the RHCOS OVA template for your OpenShift version
+2. Download the OpenShift installer binary (`openshift-install`)
+3. Prepare a `disconnected` directory to store required files:
 
-### Behavioral Configurations
+```shell
+mkdir -p disconnected
+cp rhcos-<version>.ova disconnected/
+cp openshift-install disconnected/
+```
 
-These properties are used to control how the script works.  All of the properties will dictate how much or little work the script will do.
-
-| Property            | Description                                                                                                                                                                                                                                                                                       |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| createInstallConfig | Enable script to create install config based on configuration of variables.ps1.  If set to false, the script will not generate install-config.yaml.  Note, install-config.yaml will be needed if you want this script to generate the ignition files for vm creation.                             |
-| downloadInstaller   | Enable script to download installer to be used.  If not downloading the installer, the installer must be placed in the same directory as this script.  The installer is needed to determine what template to upload to the cluster for vm cloning.                                                |
-| uploadTemplateOva   | Enable script to upload OVA template to be used for all VM being created.                                                                                                                                                                                                                         |
-| generateIgnitions   | Enable script to generate ignition configs.  This is normally used when install-config.yaml is provided to script, but need script to generate the ignition configs for VMs.                                                                                                                      |
-| waitForComplete     | This option has the script step through the process of waiting for installation complete.  Most of this functionality is provided by `openshift-install wait-for`.  The script will will check for when api is ready, bootstrap complete, accept CSRs and then for all COs to be done installing. |
-| delayVMStart        | This option has the script delay the start of the VMs after their creation.                                                                                                                                                                                                                       |
-
-
-### vCenter Configuration
-
-These properties are related to vCenter.  These will be used by script to create the install-config.yaml as well as define a single failure domain if no failure domains are configured in the variables.ps1 file.
-
-| Property    | Description                                                                                                                                    |
-|-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| vcenter     | This property specifies the vCenter URL                                                                                                        |
-| username    | Specifies the username used to connect to vCenter.  This is only used in generating the install-config.yaml information for use by the cluster |
-| password    | The password to be used to connect to vCenter. This is only used in generating the install-config.yaml information for use by the cluster      |
-| portgroup   | The default port group to use.  This property will be used when no failure domains are defined.                                                |
-| datastore   | The default data store to use.  This property will be used when no failure domains are defined.                                                |
-| datacenter  | The default data center to use.  This property will be used when no failure domains are defined.                                               |
-
-
-### Cluster Configuration
-
-These properties are used to configure the new cluster.  These properties will also be used to determine how to create the VMs.
-
-| Property        | Description                                                                                                                                           |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clustername     | The name of the cluster to create.                                                                                                                    |
-| basedomain      | The base domain to use for the cluster.                                                                                                               |
-| sshkeypath      | The path of the ssh key to use when generating ignition configs.                                                                                      |
-| failure_domains | Contains the failure domains for the cluster.  This needs to be a JSON formatted configuration following what is provided in the example below table. |
-
-Example of a failure domain configuration:
+4. Update the `variables.ps1` file with your local registry details:
 
 ```powershell
-$failure_domains = @"
-[
-    {
-        "datacenter": "IBMCloud",
-        "cluster": "vcs-mdcnc-workload-1",
-        "datastore": "mdcnc-ds-1",
-        "network": "ocp-ci-seg-14"
-    },{
-        "datacenter": "IBMCloud",
-        "cluster": "vcs-mdcnc-workload-2",
-        "datastore": "mdcnc-ds-2",
-        "network": "ocp-ci-seg-14"
-    },{
-        "datacenter": "IBMCloud",
-        "cluster": "vcs-mdcnc-workload-3",
-        "datastore": "mdcnc-ds-3",
-        "network": "ocp-ci-seg-14"
-    },{
-        "datacenter": "datacenter-2",
-        "cluster": "vcs-mdcnc-workload-4",
-        "datastore": "mdcnc-ds-4",
-        "network": "ocp-ci-seg-14"
+# Disconnected registry configuration
+$imageContentSources = @(
+    @{
+        source = "quay.io/openshift-release-dev/ocp-release"
+        mirrors = @("registry.example.local:5000/openshift-release-dev/ocp-release")
+    },
+    @{
+        source = "quay.io/openshift-release-dev/ocp-v4.0-art-dev"
+        mirrors = @("registry.example.local:5000/openshift-release-dev/ocp-v4.0-art-dev")
     }
-]
+)
+
+# Pull secret for your disconnected registry
+$pullsecret = @"
+{"auths":{"registry.example.local:5000":{"auth":"base64encodedcredentials"}}}
 "@
 ```
 
-### VM Configuration
+## Configuration
 
-| Property                   | Description                                                                                                                                    |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| vm_template                | Name of the existing vm template in vCenter to use.  Use this option to prevent script from uploading a template and use an existing template. |
-| dns                        | DNS server for network configuration of all VMs.                                                                                               |
-| gateway                    | Gateway for network configuration of all VMs.                                                                                                  |
-| netwask                    | The network mask for all VMs.                                                                                                                  |
-| lb_ip_address              | The IP address to use for the load balancer VM.                                                                                                |
-| bootstrap_ip_address       | The IP address to use for the bootstrap VM.                                                                                                    |
-| control_plane_memory       | Amount of memory to assign each control plane VM.  This value is in MB.                                                                        |
-| control_plane_num_cpus     | Number of CPUs to assign to each control plane VM.                                                                                             |
-| control_plane_count        | Number of control plane VMs.                                                                                                                   |
-| control_plane_ip_addresses | The IP addresses to assign all control plane VMs.                                                                                              |
-| control_plane_hostnames    | The host names to assign to all control plane VMs.                                                                                             |
-| compute_memory             | Amount of memory to assign each compute VM.  This value is in MB.                                                                              |
-| compute_num_cpus           | Number of CPUs to assign to each compute VM.                                                                                                   |
-| compute_count              | Number of compute VMs.                                                                                                                         |
-| compute_ip_addresses       | The IP addresses to assign all compute VMs.                                                                                                    |
-| compute_hostnames          | The host names to assign to all compute VMs.                                                                                                   |
+The PowerCLI script provided by this project is highly configurable. It can handle all aspects of creating a UPI cluster environment in a disconnected setting.
 
+### Network Settings
 
-## Build a Cluster
+These properties define the basic network configuration for your cluster:
 
-### Manual Method
+| Property          | Description                                                      |
+|-------------------|------------------------------------------------------------------|
+| searchDomain      | Search domain to add to all VMs network configuration            |
+| apivip            | Virtual IP for API endpoint                                      |
+| ingressvip        | Virtual IP for ingress                                           |
+| lb_ip_address     | Load balancer IP                                                 |
+| gateway           | Network gateway                                                  |
+| netmask           | Network mask                                                     |
+| dns               | DNS server IP address                                            |
 
-1. Create an install-config.yaml.  The machine CIDR for the dev cluster is 139.178.89.192/26.
+### Bootstrap Management Options
 
+| Property          | Description                                                      |
+|-------------------|------------------------------------------------------------------|
+| bootstrap_complete | Flag to indicate bootstrap process is complete (set to true after bootstrap to remove bootstrap resources) |
+| deploy_lb         | Whether to deploy a dedicated load balancer VM (set to false to use DNS-based load balancing) |
+
+### Node Configuration
+
+| Property                   | Description                                           |
+|----------------------------|-------------------------------------------------------|
+| control_plane_count        | Number of control plane VMs                           |
+| control_plane_num_cpus     | Number of CPUs for control plane VMs                  |
+| control_plane_memory       | Memory (MB) for control plane VMs                     |
+| control_plane_ip_addresses | Static IP addresses for control plane VMs             |
+| compute_count              | Number of compute VMs                                 |
+| compute_num_cpus           | Number of CPUs for compute VMs                        |
+| compute_memory             | Memory (MB) for compute VMs                           |
+| compute_ip_addresses       | Static IP addresses for compute VMs                   |
+| infra_count                | Number of infrastructure VMs                          |
+| infra_num_cpus             | Number of CPUs for infrastructure VMs                 |
+| infra_memory               | Memory (MB) for infrastructure VMs                    |
+| infra_ip_addresses         | Static IP addresses for infrastructure VMs            |
+| bootstrap_ip_address       | Static IP address for bootstrap VM                    |
+
+## Build a Cluster with PowerCLI
+
+### 1. Configure Your Environment
+
+Edit `variables.ps1` to match your environment:
+- Set vCenter details
+- Configure DNS, network, and IP ranges
+- Set pull secret for disconnected registry
+- Configure search domain and node specifications
+
+### 2. Run the Deployment Script
+
+```powershell
+pwsh -f main.ps1
 ```
-apiVersion: v1
-baseDomain: devcluster.openshift.com
-metadata:
-  name: mstaeble
-networking:
-  machineNetwork:
-  - cidr: "139.178.89.192/26"
-platform:
-  vsphere:
-    vCenter: vcsa.vmware.devcluster.openshift.com
-    username: YOUR_VSPHERE_USER
-    password: YOUR_VSPHERE_PASSWORD
-    datacenter: dc1
-    defaultDatastore: nvme-ds1
-pullSecret: YOUR_PULL_SECRET
-sshKey: YOUR_SSH_KEY
+
+This script will:
+1. Create ignition configs if enabled
+2. Import the RHCOS template (or use existing template)
+3. Create and configure the load balancer VM
+4. Create bootstrap, control plane, compute, and infrastructure nodes
+5. Optional: Wait for installation to complete
+
+### 3. Monitor the Installation
+
+After the VMs are created, you can monitor the installation:
+
+```bash
+./openshift-install wait-for bootstrap-complete --log-level=info
 ```
 
-2. Run `openshift-install create manifest`.
+## Bootstrap Completion
 
-3. Update any configurations you need before generating ignition configs.  It is recommended to remove the master machine CR and the worker machineset CR.  This can be accomplished by running:
+Once bootstrap is complete, you can remove the bootstrap node to free resources and update the load balancer configuration by running the script again with bootstrap_complete set to true:
 
+1. Edit `variables.ps1` and change `$bootstrap_complete = $false` to `$bootstrap_complete = $true`
+2. Run the script again:
+
+```powershell
+pwsh -f main.ps1
 ```
-rm -f openshift/99_openshift-cluster-api_master-machines-*.yaml openshift/99_openshift-cluster-api_worker-machineset-*.yaml
+
+The script will:
+1. Remove the bootstrap VM
+2. Update the load balancer configuration to remove bootstrap references
+3. Clean up bootstrap DNS records if configured
+
+## Post-Installation Configuration
+
+After the cluster is fully installed, configure the infrastructure nodes to run OpenShift infrastructure services:
+
+```powershell
+pwsh -f post-install-config.ps1
 ```
 
-3. Run `openshift-install create ignition-configs`.
+This script will:
+1. Add infrastructure node role labels
+2. Apply taints to ensure only infrastructure workloads run on these nodes
+3. Move the following components to infrastructure nodes:
+   - Ingress Router
+   - Registry
+   - Monitoring Stack
 
-4. Create and configure a variables.ps1 file.
-   There is an example variables.ps1 file in this directory named variables.ps1.example. The example file contains all properties that are available to be configured. At a minimum, you need to set values for the following variables.
-* clustername
-* basedomain
-* username
-* password
-* vcenter
-* vcentercredpath
+# Terraform Method
 
-The bootstrap ignition config must be placed in a location that will be accessible by the bootstrap machine. For example, you could store the bootstrap ignition config in a gist.
+This section will walk you through generating a cluster using Terraform in a disconnected environment.
 
-Even if declaring static IPs a DHCP server is still required early in the boot process to download the ignition files.
-
-5. Run `pwsh -f upi.ps1`.
-
-The script will now attempt to create all VMs based on the config provided.  The script will start the VMs and will say `Install Comlete` when all VMs are cloned and started.
-
-6. Run `openshift-install wait-for install-complete`. Wait for the cluster install to finish.
-
-7. Enjoy your new OpenShift cluster.
-
-8. Run `pwsh -f upi-destroy.ps1` to clean up all folder, VMs, and tags.
-
-# Terraform
-This section will walk you through generating a cluster using Terraform.
-
-<a id="terraform-pre-requisites"></a>
 ## Pre-Requisites
 
-* terraform
-* jq
+* Terraform
+* RHCOS OVA Template
+* OpenShift Installer Binary
+* Local Registry
 
-## Build a Cluster
+## Preparing for Disconnected Installation
 
-1. Create an install-config.yaml.
-The machine CIDR for the dev cluster is 139.178.89.192/26.
+1. Create an install-config.yaml with references to your local registry:
 
-```
+```yaml
 apiVersion: v1
-baseDomain: devcluster.openshift.com
+baseDomain: example.local
 metadata:
-  name: mstaeble
+  name: ocp4
 networking:
   machineNetwork:
-  - cidr: "139.178.89.192/26"
+  - cidr: "192.168.1.0/24"
 platform:
   vsphere:
-    vCenter: vcsa.vmware.devcluster.openshift.com
+    vcenter: vcenter.example.local
     username: YOUR_VSPHERE_USER
     password: YOUR_VSPHERE_PASSWORD
     datacenter: dc1
-    defaultDatastore: nvme-ds1
-pullSecret: YOUR_PULL_SECRET
+    defaultDatastore: datastore1
+pullSecret: '{"auths":{"registry.example.local:5000":{"auth":"base64encodedcredentials"}}}'
 sshKey: YOUR_SSH_KEY
+imageContentSources:
+- mirrors:
+  - registry.example.local:5000/openshift-release-dev/ocp-release
+  source: quay.io/openshift-release-dev/ocp-release
+- mirrors:
+  - registry.example.local:5000/openshift-release-dev/ocp-v4.0-art-dev
+  source: quay.io/openshift-release-dev/ocp-v4.0-art-dev
 ```
 
 2. Run `openshift-install create ignition-configs`.
 
-3. Fill out a terraform.tfvars file with the ignition configs generated.
-There is an example terraform.tfvars file in this directory named terraform.tfvars.example. The example file is set up for use with the dev cluster running at vcsa.vmware.devcluster.openshift.com. At a minimum, you need to set values for the following variables.
-* cluster_id
-* cluster_domain
-* vsphere_user
-* vsphere_password
-* ipam_token OR bootstrap_ip, control_plane_ips, and compute_ips
+3. Fill out a terraform.tfvars file for your disconnected environment:
 
-The bootstrap ignition config must be placed in a location that will be accessible by the bootstrap machine. For example, you could store the bootstrap ignition config in a gist.
+```hcl
+// Basic cluster information
+cluster_id = "ocp4"
+cluster_domain = "ocp4.example.local"
+base_domain = "example.local"
 
-Even if declaring static IPs a DHCP server is still required early in the boot process to download the ignition files. 
+// vSphere connection details
+vsphere_server = "vcenter.example.local"
+vsphere_user = "administrator@vsphere.local"
+vsphere_password = "password"
 
-4. Run `terraform init`.
+// VM template from local OVA
+vm_template = "rhcos-4.14"
 
-5. Ensure that you have you AWS profile set and a region specified. The installation will use create AWS route53 resources for routing to the OpenShift cluster.
+// Network configuration
+machine_cidr = "192.168.1.0/24"
+vm_dns_addresses = ["192.168.1.10"]
+search_domain = "example.local"
 
-6. Run `terraform apply -auto-approve`.
-This will reserve IP addresses for the VMs.
+// Node counts
+control_plane_count = 3
+compute_count = 3
+infra_count = 3
 
-7. Run `openshift-install wait-for bootstrap-complete`. Wait for the bootstrapping to complete.
+// Optional: deploy load balancer
+deploy_lb = true
 
-8. Run `terraform apply -auto-approve -var 'bootstrap_complete=true'`.
-This will destroy the bootstrap VM.
+// Search domain for all VMs
+search_domain = "example.local"
 
-9. Run `openshift-install wait-for install-complete`. Wait for the cluster install to finish.
+// Path to ignition files
+bootstrap_ignition_path = "./bootstrap.ign"
+control_plane_ignition_path = "./master.ign"
+compute_ignition_path = "./worker.ign"
+```
 
-10. Enjoy your new OpenShift cluster.
+## Build a Cluster with Terraform
 
-11. Run `terraform destroy -auto-approve`.
+1. Initialize Terraform to use local providers:
+
+```bash
+terraform init
+```
+
+2. Apply the Terraform configuration:
+
+```bash
+terraform apply -auto-approve
+```
+
+3. Wait for the bootstrapping to complete:
+
+```bash
+./openshift-install wait-for bootstrap-complete
+```
+
+## Bootstrap Completion (Terraform)
+
+Once bootstrap is complete:
+
+```bash
+terraform apply -auto-approve -var 'bootstrap_complete=true'
+```
+
+This will:
+1. Destroy the bootstrap VM
+2. Remove bootstrap from load balancer configuration
+3. Update DNS records if configured
+
+## Infrastructure Nodes
+
+Infrastructure nodes are dedicated to running OpenShift infrastructure components like:
+
+- Ingress Router
+- Image Registry
+- Monitoring Stack
+- Logging Stack
+
+These nodes are tainted to prevent application workloads from running on them, ensuring resources are dedicated to platform services.
+
+After the cluster is installed, run the post-installation script to configure the infrastructure nodes:
+
+```powershell
+pwsh -f post-install-config.ps1
+```
+
+## DNS Configuration
+
+For disconnected environments, you'll need to configure DNS for:
+
+1. API endpoints: `api.clustername.domain` and `api-int.clustername.domain`
+2. Application wildcard domain: `*.apps.clustername.domain`
+3. Node records: `bootstrap.clustername.domain`, `master-0.clustername.domain`, etc.
+4. Optional: etcd SRV records
+
+The DNS module provides functionality to create these records using the `nsupdate` command:
+
+```bash
+echo "update add api.ocp4.example.local 8600 A 192.168.1.100" | nsupdate -v -d
+```
+
+## Troubleshooting
+
+### Common Issues in Disconnected Environments
+
+1. **Registry Access**
+   - Verify your pull secret includes authentication for your local registry
+   - Ensure registry is accessible from all nodes
+
+2. **DNS Resolution**
+   - Confirm all required DNS records are created
+   - Check search domain configuration on VMs
+
+3. **Bootstrap Issues**
+   - Check bootstrap VM logs: `ssh core@bootstrap-ip journalctl -f`
+   - Verify bootstrap can reach the local registry and DNS
+
+4. **Network Configuration**
+   - Ensure static IPs are correctly assigned
+   - Verify gateway and netmask configuration
+
+5. **Load Balancer**
+   - Confirm HAProxy configuration includes all nodes
+   - Check if API endpoint is accessible: `curl -k https://api.clustername.domain:6443/version`
