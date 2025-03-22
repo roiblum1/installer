@@ -8,6 +8,9 @@ DISCONNECTED_DIR="${SCRIPT_DIR}/disconnected"
 RHCOS_OVA_PATH="${RHCOS_OVA_PATH:-${DISCONNECTED_DIR}/rhcos.ova}"
 TERRAFORM_PLUGIN_CACHE="${HOME}/.terraform.d/plugin-cache"
 
+# Define required OpenShift installer version
+REQUIRED_OPENSHIFT_VERSION="${REQUIRED_OPENSHIFT_VERSION:-4.14.8}"
+
 # Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -50,6 +53,13 @@ check_command openshift-install
 if [ ! -f "${SCRIPT_DIR}/install-config.yaml" ]; then
   print_error "install-config.yaml not found in ${SCRIPT_DIR}. This file is required."
 fi
+
+# Check OpenShift installer version
+INSTALLED_OPENSHIFT_VERSION=$(openshift-install version | head -n1 | awk '{print $2}' | sed 's/^v//')
+if [ "$INSTALLED_OPENSHIFT_VERSION" != "$REQUIRED_OPENSHIFT_VERSION" ]; then
+  print_error "OpenShift installer version $INSTALLED_OPENSHIFT_VERSION does not match the required version $REQUIRED_OPENSHIFT_VERSION."
+fi
+print_status "OpenShift installer version $INSTALLED_OPENSHIFT_VERSION verified."
 
 print_status "Starting disconnected OpenShift installation setup"
 
