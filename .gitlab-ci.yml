@@ -1,0 +1,50 @@
+stages:
+  - validate
+
+variables:
+  # These variables can be overridden in GitLab UI
+  TF_VERSION: "1.5.7"
+  REGISTRY_MIRROR: "${CI_REGISTRY:-registry.example.local:5000}"
+
+# Validate Terraform files
+terraform-validate:
+  image: ${REGISTRY_MIRROR}/hashicorp/terraform:${TF_VERSION}
+  stage: validate
+  script:
+    - terraform --version
+    - terraform init -backend=false
+    - terraform validate
+    - cd DNS && terraform init -backend=false && terraform validate && cd ..
+    - cd ipam && terraform init -backend=false && terraform validate && cd ..
+    - cd lb && terraform init -backend=false && terraform validate && cd ..
+    - cd vm && terraform init -backend=false && terraform validate && cd ..
+  rules:
+    - changes:
+        - "*.tf"
+        - "**/*.tf"
+
+# Validate PowerCLI scripts
+powercli-validate:
+  image: ${REGISTRY_MIRROR}/microsoft/powershell:latest
+  stage: validate
+  script:
+    - pwsh -Command 'Install-Module VMware.PowerCLI -Force -Scope CurrentUser -SkipPublisherCheck'
+    - pwsh -Command 'Set-PowerCLIConfiguration -InvalidCertificateAction:Ignore -ParticipateInCEIP:$false -Confirm:$false'
+    - pwd
+    - ls -la powercli/
+    - find powercli -name "*.ps1" -type f -exec pwsh -Command "Test-ScriptFileInfo -Path {} -ErrorAction SilentlyContinue || Write-Output 'Checking syntax of {}'; \$errors = [System.Management.Automation.PSParseError[]]\$null; \$null = [System.Management.Automation.PSParser]::Tokenize((Get-Content -Path {} -Raw), [ref]\$errors); if (\$errors.Count -gt 0) { Write-Output \$errors; exit 1 } else { Write-Output '{} - Syntax OK' }" \;
+  rules:
+    - changes:
+        - "powercli/*.ps1"
+
+# Validate bash scripts
+bash-validate:
+  image: ${REGISTRY_MIRROR}/bash:latest
+  stage: validate
+  script:
+    - bash --version
+    - find . -name "*.sh" -type f -exec bash -n {} \; && echo "All bash scripts syntax OK"
+  rules:
+    - changes:
+        - "*.sh"
+        - "**/*.sh"
