@@ -1,0 +1,10 @@
+{
+  "archives": {
+    "linux_amd64": {
+      "hashes": [
+        "h1:U1ldlPLYVl0h++HeCK75te/WsRmQQhzPClX6QuD0q5c="
+      ],
+      "url": "terraform-provider-ignition_2.1.2_linux_amd64.zip"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "archives": {
+    "linux_amd64": {
+      "hashes": [
+        "h1:XWkRZOLKMjci9/JAtE8X8fWOt7A4u+9mgXSUjc4Wuyo="
+      ],
+      "url": "terraform-provider-external_2.3.4_linux_amd64.zip"
+    }
+  }
+}
