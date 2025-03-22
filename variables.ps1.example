@@ -1,0 +1,201 @@
+# ============================
+#  variables.ps1 (Example)
+# ============================
+
+# Toggle script features (all false for a disconnected environment)
+$createInstallConfig = $false    # If true, script will generate install-config.yaml
+$downloadInstaller   = $false    # If true, script would fetch openshift-install from GitHub (not possible offline)
+$uploadTemplateOva   = $false    # If true, script would import an OVA from the internet (not possible offline)
+$generateIgnitions   = $false    # If true, script runs 'openshift-install create ignition-configs'
+$waitForComplete     = $false    # If true, script waits for cluster operators to be ready
+$delayVMStart        = $false    # If true, script adds delays between VM starts (bootstrap, master, worker)
+
+# ---------------------------
+#  OpenShift / OKD Variables
+# ---------------------------
+$version      = "4.9"
+$clustername  = "openshift"
+$basedomain   = "vmc.devcluster.example.com"
+
+# Specify your local SSH public key path
+$sshkeypath   = "/home/bubba/.ssh/id_rsa.pub"
+
+# Control-plane “VIPs” (only used if needed for HA)
+$apivip       = "192.168.1.10"
+$ingressvip   = "192.168.1.11"
+
+# ---------------------------
+#  vCenter Variables
+# ---------------------------
+$vcenter         = "vcs8e-vc.ocp2.dev.cluster.com"
+$username        = ""      # Fill in or provide via credential file
+$password        = ''      # Fill in or provide via credential file
+$portgroup       = "ocp-ci-seg-1"
+$datastore       = "workload_share_vcs8eworkload_lrFsW"
+$datacenter      = "IBMCloud"
+$cluster         = "vcs-8e-workload"
+$vcentercredpath = "secrets/vcenter-creds.xml"
+$storagepolicy   = ""
+$secureboot      = $false
+
+# OpenShift pull secret (truncated/fake since offline)
+$pullsecret = @"
+{"auths":{"fake":{"auth":"aWQ6cGFzcwo="}}}
+"@
+
+# ---------------------------
+#  Networking
+# ---------------------------
+# - Typically used by your static network config for each VM
+$dns         = "8.8.8.8"
+$gateway     = "192.168.14.1"
+$netmask     = "255.255.255.0"
+$searchDomain= "example.local"  # <--- Add your custom search domain here
+
+# Load-balancer and bootstrap IP addresses
+$lb_ip_address        = "192.168.14.10"
+$bootstrap_ip_address = "192.168.14.11"
+
+# ---------------------------
+#  Control Plane Sizing
+# ---------------------------
+$control_plane_memory    = 16384  # 16 GB
+$control_plane_num_cpus  = 4
+$control_plane_count     = 3
+
+# Control-plane static IPs and hostnames
+$control_plane_ip_addresses = "192.168.14.20", "192.168.14.21", "192.168.14.22"
+$control_plane_hostnames    = "control-plane-0", "control-plane-1", "control-plane-2"
+
+# ---------------------------
+#  Compute Sizing
+# ---------------------------
+$compute_memory   = 8192   # 8 GB
+$compute_num_cpus = 4
+$compute_count    = 3
+
+# Compute static IPs and hostnames
+$compute_ip_addresses = "192.168.14.30", "192.168.14.31", "192.168.14.32"
+$compute_hostnames    = "compute-0", "compute-1", "compute-2"
+
+# ---------------------------
+#  vSphere Template
+# ---------------------------
+# If not uploading a new OVA, specify an existing template name here:
+$vm_template = ""
+
+# ---------------------------
+#  Failure Domains
+# ---------------------------
+# One or more sets of vSphere resources (datacenter, cluster, network, datastore).
+# Adjust as needed for your environment.
+$failure_domains = @"
+[
+    {
+        // Name of the vSphere data center.
+        "datacenter": "datacenter-2",
+        // Name of the vSphere cluster.
+        "cluster": "vcs-mdcnc-workload-4",
+        // Name of the vSphere data store to use for the VMs.
+        "datastore": "mdcnc-ds-4",
+        // Name of the vSphere network to use for the VMs.
+        "network": "ocp-ci-seg-14"
+    }
+]
+"@
+
+# ---------------------------
+#  Virtual Machines Definition
+# ---------------------------
+# For each VM (bootstrap, masters, workers), we specify the vSphere location and type.
+$virtualmachines = @"
+{
+    "virtualmachines": {
+        "bootstrap": {
+            "server":     "$($vcenter)",
+            "datacenter": "$($datacenter)",
+            "cluster":    "$($cluster)",
+            "network":    "$($portgroup)",
+            "datastore":  "$($datastore)",
+            "type":       "bootstrap"
+        },
+        "master-0": {
+            "server":     "$($vcenter)",
+            "datacenter": "$($datacenter)",
+            "cluster":    "$($cluster)",
+            "network":    "$($portgroup)",
+            "datastore":  "$($datastore)",
+            "type":       "master"
+        },
+        "master-1": {
+            "server":     "$($vcenter)",
+            "datacenter": "$($datacenter)",
+            "cluster":    "$($cluster)",
+            "network":    "$($portgroup)",
+            "datastore":  "$($datastore)",
+            "type":       "master"
+        },
+        "master-2": {
+            "server":     "$($vcenter)",
+            "datacenter": "$($datacenter)",
+            "cluster":    "$($cluster)",
+            "network":    "$($portgroup)",
+            "datastore":  "$($datastore)",
+            "type":       "master"
+        },
+        "worker-0": {
+            "server":     "$($vcenter)",
+            "datacenter": "$($datacenter)",
+            "cluster":    "$($cluster)",
+            "network":    "$($portgroup)",
+            "datastore":  "$($datastore)",
+            "type":       "worker"
+        },
+        "worker-1": {
+            "server":     "$($vcenter)",
+            "datacenter": "$($datacenter)",
+            "cluster":    "$($cluster)",
+            "network":    "$($portgroup)",
+            "datastore":  "$($datastore)",
+            "type":       "worker"
+        },
+        "worker-2": {
+            "server":     "$($vcenter)",
+            "datacenter": "$($datacenter)",
+            "cluster":    "$($cluster)",
+            "network":    "$($portgroup)",
+            "datastore":  "$($datastore)",
+            "type":       "worker"
+        }
+    }
+}
+"@
+
+# ---------------------------
+#  install-config Template
+# ---------------------------
+# Used if $createInstallConfig = $true and you want to generate install-config.yaml
+$installconfig = @"
+{
+  "apiVersion": "v1",
+  "baseDomain": "domain",
+  "metadata": {
+    "name": "cluster"
+  },
+  "platform": {
+    "vsphere": {
+      "vcenter": "vcsa",
+      "username": "username",
+      "password": "password",
+      "datacenter": "dc1",
+      "defaultDatastore": "datastore",
+      "cluster": "cluster",
+      "network": "network"
+      # "apiVIP": "ipaddr",
+      # "ingressVIP": "ipaddr"
+    }
+  },
+  "pullSecret": "",
+  "sshKey": ""
+}
+"@
